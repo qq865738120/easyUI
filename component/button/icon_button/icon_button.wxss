@@ -1,0 +1,7 @@
+/* component/button/icon_button/icon_button.wxss */
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:  center;
+}

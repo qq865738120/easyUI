@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "index/index",
+    "page/page1/page1",
+    "detail/detail",
+    "page/page2/page2",
+    "page/page3/page3",
+    "page/page4/page4"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "组件",
+    "navigationBarTextStyle": "black"
+  }
+}

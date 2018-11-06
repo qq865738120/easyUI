@@ -1,0 +1,17 @@
+<!--page1/page1.wxml-->
+<text>icon_button组件：</text>
+<component-icon-button 
+  icon='/imgs/button_icon.png'
+  text='客服设置'>
+</component-icon-button>
+<text id='1' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
+<view style='border-bottom: 1px solid #e8e8e8;'></view>
+
+<text>base_list组件：</text>
+<component-base-list
+  title='编辑名片'
+  subTitle='2018-09-27 11:41:48'
+  cus-title='mtitle'>
+</component-base-list>
+<text id='2' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
+<view style=' border-bottom: 1px solid #e8e8e8'></view>

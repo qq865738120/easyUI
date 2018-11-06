@@ -1,0 +1,60 @@
+<!--detail/detail.wxml-->
+<view style='margin-top: 30rpx;'>
+  <text class='h1'>属性字段：</text>
+
+  <!-- 属性字段表格 -->
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">属性名</view>
+      <view class="th">类型</view>
+      <view class="th">默认值</view>
+      <view class="th">说明</view>
+    </view>
+    <block wx:for="{{ attributes }}">
+      <view class="tr">
+        <view class="td">{{ item.name }}</view>
+        <view class="td">{{ item.type }}</view>
+        <view class="td">{{ item.deff }}</view>
+        <view class="td">{{ item.detail }}</view>
+      </view>
+    </block>
+  </view>
+  <!-- 属性字段表格end -->
+
+  <text class='h1'>样式类：</text>
+
+  <!-- 样式类表格 -->
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">属性名</view>
+      <view class="th">说明</view>
+    </view>
+    <block wx:for="{{ mClass }}">
+      <view class="tr">
+        <view class="td">{{ item.name }}</view>
+        <view class="td">{{ item.detail }}</view>
+      </view>
+    </block>
+  </view>
+  <!-- 样式类表格end -->
+
+  <text class='h1'>接口方法：</text>
+
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">方法名</view>
+      <view class="th">参数和释义</view>
+      <view class="th">说明</view>
+    </view>
+    <block wx:for="{{ method }}">
+      <view class="tr">
+        <view class="td">{{ item.name }}</view>
+        <view class="td">{{ item.parameter }}</view>
+        <view class="td">{{ item.detail }}</view>
+      </view>
+    </block>
+  </view>
+
+  <text class='h1'>其他：</text>
+  <text class='content' space='emsp'>{{ other }}</text>
+</view>

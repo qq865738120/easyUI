@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "第1页",
+  "usingComponents": {
+    "component-icon-button": "/component/button/icon_button/icon_button",
+    "component-base-list": "/component/list/base_list/base_list"
+  }
+}

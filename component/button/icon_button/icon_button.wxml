@@ -1,0 +1,5 @@
+<!--component/button/icon_button/icon_button.wxml-->
+<view class='component' style='width: {{ size }}rpx; height: {{ size }}rpx'>
+  <image class='icon' src='{{ mSrc }}' style='width: {{ iconWidth }}rpx; height: {{ iconHeight }}rpx; margin-bottom: {{ spacing }}rpx'></image>
+  <text class='text' style='font-size: {{ fontSize }}rpx; color: {{ fontColor }}'>{{ mText }}</text>
+</view>

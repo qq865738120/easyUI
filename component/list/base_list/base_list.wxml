@@ -1,0 +1,6 @@
+<view class='component cus-component'>
+  <view class='body' style='border-bottom: 1px solid {{ lineColor }}'>
+    <text class='title cus-title'>{{ mTitle }}</text>
+    <text class='subTitle cus-subTitle'>{{ mSubTitle }}</text>
+  </view>
+</view>

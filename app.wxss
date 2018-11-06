@@ -1,0 +1,11 @@
+page {
+  background-color: #f5f5f5;
+}
+page>text {
+  font-size: 30rpx;
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+  margin-left: 18rpx;
+  color: red;
+  display: block;
+}

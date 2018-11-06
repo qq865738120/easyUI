@@ -1,0 +1,4 @@
+/* page1/page1.wxss */
+.mtitle {
+  color: red;
+}
