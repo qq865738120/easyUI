@@ -17,3 +17,7 @@
 | ----------- | --------------------------------- | -------------------- |
 | icon_button | [component/button/icon_button](component/button/icon_button) | 带图标的按钮 |
 | base_list | [component/list/base_list](component/list/base_list) | 带有标题和副标题的列表项 |
+
+### 写在最后
+
+使用组件前请详细查看组件提供的接口。查看方法：打开小程序选择页面，点击对应组件下方的“详细说明”按钮。
