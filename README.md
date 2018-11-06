@@ -14,4 +14,4 @@
 
 | 组件名 | 路径 | 说明 |
 | ------ | ------ | ------ |
-| icon_button | [component/button/icon_button] | 带图标的按钮 |
+| icon_button | [component/][PlDb] | 带图标的按钮 |
