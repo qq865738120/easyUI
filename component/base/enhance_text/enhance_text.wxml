@@ -1,0 +1,6 @@
+<!--component/base/enhance_text/enhance_text.wxml-->
+<view class='component cus-component' catchtap='onTap'>
+  <image src='{{ mIcon }}' wx:if='{{ mIcon != undefined && mIcon != "" ? true : false }}' style='width: {{ iconSize }}rpx; height: {{ iconSize }}rpx;'></image>
+  <text wx:if='{{ title != undefined && title != "" ? true : false }}' style='font-size: {{ titleFontSize }}rpx; color: {{ mTitleColor }}; margin-left: {{ titleSpacing }}rpx'>{{ title }}</text>
+  <text wx:if='{{ mText != undefined && mText != "" ? true : false }}' style='font-size: {{ textFontSize }}rpx; color: {{ mTextColor }}; margin-left: {{ textSpacing }}rpx'>{{ text }}</text>
+</view>

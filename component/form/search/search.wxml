@@ -2,9 +2,9 @@
 <view class='component'>
   <view class='body' style='background-color: {{ bgColor }}; border-radius: {{ radius }}rpx;'>
     <image src='{{ icon }}' style='width: {{ iconSize }}rpx; height: {{ iconSize }}rpx'></image>
-    <input class='input' placeholder='{{ placeholder }}' bindinput='onInput' style='font-size: {{ textSize }}rpx; color: {{ color }}; width: {{ width }}rpx'></input>
-    <image src='close.png' hidden='{{ !inputing }}' style='width: {{ 1 * iconSize - 8 }}rpx; height: {{ 1 * iconSize - 8 }}rpx'></image>
+    <input class='input' value='{{ value }}' placeholder='{{ placeholder }}' bindinput='onInput' style='font-size: {{ textSize }}rpx; color: {{ color }}; width: {{ width }}rpx'></input>
+    <image src='close.png' hidden='{{ !inputing }}' style='width: {{ 1 * iconSize - 8 }}rpx; height: {{ 1 * iconSize - 8 }}rpx' catchtap='onCleanTap'></image>
     <view hidden='{{ inputing }}' style='width: {{ 1 * iconSize - 8 }}rpx; height: {{ 1 * iconSize - 8 }}rpx'></view>
   </view>
-  <text wx:if='{{ mButtonText != undefined && mButtonText != "" ? true : false }}' style='font-size: {{ buttonTextSize }}rpx; color: {{ buttonColor }}; margin-left: {{ spacing }}rpx'>{{ mButtonText }}</text>
+  <text wx:if='{{ mButtonText != undefined && mButtonText != "" ? true : false }}' catchtap='onButtonTap' style='font-size: {{ buttonTextSize }}rpx; color: {{ buttonColor }}; margin-left: {{ spacing }}rpx'>{{ mButtonText }}</text>
 </view>

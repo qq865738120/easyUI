@@ -13,3 +13,6 @@
   margin-bottom: 10rpx;
   color: #666;
 }
+.test-class {
+  margin-left: 60rpx;
+}

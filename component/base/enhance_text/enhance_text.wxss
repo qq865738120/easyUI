@@ -1,0 +1,6 @@
+/* component/base/enhance_text/enhance_text.wxss */
+.component {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

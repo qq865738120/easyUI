@@ -6,6 +6,7 @@
     "component-title-view": "/component/structure/title_view/title_view",
     "component-base-button": "/component/button/base_button/base_button",
     "component-head-portrait": "/component/base/head_portrait/head_portrait",
-    "component-search": "/component/form/search/search"
+    "component-search": "/component/form/search/search",
+    "component-enhance-text": "/component/base/enhance_text/enhance_text"
   }
 }

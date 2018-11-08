@@ -1,7 +1,37 @@
 <!--page1/page1.wxml-->
+<text>enhance_text组件：</text>
+<component-enhance-text
+  icon='/imgs/good.png'
+  cus-component='test-class'
+  catchtexttap='testTap'></component-enhance-text>
+  <component-enhance-text
+  icon='/imgs/good.png'
+  title='点赞'
+  cus-component='test-class'></component-enhance-text>
+  <component-enhance-text
+  title='点赞'
+  text='6'
+  cus-component='test-class'></component-enhance-text>
+  <component-enhance-text
+  icon='/imgs/good.png'
+  title='点赞'
+  text='10'
+  cus-component='test-class'></component-enhance-text>
+<text id='7' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
+<view style=' border-bottom: 1px solid #e8e8e8'></view>
+
 <text>search组件：</text>
 <component-search
-  icon='/imgs/search.png'></component-search>
+  icon='/imgs/search.png'
+  catchonsearch='testTap'
+  buttonText=''></component-search>
+<component-search
+  icon='/imgs/search.png'
+  catchonsearch='testTap'
+  placeholder='双11狂欢夜'
+  bgColor='#fff'
+  color='#FE9036'
+  buttonColor='#FE9036'></component-search>
 <text id='6' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
 <view style=' border-bottom: 1px solid #e8e8e8'></view>
 

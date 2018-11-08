@@ -6,7 +6,9 @@ const paths = [
   'base_list组件',
   'title_view组件',
   'base_button组件',
-  'head_portrait组件'
+  'head_portrait组件',
+  'search组件',
+  'enhance_text组件'
 ]
 
 Page({

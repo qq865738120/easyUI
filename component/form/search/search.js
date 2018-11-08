@@ -1,4 +1,6 @@
 // component/form/search/search.js
+let value = '';
+
 Component({
   /**
    * 组件的属性列表
@@ -71,14 +73,15 @@ Component({
     inputing: false,
     mPlaceholder: '输入搜索内容',
     mButtonText: '搜索',
+    value: ''
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+
     onInput: function (e) {
-      console.log(e);
       if (e.detail.value != '' && !this.data.inputing) {
         this.setData({
           inputing: true
@@ -89,6 +92,30 @@ Component({
           inputing: false
         });
       }
+      const mButtonText = this.data.mButtonText;
+      if (!(mButtonText != undefined && mButtonText != "")) {
+        console.log('search搜索事件触发');
+        console.log(e);
+        this.triggerEvent('onsearch', e, { bubbles: true });
+      }
+      value = e.detail.value;
+    },
+
+    onButtonTap: function (e) {
+      console.log('search搜索事件触发');
+      console.log(e);
+      if (value == '') {
+        e.detail.value = this.data.mPlaceholder;
+      } else {
+        e.detail.value = value
+      }
+      this.triggerEvent('onsearch', e, { bubbles: true });
+    },
+
+    onCleanTap: function (e) {
+      this.setData({
+        value: ''
+      })
     }
   }
 })

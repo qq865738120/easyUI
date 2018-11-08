@@ -50,6 +50,32 @@ const attributes = [
     { name: 'textSize', type: 'String', deff: '32', detail: '如需显示昵称则使用此属性设置昵称字体大小' },
     { name: 'textColor', type: 'String', deff: '#fff', detail: '如需显示昵称则使用此属性设置昵称文本颜色' },
     { name: 'spacing', type: 'String', deff: '10', detail: '如需显示昵称则使用此属性设置昵称与头像图片间距' },
+  ],
+  [ // search
+    { name: 'icon', type: 'String', deff: '', detail: '搜索图标资源文件路径' },
+    { name: 'iconSize', type: 'String', deff: '36', detail: '搜索图标大小' },
+    { name: 'textSize', type: 'String', deff: '28', detail: '搜索框中文字大小' },
+    { name: 'placeholder', type: 'String', deff: '输入搜索内容', detail: '搜索框为空时显示的占位字符' },
+    { name: 'buttonText', type: 'String', deff: '搜索', detail: '搜索按钮文本，默认为“搜索”，不需要按钮则可以设置为空字符串' },
+    { name: 'bgColor', type: 'String', deff: '#F4F4F4', detail: '搜索框背景色' },
+    { name: 'radius', type: 'String', deff: '60', detail: '圆角' },
+    { name: 'color', type: 'String', deff: '#333', detail: '搜索框文字颜色' },
+    { name: 'buttonTextSize', type: 'String', deff: '30', detail: '按钮文本字体大小，如不需要搜索按钮则可以不设置' },
+    { name: 'buttonColor', type: 'String', deff: '#333', detail: '按钮文本颜色，如不需要搜索按钮则可以不设置' },
+    { name: 'spacing', type: 'String', deff: '26', detail: '按钮与搜索框间距，如不需要搜索按钮则可以不设置' },
+    { name: 'width', type: 'String', deff: '460', detail: '搜索框宽度' },
+  ],
+  [ // enhance_text
+    { name: 'icon', type: 'String', deff: '', detail: '图标资源文件路径，支持动态更新' },
+    { name: 'iconSize', type: 'String', deff: '38', detail: '图标资源文件大小' },
+    { name: 'title', type: 'String', deff: '', detail: '标题文本' },
+    { name: 'titleFontSize', type: 'String', deff: '28', detail: '标题文字大小' },
+    { name: 'titleColor', type: 'String', deff: '#666', detail: '标题文字颜色，支持动态更新' },
+    { name: 'titleSpacing', type: 'String', deff: '10', detail: '图标与标题间距' },
+    { name: 'text', type: 'String', deff: '', detail: '文本内容，支持动态更新' },
+    { name: 'textFontSize', type: 'String', deff: '28', detail: '文本字体大小' },
+    { name: 'textColor', type: 'String', deff: '#666', detail: '文本文字颜色，支持动态更新' },
+    { name: 'textSpacing', type: 'String', deff: '10', detail: '标题与文本间距' },
   ]
 ]
 
@@ -69,7 +95,11 @@ const mClass = [
   [ // base_button
 
   ],
-  [] // head_portrait
+  [], // head_portrait
+  [], // search
+  [ // enhance_text
+    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+  ],
 ]
 
 const method = [
@@ -88,7 +118,13 @@ const method = [
   ],
   [ // head_portrait
     { name: 'headtap', parameter: '事件对象', detail: '头像点击事件' }
-  ]
+  ],
+  [ // search
+    { name: 'onsearch', parameter: '事件对象', detail: '搜索事件，搜索关键字在事件对象的detail.value字段中。如果不带搜索按钮则用户开始输入后触发该事件，如果带有搜索按钮则在用户输入完成并点击按钮后触发该事件。' }
+  ],
+  [ // enhance_text
+    { name: 'texttap', parameter: '事件对象', detail: '点击事件' }
+  ],
 ]
 
 const slot = [
@@ -108,6 +144,8 @@ const slot = [
   [ // head_portrait
     { name: '', detail: '头像底部标签插槽，根据需要插入自定义节点或者组件' }
   ],
+  [], // search
+  [], // enhance_text
 ]
 
 const other = [
@@ -118,6 +156,8 @@ tip：样式类属性后需要加!important。`, // base_list
 `基础库1.9.90以上使用。`, // title_view
 `基础库1.9.90以上使用。`, // base_button
 `基础库1.9.90以上使用。`, // head_portrait
+`基础库1.9.90以上使用。`, // search
+`基础库1.9.90以上使用。`, // enhance_text
 ]
 
 module.exports = {

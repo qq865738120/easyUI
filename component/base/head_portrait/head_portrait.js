@@ -8,7 +8,6 @@ Component({
       type: String,
       value: '',
       observer: function (newVal) {
-        console.log(newVal);
         this.setData({
           mInline: newVal == 'true' ? 'inline-flex' : 'flex'
         });
