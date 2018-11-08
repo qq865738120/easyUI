@@ -1,7 +1,7 @@
 <!--detail/detail.wxml-->
 <view style='margin-top: 30rpx;'>
-  <text class='h1'>属性字段：</text>
 
+  <text class='h1'>属性字段：</text>
   <!-- 属性字段表格 -->
   <view class="table">
     <view class="tr bg-w">
@@ -12,7 +12,7 @@
     </view>
     <block wx:for="{{ attributes }}">
       <view class="tr">
-        <view class="td">{{ item.name }}</view>
+        <view class="td name" catchtap='onTdTap' data-text='{{ item.name }}'>{{ item.name }}</view>
         <view class="td">{{ item.type }}</view>
         <view class="td">{{ item.deff }}</view>
         <view class="td">{{ item.detail }}</view>
@@ -22,7 +22,6 @@
   <!-- 属性字段表格end -->
 
   <text class='h1'>样式类：</text>
-
   <!-- 样式类表格 -->
   <view class="table">
     <view class="tr bg-w">
@@ -31,7 +30,7 @@
     </view>
     <block wx:for="{{ mClass }}">
       <view class="tr">
-        <view class="td">{{ item.name }}</view>
+        <view class="td name" catchtap='onTdTap' data-text='{{ item.name }}'>{{ item.name }}</view>
         <view class="td">{{ item.detail }}</view>
       </view>
     </block>
@@ -39,7 +38,7 @@
   <!-- 样式类表格end -->
 
   <text class='h1'>接口方法：</text>
-
+  <!-- 接口方法表格 -->
   <view class="table">
     <view class="tr bg-w">
       <view class="th">方法名</view>
@@ -48,12 +47,29 @@
     </view>
     <block wx:for="{{ method }}">
       <view class="tr">
-        <view class="td">{{ item.name }}</view>
+        <view class="td name" catchtap='onTdTap' data-text='{{ item.name }}'>{{ item.name }}</view>
         <view class="td">{{ item.parameter }}</view>
         <view class="td">{{ item.detail }}</view>
       </view>
     </block>
   </view>
+  <!-- 接口方法表格end -->
+
+  <text class='h1'>slot节点：</text>
+  <!-- 接口方法表格 -->
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">slot名</view>
+      <view class="th">说明</view>
+    </view>
+    <block wx:for="{{ slot }}">
+      <view class="tr">
+        <view class="td name" catchtap='onTdTap' data-text='{{ item.name }}'>{{ item.name }}</view>
+        <view class="td">{{ item.detail }}</view>
+      </view>
+    </block>
+  </view>
+  <!-- 接口方法表格end -->
 
   <text class='h1'>其他：</text>
   <text class='content' space='emsp'>{{ other }}</text>

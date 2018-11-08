@@ -19,11 +19,12 @@ text {
   font-weight: 100;
   display: block;
   padding: 0 18rpx;
-  color: black;
+  color: #8d8d8d;
+  font-style: italic;
 }
 
 .table {
-  margin: 0 18rpx 60rpx 18rpx;
+  margin: 0 18rpx 80rpx 18rpx;
 }
 .tr {
   display: flex;
@@ -40,6 +41,9 @@ text {
   align-items: center;
   min-height: 2.4rem;
   width: 100%;
+}
+.name {
+  color: #4183c4;
 }
 .bg-w{
   background: snow;

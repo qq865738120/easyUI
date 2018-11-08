@@ -10,7 +10,20 @@ Page({
     attributes: [],
     mClass: [],
     method: [],
+    slot: [],
     other: ''
+  },
+
+  onTdTap: function (e) {
+    wx:wx.setClipboardData({
+      data: e.target.dataset.text,
+      success: function(res) {
+        wx.showToast({
+          title: '复制成功',
+          icon: 'none',
+        })
+      },
+    })
   },
 
   /**
@@ -25,6 +38,7 @@ Page({
       attributes: mData.attributes[parseInt(options.index)],
       mClass: mData.mClass[parseInt(options.index)],
       method: mData.method[parseInt(options.index)],
+      slot: mData.slot[parseInt(options.index)],
       other: mData.other[parseInt(options.index)],
     });
   },

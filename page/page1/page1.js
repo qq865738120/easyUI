@@ -1,9 +1,12 @@
 // page1/page1.js
-const content = '/detail/detail'
+const content = '/detail/detail?name='
 const paths = [
   '',
-  '?name=icon_button组件&index=1',
-  '?name=base_list组件&index=2'
+  'icon_button组件',
+  'base_list组件',
+  'title_view组件',
+  'base_button组件',
+  'head_portrait组件'
 ]
 
 Page({
@@ -17,8 +20,13 @@ Page({
 
   onTap: function (e) {
     wx.navigateTo({
-      url: content + paths[e.target.id],
+      url: content + paths[e.target.id] + '&index=' + e.target.id,
     })
+  },
+
+  testTap: function (e) {
+    console.log('test tap');
+    console.log(e);
   },
 
   /**

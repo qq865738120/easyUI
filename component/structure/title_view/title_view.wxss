@@ -1,0 +1,9 @@
+/* component/structure/title_view/title_view.wxss */
+.title {
+  font-size:28rpx;
+  color: #A09F9F;
+  margin-left: 29rpx;
+}
+.content {
+  padding: 0 29rpx;
+}

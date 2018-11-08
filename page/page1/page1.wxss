@@ -2,3 +2,14 @@
 .mtitle {
   color: red;
 }
+.felx {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detail {
+  font-size: 26rpx;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  color: #666;
+}

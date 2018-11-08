@@ -1,11 +1,125 @@
 <!--page1/page1.wxml-->
-<text>icon_button组件：</text>
-<component-icon-button 
+<text>search组件：</text>
+<component-search
+  icon='/imgs/search.png'></component-search>
+<text id='6' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
+<view style=' border-bottom: 1px solid #e8e8e8'></view>
+
+<text>head_portrait组件：</text>
+<component-head-portrait
+  src='/imgs/default_head.jpg'
+  text='小明'
+  bindheadtap='testTap'>
+</component-head-portrait>
+<component-head-portrait
+  src='/imgs/default_head.jpg'
+  text='小红'
+  size='160'
+  bindheadtap='testTap'>
+  <component-base-button
+    text='我的好友' 
+    theme='filling'
+    width='120'
+    height='36'
+    textSize='20'
+    color='#FE9036'
+    radius='30'
+    bindbuttontap='testTap'></component-base-button>
+</component-head-portrait>
+<text id='5' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
+<view style=' border-bottom: 1px solid #e8e8e8'></view>
+
+<text>base_button组件：</text>
+<text class='detail'>tip: default主题</text>
+<component-base-button
+  text='按钮' 
+  theme='default'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  inline='true'></component-base-button>
+<text class='detail'>tip: hollow主题</text>
+<component-base-button
+  text='按钮' 
+  theme='hollow'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  radius='10'></component-base-button>
+<text class='detail'>tip: filling主题</text>
+<component-base-button
+  text='按钮' 
+  theme='filling'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  radius='20'></component-base-button>
+<text class='detail'>tip: fillingAndShine主题</text>
+<component-base-button
+  text='按钮' 
+  theme='fillingAndShine'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  radius='30'></component-base-button>
+<text class='detail'>tip: fillingAndGradient1主题</text>
+<component-base-button
+  text='按钮' 
+  theme='fillingAndGradient1'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  endColor='#FE4E36'
+  radius='40'></component-base-button>
+<text class='detail'>tip: fillingAndGradient2主题</text>
+<component-base-button
+  text='按钮' 
+  theme='fillingAndGradient2'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  endColor='#FE4E36'
+  radius='50'></component-base-button>
+<text class='detail'>tip: 左边带图标的按钮</text>
+<component-base-button
+  text='按钮' 
+  theme='default'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  icon='/imgs/button_icon.png'></component-base-button>
+<text class='detail'>tip: 右边带图标的按钮</text>
+<component-base-button
+  text='按钮' 
+  theme='default'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
   icon='/imgs/button_icon.png'
-  text='客服设置'>
-</component-icon-button>
-<text id='1' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
-<view style='border-bottom: 1px solid #e8e8e8;'></view>
+  iconPosition='right'></component-base-button>
+<text id='4' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
+<view style=' border-bottom: 1px solid #e8e8e8'></view>
+
+<text>title_view组件：</text>
+<component-title-view title='插入内容'>
+  <view>自定义内容</view>
+</component-title-view>
+<component-title-view title='插入组件'>
+  <component-icon-button 
+    icon='/imgs/button_icon.png'
+    text='我的留言'>
+  </component-icon-button>
+</component-title-view>
+<text id='3' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
+<view style=' border-bottom: 1px solid #e8e8e8'></view>
 
 <text>base_list组件：</text>
 <component-base-list
@@ -15,3 +129,11 @@
 </component-base-list>
 <text id='2' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
 <view style=' border-bottom: 1px solid #e8e8e8'></view>
+
+<text>icon_button组件：</text>
+<component-icon-button 
+  icon='/imgs/button_icon.png'
+  text='我的留言'>
+</component-icon-button>
+<text id='1' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
+<view style='border-bottom: 1px solid #e8e8e8;'></view>

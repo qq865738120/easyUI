@@ -1,0 +1,18 @@
+/* component/base/head_portrait/head_portrait.wxss */
+.component {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slot {
+  position: absolute;
+  bottom: -6%;
+}
