@@ -1,5 +1,5 @@
 <!--component/form/search/search.wxml-->
-<view class='component'>
+<view class='component cus-component'>
   <view class='body' style='background-color: {{ bgColor }}; border-radius: {{ radius }}rpx;'>
     <image src='{{ icon }}' style='width: {{ iconSize }}rpx; height: {{ iconSize }}rpx'></image>
     <input class='input' value='{{ value }}' placeholder='{{ placeholder }}' bindinput='onInput' style='font-size: {{ textSize }}rpx; color: {{ color }}; width: {{ width }}rpx'></input>

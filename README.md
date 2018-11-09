@@ -21,8 +21,12 @@
 | head_portrait | [component/base/head_portrait](component/base/head_portrait) | 头像 |
 | search | [component/form/search](component/form/search) | 带有标题和副标题的列表项 |
 | enhance_text | [component/base/enhance_text](component/base/enhance_text) | 增强text |
+| enhance_view | [component/base/enhance_view](component/base/enhance_view) | 增强view |
 
 # 版本说明
+
+### v1.0.2
+- 新增组件enhance_view
 
 ### v1.0.1
 - 新增组件title_view、base_button、head_portrait、head_portrait、search、enhance_text

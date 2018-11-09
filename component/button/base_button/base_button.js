@@ -91,6 +91,8 @@ Component({
     }
   },
 
+  externalClasses: ['cus-component'],
+
   /**
    * 组件的初始数据
    */

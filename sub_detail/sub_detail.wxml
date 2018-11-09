@@ -1,0 +1,13 @@
+<!--sub_detail/sub_detail.wxml-->
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">属性名</view>
+    <view class="th">说明</view>
+  </view>
+  <block wx:for="{{ attributes }}">
+    <view class="tr">
+      <view class="td name" catchtap='onTdTap' data-text='{{ item.name }}'>{{ item.name }}</view>
+      <view class="td">{{ item.detail }}</view>
+    </view>
+  </block>
+</view>

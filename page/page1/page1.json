@@ -7,6 +7,7 @@
     "component-base-button": "/component/button/base_button/base_button",
     "component-head-portrait": "/component/base/head_portrait/head_portrait",
     "component-search": "/component/form/search/search",
-    "component-enhance-text": "/component/base/enhance_text/enhance_text"
+    "component-enhance-text": "/component/base/enhance_text/enhance_text",
+    "component-enhance-view": "/component/base/enhance_view/enhance_view"
   }
 }

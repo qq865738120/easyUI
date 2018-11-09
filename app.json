@@ -5,7 +5,8 @@
     "detail/detail",
     "page/page2/page2",
     "page/page3/page3",
-    "page/page4/page4"
+    "page/page4/page4",
+    "sub_detail/sub_detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

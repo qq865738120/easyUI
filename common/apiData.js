@@ -76,13 +76,36 @@ const attributes = [
     { name: 'textFontSize', type: 'String', deff: '28', detail: '文本字体大小' },
     { name: 'textColor', type: 'String', deff: '#666', detail: '文本文字颜色，支持动态更新' },
     { name: 'textSpacing', type: 'String', deff: '10', detail: '标题与文本间距' },
+  ],
+  [ // enhance_view
+    { name: 'inline', type: 'String', deff: 'false', detail: 'false表示行内元素，true表示块级元素' },
+    { name: 'reverse', type: 'String', deff: 'row', detail: 'row表示横向排列，col表示纵向排列' },
+    { name: 'type', type: 'String', deff: '', detail: '总共12种取值', show: [
+      { name: 'start', detail: '排列方向上开始处对齐，垂直排列方向上开始处对齐' },
+      { name: 'startEnd', detail: '排列方向上开始处对齐，垂直排列方向上结束处对齐' },
+      { name: 'startCenter', detail: '排列方向上开始处对齐，垂直排列方向上居中对齐' },
+      { name: 'endStart', detail: '排列方向上结束处对齐，垂直排列方向上开始处对齐' },
+      { name: 'end', detail: '排列方向上结束处对齐，垂直排列方向上结束处对齐' },
+      { name: 'endCenter', detail: '排列方向上结束处对齐，垂直排列方向上居中对齐' },
+      { name: 'centerStart', detail: '排列方向上居中对齐，垂直排列方向上开始处对齐' },
+      { name: 'centerEnd', detail: '排列方向上居中对齐，垂直排列方向上结束处对齐' },
+      { name: 'center', detail: '排列方向上居中对齐，垂直排列方向上居中对齐' },
+      { name: 'betweenStart', detail: '排列方向上两端对齐，垂直排列方向上开始处对齐' },
+      { name: 'betweenEnd', detail: '排列方向上两端对齐，垂直排列方向上结束处对齐' },
+      { name: 'betweenCenter', detail: '排列方向上两端对齐，垂直排列方向上居中对齐' },
+    ] },
+    { name: 'width', type: 'String', deff: '', detail: '组件宽度，默认根据子元素自适应' },
+    { name: 'height', type: 'String', deff: '', detail: '组件高度，默认根据子元素自适应' },
+    { name: 'margin', type: 'String', deff: '', detail: '外边距，取值为符合css语法的字符串' },
+    { name: 'padding', type: 'String', deff: '', detail: '内边距，取值为符合css语法的字符串' },
+    { name: 'bgColor', type: 'String', deff: '', detail: '背景色' },
   ]
 ]
 
 const mClass = [
   [],
   [ // icon_button
-
+    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
   ],
   [ // base_list
     { name: 'cus-component', detail: '组件最外层view自定义样式类' },
@@ -90,15 +113,22 @@ const mClass = [
     { name: 'cus-subTitle', detail: '副标题自定义样式类' }
   ],
   [ // title_view
-
+    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
   ],
   [ // base_button
-
+    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
   ],
-  [], // head_portrait
-  [], // search
+  [ // head_portrait
+    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+  ],
+  [ // search
+    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+  ],
   [ // enhance_text
     { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+  ],
+  [ // enhance_view
+    { name: 'cus-component', detail: '自定义组件样式类，部分属性不可用' },
   ],
 ]
 
@@ -120,10 +150,13 @@ const method = [
     { name: 'headtap', parameter: '事件对象', detail: '头像点击事件' }
   ],
   [ // search
-    { name: 'onsearch', parameter: '事件对象', detail: '搜索事件，搜索关键字在事件对象的detail.value字段中。如果不带搜索按钮则用户开始输入后触发该事件，如果带有搜索按钮则在用户输入完成并点击按钮后触发该事件。' }
+    { name: 'onsearch', parameter: '事件对象', detail: '搜索事件，搜索关键字在事件对象的detail.value字段中。如果不带搜索按钮则用户开始输入后触发该事件，如果带有搜索按钮则在用户输入完成并点击按钮后触发该事件。如果不输入任何内容点击按钮则使用placeholder的值作为关键字搜索' }
   ],
   [ // enhance_text
     { name: 'texttap', parameter: '事件对象', detail: '点击事件' }
+  ],
+  [ // enhance_view
+    { name: 'viewtap', parameter: '事件对象', detail: '点击事件' }
   ],
 ]
 
@@ -146,18 +179,21 @@ const slot = [
   ],
   [], // search
   [], // enhance_text
+  [ // enhance_view
+    { name: '', detail: 'view内部插槽，根据需要插入自定义节点或者组件' }
+  ],
 ]
 
 const other = [
 '',
-'基础库1.6.3以上使用', // icon_button
-`基础库1.9.90以上使用。
-tip：样式类属性后需要加!important。`, // base_list
+'基础库1.9.90以上使用', // icon_button
+`基础库1.9.90以上使用。`, // base_list
 `基础库1.9.90以上使用。`, // title_view
 `基础库1.9.90以上使用。`, // base_button
 `基础库1.9.90以上使用。`, // head_portrait
 `基础库1.9.90以上使用。`, // search
 `基础库1.9.90以上使用。`, // enhance_text
+`基础库1.9.90以上使用。`, // enhance_view
 ]
 
 module.exports = {

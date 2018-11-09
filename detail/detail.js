@@ -16,14 +16,20 @@ Page({
 
   onTdTap: function (e) {
     wx:wx.setClipboardData({
-      data: e.target.dataset.text,
-      success: function(res) {
-        wx.showToast({
-          title: '复制成功',
-          icon: 'none',
-        })
-      },
+      data: e.target.dataset.text + "=''",
     })
+  },
+
+  onDetTap: function (e) {
+    if (e.target.dataset.data != undefined) {
+      wx.setStorageSync('subData', e.target.dataset.data);
+      wx.navigateTo({
+        url: '/sub_detail/sub_detail',
+        success: function(res) {},
+        fail: function(res) {},
+        complete: function(res) {},
+      })
+    }
   },
 
   /**

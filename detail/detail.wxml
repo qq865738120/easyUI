@@ -15,7 +15,7 @@
         <view class="td name" catchtap='onTdTap' data-text='{{ item.name }}'>{{ item.name }}</view>
         <view class="td">{{ item.type }}</view>
         <view class="td">{{ item.deff }}</view>
-        <view class="td">{{ item.detail }}</view>
+        <view class="td {{ item.show != undefined ? 'name' : '' }}" data-data='{{ item.show }}' catchtap='onDetTap'>{{ item.detail }}</view>
       </view>
     </block>
   </view>

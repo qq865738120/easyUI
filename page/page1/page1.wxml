@@ -1,4 +1,164 @@
 <!--page1/page1.wxml-->
+<text>enhance_view组件：</text>
+<text class='detail'>type设置为start</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='start'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为startEnd</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='startEnd'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为startCenter</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='startCenter'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为endStart</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='endStart'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为end</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='end'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为endCenter</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='endCenter'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为centerStart</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='centerStart'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为centerEnd</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='centerEnd'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为center</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='center'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为betweenStart</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='betweenStart'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为betweenEnd</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='betweenEnd'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text class='detail'>type设置为betweenCenter</text>
+<component-enhance-view
+  bgColor='#fff'
+  height='120'
+  width='450'
+  margin='0 0 30rpx 0'
+  type='betweenCenter'>
+  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
+</component-enhance-view>
+<text id='8' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
+<view style=' border-bottom: 1px solid #e8e8e8'></view>
+
 <text>enhance_text组件：</text>
 <component-enhance-text
   icon='/imgs/good.png'
