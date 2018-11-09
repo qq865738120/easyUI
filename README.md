@@ -1,3 +1,4 @@
+![home](https://github.com/qq865738120/easyUI/imgs/easyUI.png)
 # easyUI
 
 >一款简单易用的微信小程序组库，封装开发中常用的组件，提高开发效率，以及代码的可维护性。
