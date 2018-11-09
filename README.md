@@ -48,3 +48,7 @@
 
 >使用组件前请详细查看组件提供的接口。
 >查看方法：打开小程序选择页面，点击对应组件下方的“详细说明”按钮。
+
+### 扫码查看api
+![home](https://github.com/qq865738120/easyUI/blob/master/imgs/QR.jpg)
+
