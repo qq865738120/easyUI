@@ -1,5 +1,7 @@
 <!--index/index.wxml-->
-<text id='1' catchtap='onTap'>第一页...........................................................................1~20</text>
-<text id='2' catchtap='onTap'>第二页...........................................................................21~40</text>
-<text id='3' catchtap='onTap'>第三页...........................................................................41~60</text>
-<text id='4' catchtap='onTap'>第四页...........................................................................61~80</text>
+<easy-view height='900' margin='200rpx 0 0 0' reverse='col' type='betweenCenter'>
+  <easy-icon-button icon='/imgs/easyUI.png' text='一行代码的艺术之旅' iconWidth='250' iconHeight='250' size='300' fontSize='32'></easy-icon-button>
+  <easy-view height='140' type='betweenCenter' width='700'>
+    <easy-text id='{{ index + 1 }}' title='{{ item.title }}' text='{{ item.text }}' titleColor='{{ item.titleColor }}' textColor='{{ item.textColor }}' wx:for='{{ list }}' bindtexttap='onTap'></easy-text>
+  </easy-view>
+</easy-view>

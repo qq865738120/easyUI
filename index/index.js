@@ -13,7 +13,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list: [
+      { title: '基础组件', text: '5', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
+      { title: '按钮组件', text: '2', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
+      { title: '表单组件', text: '6', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
+      { title: '列表组件', text: '3', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
+      { title: '结构组件', text: '1', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
+    ]
   },
 
   onTap: function (e) {

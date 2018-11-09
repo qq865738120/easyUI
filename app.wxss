@@ -6,6 +6,6 @@ page>text {
   margin-top: 60rpx;
   margin-bottom: 60rpx;
   margin-left: 18rpx;
-  color: red;
+  color: #36BCBC;
   display: block;
 }

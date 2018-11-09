@@ -1,3 +1,8 @@
 {
-  "navigationBarTitleText": "目录"
+  "navigationBarTitleText": "easyUI",
+  "usingComponents": {
+    "easy-icon-button": "/component/button/icon_button/icon_button",
+    "easy-text": "/component/base/enhance_text/enhance_text",
+    "easy-view": "/component/base/enhance_view/enhance_view"
+  }
 }
