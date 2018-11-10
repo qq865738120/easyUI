@@ -1,5 +1,5 @@
 page {
-  background-color: #fbfbfb;
+  background-color: #f9f9f9;
 }
 page>text {
   font-size: 30rpx;

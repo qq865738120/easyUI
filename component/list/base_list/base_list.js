@@ -28,11 +28,11 @@ Component({
     },
     iconWidth: {
       type: String,
-      value: '10'
+      value: '14'
     },
     iconHeight: {
       type: String,
-      value: '20'
+      value: '28'
     },
     showIcon: {
       type: String,
