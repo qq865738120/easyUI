@@ -1,4 +1,4 @@
 <!--component/base/enhance_view/enhance_view.wxml-->
-<view class='component cus-component' style='width: {{ width }}rpx; height: {{ height }}rpx; margin: {{ margin }}; padding: {{ padding }}; background-color: {{ bgColor }}; {{ mType }}' catchtap='onTap'>
+<view class='component cus' style='width: {{ width }}rpx; height: {{ height }}rpx; margin: {{ margin }}; padding: {{ padding }}; background-color: {{ bgColor }}; {{ mType }}' catchtap='onTap'>
   <slot></slot>
 </view>

@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarTitleText": "表单组件",
+  "usingComponents": {
+    "show": "/common/display/display",
+    "e-search": "/component/form/search/search"
+  }
+}

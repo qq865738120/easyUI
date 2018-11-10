@@ -15,7 +15,7 @@ Page({
   },
 
   onTdTap: function (e) {
-    wx:wx.setClipboardData({
+    wx.setClipboardData({
       data: e.target.dataset.text + "=''",
     })
   },
@@ -24,7 +24,7 @@ Page({
     if (e.target.dataset.data != undefined) {
       wx.setStorageSync('subData', e.target.dataset.data);
       wx.navigateTo({
-        url: '/sub_detail/sub_detail',
+        url: '/sub_detail/sub_detail?title=' + e.target.dataset.title + '取值：',
         success: function(res) {},
         fail: function(res) {},
         complete: function(res) {},
@@ -39,6 +39,7 @@ Page({
     wx: wx.setNavigationBarTitle({
       title: options.name + '说明',
     })
+    console.log(options);
     this.setData({
       attributes: mData.attributes[parseInt(options.index)],
       mClass: mData.mClass[parseInt(options.index)],
@@ -52,7 +53,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.setNavigationBarColor({
+      frontColor: '#000000',
+      backgroundColor: '#fff',
+      animation: {
+        duration: 400,
+        timingFunc: 'linear'
+      }
+    })
   },
 
   /**

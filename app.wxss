@@ -1,5 +1,5 @@
 page {
-  background-color: #f5f5f5;
+  background-color: #fbfbfb;
 }
 page>text {
   font-size: 30rpx;
@@ -8,4 +8,21 @@ page>text {
   margin-left: 18rpx;
   color: #36BCBC;
   display: block;
+}
+.mtitle {
+  color: red;
+}
+.felx {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detail {
+  font-size: 26rpx;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  color: #666;
+}
+.test-class {
+  margin-left: 60rpx;
 }

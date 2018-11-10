@@ -1,8 +1,8 @@
 const attributes = [
   [],
   [ // icon_button
-    { name: 'icon', type: 'String', deff: '', detail: '图标资源路径' },
-    { name: 'text', type: 'String', deff: '', detail: '文本' },
+    { name: 'icon', type: 'String', deff: '-', detail: '图标资源路径' },
+    { name: 'text', type: 'String', deff: '-', detail: '文本' },
     { name: 'iconWidth', type: 'String', deff: '50', detail: '图标宽度' },
     { name: 'iconHeight', type: 'String', deff: '50', detail: '图标高度' },
     { name: 'size', type: 'String', deff: '188', detail: '组件大小,默认188rpx*188rpx' },
@@ -11,9 +11,13 @@ const attributes = [
     { name: 'fontColor', type: 'String', deff: '#333333', detail: '文本颜色' },
   ],
   [ // base_list
-    { name: 'title', type: 'String', deff: '', detail: '左边标题' },
-    { name: 'subTitle', type: 'String', deff: '', detail: '右边副标题' },
+    { name: 'title', type: 'String', deff: '-', detail: '左边标题' },
+    { name: 'subTitle', type: 'String', deff: '-', detail: '右边副标题' },
     { name: 'lineColor', type: 'String', deff: '#E0E0E0', detail: '底部线条颜色' },
+    { name: 'icon', type: 'String', deff: 'back.png', detail: '右边图标，默认为向右的小箭头' },
+    { name: 'iconWidth', type: 'String', deff: '10', detail: '右边图标宽度' },
+    { name: 'iconHeight', type: 'String', deff: '20', detail: '右边图标高度' },
+    { name: 'showIcon', type: 'String', deff: 'true', detail: '是否显示图标' },
   ],
   [ // title_view
     { name: 'titleMarginTop', type: 'String', deff: '26', detail: '标题上边距' },
@@ -26,15 +30,15 @@ const attributes = [
     { name: 'bgColor', type: 'String', deff: '#fff', detail: '组件内容背景色' },
   ],
   [ // base_button
-    { name: 'text', type: 'String', deff: '', detail: '按钮文本内容，支持数据绑定动态更新' },
-    { name: 'theme', type: 'String', deff: '', detail: '按钮主题，详情见展示页面' },
-    { name: 'width', type: 'String', deff: '', detail: '按钮宽度' },
-    { name: 'height', type: 'String', deff: '', detail: '按钮高度' },
-    { name: 'radius', type: 'String', deff: '', detail: '圆角，单位rpx' },
-    { name: 'textSize', type: 'String', deff: '', detail: '字体大小' },
-    { name: 'color', type: 'String', deff: '', detail: '颜色，根据主题变换' },
-    { name: 'endColor', type: 'String', deff: '', detail: '渐变主题必填此项，否则没有渐变效果' },
-    { name: 'icon', type: 'String', deff: '', detail: '按钮图标，不填写则默认没有图标' },
+    { name: 'text', type: 'String', deff: '-', detail: '按钮文本内容，支持数据绑定动态更新' },
+    { name: 'theme', type: 'String', deff: '-', detail: '按钮主题，详情见展示页面' },
+    { name: 'width', type: 'String', deff: '-', detail: '按钮宽度' },
+    { name: 'height', type: 'String', deff: '-', detail: '按钮高度' },
+    { name: 'radius', type: 'String', deff: '-', detail: '圆角，单位rpx' },
+    { name: 'textSize', type: 'String', deff: '-', detail: '字体大小' },
+    { name: 'color', type: 'String', deff: '-', detail: '颜色，根据主题变换' },
+    { name: 'endColor', type: 'String', deff: '-', detail: '渐变主题必填此项，否则没有渐变效果' },
+    { name: 'icon', type: 'String', deff: '-', detail: '按钮图标，不填写则默认没有图标' },
     { name: 'iconSize', type: 'String', deff: '36', detail: '设置图标大小，默认36*36rpx' },
     { name: 'iconPosition', type: 'String', deff: 'left', detail: '图标位置，默认在文字左边。right表示右边' },
     { name: 'spacing', type: 'String', deff: '18', detail: '图标与文字间距，默认18rpx' },
@@ -42,17 +46,17 @@ const attributes = [
   ],
   [ // head_portrait
     { name: 'inline', type: 'String', deff: 'true', detail: 'true表示行内元素，false表示块级元素，即独占一行' },
-    { name: 'src', type: 'String', deff: '', detail: '头像资源文件路径' },
+    { name: 'src', type: 'String', deff: '-', detail: '头像资源文件路径' },
     { name: 'size', type: 'String', deff: '120', detail: '头像大小，默认120*120rpx' },
     { name: 'radius', type: 'String', deff: '120', detail: '头像圆角，默认120rpx' },
     { name: 'border', type: 'String', deff: '1px solid #fff', detail: '头像边框，语法参考css中的border属性' },
-    { name: 'text', type: 'String', deff: '', detail: '昵称文本，默认不显示' },
+    { name: 'text', type: 'String', deff: '-', detail: '昵称文本，默认不显示' },
     { name: 'textSize', type: 'String', deff: '32', detail: '如需显示昵称则使用此属性设置昵称字体大小' },
     { name: 'textColor', type: 'String', deff: '#fff', detail: '如需显示昵称则使用此属性设置昵称文本颜色' },
     { name: 'spacing', type: 'String', deff: '10', detail: '如需显示昵称则使用此属性设置昵称与头像图片间距' },
   ],
   [ // search
-    { name: 'icon', type: 'String', deff: '', detail: '搜索图标资源文件路径' },
+    { name: 'icon', type: 'String', deff: '-', detail: '搜索图标资源文件路径' },
     { name: 'iconSize', type: 'String', deff: '36', detail: '搜索图标大小' },
     { name: 'textSize', type: 'String', deff: '28', detail: '搜索框中文字大小' },
     { name: 'placeholder', type: 'String', deff: '输入搜索内容', detail: '搜索框为空时显示的占位字符' },
@@ -66,13 +70,13 @@ const attributes = [
     { name: 'width', type: 'String', deff: '460', detail: '搜索框宽度' },
   ],
   [ // enhance_text
-    { name: 'icon', type: 'String', deff: '', detail: '图标资源文件路径，支持动态更新' },
+    { name: 'icon', type: 'String', deff: '-', detail: '图标资源文件路径，支持动态更新' },
     { name: 'iconSize', type: 'String', deff: '38', detail: '图标资源文件大小' },
-    { name: 'title', type: 'String', deff: '', detail: '标题文本' },
+    { name: 'title', type: 'String', deff: '-', detail: '标题文本' },
     { name: 'titleFontSize', type: 'String', deff: '28', detail: '标题文字大小' },
     { name: 'titleColor', type: 'String', deff: '#666', detail: '标题文字颜色，支持动态更新' },
     { name: 'titleSpacing', type: 'String', deff: '10', detail: '图标与标题间距' },
-    { name: 'text', type: 'String', deff: '', detail: '文本内容，支持动态更新' },
+    { name: 'text', type: 'String', deff: '-', detail: '文本内容，支持动态更新' },
     { name: 'textFontSize', type: 'String', deff: '28', detail: '文本字体大小' },
     { name: 'textColor', type: 'String', deff: '#666', detail: '文本文字颜色，支持动态更新' },
     { name: 'textSpacing', type: 'String', deff: '10', detail: '标题与文本间距' },
@@ -80,7 +84,7 @@ const attributes = [
   [ // enhance_view
     { name: 'inline', type: 'String', deff: 'false', detail: 'false表示行内元素，true表示块级元素' },
     { name: 'reverse', type: 'String', deff: 'row', detail: 'row表示横向排列，col表示纵向排列' },
-    { name: 'type', type: 'String', deff: '', detail: '总共12种取值', show: [
+    { name: 'type', type: 'String', deff: '-', detail: '总共12种取值', show: [
       { name: 'start', detail: '排列方向上开始处对齐，垂直排列方向上开始处对齐' },
       { name: 'startEnd', detail: '排列方向上开始处对齐，垂直排列方向上结束处对齐' },
       { name: 'startCenter', detail: '排列方向上开始处对齐，垂直排列方向上居中对齐' },
@@ -94,51 +98,51 @@ const attributes = [
       { name: 'betweenEnd', detail: '排列方向上两端对齐，垂直排列方向上结束处对齐' },
       { name: 'betweenCenter', detail: '排列方向上两端对齐，垂直排列方向上居中对齐' },
     ] },
-    { name: 'width', type: 'String', deff: '', detail: '组件宽度，默认根据子元素自适应' },
-    { name: 'height', type: 'String', deff: '', detail: '组件高度，默认根据子元素自适应' },
-    { name: 'margin', type: 'String', deff: '', detail: '外边距，取值为符合css语法的字符串' },
-    { name: 'padding', type: 'String', deff: '', detail: '内边距，取值为符合css语法的字符串' },
-    { name: 'bgColor', type: 'String', deff: '', detail: '背景色' },
+    { name: 'width', type: 'String', deff: '-', detail: '组件宽度，默认根据子元素自适应' },
+    { name: 'height', type: 'String', deff: '-', detail: '组件高度，默认根据子元素自适应' },
+    { name: 'margin', type: 'String', deff: '-', detail: '外边距，取值为符合css语法的字符串' },
+    { name: 'padding', type: 'String', deff: '-', detail: '内边距，取值为符合css语法的字符串' },
+    { name: 'bgColor', type: 'String', deff: '-', detail: '背景色' },
   ]
 ]
 
 const mClass = [
   [],
   [ // icon_button
-    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+    { name: 'cus', detail: '组件最外层view自定义样式类' },
   ],
   [ // base_list
-    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+    { name: 'cus', detail: '组件最外层view自定义样式类' },
     { name: 'cus-title', detail: '标题自定义样式类' },
     { name: 'cus-subTitle', detail: '副标题自定义样式类' }
   ],
   [ // title_view
-    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+    { name: 'cus', detail: '组件最外层view自定义样式类' },
   ],
   [ // base_button
-    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+    { name: 'cus', detail: '组件最外层view自定义样式类' },
   ],
   [ // head_portrait
-    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+    { name: 'cus', detail: '组件最外层view自定义样式类' },
   ],
   [ // search
-    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+    { name: 'cus', detail: '组件最外层view自定义样式类' },
   ],
   [ // enhance_text
-    { name: 'cus-component', detail: '组件最外层view自定义样式类' },
+    { name: 'cus', detail: '组件最外层view自定义样式类' },
   ],
   [ // enhance_view
-    { name: 'cus-component', detail: '自定义组件样式类，部分属性不可用' },
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
 ]
 
 const method = [
   [],
   [ // icon_button
-
+    { name: 'buttontap', parameter: '事件对象', detail: '按钮点击事件' }
   ],
   [ // base_list
-
+    { name: 'listtap', parameter: '事件对象', detail: '列表点击事件' }
   ],
   [ // title_view
 
@@ -169,18 +173,18 @@ const slot = [
 
   ],
   [ // title_view
-    { name: '', detail: '组件内容插槽，根据需要插入自定义节点或者组件' }
+    { name: '-', detail: '组件内容插槽，根据需要插入自定义节点或者组件' }
   ],
   [ // base_button
 
   ],
   [ // head_portrait
-    { name: '', detail: '头像底部标签插槽，根据需要插入自定义节点或者组件' }
+    { name: '-', detail: '头像底部标签插槽，根据需要插入自定义节点或者组件' }
   ],
   [], // search
   [], // enhance_text
   [ // enhance_view
-    { name: '', detail: 'view内部插槽，根据需要插入自定义节点或者组件' }
+    { name: '-', detail: 'view内部插槽，根据需要插入自定义节点或者组件' }
   ],
 ]
 

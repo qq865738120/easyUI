@@ -1,2 +1,21 @@
 <!--page/page3/page3.wxml-->
-<text>page/page3/page3.wxml</text>
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
+<e-search
+  icon='/imgs/search.png'
+  catchonsearch='testTap'
+  bgColor='#fff'
+  width='520'
+  buttonText=''>
+</e-search>
+</show>
+
+<show title='{{ com.d2.title }}' sub='{{ com.d2.sub }}' mId='{{ com.d2.id }}' code='{{ com.d2.code }}'>
+<e-search
+  icon='/imgs/search.png'
+  catchonsearch='testTap'
+  placeholder='双11狂欢夜'
+  bgColor='#fff'
+  color='#FE9036'
+  buttonColor='#FE9036'>
+</e-search>
+</show>

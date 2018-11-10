@@ -6,11 +6,12 @@
     "page/page2/page2",
     "page/page3/page3",
     "page/page4/page4",
-    "sub_detail/sub_detail"
+    "sub_detail/sub_detail",
+    "page/page5/page5"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#fbfbfb",
     "navigationBarTitleText": "组件",
     "navigationBarTextStyle": "black"
   }

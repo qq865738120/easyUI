@@ -1,7 +1,8 @@
 /* sub_detail/sub_detail.wxss */
 page {
   background-color: white;
-  padding-bottom: 30rpx;
+  padding: 0 30rpx 60rpx 30rpx;
+  width: auto;
 }
 text {
   color: #333;
@@ -10,8 +11,7 @@ text {
   font-size: 28rpx;
   line-height: 64rpx;
   font-weight: 100;
-  padding-left: 18rpx;
-  padding-bottom: 20rpx;
+  margin-top: 30rpx;
 }
 .content {
   font-size: 24rpx;
@@ -21,10 +21,6 @@ text {
   padding: 0 18rpx;
   color: #8d8d8d;
   font-style: italic;
-}
-
-.table {
-  margin: 0 18rpx 80rpx 18rpx;
 }
 .tr {
   display: flex;

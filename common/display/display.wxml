@@ -1,0 +1,14 @@
+<!--common/display/display.wxml-->
+<view class='com'>
+  <view class='head'>
+    <text class='title'>{{ title }}</text>
+    <text class='sub'>{{ sub }}</text>
+  </view>
+  <view class='{{ mbody }}'>
+    <slot></slot>
+  </view>
+  <view class='font'>
+    <text id='{{ mId }}' class='font-left' catchtap='onDetail'>详细说明 ></text>
+    <text data-code='{{ code }}' class='font-right' catchtap='onCopy'>复制代码</text>
+  </view>
+</view>

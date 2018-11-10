@@ -1,4 +1,5 @@
 <!--sub_detail/sub_detail.wxml-->
+<view class='h1'>{{ title }}</view>
 <view class="table">
   <view class="tr bg-w">
     <view class="th">属性名</view>

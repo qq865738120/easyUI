@@ -44,7 +44,7 @@ Component({
     }
   },
 
-  externalClasses: ['cus-component'],
+  externalClasses: ['cus'],
 
   /**
    * 组件的初始数据
@@ -58,6 +58,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onTap: function (e) {
+      console.log('icon_button点击事件触发');
+      console.log(e);
+      this.triggerEvent('buttontap', e, { bubbles: true });
+    }
   }
 })

@@ -1,10 +1,10 @@
 <!--component/base/head_portrait/head_portrait.wxml-->
-<view class='component' style='display: {{ inline }}' catchtap='onTap'>
+<view class='component cus' style='display: {{ inline }}' catchtap='onTap'>
   <view class='body'>
     <image src='{{ src }}' style='width: {{ size }}rpx; height: {{ size }}rpx; border-radius: {{ radius }}rpx; border: {{ border }}; '></image>
     <view class='slot'>
       <slot></slot>
     </view>
   </view>
-  <text wx:if='{{ text != undefined & text != "" ? true : false }}' style='margin-top: {{ spacing }}; font-size: {{ textSize }}rpx; color: {{ textColor }}'>{{ text }}</text>
+  <text wx:if='{{ text != undefined & text != "" ? true : false }}' style='margin-top: {{ spacing }}rpx; font-size: {{ textSize }}rpx; color: {{ textColor }}'>{{ text }}</text>
 </view>

@@ -1,1 +1,8 @@
-{}
+{
+  "navigationBarTitleText": "按钮组件",
+  "usingComponents": {
+    "show": "/common/display/display",
+    "e-icon-button": "/component/button/icon_button/icon_button",
+    "e-base-button": "/component/button/base_button/base_button"
+  }
+}

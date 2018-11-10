@@ -36,12 +36,37 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 4,
 			"list": [
 				{
+					"id": 0,
+					"name": "基本组件",
+					"pathName": "page/page1/page1",
+					"query": ""
+				},
+				{
 					"id": -1,
-					"name": "page1",
-					"pathName": "page/page1/page1"
+					"name": "按钮组件",
+					"pathName": "page/page2/page2",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "表单组件",
+					"pathName": "page/page3/page3",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "列表组件",
+					"pathName": "page/page4/page4",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "结构组件",
+					"pathName": "page/page5/page5",
+					"query": ""
 				}
 			]
 		}

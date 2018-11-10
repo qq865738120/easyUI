@@ -5,6 +5,7 @@ const path = [
   '/page/page2/page2',
   '/page/page3/page3',
   '/page/page4/page4',
+  '/page/page5/page5',
 ]
 
 Page({
@@ -14,11 +15,11 @@ Page({
    */
   data: {
     list: [
-      { title: '基础组件', text: '5', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
-      { title: '按钮组件', text: '2', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
-      { title: '表单组件', text: '6', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
-      { title: '列表组件', text: '3', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
-      { title: '结构组件', text: '1', titleColor: '#9BDEDE', textColor: '#9BDEDE' },
+      { title: '基础组件', text: '3', lineColor: '#e8e8e8' },
+      { title: '按钮组件', text: '2', lineColor: '#e8e8e8' },
+      { title: '表单组件', text: '1', lineColor: '#e8e8e8' },
+      { title: '列表组件', text: '1', lineColor: '#e8e8e8' },
+      { title: '结构组件', text: '1', lineColor: 'rgba(0,0,0,0)' },
     ]
   },
 
@@ -41,46 +42,4 @@ Page({
   onReady: function () {
 
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

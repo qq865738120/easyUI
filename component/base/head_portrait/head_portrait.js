@@ -47,6 +47,8 @@ Component({
     }
   },
 
+  externalClasses: ['cus'],
+
   /**
    * 组件的初始数据
    */

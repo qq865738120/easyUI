@@ -1,4 +1,13 @@
 /* index/index.wxss */
-page {
-  background-color: white;
+.cus-view {
+  position: absolute;
+  bottom: 90rpx;
+}
+.cus-list {
+  background-color: #fff;
+  padding: 30rpx 0;
+}
+.font-text {
+  font-size: 26rpx;
+  color: #FE9036;
 }

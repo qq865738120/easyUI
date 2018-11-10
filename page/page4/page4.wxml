@@ -1,2 +1,7 @@
 <!--page/page4/page4.wxml-->
-<text>page/page4/page4.wxml</text>
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
+<e-base-list
+  title='编辑名片'
+  subTitle='2018-09-27 11:41:48'>
+</e-base-list>
+</show>

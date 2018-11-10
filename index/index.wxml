@@ -1,7 +1,20 @@
 <!--index/index.wxml-->
-<easy-view height='900' margin='200rpx 0 0 0' reverse='col' type='betweenCenter'>
+<easy-view height='900' margin='100rpx 0 0 0' reverse='col' type='betweenCenter'>
   <easy-icon-button icon='/imgs/easyUI.png' text='一行代码的艺术之旅' iconWidth='250' iconHeight='250' size='300' fontSize='32'></easy-icon-button>
-  <easy-view height='140' type='betweenCenter' width='700'>
-    <easy-text id='{{ index + 1 }}' title='{{ item.title }}' text='{{ item.text }}' titleColor='{{ item.titleColor }}' textColor='{{ item.textColor }}' wx:for='{{ list }}' bindtexttap='onTap'></easy-text>
+  <easy-view cus='cus-list'>
+    <e-base-list
+      id='{{ index + 1 }}'
+      wx:for='{{ list }}'
+      title='{{ item.title }}'
+      subTitle='{{ item.text }}'
+      lineColor='{{ item.lineColor }}'
+      catchlisttap='onTap'>
+    </e-base-list>
+  </easy-view>
+</easy-view>
+<easy-view cus='cus-view'>
+  <easy-view width='650' margin='0 50rpx' type='betweenCenter'>
+    <text class='font-text'>开始></text>
+    <text class='font-text' style='color: #666'>关于></text>
   </easy-view>
 </easy-view>

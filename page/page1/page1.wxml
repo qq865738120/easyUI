@@ -1,212 +1,236 @@
 <!--page1/page1.wxml-->
-<text>enhance_view组件：</text>
-<text class='detail'>type设置为start</text>
-<component-enhance-view
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='start'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为startEnd</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d2.title }}' sub='{{ com.d2.sub }}' mId='{{ com.d2.id }}' code='{{ com.d2.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='startEnd'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为startCenter</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='startCenter'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为endStart</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='endStart'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为end</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d5.title }}' sub='{{ com.d5.sub }}' mId='{{ com.d5.id }}' code='{{ com.d5.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='end'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为endCenter</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d6.title }}' sub='{{ com.d6.sub }}' mId='{{ com.d6.id }}' code='{{ com.d6.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='endCenter'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为centerStart</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d7.title }}' sub='{{ com.d7.sub }}' mId='{{ com.d7.id }}' code='{{ com.d7.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='centerStart'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为centerEnd</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d8.title }}' sub='{{ com.d8.sub }}' mId='{{ com.d8.id }}' code='{{ com.d8.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='centerEnd'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为center</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d9.title }}' sub='{{ com.d9.sub }}' mId='{{ com.d9.id }}' code='{{ com.d9.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='center'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为betweenStart</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d10.title }}' sub='{{ com.d10.sub }}' mId='{{ com.d10.id }}' code='{{ com.d10.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='betweenStart'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为betweenEnd</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d11.title }}' sub='{{ com.d11.sub }}' mId='{{ com.d11.id }}' code='{{ com.d11.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='betweenEnd'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text class='detail'>type设置为betweenCenter</text>
-<component-enhance-view
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
+
+<show title='{{ com.d12.title }}' sub='{{ com.d12.sub }}' mId='{{ com.d12.id }}' code='{{ com.d12.code }}'>
+<e-enhance-view
   bgColor='#fff'
   height='120'
   width='450'
-  margin='0 0 30rpx 0'
+  margin='0 30rpx'
   type='betweenCenter'>
-  <text style='color: #FF7137; font-size: 28rpx;'>123456</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>789abc</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>def</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>hijklm</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>nopqrstuvwxyz123</text>
-</component-enhance-view>
-<text id='8' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
-<view style=' border-bottom: 1px solid #e8e8e8'></view>
+  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+</e-enhance-view>
+</show>
 
-<text>enhance_text组件：</text>
-<component-enhance-text
+<show title='{{ com.d13.title }}' sub='{{ com.d13.sub }}' mId='{{ com.d13.id }}' code='{{ com.d13.code }}' margin='true'>
+<e-enhance-text
+  icon='/imgs/good.png'>
+</e-enhance-text>
+</show>
+
+<show title='{{ com.d14.title }}' sub='{{ com.d14.sub }}' mId='{{ com.d14.id }}' code='{{ com.d14.code }}' margin='true'>
+<e-enhance-text
   icon='/imgs/good.png'
-  cus-component='test-class'
-  catchtexttap='testTap'></component-enhance-text>
-  <component-enhance-text
+  title='点赞'>
+</e-enhance-text>
+</show>
+
+<show title='{{ com.d15.title }}' sub='{{ com.d15.sub }}' mId='{{ com.d15.id }}' code='{{ com.d15.code }}' margin='true'>
+<e-enhance-text
+  title='点赞'
+  text='6'>
+</e-enhance-text>
+</show>
+
+<show title='{{ com.d16.title }}' sub='{{ com.d16.sub }}' mId='{{ com.d16.id }}' code='{{ com.d16.code }}' margin='true'>
+<e-enhance-text
   icon='/imgs/good.png'
   title='点赞'
-  cus-component='test-class'></component-enhance-text>
-  <component-enhance-text
-  title='点赞'
-  text='6'
-  cus-component='test-class'></component-enhance-text>
-  <component-enhance-text
-  icon='/imgs/good.png'
-  title='点赞'
-  text='10'
-  cus-component='test-class'></component-enhance-text>
-<text id='7' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
-<view style=' border-bottom: 1px solid #e8e8e8'></view>
+  text='10'>
+</e-enhance-text>
+</show>
 
-<text>search组件：</text>
-<component-search
-  icon='/imgs/search.png'
-  catchonsearch='testTap'
-  buttonText=''></component-search>
-<component-search
-  icon='/imgs/search.png'
-  catchonsearch='testTap'
-  placeholder='双11狂欢夜'
-  bgColor='#fff'
-  color='#FE9036'
-  buttonColor='#FE9036'></component-search>
-<text id='6' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
-<view style=' border-bottom: 1px solid #e8e8e8'></view>
+<show title='{{ com.d17.title }}' sub='{{ com.d17.sub }}' mId='{{ com.d17.id }}' code='{{ com.d17.code }}' margin='true'>
+<e-head-portrait
+  src='/imgs/default_head.jpg'>
+</e-head-portrait>
+</show>
 
-<text>head_portrait组件：</text>
-<component-head-portrait
+<show title='{{ com.d18.title }}' sub='{{ com.d18.sub }}' mId='{{ com.d18.id }}' code='{{ com.d18.code }}' margin='true'>
+<e-head-portrait
   src='/imgs/default_head.jpg'
-  text='小明'
-  bindheadtap='testTap'>
-</component-head-portrait>
-<component-head-portrait
+  textColor='#666'
+  text='小明'>
+</e-head-portrait>
+</show>
+
+<show title='{{ com.d19.title }}' sub='{{ com.d19.sub }}' mId='{{ com.d19.id }}' code='{{ com.d19.code }}' margin='true'>
+<e-head-portrait
   src='/imgs/default_head.jpg'
   text='小红'
+  textColor='#666'
+  spacing='20'
   size='160'
   bindheadtap='testTap'>
-  <component-base-button
+  <e-base-button
     text='我的好友' 
     theme='filling'
     width='120'
@@ -214,116 +238,6 @@
     textSize='20'
     color='#FE9036'
     radius='30'
-    bindbuttontap='testTap'></component-base-button>
-</component-head-portrait>
-<text id='5' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
-<view style=' border-bottom: 1px solid #e8e8e8'></view>
-
-<text>base_button组件：</text>
-<text class='detail'>tip: default主题</text>
-<component-base-button
-  text='按钮' 
-  theme='default'
-  width='200'
-  height='60'
-  textSize='28'
-  color='#FE9036'
-  inline='true'></component-base-button>
-<text class='detail'>tip: hollow主题</text>
-<component-base-button
-  text='按钮' 
-  theme='hollow'
-  width='200'
-  height='60'
-  textSize='28'
-  color='#FE9036'
-  radius='10'></component-base-button>
-<text class='detail'>tip: filling主题</text>
-<component-base-button
-  text='按钮' 
-  theme='filling'
-  width='200'
-  height='60'
-  textSize='28'
-  color='#FE9036'
-  radius='20'></component-base-button>
-<text class='detail'>tip: fillingAndShine主题</text>
-<component-base-button
-  text='按钮' 
-  theme='fillingAndShine'
-  width='200'
-  height='60'
-  textSize='28'
-  color='#FE9036'
-  radius='30'></component-base-button>
-<text class='detail'>tip: fillingAndGradient1主题</text>
-<component-base-button
-  text='按钮' 
-  theme='fillingAndGradient1'
-  width='200'
-  height='60'
-  textSize='28'
-  color='#FE9036'
-  endColor='#FE4E36'
-  radius='40'></component-base-button>
-<text class='detail'>tip: fillingAndGradient2主题</text>
-<component-base-button
-  text='按钮' 
-  theme='fillingAndGradient2'
-  width='200'
-  height='60'
-  textSize='28'
-  color='#FE9036'
-  endColor='#FE4E36'
-  radius='50'></component-base-button>
-<text class='detail'>tip: 左边带图标的按钮</text>
-<component-base-button
-  text='按钮' 
-  theme='default'
-  width='200'
-  height='60'
-  textSize='28'
-  color='#FE9036'
-  icon='/imgs/button_icon.png'></component-base-button>
-<text class='detail'>tip: 右边带图标的按钮</text>
-<component-base-button
-  text='按钮' 
-  theme='default'
-  width='200'
-  height='60'
-  textSize='28'
-  color='#FE9036'
-  icon='/imgs/button_icon.png'
-  iconPosition='right'></component-base-button>
-<text id='4' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
-<view style=' border-bottom: 1px solid #e8e8e8'></view>
-
-<text>title_view组件：</text>
-<component-title-view title='插入内容'>
-  <view>自定义内容</view>
-</component-title-view>
-<component-title-view title='插入组件'>
-  <component-icon-button 
-    icon='/imgs/button_icon.png'
-    text='我的留言'>
-  </component-icon-button>
-</component-title-view>
-<text id='3' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
-<view style=' border-bottom: 1px solid #e8e8e8'></view>
-
-<text>base_list组件：</text>
-<component-base-list
-  title='编辑名片'
-  subTitle='2018-09-27 11:41:48'
-  cus-title='mtitle'>
-</component-base-list>
-<text id='2' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
-<view style=' border-bottom: 1px solid #e8e8e8'></view>
-
-<text>icon_button组件：</text>
-<component-icon-button 
-  icon='/imgs/button_icon.png'
-  text='我的留言'>
-</component-icon-button>
-<text id='1' style='font-size: 24rpx; color: #999;' catchtap='onTap'>详细说明 ></text>
-<view style='border-bottom: 1px solid #e8e8e8;'></view>
+    bindbuttontap='testTap'></e-base-button>
+</e-head-portrait>
+</show>

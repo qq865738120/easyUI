@@ -3,6 +3,7 @@
   "usingComponents": {
     "easy-icon-button": "/component/button/icon_button/icon_button",
     "easy-text": "/component/base/enhance_text/enhance_text",
-    "easy-view": "/component/base/enhance_view/enhance_view"
+    "easy-view": "/component/base/enhance_view/enhance_view",
+    "e-base-list": "/component/list/base_list/base_list"
   }
 }

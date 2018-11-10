@@ -1,6 +1,9 @@
-<view class='component cus-component'>
+<view class='component cus' catchtap='onTap'>
   <view class='body' style='border-bottom: 1px solid {{ lineColor }}'>
     <text class='title cus-title'>{{ mTitle }}</text>
-    <text class='subTitle cus-subTitle'>{{ mSubTitle }}</text>
+    <view>
+      <text class='subTitle cus-subTitle'>{{ mSubTitle }}</text>
+      <image src='{{ icon }}' wx:if='{{ showIcon == "false" ? false : true }}' style='width: {{ iconWidth }}rpx; height: {{ iconHeight }}rpx; margin-left: 12rpx;'></image>
+    </view>
   </view>
 </view>

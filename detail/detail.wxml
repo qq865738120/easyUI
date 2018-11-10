@@ -1,7 +1,7 @@
 <!--detail/detail.wxml-->
 <view style='margin-top: 30rpx;'>
 
-  <text class='h1'>属性字段：</text>
+  <view class='h1'>属性字段：</view>
   <!-- 属性字段表格 -->
   <view class="table">
     <view class="tr bg-w">
@@ -15,13 +15,13 @@
         <view class="td name" catchtap='onTdTap' data-text='{{ item.name }}'>{{ item.name }}</view>
         <view class="td">{{ item.type }}</view>
         <view class="td">{{ item.deff }}</view>
-        <view class="td {{ item.show != undefined ? 'name' : '' }}" data-data='{{ item.show }}' catchtap='onDetTap'>{{ item.detail }}</view>
+        <view class="td {{ item.show != undefined ? 'name' : '' }}" data-data='{{ item.show }}' data-title='{{ item.name }}' catchtap='onDetTap'>{{ item.detail }}</view>
       </view>
     </block>
   </view>
   <!-- 属性字段表格end -->
 
-  <text class='h1'>样式类：</text>
+  <view class='h1'>样式类：</view>
   <!-- 样式类表格 -->
   <view class="table">
     <view class="tr bg-w">
@@ -37,7 +37,7 @@
   </view>
   <!-- 样式类表格end -->
 
-  <text class='h1'>接口方法：</text>
+  <view class='h1'>接口方法：</view>
   <!-- 接口方法表格 -->
   <view class="table">
     <view class="tr bg-w">
@@ -55,7 +55,7 @@
   </view>
   <!-- 接口方法表格end -->
 
-  <text class='h1'>slot节点：</text>
+  <view class='h1'>slot节点：</view>
   <!-- 接口方法表格 -->
   <view class="table">
     <view class="tr bg-w">
@@ -71,6 +71,6 @@
   </view>
   <!-- 接口方法表格end -->
 
-  <text class='h1'>其他：</text>
+  <view class='h1'>其他：</view>
   <text class='content' space='emsp'>{{ other }}</text>
 </view>

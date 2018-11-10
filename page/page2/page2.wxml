@@ -1,2 +1,107 @@
 <!--page/page2/page2.wxml-->
-<text>page/page2/page2.wxml</text>
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
+<e-icon-button 
+  icon='/imgs/button_icon.png'
+  text='我的留言'>
+</e-icon-button>
+</show>
+
+<show title='{{ com.d2.title }}' sub='{{ com.d2.sub }}' mId='{{ com.d2.id }}' code='{{ com.d2.code }}' margin='true'>
+<e-base-button
+  text='按钮' 
+  theme='default'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  inline='true'>
+</e-base-button>
+</show>
+
+<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true'>
+<e-base-button
+  text='按钮' 
+  theme='hollow'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  radius='10'>
+</e-base-button>
+</show>
+
+<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true'>
+<e-base-button
+  text='按钮' 
+  theme='filling'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  radius='20'>
+</e-base-button>
+</show>
+
+<show title='{{ com.d5.title }}' sub='{{ com.d5.sub }}' mId='{{ com.d5.id }}' code='{{ com.d5.code }}' margin='true'>
+<e-base-button
+  text='按钮' 
+  theme='fillingAndShine'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  radius='30'>
+</e-base-button>
+</show>
+
+<show title='{{ com.d6.title }}' sub='{{ com.d6.sub }}' mId='{{ com.d6.id }}' code='{{ com.d6.code }}' margin='true'>
+<e-base-button
+  text='按钮' 
+  theme='fillingAndGradient1'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  endColor='#FE4E36'
+  radius='40'>
+</e-base-button>
+</show>
+
+<show title='{{ com.d7.title }}' sub='{{ com.d7.sub }}' mId='{{ com.d7.id }}' code='{{ com.d7.code }}' margin='true'>
+<e-base-button
+  text='按钮' 
+  theme='fillingAndGradient2'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  endColor='#FE4E36'
+  radius='50'>
+</e-base-button>
+</show>
+
+<show title='{{ com.d8.title }}' sub='{{ com.d8.sub }}' mId='{{ com.d8.id }}' code='{{ com.d8.code }}' margin='true'>
+<e-base-button
+  text='按钮' 
+  theme='default'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  icon='/imgs/button_icon.png'>
+</e-base-button>
+</show>
+
+<show title='{{ com.d9.title }}' sub='{{ com.d9.sub }}' mId='{{ com.d9.id }}' code='{{ com.d9.code }}' margin='true'>
+<e-base-button
+  text='按钮' 
+  theme='default'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  icon='/imgs/button_icon.png'
+  iconPosition='right'>
+</e-base-button>
+</show>

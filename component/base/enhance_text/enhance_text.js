@@ -66,7 +66,7 @@ Component({
     },
   },
 
-  externalClasses: ['cus-component'],
+  externalClasses: ['cus'],
 
   /**
    * 组件的初始数据

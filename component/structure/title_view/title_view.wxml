@@ -1,5 +1,5 @@
 <!--component/structure/title_view/title_view.wxml-->
-<view class='component cus-component'>
+<view class='component cus'>
   <view class='title' style='margin: {{ titleMarginTop }}rpx {{ margin }}rpx {{ titleMarginBottom }}rpx {{ margin }}rpx; color: {{ titleColor }}; font-size: {{ fontSize }}rpx'>{{ mTitle }}</view>
   <view class='content' style='padding: {{ contentMargin }}rpx {{ margin }}rpx; background-color: {{ bgColor }}'>
     <slot></slot>
