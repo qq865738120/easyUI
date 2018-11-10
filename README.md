@@ -33,7 +33,7 @@
 
 # 版本说明
 
-### v1.0.3
+### v1.0.3 last
 - 修复&优化  
 1. 修复view/enhance_view中添加base_list组件时候导致base_list宽度不正常的bug。
 2. 重写小程序界面，提升阅读体验。
