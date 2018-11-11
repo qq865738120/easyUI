@@ -35,7 +35,9 @@
 
 # 版本说明
 
-### v1.0.4 last  
+### v1.0.5 last  
+
+### v1.0.4
 - 新增组件
 1. icon_list
 2. enhance_icon
