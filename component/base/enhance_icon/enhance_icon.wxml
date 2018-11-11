@@ -1,0 +1,4 @@
+<!--component/base/enhance_icon/enhance_icon.wxml-->
+<view class='component cus' style='width: {{ width }}rpx; height: {{ height }}rpx; background-image: url({{ src }});'>
+  <slot></slot>
+</view>

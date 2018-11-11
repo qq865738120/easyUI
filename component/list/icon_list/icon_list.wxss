@@ -1,0 +1,27 @@
+/* component/list/icon_list/icon_list.wxss */
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing:  content-box;
+}
+.left {
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  width: 100%;
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: content-box;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}

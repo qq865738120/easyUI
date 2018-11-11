@@ -1,5 +1,11 @@
 <!--page1/page1.wxml-->
 
+<show title='{{ com.d20.title }}' sub='{{ com.d20.sub }}' mId='{{ com.d20.id }}' code='{{ com.d20.code }}' margin='true'>
+<e-enhance-icon
+  src='/imgs/icon.png'>
+</e-enhance-icon>
+</show>
+
 <show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
 <e-enhance-view
   bgColor='#fff'

@@ -5,6 +5,7 @@
     "e-base-button": "/component/button/base_button/base_button",
     "e-head-portrait": "/component/base/head_portrait/head_portrait",
     "e-enhance-text": "/component/base/enhance_text/enhance_text",
-    "e-enhance-view": "/component/base/enhance_view/enhance_view"
+    "e-enhance-view": "/component/base/enhance_view/enhance_view",
+    "e-enhance-icon": "/component/base/enhance_icon/enhance_icon"
   }
 }

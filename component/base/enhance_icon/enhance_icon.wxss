@@ -1,0 +1,10 @@
+/* component/base/enhance_icon/enhance_icon.wxss */
+.component {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
