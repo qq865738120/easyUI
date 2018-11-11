@@ -31,6 +31,7 @@
 | enhance_text | [component/base/enhance_text](component/base/enhance_text) | 增强text |
 | enhance_view | [component/base/enhance_view](component/base/enhance_view) | 增强view |
 | icon_list | [component/list/icon_list](component/list/icon_list) | 图标列表，可满足大部分列表需求 |
+| enhance_icon | [component/base/enhance_icon](component/base/enhance_icon) | 增强icon，可用于展示图标或图片 |
 
 # 版本说明
 
