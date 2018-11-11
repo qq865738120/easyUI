@@ -90,14 +90,14 @@ Page({
   data: {
     com: {
       d1: { id: com[1].id, title: com[1].name, sub: '', code: code.d1 },
-      d2: { id: com[2].id, title: com[2].name, sub: 'default主题', code: code.d2 },
-      d3: { id: com[2].id, title: com[2].name, sub: 'hollow主题', code: code.d3 },
-      d4: { id: com[2].id, title: com[2].name, sub: 'filling主题', code: code.d4 },
-      d5: { id: com[2].id, title: com[2].name, sub: 'fillingAndShine主题', code: code.d5 },
-      d6: { id: com[2].id, title: com[2].name, sub: 'fillingAndGradient1主题', code: code.d6 },
-      d7: { id: com[2].id, title: com[2].name, sub: 'fillingAndGradient2主题', code: code.d7 },
-      d8: { id: com[2].id, title: com[2].name, sub: '左边带图标的按钮', code: code.d8 },
-      d9: { id: com[2].id, title: com[2].name, sub: '右边带图标的按钮', code: code.d9 },
+      d2: { id: com[4].id, title: com[4].name, sub: 'default主题', code: code.d2 },
+      d3: { id: com[4].id, title: com[4].name, sub: 'hollow主题', code: code.d3 },
+      d4: { id: com[4].id, title: com[4].name, sub: 'filling主题', code: code.d4 },
+      d5: { id: com[4].id, title: com[4].name, sub: 'fillingAndShine主题', code: code.d5 },
+      d6: { id: com[4].id, title: com[4].name, sub: 'fillingAndGradient1主题', code: code.d6 },
+      d7: { id: com[4].id, title: com[4].name, sub: 'fillingAndGradient2主题', code: code.d7 },
+      d8: { id: com[4].id, title: com[4].name, sub: '左边带图标的按钮', code: code.d8 },
+      d9: { id: com[2].id, title: com[4].name, sub: '右边带图标的按钮', code: code.d9 },
     }
   },
 
