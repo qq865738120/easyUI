@@ -115,9 +115,9 @@ const attributes = [
     { name: 'titleColor', type: 'String', deff: '#030302', detail: '标题颜色' },
     { name: 'titleSize', type: 'String', deff: '34', detail: '标题大小' },
     { name: 'subTitleColor', type: 'String', deff: '#666', detail: '副标题颜色' },
-    { name: 'subTitleSize', type: 'String', deff: '24', detail: '副标题大小' },
+    { name: 'subTitleSize', type: 'String', deff: '28', detail: '副标题大小' },
     { name: 'detailColor', type: 'String', deff: '#999', detail: '描述信息颜色' },
-    { name: 'detailSize', type: 'String', deff: '22', detail: '描述信息大小' },
+    { name: 'detailSize', type: 'String', deff: '24', detail: '描述信息大小' },
   ],
   [ // enhance_icon
     { name: 'width', type: 'String', deff: '64', detail: '图标宽度，单位rpx' },

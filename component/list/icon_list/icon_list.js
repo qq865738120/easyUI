@@ -51,7 +51,7 @@ Component({
     },
     subTitleSize: {
       type: String,
-      value: '24'
+      value: '28'
     },
     detailColor: {
       type: String,
@@ -59,7 +59,7 @@ Component({
     },
     detailSize: {
       type: String,
-      value: '22'
+      value: '24'
     },
   },
 
