@@ -15,7 +15,8 @@
 >请使用1.9.90以上的基础库。
 
 # 使用方法
->打开项目，选择需要的组件（组件位于component目录下），将包含组件4个文件的文件夹复制到您的项目中。然后在您项目的代码中引用即可，详细引用说明请查看[小程序官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
+>打开项目，选择需要的组件（组件位于component目录下），将包含组件4个文件的文件夹复制到您的项目中。  
+然后在您项目的代码中引用即可，详细引用说明请查看[小程序官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
 
 # 组件目录
 
@@ -29,10 +30,14 @@
 | search | [component/form/search](component/form/search) | 带有标题和副标题的列表项 |
 | enhance_text | [component/base/enhance_text](component/base/enhance_text) | 增强text |
 | enhance_view | [component/base/enhance_view](component/base/enhance_view) | 增强view |
+| icon_list | [component/list/icon_list](component/list/icon_list) | 图标列表，可满足大部分列表需求 |
 
 # 版本说明
 
 ### v1.0.4 last  
+- 新增组件
+1. icon_list
+2. enhance_icon
 
 ### v1.0.3  
 - 修复&优化  
