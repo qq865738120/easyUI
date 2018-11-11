@@ -35,9 +35,9 @@
 
 # 版本说明
 
-### v1.0.6 last
+## v1.0.6 last
 
-## v1.0.5   
+### v1.0.5   
 - 修复&优化
 1. 修复enhance_icon在手机上无法显示图片的bug。
 2. 将icon_list的subTitle属性默认值由24调整到28。
