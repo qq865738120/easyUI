@@ -10,6 +10,8 @@ App({
       { id: '6', name: 'search组件'},
       { id: '7', name: 'enhance_text组件'},
       { id: '8', name: 'enhance_view组件'},
+      { id: '9', name: 'icon_list组件' },
+      { id: '10', name: 'enhance_icon组件' },
     ]
   },
 })

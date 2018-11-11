@@ -2,6 +2,11 @@
   "navigationBarTitleText": "列表组件",
   "usingComponents": {
     "e-base-list": "/component/list/base_list/base_list",
-    "show": "/common/display/display"
+    "show": "/common/display/display",
+    "e-icon-list": "/component/list/icon_list/icon_list",
+    "e-head-portrait": "/component/base/head_portrait/head_portrait",
+    "e-base-button": "/component/button/base_button/base_button",
+    "e-enhance-icon": "/component/base/enhance_icon/enhance_icon",
+    "e-enhance-view": "/component/base/enhance_view/enhance_view"
   }
 }

@@ -103,6 +103,26 @@ const attributes = [
     { name: 'margin', type: 'String', deff: '-', detail: '外边距，取值为符合css语法的字符串' },
     { name: 'padding', type: 'String', deff: '-', detail: '内边距，取值为符合css语法的字符串' },
     { name: 'bgColor', type: 'String', deff: '-', detail: '背景色' },
+  ],
+  [ // icon_list
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '背景色' },
+    { name: 'margin', type: 'String', deff: '30', detail: '左右边距' },
+    { name: 'title', type: 'String', deff: '-', detail: '标题内容' },
+    { name: 'subTitle', type: 'String', deff: '-', detail: '副标题内容' },
+    { name: 'detail', type: 'String', deff: '-', detail: '描述信息内容' },
+    { name: 'spacing', type: 'String', deff: '30', detail: '图标与标题间距' },
+    { name: 'lineColor', type: 'String', deff: '-', detail: '底部线条颜色，默认没有线条。语法参考css中border属性' },
+    { name: 'titleColor', type: 'String', deff: '#030302', detail: '标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '34', detail: '标题大小' },
+    { name: 'subTitleColor', type: 'String', deff: '#666', detail: '副标题颜色' },
+    { name: 'subTitleSize', type: 'String', deff: '24', detail: '副标题大小' },
+    { name: 'detailColor', type: 'String', deff: '#999', detail: '描述信息颜色' },
+    { name: 'detailSize', type: 'String', deff: '22', detail: '描述信息大小' },
+  ],
+  [ // enhance_icon
+    { name: 'width', type: 'String', deff: '64', detail: '图标宽度，单位rpx' },
+    { name: 'height', type: 'String', deff: '64', detail: '图标高度，单位rpx' },
+    { name: 'src', type: 'String', deff: '-', detail: '图标资源文件路径' },
   ]
 ]
 
@@ -134,6 +154,12 @@ const mClass = [
   [ // enhance_view
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // icon_list
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // enhance_icon
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -162,6 +188,10 @@ const method = [
   [ // enhance_view
     { name: 'viewtap', parameter: '事件对象', detail: '点击事件' }
   ],
+  [ // icon_list
+    { name: 'listtap', parameter: '事件对象', detail: '点击事件' }
+  ],
+  [], // enhance_icon
 ]
 
 const slot = [
@@ -186,6 +216,13 @@ const slot = [
   [ // enhance_view
     { name: '-', detail: 'view内部插槽，根据需要插入自定义节点或者组件' }
   ],
+  [ // icon_list
+    { name: 'icon', detail: '左边图标插槽，可插入需要显示的图标或者头像。插入图标时请使用enhance_icon组件，使用image组件可能会出现问题' },
+    { name: 'right', detail: '右边内容插槽，可插入需要显示的图标、文字、按钮等。插入图标时请使用enhance_icon组件，使用image组件可能会出现问题' },
+  ],
+  [ // enhance_icon
+    { name: '-', detail: '内部插槽，一般不建议插入任何元素' }
+  ],
 ]
 
 const other = [
@@ -198,6 +235,10 @@ const other = [
 `基础库1.9.90以上使用。`, // search
 `基础库1.9.90以上使用。`, // enhance_text
 `基础库1.9.90以上使用。`, // enhance_view
+`基础库1.9.90以上使用。
+tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // icon_list
+`基础库1.9.90以上使用。
+tip: 在需要配合组件库中其它组件的时候优先考虑使用该组件展示图片或图标，不建议使用官方image组件`, // enhance_icon
 ]
 
 module.exports = {

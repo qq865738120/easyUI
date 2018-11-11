@@ -1,0 +1,20 @@
+<!--component/list/icon_list/icon_list.wxml-->
+<view class='component cus' catchtap='onTap' style='padding: 0 {{ margin }}rpx; background-color: {{ bgColor }}'>
+  <view class='left'>
+    <slot name='icon'></slot>
+  </view>
+  <view class='right' style='margin-left: {{ spacing }}rpx; border-bottom: {{ lineColor }};'>
+    <view class='center'>
+      <view wx:if='{{ title != undefined && title != "" ? true : false }}'>
+        <text style='color: {{ titleColor }}; font-size: {{ titleSize }}rpx;'>{{ title }}</text>
+      </view>
+      <view wx:if='{{ subTitle != undefined && subTitle != "" ? true : false }}'>
+        <text style='color: {{ subTitleColor }}; font-size: {{ subTitleSize }}rpx;'>{{ subTitle }}</text>
+      </view>
+      <view wx:if='{{ detail != undefined && detail != "" ? true : false }}'>
+        <text style='color: {{ detailColor }}; font-size: {{ detailSize }}rpx;'>{{ detail }}</text>
+      </view>
+    </view>
+    <slot name='right'></slot>
+  </view>
+</view>

@@ -122,9 +122,12 @@ const code = {
     height='36'
     textSize='20'
     color='#FE9036'
-    radius='30'
-    bindbuttontap='testTap'></e-base-button>
+    radius='30'>
+  </e-base-button>
 </e-head-portrait>`,
+  d20: `<e-enhance-icon
+  src='/imgs/icon.png'>
+</e-enhance-icon>`,
 }
 
 Page({
@@ -153,6 +156,7 @@ Page({
       d17: { id: com[5].id, title: com[5].name, sub: '只有头像', code: code.d17 },
       d18: { id: com[5].id, title: com[5].name, sub: '带有昵称', code: code.d18 },
       d19: { id: com[5].id, title: com[5].name, sub: '带有昵称和标签', code: code.d19 },
+      d20: { id: com[10].id, title: com[10].name, sub: '', code: code.d20 },
     }
   },
 

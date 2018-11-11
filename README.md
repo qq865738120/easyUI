@@ -2,7 +2,7 @@
 # easyUI
 
 >一款简单易用的微信小程序组库，封装开发中常用的组件，提高开发效率，以及代码的可维护性。
->超越一行代码的极限，体验不一样的开发方式。
+>超越一行代码的极限，体验开箱即用开发方式。默认配置即可满足大部分需求，特殊情况可自定义相关属性来满足需求。
 
 >组件库中的任何一个组件都可以单独使用，不依赖任何组件，可以根据业务需求添加真正使用到的组件，让您的小程序一小再小。
 
@@ -15,8 +15,8 @@
 >请使用1.9.90以上的基础库。
 
 # 使用方法
->打开项目，选择需要的组件（组件位于component目录下），将包含组件4个文件的文件夹复制到您的项目中。然后在您项目的代码中引用即可，详细引用说明请查看[小程序官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
-
+>打开项目，选择需要的组件（组件位于component目录下），将包含组件4个文件的文件夹复制到您的项目中。  
+然后在您项目的代码中引用即可，详细引用说明请查看[小程序官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
 
 # 组件目录
 
@@ -30,10 +30,17 @@
 | search | [component/form/search](component/form/search) | 带有标题和副标题的列表项 |
 | enhance_text | [component/base/enhance_text](component/base/enhance_text) | 增强text |
 | enhance_view | [component/base/enhance_view](component/base/enhance_view) | 增强view |
+| icon_list | [component/list/icon_list](component/list/icon_list) | 图标列表，可满足大部分列表需求 |
+| enhance_icon | [component/base/enhance_icon](component/base/enhance_icon) | 增强icon，可用于展示图标或图片 |
 
 # 版本说明
 
-### v1.0.3 last
+### v1.0.4 last  
+- 新增组件
+1. icon_list
+2. enhance_icon
+
+### v1.0.3  
 - 修复&优化  
 1. 修复view/enhance_view中添加base_list组件时候导致base_list宽度不正常的bug。
 2. 重写小程序界面，提升阅读体验。
