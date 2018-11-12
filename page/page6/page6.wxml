@@ -8,7 +8,7 @@
   detail='快递：免运费'
   detailColor='#999'
   subDetail='月销436'
-  sales='广州深圳'>
+  sales='广东深圳'>
   <e-enhance-text
     slot='priceLast'
     iconSize='32'
