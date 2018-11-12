@@ -4,7 +4,7 @@
 <e-goods-detail
   imgList='{{ ["/imgs/image.png", "/imgs/image.png"] }}'
   title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'
-  price='¥6666.00~¥9999.00'
+  price='¥6620~¥8659'
   detail='快递：免运费'
   detailColor='#999'
   subDetail='月销436'
@@ -21,7 +21,7 @@
 <e-goods-detail
   imgList='{{ ["/imgs/image.png", "/imgs/image.png"] }}'
   title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'
-  price='¥6666.00~¥9999.00'
+  price='¥6620~¥8659'
   detail='订单提交后可立即领取优惠券使用'
   sales='月销售:358'>
   <e-base-button

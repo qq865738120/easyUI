@@ -27,7 +27,7 @@ Component({
     },
     titleSize: {
       type: String,
-      value: '30'
+      value: '32'
     },
     price: {
       type: String,
@@ -39,7 +39,7 @@ Component({
     },
     priceSize: {
       type: String,
-      value: '34'
+      value: '36'
     },
     detail: {
       type: String,

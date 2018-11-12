@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 .title-text {
-  font-weight: 600;
+  font-weight: 700;
 }
 .price {
   margin: 22rpx 0 10rpx 0;
