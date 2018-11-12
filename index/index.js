@@ -6,6 +6,7 @@ const path = [
   '/page/page3/page3',
   '/page/page4/page4',
   '/page/page5/page5',
+  '/page/page6/page6',
 ]
 
 Page({
@@ -19,7 +20,8 @@ Page({
       { title: '按钮组件', text: '2', lineColor: '#e8e8e8' },
       { title: '表单组件', text: '1', lineColor: '#e8e8e8' },
       { title: '列表组件', text: '2', lineColor: '#e8e8e8' },
-      { title: '结构组件', text: '1', lineColor: 'rgba(0,0,0,0)' },
+      { title: '结构组件', text: '1', lineColor: '#e8e8e8' },
+      { title: '高级组件', text: '1', lineColor: 'rgba(0,0,0,0)' },
     ]
   },
 

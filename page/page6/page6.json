@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "高级组件",
+  "usingComponents": {
+    "show": "/common/display/display",
+    "e-goods-card": "/component/senior/goods_card/goods_card",
+    "e-goods-detail": "/component/senior/goods_detail/goods_detail",
+    "e-enhance-icon": "/component/base/enhance_icon/enhance_icon",
+    "e-enhance-view": "/component/base/enhance_view/enhance_view"
+  }
+}

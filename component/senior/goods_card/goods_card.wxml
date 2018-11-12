@@ -1,0 +1,12 @@
+<!--component/senior/goods_card/goods_card.wxml-->
+<view class='component cus' catchtap='onTap' style='border-radius: {{ radius }}rpx; width: {{ widht }}rpx; background-color: {{ bgColor }};'>
+  <image src='{{ src }}' mode='aspectFill' style='width: 100%; height: {{ imgHeight }}rpx'></image>
+  <text class='title' space='ensp' style='color: {{ titleColor }}; font-size: {{ titleSize }}rpx'>{{ title }}</text>
+  <view class='end'>
+    <view>
+      <text space='ensp' style='color: {{ priceColor }}; font-size: {{ priceSize }}rpx;'>{{ price }}</text>
+      <text style='color: {{ detailColor }}; font-size: {{ detailSize }}rpx; margin-left: {{ spacing }}rpx'>{{ detail }}</text>
+    </view>
+    <slot></slot>
+  </view>
+</view>

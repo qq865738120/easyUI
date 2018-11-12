@@ -1,0 +1,12 @@
+/* component/senior/goods_detail/goods_detail.wxss */
+
+.body {
+  margin: 30rpx;
+}
+.swiper {
+  height: 750rpx;
+}
+.imgae {
+  width: 750rpx;
+  height: 750rpx;
+}

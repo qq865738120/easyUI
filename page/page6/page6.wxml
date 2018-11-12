@@ -1,0 +1,32 @@
+<!--page/page6/page6.wxml-->
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
+<e-goods-detail
+  imgList='{{ ["/imgs/image.png", "/imgs/image.png"] }}'
+  title='可爱的小猫咪 圆脸白色装 1只/盒'
+  price='¥6666.00~¥9999.00'
+  detail='订单提交后可立即领取优惠券使用'
+  sales='月销售:358'>
+</e-goods-detail>
+</show>
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
+<e-enhance-view
+  margin='0 30rpx'
+  width='750'
+  margin='0'
+  type='betweenCenter'>
+  <e-goods-card
+    src='/imgs/image.png'
+    title='可爱的小猫咪 圆脸白色装 1只/盒'
+    price='￥6666'
+    detail='233人付款'>
+  </e-goods-card>
+  <e-goods-card
+    src='/imgs/image.png'
+    title='可爱的小猫咪 圆脸白色装 1只/盒'
+    price='￥6666'
+    detail='233人付款'>
+  </e-goods-card>
+</e-enhance-view>
+</show>

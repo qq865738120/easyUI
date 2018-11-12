@@ -123,7 +123,24 @@ const attributes = [
     { name: 'width', type: 'String', deff: '64', detail: '图标宽度，单位rpx' },
     { name: 'height', type: 'String', deff: '64', detail: '图标高度，单位rpx' },
     { name: 'src', type: 'String', deff: '-', detail: '图标资源文件路径' },
-  ]
+  ],
+  [ // goods_card
+    { name: 'width', type: 'String', deff: '370', detail: '组件宽度' },
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '组件背景色' },
+    { name: 'radius', type: 'String', deff: '-', detail: '圆角' },
+    { name: 'src', type: 'String', deff: '-', detail: '展示图资源文件路径' },
+    { name: 'imgHeight', type: 'String', deff: '380', detail: '展示图高度' },
+    { name: 'title', type: 'String', deff: '-', detail: '商品标题' },
+    { name: 'titleColor', type: 'String', deff: '#323232', detail: '商品标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '26', detail: '商品标题大小' },
+    { name: 'price', type: 'String', deff: '-', detail: '价格' },
+    { name: 'priceColor', type: 'String', deff: '#F62135', detail: '价格文字颜色' },
+    { name: 'priceSize', type: 'String', deff: '30', detail: '价格文字大小' },
+    { name: 'detail', type: 'String', deff: '-', detail: '描述信息' },
+    { name: 'detailColor', type: 'String', deff: '#999', detail: '描述信息颜色' },
+    { name: 'detailSize', type: 'String', deff: '22', detail: '描述信息大小' },
+    { name: 'spacing', type: 'String', deff: '10', detail: '价格与描述信息间隔大小' },
+  ],
 ]
 
 const mClass = [
@@ -160,6 +177,9 @@ const mClass = [
   [ // enhance_icon
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // goods_card
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -192,6 +212,9 @@ const method = [
     { name: 'listtap', parameter: '事件对象', detail: '点击事件' }
   ],
   [], // enhance_icon
+  [ // goods_card
+    { name: 'goods', parameter: '事件对象', detail: '点击事件' }
+  ]
 ]
 
 const slot = [
@@ -221,8 +244,11 @@ const slot = [
     { name: 'right', detail: '右边内容插槽，可插入需要显示的图标、文字、按钮等。插入图标时请使用enhance_icon组件，使用image组件可能会出现问题' },
   ],
   [ // enhance_icon
-    { name: '-', detail: '内部插槽，一般不建议插入任何元素' }
+
   ],
+  [ // goods_card
+    { name: '-', detail: '价格栏右边插槽' }
+  ]
 ]
 
 const other = [
@@ -239,6 +265,7 @@ const other = [
 tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // icon_list
 `基础库1.9.90以上使用。
 tip: 在需要配合组件库中其它组件的时候优先考虑使用该组件展示图片或图标，不建议使用官方image组件`, // enhance_icon
+`基础库1.9.90以上使用。`, // goods_card
 ]
 
 module.exports = {

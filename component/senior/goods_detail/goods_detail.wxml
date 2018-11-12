@@ -1,0 +1,22 @@
+<!--component/senior/goods_detail/goods_detail.wxml-->
+<view class='component cus' style='background-color: {{ bgColor }};'>
+  <swiper class='swiper' indicator-dots='true' autoplay='true' duration='300' skip-hidden-item-layout='true'>
+    <swiper-item wx:for='{{ imgList }}'>
+      <image class='imgae' src='{{ item }}'></image>
+    </swiper-item>
+  </swiper>
+  <view class='body'>
+    <view class='title'>
+      <text style='color: {{ titleColor }}; font-size: {{ titleSize }}rpx'>{{ title }}</text>
+      <slot></slot>
+    </view>
+    <view class='price'>
+      <text style='color: {{ priceColor }}; font-size: {{ priceSize }}rpx'>{{ price }}</text>
+      <slot></slot>
+    </view>
+    <view class='detail'>
+      <text style='color: {{ detailColor }}; font-size: {{ detailSize }}rpx'>{{ detail }}</text>
+      <text style='color: {{ salesColor }}; font-size: {{ salesSize }}rpx'>{{ sales }}</text>
+    </view>
+  </view>
+</view>
