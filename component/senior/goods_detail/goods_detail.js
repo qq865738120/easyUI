@@ -51,7 +51,7 @@ Component({
     },
     detailSize: {
       type: String,
-      value: '22'
+      value: '26'
     },
     subDetail: {
       type: String,
@@ -72,7 +72,7 @@ Component({
     },
     salesSize: {
       type: String,
-      value: '22'
+      value: '26'
     },
   },
 
