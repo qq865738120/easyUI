@@ -141,6 +141,23 @@ const attributes = [
     { name: 'detailSize', type: 'String', deff: '22', detail: '描述信息大小' },
     { name: 'spacing', type: 'String', deff: '10', detail: '价格与描述信息间隔大小' },
   ],
+  [ // goods_detail
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '组件背景色' },
+    { name: 'imgList', type: 'Array', deff: '-', detail: '展示图片路径的数组，例：["image1.png", "image2.png"]' },
+    { name: 'title', type: 'String', deff: '-', detail: '商品标题' },
+    { name: 'titleColor', type: 'String', deff: '#333333', detail: '商品标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '30', detail: '商品标题大小' },
+    { name: 'price', type: 'String', deff: '-', detail: '商品价格' },
+    { name: 'priceColor', type: 'String', deff: '#F23030', detail: '商品价格文字颜色' },
+    { name: 'priceSize', type: 'String', deff: '34', detail: '商品价格文字大小' },
+    { name: 'detail', type: 'String', deff: '-', detail: '描述信息' },
+    { name: 'detailColor', type: 'String', deff: '#F23030', detail: '描述信息的颜色' },
+    { name: 'detailSize', type: 'String', deff: '22', detail: '描述信息的大小' },
+    { name: 'subDetail', type: 'String', deff: '-', detail: '副描述信息，设置后会呈现另一种主题风格，不设置则为默认主题风格' },
+    { name: 'sales', type: 'String', deff: '-', detail: '销售额' },
+    { name: 'salesColor', type: 'String', deff: '#999999', detail: '销售额的颜色' },
+    { name: 'salesSize', type: 'String', deff: '22', detail: '销售额的文字大小' },
+  ],
 ]
 
 const mClass = [
@@ -180,6 +197,9 @@ const mClass = [
   [ // goods_card
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // goods_detail
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -214,7 +234,8 @@ const method = [
   [], // enhance_icon
   [ // goods_card
     { name: 'goods', parameter: '事件对象', detail: '点击事件' }
-  ]
+  ],
+  [], // goods_detail
 ]
 
 const slot = [
@@ -248,6 +269,10 @@ const slot = [
   ],
   [ // goods_card
     { name: '-', detail: '价格栏右边插槽' }
+  ],
+  [ // goods_detail
+    { name: 'titleLast', detail: '标题栏最右边插槽，可插入分享按钮等组件' },
+    { name: 'priceLast', detail: '价格栏最紧跟价格其后的插槽，促销图标、文字等组件' }
   ]
 ]
 
@@ -266,6 +291,8 @@ tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相
 `基础库1.9.90以上使用。
 tip: 在需要配合组件库中其它组件的时候优先考虑使用该组件展示图片或图标，不建议使用官方image组件`, // enhance_icon
 `基础库1.9.90以上使用。`, // goods_card
+`基础库1.9.90以上使用。
+tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // goods_detail
 ]
 
 module.exports = {

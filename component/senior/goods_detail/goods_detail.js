@@ -1,5 +1,10 @@
 // component/senior/goods_detail/goods_detail.js
 Component({
+
+  options: {
+    multipleSlots: true
+  },
+
   /**
    * 组件的属性列表
    */
@@ -46,7 +51,16 @@ Component({
     },
     detailSize: {
       type: String,
-      value: '24'
+      value: '22'
+    },
+    subDetail: {
+      type: String,
+      value: '',
+      observer: function (newVal) {
+        this.setData({
+          mDetail: ''
+        });
+      }
     },
     sales: {
       type: String,
@@ -58,11 +72,7 @@ Component({
     },
     salesSize: {
       type: String,
-      value: '24'
-    },
-    title: {
-      type: String,
-      value: ''
+      value: '22'
     },
   },
 
@@ -70,7 +80,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    mDetail: 'border: 1rpx solid; padding: 2rpx 8rpx; border-radius: 6rpx;'
   },
 
   /**

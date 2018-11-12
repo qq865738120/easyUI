@@ -19,6 +19,44 @@ const code = {
     detail='233人付款'>
   </e-goods-card>
 </e-enhance-view>`,
+  d2: `<e-goods-detail
+  imgList='{{ ["/imgs/image.png", "/imgs/image.png"] }}'
+  title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'
+  price='¥6666.00~¥9999.00'
+  detail='订单提交后可立即领取优惠券使用'
+  sales='月销售:358'>
+  <e-base-button
+    slot='titleLast'
+    theme='fillingAndGradient2'
+    icon='/imgs/share.png'
+    spacing='0'
+    width='80'
+    height='80'
+    textSize='28'
+    color='#FF9600'
+    endColor='#FCB000'
+    radius='50'>
+  </e-base-button>
+  <e-enhance-text
+    slot='priceLast'
+    iconSize='32'
+    icon='/imgs/hot.png'>
+  </e-enhance-text>
+</e-goods-detail>`,
+  d3: `<e-goods-detail
+  imgList='{{ ["/imgs/image.png", "/imgs/image.png"] }}'
+  title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'
+  price='¥6666.00~¥9999.00'
+  detail='快递：免运费'
+  detailColor='#999'
+  subDetail='月销436'
+  sales='广州深圳'>
+  <e-enhance-text
+    slot='priceLast'
+    iconSize='32'
+    icon='/imgs/hot.png'>
+  </e-enhance-text>
+</e-goods-detail>`
 }
 
 Page({
@@ -29,7 +67,8 @@ Page({
   data: {
     com: {
       d1: { id: com[11].id, title: com[11].name, sub: '两列布局', code: code.d1 },
-      d2: { id: com[12].id, title: com[12].name, sub: '两列布局', code: code.d1 }
+      d2: { id: com[12].id, title: com[12].name, sub: '不带subDetail属性', code: code.d2 },
+      d3: { id: com[12].id, title: com[12].name, sub: '带subDetail属性', code: code.d3 }
     }
   },
 

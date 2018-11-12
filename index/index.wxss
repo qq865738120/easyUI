@@ -1,7 +1,7 @@
 /* index/index.wxss */
 .cus-view {
   position: absolute;
-  bottom: 90rpx;
+  bottom: 60rpx;
 }
 .cus-list {
   background-color: #fff;

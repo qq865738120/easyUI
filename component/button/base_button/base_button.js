@@ -97,7 +97,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    mText: '按钮',
+    mText: '',
     mTheme: '',
     mIcon: '',
     mIconPosition: 'left',
