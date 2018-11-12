@@ -61,24 +61,6 @@
 1. 修复view/enhance_view中添加base_list组件时候导致base_list宽度不正常的bug。
 2. 重写小程序界面，提升阅读体验。
 
-### v1.0.2
-- 新增组件  
-1. enhance_view
-
-### v1.0.1
-- 新增组件  
-1. title_view  
-2. base_button  
-3. head_portrait  
-4. head_portrait  
-5. search  
-6. enhance_text
-
-### v1.0.0
-- 新增组件  
-1. icon_button  
-2. base_list
-
 # 关于
 - 作者：code_xia
 - 个人邮箱：zwj865738120@163.com
