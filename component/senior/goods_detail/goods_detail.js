@@ -80,7 +80,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    mDetail: 'border: 1rpx solid; padding: 2rpx 8rpx; border-radius: 6rpx;'
+    mDetail: 'border: 1rpx solid; padding: 2rpx 8rpx; border-radius: 10rpx;'
   },
 
   /**
