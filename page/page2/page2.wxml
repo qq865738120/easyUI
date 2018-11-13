@@ -1,5 +1,69 @@
 <!--page/page2/page2.wxml-->
 
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='false'>
+<e-suspension-button 
+  src='/imgs/share.png'
+  imgMargin='26'
+  color='#FE9036'>
+</e-suspension-button >
+</show>
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
+<e-suspension-button 
+  src='/imgs/share.png'
+  imgMargin='26'
+  color='#FE9036'
+  theme='shine'>
+</e-suspension-button >
+</show>
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
+<e-suspension-button 
+  src='/imgs/share.png'
+  imgMargin='26'
+  color='#FE9036'
+  endColor='#FE4E36'
+  theme='gradient1'>
+</e-suspension-button >
+</show>
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
+<e-suspension-button 
+  src='/imgs/share.png'
+  imgMargin='26'
+  color='#FE9036'
+  endColor='#FE4E36'
+  theme='gradient2'>
+</e-suspension-button >
+</show>
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
+<e-suspension-button 
+  src='/imgs/share.png'
+  imgMargin='26'
+  color='#FE9036'
+  endColor='#FE4E36'
+  theme='shineAndgradient1'>
+</e-suspension-button >
+</show>
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
+<e-suspension-button 
+  src='/imgs/share.png'
+  imgMargin='26'
+  color='#FE9036'
+  endColor='#FE4E36'
+  theme='shineAndgradient2'>
+</e-suspension-button >
+</show>
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
+<e-suspension-button 
+  src='/imgs/image.png'
+  text='分享'>
+</e-suspension-button >
+</show>
+
 <show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
 <e-icon-button 
   icon='/imgs/button_icon.png'
@@ -15,7 +79,7 @@
   height='60'
   textSize='28'
   color='#FE9036'
-  inline='true'>
+  inline='false'>
 </e-base-button>
 </show>
 

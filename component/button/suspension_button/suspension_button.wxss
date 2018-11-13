@@ -1,0 +1,14 @@
+/* component/button/suspension_button/suspension_button.wxss */
+.component {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.bgImg {
+  position: absolute;
+}
+.text {
+  position: absolute;
+}

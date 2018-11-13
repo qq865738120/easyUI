@@ -12,7 +12,7 @@ const code = {
   height='60'
   textSize='28'
   color='#FE9036'
-  inline='true'>
+  inline='false'>
 </e-base-button>`,
   d3: `<e-base-button
   text='按钮' 
@@ -90,7 +90,7 @@ Page({
   data: {
     com: {
       d1: { id: com[1].id, title: com[1].name, sub: '', code: code.d1 },
-      d2: { id: com[4].id, title: com[4].name, sub: 'default主题', code: code.d2 },
+      d2: { id: com[4].id, title: com[4].name, sub: 'default主题块级元素', code: code.d2 },
       d3: { id: com[4].id, title: com[4].name, sub: 'hollow主题', code: code.d3 },
       d4: { id: com[4].id, title: com[4].name, sub: 'filling主题', code: code.d4 },
       d5: { id: com[4].id, title: com[4].name, sub: 'fillingAndShine主题', code: code.d5 },
