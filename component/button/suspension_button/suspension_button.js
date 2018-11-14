@@ -121,8 +121,7 @@ Component({
     },
 
     onTap: function (e) {
-      console.log('suspension_button点击事件触发');
-      console.log(e);
+      console.log('suspension_button点击事件触发', e);
       this.triggerEvent('buttontap', e, { bubbles: true });
     },
 
@@ -139,6 +138,7 @@ Component({
           mLeft: (left > 0 && left < sysInfo.windowWidth - point[0] * 2 ? left : mLeft) + 'px',
           mTop: (top > 0 && top < sysInfo.windowHeight - point[1] * 2 ? top : mTop) + 'px'
         })
+        console.log('suspension_button移动事件触发', e);
         this.triggerEvent('buttonMove', e, { bubbles: true });
       }
     },

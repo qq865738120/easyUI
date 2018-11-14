@@ -91,8 +91,7 @@ Component({
    */
   methods: {
     onTap: function (e) {
-      console.log('enhance_view点击事件触发');
-      console.log(e);
+      console.log('enhance_view点击事件触发', e);
       this.triggerEvent('viewtap', e, { bubbles: true });
     }
   }

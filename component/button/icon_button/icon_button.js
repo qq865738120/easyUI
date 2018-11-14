@@ -59,8 +59,7 @@ Component({
    */
   methods: {
     onTap: function (e) {
-      console.log('icon_button点击事件触发');
-      console.log(e);
+      console.log('icon_button点击事件触发', e);
       this.triggerEvent('buttontap', e, { bubbles: true });
     }
   }

@@ -80,8 +80,7 @@ Component({
    */
   methods: {
     onTap: function (e) {
-      console.log('goods_card点击事件触发');
-      console.log(e);
+      console.log('goods_card点击事件触发', e);
       this.triggerEvent('goodstap', e, { bubbles: true });
     }
   }

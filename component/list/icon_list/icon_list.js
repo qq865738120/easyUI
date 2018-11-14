@@ -77,8 +77,7 @@ Component({
    */
   methods: {
     onTap: function (e) {
-      console.log('icon_list点击事件触发');
-      console.log(e);
+      console.log('icon_list点击事件触发', e);
       this.triggerEvent('listtap', e, { bubbles: true });
     }
   }

@@ -55,8 +55,7 @@ Component({
    */
   methods: {
     onTap: function (e) {
-      console.log('base_list点击事件触发');
-      console.log(e);
+      console.log('base_list点击事件触发', e);
       this.triggerEvent('listtap', e, { bubbles: true });
     }
   }

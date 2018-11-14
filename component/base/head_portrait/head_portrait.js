@@ -61,8 +61,7 @@ Component({
    */
   methods: {
     onTap: function (e) {
-      console.log('head_portrait点击事件触发');
-      console.log(e);
+      console.log('head_portrait点击事件触发', e);
       this.triggerEvent('headtap', e, { bubbles: true });
     }
   }
