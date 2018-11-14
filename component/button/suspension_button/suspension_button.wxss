@@ -1,6 +1,6 @@
 /* component/button/suspension_button/suspension_button.wxss */
 .component {
-  position: relative;
+  position: fixed;
   overflow: hidden;
   display: inline-flex;
   justify-content: center;

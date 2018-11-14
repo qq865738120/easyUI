@@ -1,5 +1,5 @@
 <!--component/button/suspension_button/suspension_button.wxml-->
-<view class='component cus' style='width: {{ width }}rpx; height: {{ height }}rpx; left: {{ left }}rpx; top: {{ top }}rpx; {{ mTheme }}' catchtap='onTap' catchtouchmove='onMove'>
+<view class='component cus' style='width: {{ width }}rpx; height: {{ height }}rpx; left: {{ left }}px; top: {{ top }}px; {{ mTheme }}' catchtap='onTap' catchtouchmove='onMove' catchtouchend='onMoveEnd'>
   <image src='{{ src }}' class='bgImg' style='width: {{ width - 2 * imgMargin }}rpx; height: {{ height - 2 * imgMargin }}rpx;'></image>
   <text class='text' style='color: {{ textColor }}; font-size: {{ textSize }}rpx;'>{{ text }}</text>
 </view>

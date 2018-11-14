@@ -1,9 +1,7 @@
 // component/button/suspension_button/suspension_button.js
-let windowWidth = 0;
-let windowHeight = 0;
 let lastPoint = [0, 0];
 let currentTime = 0;
-let position = [0, 0];
+let sysInfo = wx.getSystemInfoSync();
 
 Component({
   /**
@@ -36,6 +34,14 @@ Component({
     height: {
       type: String,
       value: '100'
+    },
+    left: {
+      type: String,
+      value: ''
+    },
+    top: {
+      type: String,
+      value: ''
     },
     color: {
       type: String,
@@ -81,23 +87,25 @@ Component({
    */
   methods: {
 
-    _getScreenSizeRpx: function () {
-      if (windowWidth == 0 || windowHeight == 0) {
-        windowWidth = wx.getSystemInfoSync().screenWidth;
-        windowHeight = wx.getSystemInfoSync().screenHeight;
-      }
+    _clone: function (obj) {
+      return JSON.parse(JSON.stringify(obj));
+    },
+
+    _getScreenSizeRpx: function (isWindow) {
+      let windowWidth = isWindow ? sysInfo.windowWidth : sysInfo.screenWidth;
+      let windowHeight = isWindow ? sysInfo.windowHeight : sysInfo.screenHeight;
       var height = 750 / windowWidth * windowHeight;
       var size = [];
       size[0] = 750
-      size[1] = 750 / windowWidth * windowHeight;
+      size[1] = height;
       return size;
     },
 
     _px2Rpx: function (x, y) {
       var point = [0, 0];
-      var size = this._getScreenSizeRpx();
-      point[0] = parseInt(x * (750 / windowWidth));
-      point[1] = parseInt(y * (size[1] / windowHeight));
+      var size = this._getScreenSizeRpx(false);
+      point[0] = parseInt(x * (750 / sysInfo.screenWidth));
+      point[1] = parseInt(y * (size[1] / sysInfo.screenHeight));
       return point;
     },
 
@@ -109,27 +117,38 @@ Component({
 
     onMove: function (e) {
       console.log(e);
+      let windowSize = this._getScreenSizeRpx(true);
       let point = this._px2Rpx(e.touches[0].clientX, e.touches[0].clientY);
-      const temp = point;
+      const temp = this._clone(point);
       if (currentTime != 0) {
         let offsetPoint = this._px2Rpx(e.currentTarget.offsetLeft, e.currentTarget.offsetTop);
         console.log('current', point);
         console.log('last', lastPoint);
-        point[0] = offsetPoint[0] + (point[0] - lastPoint[0]) - this.data.width / 2;
-        point[1] = point[1] + offsetPoint[1] - point[1];
-        console.log(point);
-        if (point[0] >= 0 && point[0] <= 750 - this.data.width) {
+        console.log('offsetPoint', offsetPoint);
+        point[0] = offsetPoint[0] + (point[0] - lastPoint[0]) ;
+        point[1] = offsetPoint[1] + (point[1] - lastPoint[1]) ;
+        if (point[0] >= 0 && point[0] <= windowSize[0] - this.data.width) {
+          console.log('x', point[0]);
           this.setData({
-            left: point[0]
+            // left: point[0]
           })
         }
-      } else if (currentTime == 0) {
-        position = this._px2Rpx(e.currentTarget.offsetLeft, e.currentTarget.offsetTop);
+        if (point[1] >= 0 && point[1] <= windowSize[1] -this.data.height ) {
+          console.log('y', point[1]);
+          this.setData({
+            // top: point[1]
+          })
+        }
       }
-      lastPoint = temp;
+      lastPoint = this._clone(temp);
       currentTime = e.timeStamp;
-      console.log(position);
+      console.log(point);
     },
+
+    onMoveEnd: function (e) {
+      currentTime = 0;
+      console.log('sysInfo', sysInfo);
+    }
 
   },
 
