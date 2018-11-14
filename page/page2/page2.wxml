@@ -13,7 +13,7 @@
 <e-suspension-button 
   src='/imgs/share.png'
   imgMargin='26'
-  color='rgba(254, 144, 54, 0.3)'
+  color='rgba(254, 144, 54, 1)'
   theme='shine1'
   removable='true'>
 </e-suspension-button >

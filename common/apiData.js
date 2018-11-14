@@ -31,7 +31,14 @@ const attributes = [
   ],
   [ // base_button
     { name: 'text', type: 'String', deff: '-', detail: '按钮文本内容，支持数据绑定动态更新' },
-    { name: 'theme', type: 'String', deff: '-', detail: '按钮主题，详情见展示页面' },
+    { name: 'theme', type: 'String', deff: '-', detail: '按钮主题，详情见展示页面', show: [
+      { name: 'default', detail: '默认主题，带颜色边框加黑色文字' },
+      { name: 'hollow', detail: 'hollow主题，带颜色边框加带颜色文字' },
+      { name: 'filling', detail: 'filling主题，带填充颜色加白色文字' },
+      { name: 'fillingAndShine', detail: 'fillingAndShine主题，带填充颜色加白色文字加发光色' },
+      { name: 'fillingAndGradient1', detail: 'fillingAndGradient1主题，背景色左右渐变加白色文字' },
+      { name: 'fillingAndGradient2', detail: 'fillingAndGradient2主题，背景色上下渐变加白色文字' }
+    ] },
     { name: 'width', type: 'String', deff: '-', detail: '按钮宽度' },
     { name: 'height', type: 'String', deff: '-', detail: '按钮高度' },
     { name: 'radius', type: 'String', deff: '-', detail: '圆角，单位rpx' },

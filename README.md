@@ -34,6 +34,7 @@
 | enhance_icon | [component/base/enhance_icon](component/base/enhance_icon) | 增强icon，可用于展示图标或图片 |
 | goods_card | [component/senior/goods_card](component/senior/goods_card) | 商品展示卡 |
 | goods_detail | [component/senior/goods_detail](component/senior/goods_detail) | 商品详情展示 |
+| suspension_button | [component/button/suspension_button](component/button/suspension_button) | 浮动按钮 |
 
 # 版本说明
 
@@ -41,6 +42,7 @@
 - 新增组件
 1. goods_card  
 2. goods_detail  
+3. suspension_button
 - 修复&优化
 1. 删除enhance_icon组件插槽。  
 2. 修复小程序base_button的详细说明不正确的bug。  
