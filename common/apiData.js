@@ -158,6 +158,30 @@ const attributes = [
     { name: 'salesColor', type: 'String', deff: '#999999', detail: '销售额的颜色' },
     { name: 'salesSize', type: 'String', deff: '22', detail: '销售额的文字大小' },
   ],
+  [ // suspension_button
+    { name: 'theme', type: 'String', deff: 'default', detail: '按钮主题，点击查看详细参数说明', show: [
+      { name: 'default', detail: '默认主题，即圆形加背景填充' },
+      { name: 'shine1', detail: 'shine1主题，即圆形加背景填充加发光阴影' },
+      { name: 'shine2', detail: 'shine2主题，即左边半圆加背景填充加发光阴影' },
+      { name: 'shine3', detail: 'shine3主题，即右边半圆加背景填充加发光阴影' },
+      { name: 'gradient1', detail: 'gradient1主题，即圆形加背景左右渐变' },
+      { name: 'gradient2', detail: 'gradient2主题，即圆形加背景上下渐变' },
+      { name: 'shineAndgradient1', detail: 'shineAndgradient1主题，即圆形加背景左右渐变加发光阴影' },
+      { name: 'shineAndgradient2', detail: 'shineAndgradient2主题，即圆形加背景上下渐变加发光阴影' }
+    ] },
+    { name: 'removable', type: 'String', deff: 'false', detail: '设置按钮是否可移动，true表示可移动' },
+    { name: 'width', type: 'String', deff: '100', detail: '按钮宽度' },
+    { name: 'height', type: 'String', deff: '100', detail: '按钮高度' },
+    { name: 'left', type: 'String', deff: '0', detail: '按钮左上角距离屏幕可用区域最左边距离' },
+    { name: 'top', type: 'String', deff: '0', detail: '按钮左上角距离屏幕可用区域最上边距离' },
+    { name: 'color', type: 'String', deff: '', detail: '背景色' },
+    { name: 'endColor', type: 'String', deff: '', detail: 'shine主题（背景渐变主题）需要设置该颜色来实现两个颜色的渐变' },
+    { name: 'src', type: 'String', deff: '', detail: '按钮图片文件路径，如果不需要图片则可用不设置' },
+    { name: 'imgMargin', type: 'String', deff: '', detail: '图片距离按钮边缘的距离' },
+    { name: 'text', type: 'String', deff: '', detail: '按钮文字，如果不需要文字可不设置' },
+    { name: 'textColor', type: 'String', deff: '', detail: '文字颜色，如果不设置text则可用不设置该属性' },
+    { name: 'textSize', type: 'String', deff: '30', detail: '文字大小，如果不设置text则可用不设置该属性' }
+  ]
 ]
 
 const mClass = [
@@ -200,6 +224,9 @@ const mClass = [
   [ // goods_detail
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // suspension_button
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -233,9 +260,13 @@ const method = [
   ],
   [], // enhance_icon
   [ // goods_card
-    { name: 'goods', parameter: '事件对象', detail: '点击事件' }
+    { name: 'goodstap', parameter: '事件对象', detail: '点击事件' }
   ],
   [], // goods_detail
+  [ // suspension_button
+    { name: 'buttontap', parameter: '事件对象', detail: '点击事件' },
+    { name: 'buttonMove', parameter: '事件对象', detail: '拖动事件' }
+  ],
 ]
 
 const slot = [
@@ -273,7 +304,10 @@ const slot = [
   [ // goods_detail
     { name: 'titleLast', detail: '标题栏最右边插槽，可插入分享按钮等组件' },
     { name: 'priceLast', detail: '价格栏最紧跟价格其后的插槽，促销图标、文字等组件' }
-  ]
+  ],
+  [ // suspension_button
+
+  ],
 ]
 
 const other = [
@@ -293,6 +327,7 @@ tip: 在需要配合组件库中其它组件的时候优先考虑使用该组件
 `基础库1.9.90以上使用。`, // goods_card
 `基础库1.9.90以上使用。
 tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // goods_detail
+`基础库1.9.90以上使用。`, // suspension_button
 ]
 
 module.exports = {

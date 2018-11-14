@@ -14,6 +14,7 @@ App({
       { id: '10', name: 'enhance_icon组件' },
       { id: '11', name: 'goods_card组件' },
       { id: '12', name: 'goods_detail组件' },
+      { id: '13', name: 'suspension_button组件' },
     ]
   },
 })

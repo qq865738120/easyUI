@@ -2,6 +2,7 @@
 let lastPoint = [0, 0];
 let currentTime = 0;
 let sysInfo = wx.getSystemInfoSync();
+let lastTime = 0;
 
 Component({
   /**
@@ -16,7 +17,9 @@ Component({
         const endColor = this.data.endColor;
         const themes = {
           default: `border-radius: 100%; background-color: ${color}`,
-          shine: `border-radius: 100%; background-color: ${color}; box-shadow: 0 8rpx 40rpx ${color};`,
+          shine1: `border-radius: 100%; background-color: ${color}; box-shadow: 0 8rpx 40rpx ${color};`,
+          shine2: `border-radius: 50% 0 0 50%; background-color: ${color}; box-shadow: 0 8rpx 40rpx ${color};`,
+          shine3: `border-radius: 0 50% 50% 0; background-color: ${color}; box-shadow: 0 8rpx 40rpx ${color};`,
           gradient1: `border-radius: 100%; background: linear-gradient(to right, ${color}, ${endColor});`,
           gradient2: `border-radius: 100%; background: linear-gradient(${color}, ${endColor});`,
           shineAndgradient1: `border-radius: 100%; background: linear-gradient(to right, ${color}, ${endColor}); box-shadow: 0 8rpx 40rpx ${endColor};`,
@@ -26,6 +29,10 @@ Component({
           mTheme: themes[newVal]
         })
       }
+    },
+    removable: {
+      type: String,
+      value: 'false'
     },
     width: {
       type: String,
@@ -37,11 +44,17 @@ Component({
     },
     left: {
       type: String,
-      value: ''
+      value: '',
+      observer: function (newVal) {
+        this.setData({ mLeft: newVal + 'rpx' })
+      }
     },
     top: {
       type: String,
-      value: ''
+      value: '',
+      observer: function (newVal) {
+        this.setData({ mTop: newVal + 'rpx' })
+      }
     },
     color: {
       type: String,
@@ -78,18 +91,16 @@ Component({
    */
   data: {
     mTheme: ``,
-    left: '',
-    top: ''
+    mLeft: '',
+    mTop: ''
   },
+
+  externalClasses: ['cus'],
 
   /**
    * 组件的方法列表
    */
   methods: {
-
-    _clone: function (obj) {
-      return JSON.parse(JSON.stringify(obj));
-    },
 
     _getScreenSizeRpx: function (isWindow) {
       let windowWidth = isWindow ? sysInfo.windowWidth : sysInfo.screenWidth;
@@ -101,11 +112,11 @@ Component({
       return size;
     },
 
-    _px2Rpx: function (x, y) {
+    _rpx2Px: function (x, y) {
       var point = [0, 0];
       var size = this._getScreenSizeRpx(false);
-      point[0] = parseInt(x * (750 / sysInfo.screenWidth));
-      point[1] = parseInt(y * (size[1] / sysInfo.screenHeight));
+      point[0] = parseInt(x * (sysInfo.screenWidth / 750));
+      point[1] = parseInt(x * (sysInfo.screenHeight / size[1]));
       return point;
     },
 
@@ -116,39 +127,30 @@ Component({
     },
 
     onMove: function (e) {
-      console.log(e);
-      let windowSize = this._getScreenSizeRpx(true);
-      let point = this._px2Rpx(e.touches[0].clientX, e.touches[0].clientY);
-      const temp = this._clone(point);
-      if (currentTime != 0) {
-        let offsetPoint = this._px2Rpx(e.currentTarget.offsetLeft, e.currentTarget.offsetTop);
-        console.log('current', point);
-        console.log('last', lastPoint);
-        console.log('offsetPoint', offsetPoint);
-        point[0] = offsetPoint[0] + (point[0] - lastPoint[0]) ;
-        point[1] = offsetPoint[1] + (point[1] - lastPoint[1]) ;
-        if (point[0] >= 0 && point[0] <= windowSize[0] - this.data.width) {
-          console.log('x', point[0]);
-          this.setData({
-            // left: point[0]
-          })
-        }
-        if (point[1] >= 0 && point[1] <= windowSize[1] -this.data.height ) {
-          console.log('y', point[1]);
-          this.setData({
-            // top: point[1]
-          })
-        }
+      if (this.data.removable == 'false') return;
+      if (e.timeStamp - lastTime > 30) {
+        lastTime = e.timeStamp;
+        const point = this._rpx2Px(this.data.width / 2, this.data.height / 2);
+        const left = e.touches[0].clientX - point[0];
+        const top = e.touches[0].clientY - point[1];
+        const mLeft = this.data.mLeft;
+        const mTop = this.data.mTop;
+        this.setData({
+          mLeft: (left > 0 && left < sysInfo.windowWidth - point[0] * 2 ? left : mLeft) + 'px',
+          mTop: (top > 0 && top < sysInfo.windowHeight - point[1] * 2 ? top : mTop) + 'px'
+        })
+        this.triggerEvent('buttonMove', e, { bubbles: true });
       }
-      lastPoint = this._clone(temp);
-      currentTime = e.timeStamp;
-      console.log(point);
     },
 
-    onMoveEnd: function (e) {
-      currentTime = 0;
-      console.log('sysInfo', sysInfo);
-    }
+    onMoveStart: function (e) {
+      if (this.data.removable == 'false') return;
+      const point = this._rpx2Px(this.data.width / 2, this.data.height / 2);
+      this.setData({
+        mLeft: (e.touches[0].clientX - point[0]) + 'px',
+        mTop: (e.touches[0].clientY - point[1]) + 'px'
+      })
+    },
 
   },
 

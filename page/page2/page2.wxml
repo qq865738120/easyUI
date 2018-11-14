@@ -1,67 +1,34 @@
 <!--page/page2/page2.wxml-->
 
-<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='false'>
+<show title='{{ com.d10.title }}' sub='{{ com.d10.sub }}' mId='{{ com.d10.id }}' code='{{ com.d10.code }}' margin='true'>
 <e-suspension-button 
   src='/imgs/share.png'
   imgMargin='26'
-  color='#FE9036'>
+  color='rgba(254, 144, 54, 0.3)'>
 </e-suspension-button >
+<view style='height: 100rpx;'></view>
 </show>
 
-<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
+<show title='{{ com.d11.title }}' sub='{{ com.d11.sub }}' mId='{{ com.d11.id }}' code='{{ com.d11.code }}' margin='true'>
 <e-suspension-button 
   src='/imgs/share.png'
   imgMargin='26'
-  color='#FE9036'
-  theme='shine'>
+  color='rgba(254, 144, 54, 0.3)'
+  theme='shine1'
+  removable='true'>
 </e-suspension-button >
+<view style='height: 100rpx;'></view>
 </show>
 
-<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
+<show title='{{ com.d12.title }}' sub='{{ com.d12.sub }}' mId='{{ com.d12.id }}' code='{{ com.d12.code }}' margin='true'>
 <e-suspension-button 
   src='/imgs/share.png'
   imgMargin='26'
-  color='#FE9036'
-  endColor='#FE4E36'
-  theme='gradient1'>
+  color='rgba(254, 144, 54, 0.3)'
+  theme='shine2'
+  left='650'>
 </e-suspension-button >
-</show>
-
-<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
-<e-suspension-button 
-  src='/imgs/share.png'
-  imgMargin='26'
-  color='#FE9036'
-  endColor='#FE4E36'
-  theme='gradient2'>
-</e-suspension-button >
-</show>
-
-<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
-<e-suspension-button 
-  src='/imgs/share.png'
-  imgMargin='26'
-  color='#FE9036'
-  endColor='#FE4E36'
-  theme='shineAndgradient1'>
-</e-suspension-button >
-</show>
-
-<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
-<e-suspension-button 
-  src='/imgs/share.png'
-  imgMargin='26'
-  color='#FE9036'
-  endColor='#FE4E36'
-  theme='shineAndgradient2'>
-</e-suspension-button >
-</show>
-
-<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' margin='true'>
-<e-suspension-button 
-  src='/imgs/image.png'
-  text='分享'>
-</e-suspension-button >
+<view style='height: 100rpx;'></view>
 </show>
 
 <show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>

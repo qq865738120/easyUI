@@ -80,6 +80,25 @@ const code = {
   icon='/imgs/button_icon.png'
   iconPosition='right'>
 </e-base-button>`,
+  d10: `<e-suspension-button 
+  src='/imgs/share.png'
+  imgMargin='26'
+  color='rgba(254, 144, 54, 0.3)'>
+</e-suspension-button >`,
+  d11: `<e-suspension-button 
+  src='/imgs/share.png'
+  imgMargin='26'
+  color='rgba(254, 144, 54, 0.3)'
+  theme='shine1'
+  removable='true'>
+</e-suspension-button >`,
+  d12: `<e-suspension-button 
+  src='/imgs/share.png'
+  imgMargin='26'
+  color='rgba(254, 144, 54, 0.3)'
+  theme='shine2'
+  left='650'>
+</e-suspension-button >`,
 }
 
 Page({
@@ -98,6 +117,9 @@ Page({
       d7: { id: com[4].id, title: com[4].name, sub: 'fillingAndGradient2主题', code: code.d7 },
       d8: { id: com[4].id, title: com[4].name, sub: '左边带图标的按钮', code: code.d8 },
       d9: { id: com[2].id, title: com[4].name, sub: '右边带图标的按钮', code: code.d9 },
+      d10: { id: com[13].id, title: com[13].name, sub: 'default主题', code: code.d10 },
+      d11: { id: com[13].id, title: com[13].name, sub: 'shine1主题、带拖动效果', code: code.d11 },
+      d12: { id: com[13].id, title: com[13].name, sub: 'shine2主题', code: code.d12 },
     }
   },
 

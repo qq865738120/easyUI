@@ -5,10 +5,6 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
-.bgImg {
-  position: absolute;
-}
-.text {
-  position: absolute;
+  transition-property: top left;
+  transition-duration: 30ms;
 }
