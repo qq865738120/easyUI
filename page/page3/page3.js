@@ -16,6 +16,9 @@ const code = {
   color='#FE9036'
   buttonColor='#FE9036'>
 </e-search>`,
+  d3: `<e-count-button />`,
+  d4: `<e-count-button
+  theme='open' />`
 }
 
 Page({
@@ -27,6 +30,8 @@ Page({
     com: {
       d1: { id: com[6].id, title: com[6].name, sub: '不带搜索按钮', code: code.d1 },
       d2: { id: com[6].id, title: com[6].name, sub: '带搜索按钮', code: code.d2 },
+      d3: { id: com[14].id, title: com[14].name, sub: 'default主题', code: code.d3 },
+      d4: { id: com[14].id, title: com[14].name, sub: 'open主题', code: code.d4 },
     }
   },
 

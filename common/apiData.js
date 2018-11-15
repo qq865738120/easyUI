@@ -188,6 +188,19 @@ const attributes = [
     { name: 'text', type: 'String', deff: '', detail: '按钮文字，如果不需要文字可不设置' },
     { name: 'textColor', type: 'String', deff: '', detail: '文字颜色，如果不设置text则可用不设置该属性' },
     { name: 'textSize', type: 'String', deff: '30', detail: '文字大小，如果不设置text则可用不设置该属性' }
+  ],
+  [ // count_button
+    { name: 'width', type: 'String', deff: '130', detail: '组件宽度' },
+    { name: 'height', type: 'String', deff: '34', detail: '组件高度' },
+    { name: 'fontSize', type: 'String', deff: '24', detail: '字体大小' },
+    { name: 'theme', type: 'String', deff: 'default', detail: '主题，点击查看详细属性说明', show: [
+      { name: 'default', detail: '默认主题，即color1边框色的边框' },
+      { name: 'open', detail: 'open主题，即color1作为数值部分的背景填充色' },
+    ] },
+    { name: 'color1', type: 'String', deff: '#ddd', detail: '根据主题来反映在组建不同部位' },
+    { name: 'color2', type: 'String', deff: '#999', detail: '点击后颜色' },
+    { name: 'mainColor', type: 'String', deff: '#FF3657', detail: '主色调' },
+    { name: 'maxCount', type: 'String', deff: '20', detail: '最大数值' },
   ]
 ]
 
@@ -234,6 +247,9 @@ const mClass = [
   [ // suspension_button
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // count_button
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -274,6 +290,9 @@ const method = [
     { name: 'buttontap', parameter: '事件对象', detail: '点击事件' },
     { name: 'buttonMove', parameter: '事件对象', detail: '拖动事件' }
   ],
+  [
+    { name: 'countChange', parameter: '事件对象', detail: '数值改变事件，数值在事件对象的detail的count字段' }
+  ], // count_button
 ]
 
 const slot = [
@@ -312,9 +331,8 @@ const slot = [
     { name: 'titleLast', detail: '标题栏最右边插槽，可插入分享按钮等组件' },
     { name: 'priceLast', detail: '价格栏最紧跟价格其后的插槽，促销图标、文字等组件' }
   ],
-  [ // suspension_button
-
-  ],
+  [], // suspension_button
+  [], // count_button
 ]
 
 const other = [
@@ -335,6 +353,7 @@ tip: 在需要配合组件库中其它组件的时候优先考虑使用该组件
 `基础库1.9.90以上使用。
 tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // goods_detail
 `基础库1.9.90以上使用。`, // suspension_button
+`基础库1.9.90以上使用。`, // count_button
 ]
 
 module.exports = {

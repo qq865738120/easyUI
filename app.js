@@ -15,6 +15,7 @@ App({
       { id: '11', name: 'goods_card组件' },
       { id: '12', name: 'goods_detail组件' },
       { id: '13', name: 'suspension_button组件' },
+      { id: '14', name: 'count_button组件' },
     ]
   },
 })

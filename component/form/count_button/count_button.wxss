@@ -1,0 +1,18 @@
+/* component/form/count_button/count_button.wxss */
+.component {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: content-box;
+}
+.center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: calc( 100% - 4rpx );
+  box-sizing:  content-box;
+}
+.padding {
+  padding: 4rpx 6rpx;
+}
