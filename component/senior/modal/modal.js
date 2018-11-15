@@ -54,7 +54,8 @@ Component({
     top: '',
     left: '',
     width: '',
-    height: ''
+    height: '',
+    isShow: false
   },
 
   /**
@@ -65,6 +66,9 @@ Component({
 
     onTap: function (e) {
       console.log('modal关闭事件触发', e);
+      this.setData({
+        isShow: false
+      })
       this.triggerEvent('closetap', e, { bubbles: true });
     }
   },
@@ -73,7 +77,6 @@ Component({
     ready: function () {
       let that = this;
       const sysInfo = wx.getSystemInfoSync();
-      console.log(sysInfo);
       const query = wx.createSelectorQuery();
       query.in(this).select('.component').boundingClientRect().selectViewport().scrollOffset()
       query.exec(function (res) {
@@ -83,7 +86,17 @@ Component({
           width: sysInfo.windowWidth,
           height: sysInfo.windowHeight
         });
-      })
+      });
+      wx.mShowModal = function () {
+        that.setData({
+          isShow: true
+        })
+      }
+      wx.mHideModal = function () {
+        that.setData({
+          isShow: false
+        })
+      }
     },
   },
 })
