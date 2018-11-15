@@ -1,0 +1,11 @@
+<!--component/senior/modal/modal.wxml-->
+<view class='component cus' style='width: {{ width }}px; height: {{ height }}px; top: {{ top }}px; left: {{ left }}px' catchtouchmove='onMove'>
+  <view class='body' style='border-radius: {{ radius }}rpx'>
+    <image wx:if='{{ src != undefined && src != "" ? true : false }}' src='{{ src }}'></image>
+    <text wx:if='{{ title != undefined && title != "" ? true : false }}'>{{ title }}</text>
+    <view class='content'>
+      <slot name='content'></slot>
+    </view>
+    <slot name='bottom'></slot>
+  </view>
+</view>

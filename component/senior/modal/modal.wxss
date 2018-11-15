@@ -1,0 +1,21 @@
+/* component/senior/modal/modal.wxss */
+.component {
+  background-color: rgba(0, 0, 0, 0.35);
+  position: fixed;
+  z-index: 100000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.body {
+  background-color: #fff;
+  width: 600rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40rpx;
+}
+.content {
+  margin: 35rpx 0;
+}

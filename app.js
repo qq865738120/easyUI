@@ -16,6 +16,7 @@ App({
       { id: '12', name: 'goods_detail组件' },
       { id: '13', name: 'suspension_button组件' },
       { id: '14', name: 'count_button组件' },
+      { id: '15', name: 'modal组件' },
     ]
   },
 })
