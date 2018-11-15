@@ -20,17 +20,17 @@
 <show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}'>
 <e-modal
   src='/imgs/close.png'>
-  <text slot='content'>确认退出登录吗</text>
+  <text slot='content' style='color: #666; font-size: 30rpx'>确认退出登录吗</text>
   <e-base-button
     slot='bottom'
     text='按钮' 
     theme='fillingAndGradient2'
-    width='200'
-    height='60'
-    textSize='28'
+    width='500'
+    height='80'
+    textSize='32'
     color='#FE9036'
     endColor='#FE4E36'
-    radius='50'>
+    radius='70'>
   </e-base-button>
 </e-modal>
 </show>

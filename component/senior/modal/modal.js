@@ -61,7 +61,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onMove: function () {}
+    onMove: function () {},
+
+    onTap: function (e) {
+      console.log('modal关闭事件触发', e);
+      this.triggerEvent('closetap', e, { bubbles: true });
+    }
   },
 
   lifetimes: {
