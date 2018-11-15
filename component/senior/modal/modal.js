@@ -18,8 +18,32 @@ Component({
       value: '12'
     },
     src: {
-      type:String,
+      type: String,
       value: ''
+    },
+    iconWidth: {
+      type: String,
+      value: '30'
+    },
+    iconHeight: {
+      type: String,
+      value: '30'
+    },
+    iconLeft: {
+      type: String,
+      value: '610'
+    },
+    iconTop: {
+      type: String,
+      value: '25'
+    },
+    titleColor: {
+      type: String,
+      value: '#000'
+    },
+    titleSize: {
+      type: String,
+      value: '34'
     }
   },
 

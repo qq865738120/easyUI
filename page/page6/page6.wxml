@@ -18,6 +18,24 @@
 </show>
 
 <show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}'>
+<e-modal
+  src='/imgs/close.png'>
+  <text slot='content'>确认退出登录吗</text>
+  <e-base-button
+    slot='bottom'
+    text='按钮' 
+    theme='fillingAndGradient2'
+    width='200'
+    height='60'
+    textSize='28'
+    color='#FE9036'
+    endColor='#FE4E36'
+    radius='50'>
+  </e-base-button>
+</e-modal>
+</show>
+
+<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}'>
 <e-goods-detail
   imgList='{{ ["/imgs/image.png", "/imgs/image.png"] }}'
   title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'

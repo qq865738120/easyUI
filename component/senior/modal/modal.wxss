@@ -14,8 +14,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 40rpx;
+  padding: 50rpx 35rpx 40rpx 35rpx;
+  position: relative;
 }
 .content {
   margin: 35rpx 0;
+}
+.image {
+  position: absolute;
 }
