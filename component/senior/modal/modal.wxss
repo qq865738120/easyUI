@@ -23,3 +23,16 @@
 .image {
   position: absolute;
 }
+.animated {
+  animation-duration: 350ms;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
