@@ -1,36 +1,81 @@
 <!--page/page6/page6.wxml-->
 
-<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}'>
-<e-modal>
-  <text slot='content'>123</text>
-  <e-base-button
-    slot='bottom'
-    text='按钮' 
-    theme='fillingAndGradient2'
-    width='200'
-    height='60'
-    textSize='28'
-    color='#FE9036'
-    endColor='#FE4E36'
-    radius='50'>
-  </e-base-button>
+<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true'>
+<e-base-button
+  id='1'
+  text='弹出模态框' 
+  theme='fillingAndGradient2'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  endColor='#FE4E36'
+  radius='50'
+  catchbuttontap='onButtonTap'>
+</e-base-button>
+<e-modal isShow='{{ show1 }}'>
+  <text slot='content' style='color: #666; font-size: 30rpx'>确认退出登录吗</text>
+  <e-enhance-view
+    bgColor='#fff'
+    width='600'
+    type='betweenCenter'
+    slot='bottom'>
+    <e-base-button
+      id='cancle'
+      text='取消' 
+      theme='fillingAndGradient2'
+      width='285'
+      height='60'
+      textSize='28'
+      color='#FE9036'
+      endColor='#FE4E36'
+      radius='50'
+      catchbuttontap='onModalButtonTap'>
+    </e-base-button>
+    <e-base-button
+      id='ok'
+      text='确认' 
+      theme='fillingAndGradient2'
+      width='285'
+      height='60'
+      textSize='28'
+      color='#FE9036'
+      endColor='#FE4E36'
+      radius='50'
+      catchbuttontap='onModalButtonTap'>
+    </e-base-button>
+  </e-enhance-view>
 </e-modal>
 </show>
 
-<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}'>
+<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true'>
+<e-base-button
+  id='2'
+  text='弹出模态框' 
+  theme='fillingAndGradient2'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  endColor='#FE4E36'
+  radius='50'
+  catchbuttontap='onButtonTap' />
 <e-modal
-  src='/imgs/close.png'>
+  src='/imgs/close.png'
+  isShow='{{ show2 }}'>
   <text slot='content' style='color: #666; font-size: 30rpx'>确认退出登录吗</text>
   <e-base-button
+    id='ok'
     slot='bottom'
-    text='按钮' 
+    text='确认退出' 
     theme='fillingAndGradient2'
     width='500'
     height='80'
     textSize='32'
     color='#FE9036'
     endColor='#FE4E36'
-    radius='70'>
+    radius='70'
+    catchbuttontap='onModalButtonTap'>
   </e-base-button>
 </e-modal>
 </show>

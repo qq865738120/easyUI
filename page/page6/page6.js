@@ -69,6 +69,33 @@ Page({
       d1: { id: com[11].id, title: com[11].name, sub: '两列布局', code: code.d1 },
       d2: { id: com[12].id, title: com[12].name, sub: '不带subDetail属性', code: code.d2 },
       d3: { id: com[12].id, title: com[12].name, sub: '带subDetail属性', code: code.d3 }
+    },
+    show1: false,
+    show2: false
+  },
+
+  onButtonTap: function (e) {
+    let that = this;
+    console.log(e);
+    switch (e.target.id) {
+      case '1': that.setData({ show1: true }); break;
+      case '2': that.setData({ show2: true }); break;
+    }
+  },
+
+  onModalButtonTap: function (e) {
+    let that = this;
+    switch (e.target.id) {
+      case 'ok': that.setData({
+        show1: false,
+        show2: false
+      });
+      break;
+      case 'cancle': that.setData({
+        show1: false,
+        show2: false
+      });
+      break;
     }
   },
 
@@ -81,14 +108,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.showModal({
+      title: '1',
+      content: '11',
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log(wx.mShowModal());
 
   }
 })

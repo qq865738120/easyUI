@@ -1,5 +1,5 @@
 <!--component/senior/modal/modal.wxml-->
-<view class='component cus' wx:if='{{ isShow }}' style='width: {{ width }}px; height: {{ height }}px; top: {{ top }}px; left: {{ left }}px' catchtouchmove='onMove'>
+<view class='component cus' hidden='{{ !isShow }}' style='width: {{ width }}px; height: {{ height }}px; top: {{ top }}px; left: {{ left }}px' catchtouchmove='onMove'>
   <view class='body' style='border-radius: {{ radius }}rpx'>
     <image class='image' wx:if='{{ src != undefined && src != "" ? true : false }}' src='{{ src }}' style='width: {{ iconWidth }}rpx; height: {{ iconHeight }}rpx; left: {{ iconLeft }}rpx; top: {{ iconTop }}rpx' catchtap='onTap'></image>
     <text wx:if='{{ title != undefined && title != "" ? true : false }}' style='color: {{ titleColor }}; font-size: {{ titleSize }}rpx;'>{{ title }}</text>

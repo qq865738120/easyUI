@@ -9,6 +9,15 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    isShow: {
+      type: Boolean,
+      value: false,
+      observer: function (newVal) {
+        this.setData({
+          mIsShow: newVal
+        });
+      }
+    },
     title: {
       type: String,
       value: '提示'
@@ -55,7 +64,7 @@ Component({
     left: '',
     width: '',
     height: '',
-    isShow: false
+    mIsShow: false
   },
 
   /**
@@ -87,16 +96,6 @@ Component({
           height: sysInfo.windowHeight
         });
       });
-      wx.mShowModal = function () {
-        that.setData({
-          isShow: true
-        })
-      }
-      wx.mHideModal = function () {
-        that.setData({
-          isShow: false
-        })
-      }
     },
   },
 })
