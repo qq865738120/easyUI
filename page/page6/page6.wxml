@@ -1,6 +1,6 @@
 <!--page/page6/page6.wxml-->
 
-<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true'>
+<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true'>
 <e-base-button
   id='1'
   text='弹出模态框' 
@@ -48,7 +48,7 @@
 </e-modal>
 </show>
 
-<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true'>
+<show title='{{ com.d5.title }}' sub='{{ com.d5.sub }}' mId='{{ com.d5.id }}' code='{{ com.d5.code }}' margin='true'>
 <e-base-button
   id='2'
   text='弹出模态框' 

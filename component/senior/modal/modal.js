@@ -67,6 +67,8 @@ Component({
     mIsShow: false
   },
 
+  externalClasses: ['cus'],
+
   /**
    * 组件的方法列表
    */

@@ -201,6 +201,18 @@ const attributes = [
     { name: 'color2', type: 'String', deff: '#999', detail: '点击后颜色' },
     { name: 'mainColor', type: 'String', deff: '#FF3657', detail: '主色调' },
     { name: 'maxCount', type: 'String', deff: '20', detail: '最大数值' },
+  ],
+  [ // modal
+    { name: 'isShow', type: 'Boolean', deff: 'false', detail: '是否弹出模态框，默认不弹出，需要显示的时候将该字段设为true' },
+    { name: 'title', type: 'String', deff: '提示', detail: '模态框标题' },
+    { name: 'radius', type: 'String', deff: '12', detail: '圆角' },
+    { name: 'src', type: 'String', deff: '', detail: '关闭按钮图标。如果不许则不设置。' },
+    { name: 'iconWidth', type: 'String', deff: '30', detail: '图标宽度' },
+    { name: 'iconHeight', type: 'String', deff: '30', detail: '图标高度' },
+    { name: 'iconLeft', type: 'String', deff: '610', detail: '图标距离窗口左边的距离' },
+    { name: 'iconTop', type: 'String', deff: '25', detail: '图标距离窗口顶部的距离' },
+    { name: 'titleColor', type: 'String', deff: '#000', detail: '标题文字颜色' },
+    { name: 'titleSize', type: 'String', deff: '34', detail: '标题文字大小' },
   ]
 ]
 
@@ -250,6 +262,9 @@ const mClass = [
   [ // count_button
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // modal
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -290,9 +305,12 @@ const method = [
     { name: 'buttontap', parameter: '事件对象', detail: '点击事件' },
     { name: 'buttonMove', parameter: '事件对象', detail: '拖动事件' }
   ],
-  [
+  [ // count_button
     { name: 'countChange', parameter: '事件对象', detail: '数值改变事件，数值在事件对象的detail的count字段' }
-  ], // count_button
+  ],
+  [ // modal
+    { name: 'closetap', parameter: '事件对象', detail: '模态框关闭按钮点击事件' }
+  ],
 ]
 
 const slot = [
@@ -333,6 +351,10 @@ const slot = [
   ],
   [], // suspension_button
   [], // count_button
+  [ // modal
+    { name: 'content', detail: '模态框内容插槽' },
+    { name: 'bottom', detail: '模态框底部按钮栏插槽' }
+  ],
 ]
 
 const other = [
@@ -354,6 +376,8 @@ tip: 在需要配合组件库中其它组件的时候优先考虑使用该组件
 tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // goods_detail
 `基础库1.9.90以上使用。`, // suspension_button
 `基础库1.9.90以上使用。`, // count_button
+`基础库1.9.90以上使用。
+tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData方法动态修改视图属性。如官方模态框能够满足需求请使用官方模态框。`, // enhance_view
 ]
 
 module.exports = {

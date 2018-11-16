@@ -68,7 +68,9 @@ Page({
     com: {
       d1: { id: com[11].id, title: com[11].name, sub: '两列布局', code: code.d1 },
       d2: { id: com[12].id, title: com[12].name, sub: '不带subDetail属性', code: code.d2 },
-      d3: { id: com[12].id, title: com[12].name, sub: '带subDetail属性', code: code.d3 }
+      d3: { id: com[12].id, title: com[12].name, sub: '带subDetail属性', code: code.d3 },
+      d4: { id: com[15].id, title: com[15].name, sub: '不带关闭按钮', code: code.d3 },
+      d5: { id: com[15].id, title: com[15].name, sub: '带关闭按钮', code: code.d3 }
     },
     show1: false,
     show2: false
@@ -108,10 +110,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showModal({
-      title: '1',
-      content: '11',
-    })
+
   },
 
   /**
