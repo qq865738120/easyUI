@@ -1,0 +1,38 @@
+/* component/senior/modal/modal.wxss */
+.component {
+  background-color: rgba(0, 0, 0, 0.45);
+  position: fixed;
+  z-index: 100000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.body {
+  background-color: #fff;
+  width: 600rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50rpx 35rpx 40rpx 35rpx;
+  position: relative;
+}
+.content {
+  margin: 35rpx 0;
+}
+.image {
+  position: absolute;
+}
+.animated {
+  animation-duration: 350ms;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -30,6 +30,7 @@ Component({
           default: `border: 1px solid ${color} `,
           hollow: `border: 1px solid ${color}; color: ${color}`,
           filling: `background-color: ${color}; color: #fff`,
+          filling2: `background-color: ${color}; color: ${endColor}`,
           fillingAndShine: `background-color: ${color}; color: #fff; box-shadow: 0 5rpx 40rpx ${color};`,
           fillingAndGradient1: `background: linear-gradient(to right, ${color}, ${endColor}); color: #fff`,
           fillingAndGradient2: `background: linear-gradient(${color}, ${endColor}); color: #fff`
@@ -97,7 +98,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    mText: '按钮',
+    mText: '',
     mTheme: '',
     mIcon: '',
     mIconPosition: 'left',
@@ -112,8 +113,7 @@ Component({
      * 按钮点击事件
      */
     onTap: function (e) {
-      console.log('base_button点击事件触发');
-      console.log(e);
+      console.log('base_button点击事件触发', e);
       this.triggerEvent('buttontap', e, { bubbles: true });
     }
   }

@@ -1,0 +1,6 @@
+<!--component/form/count_button/count_button.wxml-->
+<view class='component cus' style='height: {{ height - 1 + 11 }}rpx;{{ comp }}'>
+  <view id='left' class='center between padding' style='font-size: {{ fontSize }}rpx; width: {{ height }}rpx; {{ left }} {{ leftBtn }}' catchtap='onTap'>-</view>
+  <text class='center padding' style='font-size: {{ fontSize }}rpx; width: {{ width - 2 * height }}rpx; {{ center }}'>{{ count }}</text>
+  <view id='right' class='center between padding' style='font-size: {{ fontSize }}rpx; width: {{ height }}rpx; {{ right }} {{ rightBtn }}' catchtap='onTap'>+</view>
+</view>

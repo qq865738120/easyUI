@@ -26,7 +26,11 @@ Component({
       type: String,
       value: '50',
     },
-    size: { // 组件大小
+    width: { // 组件大小
+      type: String,
+      value: '188'
+    },
+    height: { // 组件大小
       type: String,
       value: '188'
     },
@@ -59,8 +63,7 @@ Component({
    */
   methods: {
     onTap: function (e) {
-      console.log('icon_button点击事件触发');
-      console.log(e);
+      console.log('icon_button点击事件触发', e);
       this.triggerEvent('buttontap', e, { bubbles: true });
     }
   }

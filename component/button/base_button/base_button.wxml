@@ -1,6 +1,8 @@
 <!--component/button/base_button/base_button.wxml-->
-<view class='component cus' catchtap='onTap' style='width: {{ width }}rpx; height: {{ height }}rpx; border-radius: {{ radius }}rpx; font-size: {{ textSize }}rpx; {{ mTheme }}; display: {{ mInline }}'>
-  <image wx:if='{{ mIcon != undefined && mIcon && mIconPosition == "left" != "" ? true : false }}' src='{{ mIcon }}' style='width: {{ iconSize }}rpx; height: {{ iconSize }}rpx; margin-right: {{ spacing }}rpx;'></image>
-  {{ mText }}
-  <image wx:if='{{ mIcon != undefined && mIcon != "" && mIconPosition == "right" ? true : false }}' src='{{ mIcon }}' style='width: {{ iconSize }}rpx; height: {{ iconSize }}rpx; margin-left: {{ spacing }}rpx;'></image>
+<view class='component cus' style='display: {{ mInline }};'>
+  <view class='body cus' catchtap='onTap' style='width: {{ width }}rpx; height: {{ height }}rpx; border-radius: {{ radius }}rpx; font-size: {{ textSize }}rpx; {{ mTheme }};'>
+    <image wx:if='{{ mIcon != undefined && mIcon && mIconPosition == "left" != "" ? true : false }}' src='{{ mIcon }}' style='width: {{ iconSize }}rpx; height: {{ iconSize }}rpx; margin-right: {{ spacing }}rpx;'></image>
+    {{ mText }}
+    <image wx:if='{{ mIcon != undefined && mIcon != "" && mIconPosition == "right" ? true : false }}' src='{{ mIcon }}' style='width: {{ iconSize }}rpx; height: {{ iconSize }}rpx; margin-left: {{ spacing }}rpx;'></image>
+  </view>
 </view>

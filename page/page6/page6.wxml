@@ -1,0 +1,146 @@
+<!--page/page6/page6.wxml-->
+
+<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true'>
+<e-base-button
+  id='1'
+  text='弹出模态框' 
+  theme='fillingAndGradient2'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  endColor='#FE4E36'
+  radius='50'
+  catchbuttontap='onButtonTap'>
+</e-base-button>
+<e-modal isShow='{{ show1 }}'>
+  <text slot='content' style='color: #666; font-size: 30rpx'>确认退出登录吗</text>
+  <e-enhance-view
+    bgColor='#fff'
+    width='600'
+    type='betweenCenter'
+    slot='bottom'>
+    <e-base-button
+      id='cancle'
+      text='取消' 
+      theme='fillingAndGradient2'
+      width='285'
+      height='60'
+      textSize='28'
+      color='#FE9036'
+      endColor='#FE4E36'
+      radius='50'
+      catchbuttontap='onModalButtonTap'>
+    </e-base-button>
+    <e-base-button
+      id='ok'
+      text='确认' 
+      theme='fillingAndGradient2'
+      width='285'
+      height='60'
+      textSize='28'
+      color='#FE9036'
+      endColor='#FE4E36'
+      radius='50'
+      catchbuttontap='onModalButtonTap'>
+    </e-base-button>
+  </e-enhance-view>
+</e-modal>
+</show>
+
+<show title='{{ com.d5.title }}' sub='{{ com.d5.sub }}' mId='{{ com.d5.id }}' code='{{ com.d5.code }}' margin='true'>
+<e-base-button
+  id='2'
+  text='弹出模态框' 
+  theme='fillingAndGradient2'
+  width='200'
+  height='60'
+  textSize='28'
+  color='#FE9036'
+  endColor='#FE4E36'
+  radius='50'
+  catchbuttontap='onButtonTap' />
+<e-modal
+  src='/imgs/close.png'
+  isShow='{{ show2 }}'>
+  <text slot='content' style='color: #666; font-size: 30rpx'>确认退出登录吗</text>
+  <e-base-button
+    id='ok'
+    slot='bottom'
+    text='确认退出' 
+    theme='fillingAndGradient2'
+    width='500'
+    height='80'
+    textSize='32'
+    color='#FE9036'
+    endColor='#FE4E36'
+    radius='70'
+    catchbuttontap='onModalButtonTap'>
+  </e-base-button>
+</e-modal>
+</show>
+
+<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}'>
+<e-goods-detail
+  imgList='{{ ["/imgs/image.png", "/imgs/image.png"] }}'
+  title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'
+  price='¥6620~¥8659'
+  detail='快递：免运费'
+  detailColor='#999'
+  subDetail='月销436'
+  sales='广东深圳'>
+  <e-enhance-text
+    slot='priceLast'
+    iconSize='32'
+    icon='/imgs/hot.png'>
+  </e-enhance-text>
+</e-goods-detail>
+</show>
+
+<show title='{{ com.d2.title }}' sub='{{ com.d2.sub }}' mId='{{ com.d2.id }}' code='{{ com.d2.code }}'>
+<e-goods-detail
+  imgList='{{ ["/imgs/image.png", "/imgs/image.png"] }}'
+  title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'
+  price='¥6620~¥8659'
+  detail='订单提交后可立即领取优惠券使用'
+  sales='月销售:358'>
+  <e-base-button
+    slot='titleLast'
+    theme='fillingAndGradient2'
+    icon='/imgs/share.png'
+    spacing='0'
+    width='80'
+    height='80'
+    textSize='28'
+    color='#FF9600'
+    endColor='#FCB000'
+    radius='50'>
+  </e-base-button>
+  <e-enhance-text
+    slot='priceLast'
+    iconSize='32'
+    icon='/imgs/hot.png'>
+  </e-enhance-text>
+</e-goods-detail>
+</show>
+
+<show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
+<e-enhance-view
+  margin='0 30rpx'
+  width='750'
+  margin='0'
+  type='betweenCenter'>
+  <e-goods-card
+    src='/imgs/image.png'
+    title='可爱的小猫咪 圆脸白色装 1只/盒'
+    price='￥6666'
+    detail='233人付款'>
+  </e-goods-card>
+  <e-goods-card
+    src='/imgs/image.png'
+    title='可爱的小猫咪 圆脸白色装 1只/盒'
+    price='￥6666'
+    detail='233人付款'>
+  </e-goods-card>
+</e-enhance-view>
+</show>

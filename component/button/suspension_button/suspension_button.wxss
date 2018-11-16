@@ -1,0 +1,10 @@
+/* component/button/suspension_button/suspension_button.wxss */
+.component {
+  position: fixed;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: top left;
+  transition-duration: 30ms;
+}

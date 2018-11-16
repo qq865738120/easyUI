@@ -32,10 +32,29 @@
 | enhance_view | [component/base/enhance_view](component/base/enhance_view) | 增强view |
 | icon_list | [component/list/icon_list](component/list/icon_list) | 图标列表，可满足大部分列表需求 |
 | enhance_icon | [component/base/enhance_icon](component/base/enhance_icon) | 增强icon，可用于展示图标或图片 |
+| goods_card | [component/senior/goods_card](component/senior/goods_card) | 商品展示卡 |
+| goods_detail | [component/senior/goods_detail](component/senior/goods_detail) | 商品详情展示 |
+| suspension_button | [component/button/suspension_button](component/button/suspension_button) | 浮动按钮 |
+| count_button | [component/form/count_button](component/form/count_button) | 计数按钮 |
+| modal | [component/senior/modal](component/senior/modal) | 模态框 |
 
 # 版本说明
 
-### v1.0.5 last  
+### v1.0.6 last
+- 新增组件
+1. goods_card  
+2. goods_detail  
+3. suspension_button
+4. count_button
+5. modal
+- 修复&优化
+1. 删除enhance_icon组件插槽。  
+2. 修复小程序base_button的详细说明不正确的bug。  
+3. search组件新增focus属性。  
+4. base_button新增filling2主题。  
+5. icon_button删除size属性，新增width和height属性。
+
+### v1.0.5   
 - 修复&优化
 1. 修复enhance_icon在手机上无法显示图片的bug。
 2. 将icon_list的subTitle属性默认值由24调整到28。
@@ -50,24 +69,6 @@
 - 修复&优化  
 1. 修复view/enhance_view中添加base_list组件时候导致base_list宽度不正常的bug。
 2. 重写小程序界面，提升阅读体验。
-
-### v1.0.2
-- 新增组件  
-1. enhance_view
-
-### v1.0.1
-- 新增组件  
-1. title_view  
-2. base_button  
-3. head_portrait  
-4. head_portrait  
-5. search  
-6. enhance_text
-
-### v1.0.0
-- 新增组件  
-1. icon_button  
-2. base_list
 
 # 关于
 - 作者：code_xia

@@ -1,0 +1,23 @@
+<!--component/senior/goods_detail/goods_detail.wxml-->
+<view class='component cus' style='background-color: {{ bgColor }};'>
+  <swiper class='swiper' indicator-dots='true' autoplay='true' duration='300' skip-hidden-item-layout='true'>
+    <swiper-item wx:for='{{ imgList }}'>
+      <image class='imgae' src='{{ item }}'></image>
+    </swiper-item>
+  </swiper>
+  <view class='body'>
+    <view class='title'>
+      <text class='title-text' style='color: {{ titleColor }}; font-size: {{ titleSize }}rpx'>{{ title }}</text>
+      <slot name='titleLast'></slot>
+    </view>
+    <view class='price' style='margin-bottom: {{ subDetail != undefined && subDetail != "" ? "20" : "10" }}rpx;'>
+      <text class='price-text' style='color: {{ priceColor }}; font-size: {{ priceSize }}rpx'>{{ price }}</text>
+      <slot name='priceLast'></slot>
+    </view>
+    <view class='detail'>
+      <text style='color: {{ detailColor }}; font-size: {{ detailSize }}rpx; {{ mDetail }}'>{{ detail }}</text>
+      <text wx:if='{{ subDetail != undefined && subDetail != "" ? true : false }}' style='color: {{ detailColor }}; font-size: {{ detailSize }}rpx; {{ mDetail }}'>{{ subDetail }}</text>
+      <text style='color: {{ salesColor }}; font-size: {{ salesSize }}rpx'>{{ sales }}</text>
+    </view>
+  </view>
+</view>

@@ -27,6 +27,10 @@ Component({
         });
       }
     },
+    focus: {
+      type: Boolean,
+      value: false
+    },
     buttonText: {
       type: String,
       value: '搜索',
@@ -96,16 +100,14 @@ Component({
       }
       const mButtonText = this.data.mButtonText;
       if (!(mButtonText != undefined && mButtonText != "")) {
-        console.log('search搜索事件触发');
-        console.log(e);
+        console.log('search搜索事件触发', e);
         this.triggerEvent('onsearch', e, { bubbles: true });
       }
       value = e.detail.value;
     },
 
     onButtonTap: function (e) {
-      console.log('search搜索事件触发');
-      console.log(e);
+      console.log('search搜索事件触发', e);
       if (value == '') {
         e.detail.value = this.data.mPlaceholder;
       } else {

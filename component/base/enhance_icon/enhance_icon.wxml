@@ -1,4 +1,3 @@
 <!--component/base/enhance_icon/enhance_icon.wxml-->
 <image class='component cus' src='{{ src }}' style='width: {{ width }}rpx; height: {{ height }}rpx;'>
-  <slot></slot>
 </image>

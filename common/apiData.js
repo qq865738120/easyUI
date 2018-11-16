@@ -5,7 +5,8 @@ const attributes = [
     { name: 'text', type: 'String', deff: '-', detail: '文本' },
     { name: 'iconWidth', type: 'String', deff: '50', detail: '图标宽度' },
     { name: 'iconHeight', type: 'String', deff: '50', detail: '图标高度' },
-    { name: 'size', type: 'String', deff: '188', detail: '组件大小,默认188rpx*188rpx' },
+    { name: 'width', type: 'String', deff: '188', detail: '组件高度,默认188rpx*188rpx' },
+    { name: 'height', type: 'String', deff: '188', detail: '组件宽带,默认188rpx*188rpx' },
     { name: 'spacing', type: 'String', deff: '14', detail: '图标与文字间距' },
     { name: 'fontSize', type: 'String', deff: '24', detail: '文字大小' },
     { name: 'fontColor', type: 'String', deff: '#333333', detail: '文本颜色' },
@@ -31,7 +32,15 @@ const attributes = [
   ],
   [ // base_button
     { name: 'text', type: 'String', deff: '-', detail: '按钮文本内容，支持数据绑定动态更新' },
-    { name: 'theme', type: 'String', deff: '-', detail: '按钮主题，详情见展示页面' },
+    { name: 'theme', type: 'String', deff: '-', detail: '按钮主题，详情见展示页面', show: [
+      { name: 'default', detail: '默认主题，带颜色边框加黑色文字' },
+      { name: 'hollow', detail: 'hollow主题，带颜色边框加带颜色文字' },
+      { name: 'filling', detail: 'filling主题，带填充颜色加白色文字' },
+      { name: 'filling2', detail: 'filling2主题，带填充颜色加enColor颜色文字' },
+      { name: 'fillingAndShine', detail: 'fillingAndShine主题，带填充颜色加白色文字加发光色' },
+      { name: 'fillingAndGradient1', detail: 'fillingAndGradient1主题，背景色左右渐变加白色文字' },
+      { name: 'fillingAndGradient2', detail: 'fillingAndGradient2主题，背景色上下渐变加白色文字' }
+    ] },
     { name: 'width', type: 'String', deff: '-', detail: '按钮宽度' },
     { name: 'height', type: 'String', deff: '-', detail: '按钮高度' },
     { name: 'radius', type: 'String', deff: '-', detail: '圆角，单位rpx' },
@@ -61,6 +70,7 @@ const attributes = [
     { name: 'textSize', type: 'String', deff: '28', detail: '搜索框中文字大小' },
     { name: 'placeholder', type: 'String', deff: '输入搜索内容', detail: '搜索框为空时显示的占位字符' },
     { name: 'buttonText', type: 'String', deff: '搜索', detail: '搜索按钮文本，默认为“搜索”，不需要按钮则可以设置为空字符串' },
+    { name: 'focus', type: 'Boolean', deff: 'false', detail: '是否自动获取焦点' },
     { name: 'bgColor', type: 'String', deff: '#F4F4F4', detail: '搜索框背景色' },
     { name: 'radius', type: 'String', deff: '60', detail: '圆角' },
     { name: 'color', type: 'String', deff: '#333', detail: '搜索框文字颜色' },
@@ -123,6 +133,89 @@ const attributes = [
     { name: 'width', type: 'String', deff: '64', detail: '图标宽度，单位rpx' },
     { name: 'height', type: 'String', deff: '64', detail: '图标高度，单位rpx' },
     { name: 'src', type: 'String', deff: '-', detail: '图标资源文件路径' },
+  ],
+  [ // goods_card
+    { name: 'width', type: 'String', deff: '370', detail: '组件宽度' },
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '组件背景色' },
+    { name: 'radius', type: 'String', deff: '-', detail: '圆角' },
+    { name: 'src', type: 'String', deff: '-', detail: '展示图资源文件路径' },
+    { name: 'imgHeight', type: 'String', deff: '380', detail: '展示图高度' },
+    { name: 'title', type: 'String', deff: '-', detail: '商品标题' },
+    { name: 'titleColor', type: 'String', deff: '#323232', detail: '商品标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '26', detail: '商品标题大小' },
+    { name: 'price', type: 'String', deff: '-', detail: '价格' },
+    { name: 'priceColor', type: 'String', deff: '#F62135', detail: '价格文字颜色' },
+    { name: 'priceSize', type: 'String', deff: '30', detail: '价格文字大小' },
+    { name: 'detail', type: 'String', deff: '-', detail: '描述信息' },
+    { name: 'detailColor', type: 'String', deff: '#999', detail: '描述信息颜色' },
+    { name: 'detailSize', type: 'String', deff: '22', detail: '描述信息大小' },
+    { name: 'spacing', type: 'String', deff: '10', detail: '价格与描述信息间隔大小' },
+  ],
+  [ // goods_detail
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '组件背景色' },
+    { name: 'imgList', type: 'Array', deff: '-', detail: '展示图片路径的数组，例：["image1.png", "image2.png"]' },
+    { name: 'title', type: 'String', deff: '-', detail: '商品标题' },
+    { name: 'titleColor', type: 'String', deff: '#333333', detail: '商品标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '32', detail: '商品标题大小' },
+    { name: 'price', type: 'String', deff: '-', detail: '商品价格' },
+    { name: 'priceColor', type: 'String', deff: '#F23030', detail: '商品价格文字颜色' },
+    { name: 'priceSize', type: 'String', deff: '36', detail: '商品价格文字大小' },
+    { name: 'detail', type: 'String', deff: '-', detail: '描述信息' },
+    { name: 'detailColor', type: 'String', deff: '#F23030', detail: '描述信息的颜色' },
+    { name: 'detailSize', type: 'String', deff: '22', detail: '描述信息的大小' },
+    { name: 'subDetail', type: 'String', deff: '-', detail: '副描述信息，设置后会呈现另一种主题风格，不设置则为默认主题风格' },
+    { name: 'sales', type: 'String', deff: '-', detail: '销售额' },
+    { name: 'salesColor', type: 'String', deff: '#999999', detail: '销售额的颜色' },
+    { name: 'salesSize', type: 'String', deff: '22', detail: '销售额的文字大小' },
+  ],
+  [ // suspension_button
+    { name: 'theme', type: 'String', deff: 'default', detail: '按钮主题，点击查看详细参数说明', show: [
+      { name: 'default', detail: '默认主题，即圆形加背景填充' },
+      { name: 'shine1', detail: 'shine1主题，即圆形加背景填充加发光阴影' },
+      { name: 'shine2', detail: 'shine2主题，即左边半圆加背景填充加发光阴影' },
+      { name: 'shine3', detail: 'shine3主题，即右边半圆加背景填充加发光阴影' },
+      { name: 'gradient1', detail: 'gradient1主题，即圆形加背景左右渐变' },
+      { name: 'gradient2', detail: 'gradient2主题，即圆形加背景上下渐变' },
+      { name: 'shineAndgradient1', detail: 'shineAndgradient1主题，即圆形加背景左右渐变加发光阴影' },
+      { name: 'shineAndgradient2', detail: 'shineAndgradient2主题，即圆形加背景上下渐变加发光阴影' }
+    ] },
+    { name: 'removable', type: 'String', deff: 'false', detail: '设置按钮是否可移动，true表示可移动' },
+    { name: 'width', type: 'String', deff: '100', detail: '按钮宽度' },
+    { name: 'height', type: 'String', deff: '100', detail: '按钮高度' },
+    { name: 'left', type: 'String', deff: '0', detail: '按钮左上角距离屏幕可用区域最左边距离' },
+    { name: 'top', type: 'String', deff: '0', detail: '按钮左上角距离屏幕可用区域最上边距离' },
+    { name: 'color', type: 'String', deff: '', detail: '背景色' },
+    { name: 'endColor', type: 'String', deff: '', detail: 'shine主题（背景渐变主题）需要设置该颜色来实现两个颜色的渐变' },
+    { name: 'src', type: 'String', deff: '', detail: '按钮图片文件路径，如果不需要图片则可用不设置' },
+    { name: 'imgMargin', type: 'String', deff: '', detail: '图片距离按钮边缘的距离' },
+    { name: 'text', type: 'String', deff: '', detail: '按钮文字，如果不需要文字可不设置' },
+    { name: 'textColor', type: 'String', deff: '', detail: '文字颜色，如果不设置text则可用不设置该属性' },
+    { name: 'textSize', type: 'String', deff: '30', detail: '文字大小，如果不设置text则可用不设置该属性' }
+  ],
+  [ // count_button
+    { name: 'width', type: 'String', deff: '130', detail: '组件宽度' },
+    { name: 'height', type: 'String', deff: '34', detail: '组件高度' },
+    { name: 'fontSize', type: 'String', deff: '24', detail: '字体大小' },
+    { name: 'theme', type: 'String', deff: 'default', detail: '主题，点击查看详细属性说明', show: [
+      { name: 'default', detail: '默认主题，即color1边框色的边框' },
+      { name: 'open', detail: 'open主题，即color1作为数值部分的背景填充色' },
+    ] },
+    { name: 'color1', type: 'String', deff: '#ddd', detail: '根据主题来反映在组建不同部位' },
+    { name: 'color2', type: 'String', deff: '#999', detail: '点击后颜色' },
+    { name: 'mainColor', type: 'String', deff: '#FF3657', detail: '主色调' },
+    { name: 'maxCount', type: 'String', deff: '20', detail: '最大数值' },
+  ],
+  [ // modal
+    { name: 'isShow', type: 'Boolean', deff: 'false', detail: '是否弹出模态框，默认不弹出，需要显示的时候将该字段设为true' },
+    { name: 'title', type: 'String', deff: '提示', detail: '模态框标题' },
+    { name: 'radius', type: 'String', deff: '12', detail: '圆角' },
+    { name: 'src', type: 'String', deff: '', detail: '关闭按钮图标。如果不许则不设置。' },
+    { name: 'iconWidth', type: 'String', deff: '30', detail: '图标宽度' },
+    { name: 'iconHeight', type: 'String', deff: '30', detail: '图标高度' },
+    { name: 'iconLeft', type: 'String', deff: '610', detail: '图标距离窗口左边的距离' },
+    { name: 'iconTop', type: 'String', deff: '25', detail: '图标距离窗口顶部的距离' },
+    { name: 'titleColor', type: 'String', deff: '#000', detail: '标题文字颜色' },
+    { name: 'titleSize', type: 'String', deff: '34', detail: '标题文字大小' },
   ]
 ]
 
@@ -160,6 +253,21 @@ const mClass = [
   [ // enhance_icon
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // goods_card
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // goods_detail
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // suspension_button
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // count_button
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // modal
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -192,6 +300,20 @@ const method = [
     { name: 'listtap', parameter: '事件对象', detail: '点击事件' }
   ],
   [], // enhance_icon
+  [ // goods_card
+    { name: 'goodstap', parameter: '事件对象', detail: '点击事件' }
+  ],
+  [], // goods_detail
+  [ // suspension_button
+    { name: 'buttontap', parameter: '事件对象', detail: '点击事件' },
+    { name: 'buttonMove', parameter: '事件对象', detail: '拖动事件' }
+  ],
+  [ // count_button
+    { name: 'countChange', parameter: '事件对象', detail: '数值改变事件，数值在事件对象的detail的count字段' }
+  ],
+  [ // modal
+    { name: 'closetap', parameter: '事件对象', detail: '模态框关闭按钮点击事件' }
+  ],
 ]
 
 const slot = [
@@ -221,7 +343,20 @@ const slot = [
     { name: 'right', detail: '右边内容插槽，可插入需要显示的图标、文字、按钮等。插入图标时请使用enhance_icon组件，使用image组件可能会出现问题' },
   ],
   [ // enhance_icon
-    { name: '-', detail: '内部插槽，一般不建议插入任何元素' }
+
+  ],
+  [ // goods_card
+    { name: '-', detail: '价格栏右边插槽' }
+  ],
+  [ // goods_detail
+    { name: 'titleLast', detail: '标题栏最右边插槽，可插入分享按钮等组件' },
+    { name: 'priceLast', detail: '价格栏最紧跟价格其后的插槽，促销图标、文字等组件' }
+  ],
+  [], // suspension_button
+  [], // count_button
+  [ // modal
+    { name: 'content', detail: '模态框内容插槽' },
+    { name: 'bottom', detail: '模态框底部按钮栏插槽' }
   ],
 ]
 
@@ -239,6 +374,13 @@ const other = [
 tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // icon_list
 `基础库1.9.90以上使用。
 tip: 在需要配合组件库中其它组件的时候优先考虑使用该组件展示图片或图标，不建议使用官方image组件`, // enhance_icon
+`基础库1.9.90以上使用。`, // goods_card
+`基础库1.9.90以上使用。
+tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // goods_detail
+`基础库1.9.90以上使用。`, // suspension_button
+`基础库1.9.90以上使用。`, // count_button
+`基础库1.9.90以上使用。
+tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData方法动态修改视图属性。如官方模态框能够满足需求请使用官方模态框。`, // enhance_view
 ]
 
 module.exports = {

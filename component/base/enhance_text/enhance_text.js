@@ -83,8 +83,7 @@ Component({
    */
   methods: {
     onTap: function (e) {
-      console.log('enhance_text点击事件触发');
-      console.log(e);
+      console.log('enhance_text点击事件触发', e);
       this.triggerEvent('texttap', e, { bubbles: true });
     }
   }

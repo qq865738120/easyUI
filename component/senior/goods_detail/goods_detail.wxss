@@ -1,0 +1,31 @@
+/* component/senior/goods_detail/goods_detail.wxss */
+
+.body {
+  padding: 30rpx;
+}
+.swiper {
+  height: 750rpx;
+}
+.imgae {
+  width: 750rpx;
+  height: 750rpx;
+}
+.title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.title-text {
+  font-weight: 700;
+}
+.price {
+  margin: 22rpx 0 10rpx 0;
+}
+.price-text {
+  margin-right: 8rpx;
+}
+.detail {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
