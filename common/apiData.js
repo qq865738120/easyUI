@@ -68,6 +68,7 @@ const attributes = [
     { name: 'textSize', type: 'String', deff: '28', detail: '搜索框中文字大小' },
     { name: 'placeholder', type: 'String', deff: '输入搜索内容', detail: '搜索框为空时显示的占位字符' },
     { name: 'buttonText', type: 'String', deff: '搜索', detail: '搜索按钮文本，默认为“搜索”，不需要按钮则可以设置为空字符串' },
+    { name: 'focus', type: 'Boolean', deff: 'false', detail: '是否自动获取焦点' },
     { name: 'bgColor', type: 'String', deff: '#F4F4F4', detail: '搜索框背景色' },
     { name: 'radius', type: 'String', deff: '60', detail: '圆角' },
     { name: 'color', type: 'String', deff: '#333', detail: '搜索框文字颜色' },

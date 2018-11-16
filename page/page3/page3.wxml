@@ -23,6 +23,7 @@
 <e-search
   icon='/imgs/search.png'
   catchonsearch='testTap'
+  focus='{{ true }}'
   placeholder='双11狂欢夜'
   bgColor='#fff'
   color='#FE9036'

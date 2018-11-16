@@ -36,6 +36,7 @@
 | goods_detail | [component/senior/goods_detail](component/senior/goods_detail) | 商品详情展示 |
 | suspension_button | [component/button/suspension_button](component/button/suspension_button) | 浮动按钮 |
 | count_button | [component/form/count_button](component/form/count_button) | 计数按钮 |
+| modal | [component/senior/modal](component/senior/modal) | 模态框 |
 
 # 版本说明
 
@@ -45,9 +46,11 @@
 2. goods_detail  
 3. suspension_button
 4. count_button
+5. modal
 - 修复&优化
 1. 删除enhance_icon组件插槽。  
 2. 修复小程序base_button的详细说明不正确的bug。  
+3. search组件新增focus属性。
 
 ### v1.0.5   
 - 修复&优化

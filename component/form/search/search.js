@@ -27,6 +27,10 @@ Component({
         });
       }
     },
+    focus: {
+      type: Boolean,
+      value: false
+    },
     buttonText: {
       type: String,
       value: '搜索',
