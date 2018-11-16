@@ -50,7 +50,9 @@
 - 修复&优化
 1. 删除enhance_icon组件插槽。  
 2. 修复小程序base_button的详细说明不正确的bug。  
-3. search组件新增focus属性。
+3. search组件新增focus属性。  
+4. base_button新增filling2主题。  
+5. icon_button删除size属性，新增width和height属性。
 
 ### v1.0.5   
 - 修复&优化

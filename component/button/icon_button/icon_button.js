@@ -26,7 +26,11 @@ Component({
       type: String,
       value: '50',
     },
-    size: { // 组件大小
+    width: { // 组件大小
+      type: String,
+      value: '188'
+    },
+    height: { // 组件大小
       type: String,
       value: '188'
     },

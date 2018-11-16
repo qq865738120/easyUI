@@ -30,6 +30,7 @@ Component({
           default: `border: 1px solid ${color} `,
           hollow: `border: 1px solid ${color}; color: ${color}`,
           filling: `background-color: ${color}; color: #fff`,
+          filling2: `background-color: ${color}; color: ${endColor}`,
           fillingAndShine: `background-color: ${color}; color: #fff; box-shadow: 0 5rpx 40rpx ${color};`,
           fillingAndGradient1: `background: linear-gradient(to right, ${color}, ${endColor}); color: #fff`,
           fillingAndGradient2: `background: linear-gradient(${color}, ${endColor}); color: #fff`

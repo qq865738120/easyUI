@@ -1,6 +1,6 @@
 <!--index/index.wxml-->
 <easy-view height='1000' margin='50rpx 0 0 0' reverse='col' type='betweenCenter'>
-  <easy-icon-button icon='/imgs/easyUI.png' text='一行代码的艺术之旅' iconWidth='250' iconHeight='250' size='300' fontSize='32'></easy-icon-button>
+  <easy-icon-button icon='/imgs/easyUI.png' text='一行代码的艺术之旅' iconWidth='250' iconHeight='250' width='300' height='300' fontSize='32'></easy-icon-button>
   <easy-view cus='cus-list'>
     <e-base-list
       id='{{ index + 1 }}'

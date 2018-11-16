@@ -5,7 +5,8 @@ const attributes = [
     { name: 'text', type: 'String', deff: '-', detail: '文本' },
     { name: 'iconWidth', type: 'String', deff: '50', detail: '图标宽度' },
     { name: 'iconHeight', type: 'String', deff: '50', detail: '图标高度' },
-    { name: 'size', type: 'String', deff: '188', detail: '组件大小,默认188rpx*188rpx' },
+    { name: 'width', type: 'String', deff: '188', detail: '组件高度,默认188rpx*188rpx' },
+    { name: 'height', type: 'String', deff: '188', detail: '组件宽带,默认188rpx*188rpx' },
     { name: 'spacing', type: 'String', deff: '14', detail: '图标与文字间距' },
     { name: 'fontSize', type: 'String', deff: '24', detail: '文字大小' },
     { name: 'fontColor', type: 'String', deff: '#333333', detail: '文本颜色' },
@@ -35,6 +36,7 @@ const attributes = [
       { name: 'default', detail: '默认主题，带颜色边框加黑色文字' },
       { name: 'hollow', detail: 'hollow主题，带颜色边框加带颜色文字' },
       { name: 'filling', detail: 'filling主题，带填充颜色加白色文字' },
+      { name: 'filling2', detail: 'filling2主题，带填充颜色加enColor颜色文字' },
       { name: 'fillingAndShine', detail: 'fillingAndShine主题，带填充颜色加白色文字加发光色' },
       { name: 'fillingAndGradient1', detail: 'fillingAndGradient1主题，背景色左右渐变加白色文字' },
       { name: 'fillingAndGradient2', detail: 'fillingAndGradient2主题，背景色上下渐变加白色文字' }
