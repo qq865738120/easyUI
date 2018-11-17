@@ -1,6 +1,6 @@
 /* component/senior/modal/modal.wxss */
 .component {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.52);
   position: fixed;
   z-index: 100000;
   display: inline-flex;
@@ -24,7 +24,7 @@
   position: absolute;
 }
 .animated {
-  animation-duration: 350ms;
+  animation-duration: 210ms;
   animation-fill-mode: both;
   animation-name: fadeIn;
 }
