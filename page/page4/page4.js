@@ -154,9 +154,9 @@ Page({
       d2: { id: com[9].id, title: com[9].name, sub: '中间三行', code: code.d2 },
       d3: { id: com[9].id, title: com[9].name, sub: '中间一行', code: code.d3 },
       d4: { id: com[9].id, title: com[9].name, sub: '中间两行', code: code.d4 },
-      d5: { id: com[15].id, title: com[15].name, sub: '中间两行', code: code.d5 },
-      d6: { id: com[15].id, title: com[15].name, sub: '中间两行', code: code.d6 },
-      d7: { id: com[15].id, title: com[15].name, sub: '中间两行', code: code.d7 }
+      d5: { id: com[16].id, title: com[16].name, sub: 'longLine主题', code: code.d5 },
+      d6: { id: com[16].id, title: com[16].name, sub: 'rounded主题', code: code.d6 },
+      d7: { id: com[16].id, title: com[16].name, sub: 'default主题', code: code.d7 }
     }
   },
 

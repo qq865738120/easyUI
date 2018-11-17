@@ -218,7 +218,11 @@ const attributes = [
     { name: 'titleSize', type: 'String', deff: '34', detail: '标题文字大小' },
   ],
   [ // goods_list
-    { name: 'theme', type: 'String', deff: 'default', detail: '主题，点击查看详细参数说明' },
+    { name: 'theme', type: 'String', deff: 'default', detail: '主题，点击查看详细参数说明', show: [
+      { name: 'default', detail: '默认主题，即底部为短线条' },
+      { name: 'rounded', detail: 'rounded主题，即底部为短线条且图片视角圆润' },
+      { name: 'longLine', detail: 'longLine主题，即底部为长线条' },
+    ] },
     { name: 'src', type: 'String', deff: '-', detail: '商品图片资源文件路径' },
     { name: 'width', type: 'String', deff: '750', detail: '组件宽度' },
     { name: 'imgSize', type: 'String', deff: '240', detail: '图片大小，默认240rpx*240rpx' },
@@ -332,7 +336,7 @@ const method = [
     { name: 'closetap', parameter: '事件对象', detail: '模态框关闭按钮点击事件' }
   ],
   [ // goods_list
-    { name: 'listtap', parameter: '事件对象', detail: '点击事件' }
+    { name: 'listtap', parameter: '事件对象', detail: '列表点击事件' }
   ],
 ]
 
