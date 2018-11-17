@@ -1,8 +1,5 @@
 // component/button/suspension_button/suspension_button.js
-let lastPoint = [0, 0];
-let currentTime = 0;
 let sysInfo = wx.getSystemInfoSync();
-let lastTime = 0;
 
 Component({
   /**
@@ -92,7 +89,8 @@ Component({
   data: {
     mTheme: ``,
     mLeft: '',
-    mTop: ''
+    mTop: '',
+    lastTime: 0,
   },
 
   externalClasses: ['cus'],
@@ -127,16 +125,17 @@ Component({
 
     onMove: function (e) {
       if (this.data.removable == 'false') return;
-      if (e.timeStamp - lastTime > 30) {
-        lastTime = e.timeStamp;
+      if (e.timeStamp - this.data.lastTime > 30) {
+        // lastTime = e.timeStamp;
+        this.setData({ lastTime: e.timeStamp });
         const point = this._rpx2Px(this.data.width / 2, this.data.height / 2);
-        const left = e.touches[0].clientX - point[0];
-        const top = e.touches[0].clientY - point[1];
+        const left = parseInt(e.touches[0].clientX - point[0]);
+        const top = parseInt(e.touches[0].clientY - point[1]);
         const mLeft = this.data.mLeft;
         const mTop = this.data.mTop;
         this.setData({
-          mLeft: (left > 0 && left < sysInfo.windowWidth - point[0] * 2 ? left : mLeft) + 'px',
-          mTop: (top > 0 && top < sysInfo.windowHeight - point[1] * 2 ? top : mTop) + 'px'
+          mLeft: (left > 0 && left < sysInfo.windowWidth - point[0] * 2 ? left + 'px' : mLeft),
+          mTop: (top > 0 && top < sysInfo.windowHeight - point[1] * 2 ? top + 'px' : mTop)
         })
         console.log('suspension_button移动事件触发', e);
         this.triggerEvent('buttonMove', e, { bubbles: true });
