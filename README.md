@@ -37,10 +37,17 @@
 | suspension_button | [component/button/suspension_button](component/button/suspension_button) | 浮动按钮 |
 | count_button | [component/form/count_button](component/form/count_button) | 计数按钮 |
 | modal | [component/senior/modal](component/senior/modal) | 模态框 |
+| goods_list | [component/list/goods_list](component/list/goods_list) | 商品列表 |
 
 # 版本说明
 
-### v1.0.6 last
+### v1.0.7 last
+- 新增组件
+1. goods_list  
+5. modal
+- 修复&优化
+
+### v1.0.6 
 - 新增组件
 1. goods_card  
 2. goods_detail  

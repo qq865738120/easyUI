@@ -1,0 +1,33 @@
+/* component/list/goods_list/goods_list.wxss */
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image {
+  margin: 10rpx 0;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.title {
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.bottom-left {
+
+}
+.bottom-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}

@@ -189,8 +189,8 @@ const attributes = [
     { name: 'src', type: 'String', deff: '', detail: '按钮图片文件路径，如果不需要图片则可用不设置' },
     { name: 'imgMargin', type: 'String', deff: '', detail: '图片距离按钮边缘的距离' },
     { name: 'text', type: 'String', deff: '', detail: '按钮文字，如果不需要文字可不设置' },
-    { name: 'textColor', type: 'String', deff: '', detail: '文字颜色，如果不设置text则可用不设置该属性' },
-    { name: 'textSize', type: 'String', deff: '30', detail: '文字大小，如果不设置text则可用不设置该属性' }
+    { name: 'textColor', type: 'String', deff: '', detail: '文字颜色，如果不设置text则可以不设置该属性' },
+    { name: 'textSize', type: 'String', deff: '30', detail: '文字大小，如果不设置text则可以不设置该属性' }
   ],
   [ // count_button
     { name: 'width', type: 'String', deff: '130', detail: '组件宽度' },
@@ -216,6 +216,20 @@ const attributes = [
     { name: 'iconTop', type: 'String', deff: '25', detail: '图标距离窗口顶部的距离' },
     { name: 'titleColor', type: 'String', deff: '#000', detail: '标题文字颜色' },
     { name: 'titleSize', type: 'String', deff: '34', detail: '标题文字大小' },
+  ],
+  [ // goods_list
+    { name: 'theme', type: 'String', deff: 'default', detail: '主题，点击查看详细参数说明' },
+    { name: 'src', type: 'String', deff: '-', detail: '商品图片资源文件路径' },
+    { name: 'width', type: 'String', deff: '750', detail: '组件宽度' },
+    { name: 'imgSize', type: 'String', deff: '240', detail: '图片大小，默认240rpx*240rpx' },
+    { name: 'title', type: 'String', deff: '-', detail: '商品标题' },
+    { name: 'titleColor', type: 'String', deff: '-', detail: '标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '30', detail: '标题大小' },
+    { name: 'price', type: 'String', deff: '-', detail: '商品价格' },
+    { name: 'priceColor', type: 'String', deff: '#FA3B54', detail: '价格颜色' },
+    { name: 'priceSize', type: 'String', deff: '38', detail: '价格大小' },
+    { name: 'thickness', type: 'String', deff: '-', detail: '价格文字粗细' },
+    { name: 'showLine', type: 'String', deff: 'true', detail: '是否显示底部线条，默认显示' },
   ]
 ]
 
@@ -268,6 +282,9 @@ const mClass = [
   [ // modal
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // goods_list
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -314,6 +331,9 @@ const method = [
   [ // modal
     { name: 'closetap', parameter: '事件对象', detail: '模态框关闭按钮点击事件' }
   ],
+  [ // goods_list
+    { name: 'listtap', parameter: '事件对象', detail: '点击事件' }
+  ],
 ]
 
 const slot = [
@@ -358,6 +378,12 @@ const slot = [
     { name: 'content', detail: '模态框内容插槽' },
     { name: 'bottom', detail: '模态框底部按钮栏插槽' }
   ],
+  [ // goods_list
+    { name: 'center', detail: '中间内容插槽' },
+    { name: 'price', detail: '价格后面插槽' },
+    { name: 'right', detail: '右下角插槽' },
+    { name: 'bottom', detail: '价格底部栏插槽' }
+  ],
 ]
 
 const other = [
@@ -380,7 +406,8 @@ tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相
 `基础库1.9.90以上使用。`, // suspension_button
 `基础库1.9.90以上使用。`, // count_button
 `基础库1.9.90以上使用。
-tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData方法动态修改视图属性。如官方模态框能够满足需求请使用官方模态框。`, // enhance_view
+tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData方法动态修改视图属性。如官方模态框能够满足需求请使用官方模态框。`, // modal
+`基础库1.9.90以上使用。`, // goods_list
 ]
 
 module.exports = {
