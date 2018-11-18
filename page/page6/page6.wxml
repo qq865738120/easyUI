@@ -1,5 +1,11 @@
 <!--page/page6/page6.wxml-->
 
+<show title='{{ com.d6.title }}' sub='{{ com.d6.sub }}' mId='{{ com.d6.id }}' code='{{ com.d6.code }}'>
+<e-sidebar
+  list='{{ sidebarList }}'
+  height='600rpx' />
+</show>
+
 <show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true'>
 <e-base-button
   id='1'

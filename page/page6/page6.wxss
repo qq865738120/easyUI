@@ -1,1 +1,5 @@
 /* page/page6/page6.wxss */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

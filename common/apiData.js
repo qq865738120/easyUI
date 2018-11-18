@@ -234,6 +234,17 @@ const attributes = [
     { name: 'priceSize', type: 'String', deff: '38', detail: '价格大小' },
     { name: 'thickness', type: 'String', deff: '-', detail: '价格文字粗细' },
     { name: 'showLine', type: 'String', deff: 'true', detail: '是否显示底部线条，默认显示' },
+  ],
+  [ // sidebar
+    { name: 'list', type: 'Array', deff: '-', detail: '内容数组，样例[ "item1", "item2" ]' },
+    { name: 'width', type: 'String', deff: '200', detail: '宽度' },
+    { name: 'height', type: 'String', deff: '100%', detail: '默认100%，单位不固定，设置时需在数值后带上单位' },
+    { name: 'bgColor', type: 'String', deff: '#f4f4f4', detail: '背景色' },
+    { name: 'itemColor1', type: 'String', deff: '#333333', detail: '列表项文字颜色' },
+    { name: 'itemSize1', type: 'String', deff: '30', detail: '列表项文字大小' },
+    { name: 'itemBgColor', type: 'String', deff: '#fff', detail: '列表项选中后背景色' },
+    { name: 'itemColor2', type: 'String', deff: '#FE9036', detail: '列表项选中后文字颜色' },
+    { name: 'itemSize2', type: 'String', deff: '32', detail: '列表项选中后文字大小' },
   ]
 ]
 
@@ -289,6 +300,9 @@ const mClass = [
   [ // goods_list
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // sidebar
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -337,6 +351,9 @@ const method = [
   ],
   [ // goods_list
     { name: 'listtap', parameter: '事件对象', detail: '列表点击事件' }
+  ],
+  [ // sidebar
+    { name: 'itemTap', parameter: '事件对象', detail: '列表项点击事件，被点击列表项索引在事件对象的detail的index字段' }
   ],
 ]
 
@@ -388,6 +405,9 @@ const slot = [
     { name: 'right', detail: '右下角插槽' },
     { name: 'bottom', detail: '价格底部栏插槽' }
   ],
+  [ // sidebar
+    { name: '-', detail: '列表项插槽，可插入任意自定义内容' }
+  ],
 ]
 
 const other = [
@@ -412,6 +432,7 @@ tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相
 `基础库1.9.90以上使用。
 tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData方法动态修改视图属性。如官方模态框能够满足需求请使用官方模态框。`, // modal
 `基础库1.9.90以上使用。`, // goods_list
+`基础库1.9.90以上使用。`, // sidebar
 ]
 
 module.exports = {

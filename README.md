@@ -38,13 +38,14 @@
 | count_button | [component/form/count_button](component/form/count_button) | 计数按钮 |
 | modal | [component/senior/modal](component/senior/modal) | 模态框 |
 | goods_list | [component/list/goods_list](component/list/goods_list) | 商品列表 |
+| sidebar | [component/senior/sidebar](component/senior/sidebar) | 侧边栏菜单 |
 
 # 版本说明
 
 ### v1.0.7 last
 - 新增组件
 1. goods_list  
-5. modal
+2. sidebar
 - 修复&优化
 
 ### v1.0.6 
