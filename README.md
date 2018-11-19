@@ -39,6 +39,7 @@
 | modal | [component/senior/modal](component/senior/modal) | 模态框 |
 | goods_list | [component/list/goods_list](component/list/goods_list) | 商品列表 |
 | sidebar | [component/senior/sidebar](component/senior/sidebar) | 侧边栏菜单 |
+| enhance_image | [component/base/enhance_image](component/base/enhance_image) | 增强image，可用于需要背景图片的场景 |
 
 # 版本说明
 
@@ -46,6 +47,7 @@
 - 新增组件
 1. goods_list  
 2. sidebar
+3. enhance_image
 - 修复&优化
 
 ### v1.0.6 

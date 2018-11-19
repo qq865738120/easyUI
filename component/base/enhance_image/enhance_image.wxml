@@ -1,0 +1,5 @@
+<!--component/base/enhance_image/enhance_image.wxml-->
+<view class='component cus' style='width: {{ width }}rpx; height: {{ height }}rpx;'>
+  <image class='image' wx:if='{{ src != undefined && src != "" ? true : false }}' src='{{ src }}' mode='{{ mode }}' style='width: {{ width }}rpx; height: {{ height }}rpx;' binderror='onError' bindload='onLoad'></image>
+  <slot></slot>
+</view>

@@ -245,6 +245,12 @@ const attributes = [
     { name: 'itemBgColor', type: 'String', deff: '#fff', detail: '列表项选中后背景色' },
     { name: 'itemColor2', type: 'String', deff: '#FE9036', detail: '列表项选中后文字颜色' },
     { name: 'itemSize2', type: 'String', deff: '32', detail: '列表项选中后文字大小' },
+  ],
+  [ // enhance_image
+    { name: 'width', type: 'String', deff: '600', detail: '组件宽度' },
+    { name: 'height', type: 'String', deff: '450', detail: '组件宽度' },
+    { name: 'src', type: 'String', deff: '-', detail: '图片资源文件路径' },
+    { name: 'mode', type: 'String', deff: 'scaleToFill', detail: '图片裁剪、缩放的模式。具体参数取值请查看官方文档image组件' },
   ]
 ]
 
@@ -303,6 +309,9 @@ const mClass = [
   [ // sidebar
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // enhance_image
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -354,6 +363,10 @@ const method = [
   ],
   [ // sidebar
     { name: 'itemTap', parameter: '事件对象', detail: '列表项点击事件，被点击列表项索引在事件对象的detail的index字段' }
+  ],
+  [ // enhance_image
+    { name: 'error', parameter: '事件对象', detail: "当错误发生时，事件对象event.detail = {errMsg: 'something wrong'}。仅支持bind绑定，不支持catch。" },
+    { name: 'load', parameter: '事件对象', detail: "当图片载入完毕时，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}。仅支持bind绑定，不支持catch。" }
   ],
 ]
 
@@ -408,6 +421,9 @@ const slot = [
   [ // sidebar
     { name: '-', detail: '列表项插槽，可插入任意自定义内容' }
   ],
+  [ // enhance_image
+    { name: '-', detail: '内容插槽，可插入任意自定义内容' }
+  ],
 ]
 
 const other = [
@@ -433,6 +449,8 @@ tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相
 tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData方法动态修改视图属性。如官方模态框能够满足需求请使用官方模态框。`, // modal
 `基础库1.9.90以上使用。`, // goods_list
 `基础库1.9.90以上使用。`, // sidebar
+`基础库1.9.90以上使用。
+tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要设置背景图片且需要使用本地路径的场景。`, // modal
 ]
 
 module.exports = {

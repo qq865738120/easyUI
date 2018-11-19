@@ -128,6 +128,11 @@ const code = {
   d20: `<e-enhance-icon
   src='/imgs/icon.png'>
 </e-enhance-icon>`,
+  d21: `<e-enhance-image
+  src='/imgs/img.jpg'>
+  <text>插入text</text>
+  <view>插入view</view>
+</e-enhance-image>`
 }
 
 Page({
@@ -157,6 +162,7 @@ Page({
       d18: { id: com[5].id, title: com[5].name, sub: '带有昵称', code: code.d18 },
       d19: { id: com[5].id, title: com[5].name, sub: '带有昵称和标签', code: code.d19 },
       d20: { id: com[10].id, title: com[10].name, sub: '', code: code.d20 },
+      d21: { id: com[18].id, title: com[18].name, sub: '', code: code.d21 },
     }
   },
 

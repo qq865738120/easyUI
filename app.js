@@ -19,6 +19,7 @@ App({
       { id: '15', name: 'modal组件' },
       { id: '16', name: 'goods_list组件' },
       { id: '17', name: 'sidebar组件' },
+      { id: '18', name: 'enhance_image组件' },
     ]
   },
 })
