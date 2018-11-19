@@ -11,7 +11,6 @@
 
 <show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
 <e-search
-  icon='/imgs/search.png'
   catchonsearch='testTap'
   bgColor='#fff'
   width='520'
@@ -21,7 +20,6 @@
 
 <show title='{{ com.d2.title }}' sub='{{ com.d2.sub }}' mId='{{ com.d2.id }}' code='{{ com.d2.code }}'>
 <e-search
-  icon='/imgs/search.png'
   catchonsearch='testTap'
   focus='{{ true }}'
   placeholder='双11狂欢夜'

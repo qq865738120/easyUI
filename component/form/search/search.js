@@ -67,6 +67,10 @@ Component({
     width: {
       type: String,
       value: '460'
+    },
+    height: {
+      type: String,
+      value: '60'
     }
   },
 
@@ -117,8 +121,10 @@ Component({
     },
 
     onCleanTap: function (e) {
+      console.log(e);
       this.setData({
-        value: ''
+        value: '',
+        inputing: false
       })
     }
   }

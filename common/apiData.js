@@ -78,6 +78,7 @@ const attributes = [
     { name: 'buttonColor', type: 'String', deff: '#333', detail: '按钮文本颜色，如不需要搜索按钮则可以不设置' },
     { name: 'spacing', type: 'String', deff: '26', detail: '按钮与搜索框间距，如不需要搜索按钮则可以不设置' },
     { name: 'width', type: 'String', deff: '460', detail: '搜索框宽度' },
+    { name: 'height', type: 'String', deff: '60', detail: '搜索框高度' },
   ],
   [ // enhance_text
     { name: 'icon', type: 'String', deff: '-', detail: '图标资源文件路径，支持动态更新' },
@@ -92,7 +93,7 @@ const attributes = [
     { name: 'textSpacing', type: 'String', deff: '10', detail: '标题与文本间距' },
   ],
   [ // enhance_view
-    { name: 'inline', type: 'String', deff: 'false', detail: 'false表示行内元素，true表示块级元素' },
+    { name: 'inline', type: 'String', deff: 'false', detail: 'true表示行内元素，false表示块级元素' },
     { name: 'reverse', type: 'String', deff: 'row', detail: 'row表示横向排列，col表示纵向排列' },
     { name: 'type', type: 'String', deff: '-', detail: '总共12种取值', show: [
       { name: 'start', detail: '排列方向上开始处对齐，垂直排列方向上开始处对齐' },
@@ -251,6 +252,22 @@ const attributes = [
     { name: 'height', type: 'String', deff: '450', detail: '组件宽度' },
     { name: 'src', type: 'String', deff: '-', detail: '图片资源文件路径' },
     { name: 'mode', type: 'String', deff: 'scaleToFill', detail: '图片裁剪、缩放的模式。具体参数取值请查看官方文档image组件' },
+  ],
+  [ // head_view
+    { name: 'title', type: 'String', deff: '-', detail: '标题' },
+    { name: 'titleColor', type: 'String', deff: '#333', detail: '标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '30', detail: '标题大小' },
+    { name: 'tickness', type: 'String', deff: '700', detail: '标题粗细' },
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '背景颜色' },
+    { name: 'margin', type: 'String', deff: '30', detail: '左右内部边距' },
+    { name: 'padding', type: 'String', deff: '25', detail: '上下内部边距，标题部分与内容部分都使用该数值作为上下边距' },
+    { name: 'lineColor', type: 'String', deff: '#e8e8e8', detail: '标题栏底部线条颜色，不需要线条可设置为透明色或者与背景同色' },
+    { name: 'theme', type: 'String', deff: 'default', detail: '主题，点击查看具体参数取值', show: [
+      { name: 'default', detail: '默认主题，即标题栏底部为短线条' },
+      { name: 'longLine', detail: 'longLine主题，即标题栏底部为长线条' },
+    ] },
+    { name: 'title', type: 'String', deff: '-', detail: '标题' },
+    { name: 'title', type: 'String', deff: '-', detail: '标题' },
   ]
 ]
 
@@ -312,6 +329,9 @@ const mClass = [
   [ // enhance_image
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // head_view
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -362,12 +382,13 @@ const method = [
     { name: 'listtap', parameter: '事件对象', detail: '列表点击事件' }
   ],
   [ // sidebar
-    { name: 'itemTap', parameter: '事件对象', detail: '列表项点击事件，被点击列表项索引在事件对象的detail的index字段' }
+    { name: 'itemtap', parameter: '事件对象', detail: '列表项点击事件，被点击列表项索引在事件对象的detail的index字段' }
   ],
   [ // enhance_image
     { name: 'error', parameter: '事件对象', detail: "当错误发生时，事件对象event.detail = {errMsg: 'something wrong'}。仅支持bind绑定，不支持catch。" },
     { name: 'load', parameter: '事件对象', detail: "当图片载入完毕时，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}。仅支持bind绑定，不支持catch。" }
   ],
+  [], // head_view
 ]
 
 const slot = [
@@ -424,6 +445,10 @@ const slot = [
   [ // enhance_image
     { name: '-', detail: '内容插槽，可插入任意自定义内容' }
   ],
+  [ // head_view
+    { name: 'sub', detail: '小标题插槽，即标题栏靠右的位置' },
+    { name: 'body', detail: '内容插槽，即标题栏以下部分' }
+  ],
 ]
 
 const other = [
@@ -451,6 +476,7 @@ tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData
 `基础库1.9.90以上使用。`, // sidebar
 `基础库1.9.90以上使用。
 tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要设置背景图片且需要使用本地路径的场景。`, // modal
+`基础库1.9.90以上使用。`, // head_view
 ]
 
 module.exports = {

@@ -68,6 +68,8 @@ Component({
     lastIndex: -1
   },
 
+  externalClasses: ['cus'],
+
   /**
    * 组件的方法列表
    */
@@ -90,7 +92,7 @@ Component({
         mList: that.data.mList,
         lastIndex: e.currentTarget.dataset.index
       })
-      this.triggerEvent('itemTap', e, { bubbles: true });
+      this.triggerEvent('itemtap', e, { bubbles: true });
     }
   },
 

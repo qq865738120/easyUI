@@ -1,0 +1,10 @@
+<!--component/structure/head_view/head_view.wxml-->
+<view class='component cus' style='background-color: {{ bgColor }};'>
+  <view class='title' style='border-bottom: 1rpx solid {{ lineColor }}; {{ mTitle }}'>
+    <text style='color: {{ titleColor }}; font-size: {{ titleSize }}rpx; font-weight: {{ tickness }}'>{{ title }}</text>
+    <slot name='sub'></slot>
+  </view>
+  <view style='padding: {{ padding }}rpx {{ margin }}rpx;'>
+    <slot name='body'></slot>
+  </view>
+</view>

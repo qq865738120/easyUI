@@ -130,7 +130,6 @@ Component({
           bottom: ''
         })
       }
-      console.log(this.data);
     },
   },
 })
