@@ -141,6 +141,26 @@ const code = {
     iconSize='32'>
   </e-base-button>
 </e-goods-list>`,
+  d8: `<e-base-card
+  src='/imgs/img.jpg'
+  title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适'>
+  <view slot='sub'>
+    <text style='font-size: 22rpx; color: #999;'>销量8523</text>
+    <e-enhance-view
+      height='34'
+      type='betweenStart'>
+      <text style='font-size: 30rpx;'>￥2699</text>
+      <e-enhance-text
+        icon='/imgs/money.png'
+        iconSize='48'
+        titleFontSize='24'
+        titleColor='#FA3B54'
+        titleSpacing='0'
+        title='￥10.5'>
+      </e-enhance-text>
+    </e-enhance-view>
+  </view>
+</e-base-card>`
 }
 
 Page({
@@ -156,7 +176,8 @@ Page({
       d4: { id: com[9].id, title: com[9].name, sub: '中间两行', code: code.d4 },
       d5: { id: com[16].id, title: com[16].name, sub: 'longLine主题', code: code.d5 },
       d6: { id: com[16].id, title: com[16].name, sub: 'rounded主题', code: code.d6 },
-      d7: { id: com[16].id, title: com[16].name, sub: 'default主题', code: code.d7 }
+      d7: { id: com[16].id, title: com[16].name, sub: 'default主题', code: code.d7 },
+      d8: { id: com[20].id, title: com[20].name, sub: '', code: code.d8 }
     }
   },
 

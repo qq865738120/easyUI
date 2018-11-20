@@ -1,0 +1,18 @@
+/* component/list/base_card/base_card.wxss */
+.component {
+  padding: 30rpx;
+  margin: 35rpx 30rpx;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 32px 0px rgba(230,230,230,1);
+}
+.body {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+.body-right {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}

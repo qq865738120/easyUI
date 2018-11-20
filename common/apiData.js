@@ -268,6 +268,15 @@ const attributes = [
     ] },
     { name: 'title', type: 'String', deff: '-', detail: '标题' },
     { name: 'title', type: 'String', deff: '-', detail: '标题' },
+  ],
+  [ // base_card
+    { name: 'src', type: 'String', deff: '-', detail: '图片资源文件' },
+    { name: 'imgWidth', type: 'String', deff: '160', detail: '图片宽度' },
+    { name: 'imgHeight', type: 'String', deff: '160', detail: '图片高度' },
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '背景颜色' },
+    { name: 'title', type: 'String', deff: '-', detail: '标题' },
+    { name: 'titleColor', type: 'String', deff: '#333', detail: '标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '28', detail: '标题大小' },
   ]
 ]
 
@@ -332,6 +341,9 @@ const mClass = [
   [ // head_view
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // base_card
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -389,6 +401,9 @@ const method = [
     { name: 'load', parameter: '事件对象', detail: "当图片载入完毕时，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}。仅支持bind绑定，不支持catch。" }
   ],
   [], // head_view
+  [ // base_card
+    { name: 'cardtap', parameter: '事件对象', detail: '列表点击事件' }
+  ],
 ]
 
 const slot = [
@@ -449,6 +464,10 @@ const slot = [
     { name: 'sub', detail: '小标题插槽，即标题栏靠右的位置' },
     { name: 'body', detail: '内容插槽，即标题栏以下部分' }
   ],
+  [ // head_view
+    { name: 'sub', detail: '标题底部插槽' },
+    { name: 'bottom', detail: '组件底部插槽' }
+  ],
 ]
 
 const other = [
@@ -477,6 +496,7 @@ tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData
 `基础库1.9.90以上使用。
 tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要设置背景图片且需要使用本地路径的场景。`, // modal
 `基础库1.9.90以上使用。`, // head_view
+`基础库1.9.90以上使用。`, // base_card
 ]
 
 module.exports = {

@@ -21,6 +21,7 @@ App({
       { id: '17', name: 'sidebar组件' },
       { id: '18', name: 'enhance_image组件' },
       { id: '19', name: 'head_view组件' },
+      { id: '20', name: 'base_card组件' },
     ]
   },
 })

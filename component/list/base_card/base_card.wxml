@@ -1,0 +1,15 @@
+<!--component/list/base_card/base_card.wxml-->
+<view class='component cus' style='background-color: {{ bgColor }};' catchtap='onTap'>
+  <view class='body'>
+    <image src='{{ src }}' mode='aspectFill' style='width: {{ imgWidth }}rpx; height: {{ imgHeight }}rpx;'></image>
+    <view class='body-right' style='width: {{ 750 - 140 - imgWidth }}rpx'>
+      <text style='color: {{ titleColor }}; font-size: {{ titleSize }}rpx;'>{{ title }}</text>
+      <view style='width: 100%'>
+        <slot name='sub'></slot>
+      </view>
+    </view>
+  </view>
+  <view style='width: 100%;'>
+    <slot name='bottom'></slot>
+  </view>
+</view>
