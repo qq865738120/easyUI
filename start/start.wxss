@@ -1,0 +1,70 @@
+/* start/start.wxss */
+.swiper {
+  height: 1100rpx;
+  margin-top: 20rpx;
+}
+.item {
+  margin: 30rpx;
+  background-color: rgba(0, 0, 0, 0);
+}
+.view-cus {
+  box-shadow: 0 8rpx 30rpx 0 rgba(230,230,230,1);
+  border-radius: 30rpx;
+}
+.title-view {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 30rpx 25rpx 30rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+  margin-bottom: 25rpx;
+}
+.title {
+  font-size: 36rpx;
+  margin-left: 12rpx;
+}
+.image-text {
+  font-size: 24rpx;
+  color: #999;
+  position: absolute;
+  bottom: 20rpx;
+  left: 20rpx;
+}
+.image-cus {
+  margin: 0 30rpx;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 913291 */
+  src: url('//at.alicdn.com/t/font_913291_8i9jkiyutrp.eot');
+  src: url('//at.alicdn.com/t/font_913291_8i9jkiyutrp.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_913291_8i9jkiyutrp.woff') format('woff'),
+  url('//at.alicdn.com/t/font_913291_8i9jkiyutrp.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_913291_8i9jkiyutrp.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size: 56rpx;
+  color: #36BCBC;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-number1:before { content: "\e635"; }
+
+.icon-number3:before { content: "\e637"; }
+
+.icon-number4:before { content: "\e638"; }
+
+.icon-number5:before { content: "\e639"; }
+
+.icon-number6:before { content: "\e63a"; }
+
+.icon-number7:before { content: "\e63b"; }
+
+.icon-number8:before { content: "\e63c"; }
+
+.icon-number9:before { content: "\e63d"; }
+
+.icon-number61:before { content: "\e600"; }

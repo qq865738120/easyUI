@@ -19,8 +19,8 @@ Page({
       { title: '基础组件', text: '5', lineColor: '#e8e8e8' },
       { title: '按钮组件', text: '3', lineColor: '#e8e8e8' },
       { title: '表单组件', text: '2', lineColor: '#e8e8e8' },
-      { title: '列表组件', text: '3', lineColor: '#e8e8e8' },
-      { title: '结构组件', text: '1', lineColor: '#e8e8e8' },
+      { title: '列表组件', text: '4', lineColor: '#e8e8e8' },
+      { title: '结构组件', text: '2', lineColor: '#e8e8e8' },
       { title: '高级组件', text: '4', lineColor: 'rgba(0,0,0,0)' },
     ]
   },
@@ -28,6 +28,12 @@ Page({
   onTap: function (e) {
     wx.navigateTo({
       url: path[parseInt(e.target.id)]
+    })
+  },
+
+  onStartTap: function (e) {
+    wx.navigateTo({
+      url: '/start/start',
     })
   },
 

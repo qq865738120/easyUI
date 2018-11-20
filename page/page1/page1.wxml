@@ -3,8 +3,7 @@
 <show title='{{ com.d21.title }}' sub='{{ com.d21.sub }}' mId='{{ com.d21.id }}' code='{{ com.d21.code }}' margin='true'>
 <e-enhance-image
   src='/imgs/img.jpg'>
-  <text>插入text</text>
-  <view>插入view</view>
+  <text style='color: #fff; position: absolute; bottom: 20rpx; right: 30rpx;'>2018.10.10</text>
 </e-enhance-image>
 </show>
 
