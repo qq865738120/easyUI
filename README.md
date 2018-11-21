@@ -54,7 +54,7 @@
 5. base_card
 - 修复&优化
 1. search组件新增默认搜索图标。
-2. search组件删除清楚图标。
+2. search组件删除清除图标。
 3. enhance_text支持使用阿里图标库引入图标（增加icon-cus自定义样式类）。
 4. enhance_icon支持使用阿里图标库引入图标。
 5. enhance_icon新增color属性。
