@@ -8,6 +8,7 @@
     "e-enhance-view": "/component/base/enhance_view/enhance_view",
     "e-enhance-text": "/component/base/enhance_text/enhance_text",
     "e-base-button": "/component/button/base_button/base_button",
-    "e-modal": "/component/senior/modal/modal"
+    "e-modal": "/component/senior/modal/modal",
+    "e-sidebar": "/component/senior/sidebar/sidebar"
   }
 }

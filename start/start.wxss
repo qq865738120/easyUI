@@ -1,0 +1,35 @@
+/* start/start.wxss */
+.swiper {
+  height: 1100rpx;
+  margin-top: 20rpx;
+}
+.item {
+  margin: 30rpx;
+  background-color: rgba(0, 0, 0, 0);
+}
+.view-cus {
+  box-shadow: 0 8rpx 30rpx 0 rgba(230,230,230,1);
+  border-radius: 30rpx;
+}
+.title-view {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 30rpx 25rpx 30rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+  margin-bottom: 25rpx;
+}
+.title {
+  font-size: 36rpx;
+  margin-left: 12rpx;
+}
+.image-text {
+  font-size: 24rpx;
+  color: #999;
+  position: absolute;
+  bottom: 20rpx;
+  left: 20rpx;
+}
+.image-cus {
+  margin: 0 30rpx;
+}

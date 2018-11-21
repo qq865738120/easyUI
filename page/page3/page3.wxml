@@ -1,17 +1,16 @@
 <!--page/page3/page3.wxml-->
 
-<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true'>
+<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true' bgColor='#fff'>
 <e-count-button />
 </show>
 
-<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true'>
+<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true' bgColor='#fff'>
 <e-count-button
   theme='open' />
 </show>
 
 <show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
 <e-search
-  icon='/imgs/search.png'
   catchonsearch='testTap'
   bgColor='#fff'
   width='520'
@@ -21,7 +20,6 @@
 
 <show title='{{ com.d2.title }}' sub='{{ com.d2.sub }}' mId='{{ com.d2.id }}' code='{{ com.d2.code }}'>
 <e-search
-  icon='/imgs/search.png'
   catchonsearch='testTap'
   focus='{{ true }}'
   placeholder='双11狂欢夜'

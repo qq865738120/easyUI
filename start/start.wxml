@@ -1,0 +1,26 @@
+<!--start/start.wxml-->
+<swiper class='swiper' duration='350' next-margin='70rpx'>
+  <swiper-item class='item' wx:for='{{ swiperList }}'>
+    <e-enhance-view
+      cus='view-cus'
+      bgColor='#fff'
+      height='960'
+      padding='30rpx 0'
+      margin='0 30rpx 0 0'
+      type='betweenStart'>
+      <view class='iconfont {{ item.icon }} title-view' wx:if='{{ item.icon != undefined }}'>
+        <text class='title'>{{ item.title }}</text>
+      </view>
+      <e-enhance-image cus='image-cus' src='{{ item.src }}' mode='aspectFill' width='590' height='845' wx:if='{{ item.icon != undefined }}'>
+        <text class='image-text'>{{ item.sub }}</text>
+      </e-enhance-image>
+      <e-enhance-view
+        wx:if='{{ item.icon == undefined }}'
+        height='900'
+        width='660'
+        type='center'>
+        <e-icon-button icon='{{ item.src }}' text='{{ item.title }}' iconWidth='250' iconHeight='250' width='400' height='300' fontSize='28'></e-icon-button>
+      </e-enhance-view>
+    </e-enhance-view>
+  </swiper-item>
+</swiper>

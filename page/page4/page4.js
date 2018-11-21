@@ -75,6 +75,92 @@ const code = {
     radius='50'>
   </e-base-button>
 </e-icon-list>`,
+  d5: `<e-goods-list
+  src='/imgs/image.png'
+  title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'
+  theme='longLine'
+  price='￥6666'>
+</e-goods-list>`,
+  d6: `<e-goods-list
+  src='/imgs/image.png'
+  title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'
+  theme='rounded'
+  price='￥6666'>
+  <e-base-button
+    slot='center'
+    text='包邮' 
+    theme='hollow'
+    width='66'
+    height='30'
+    textSize='22'
+    color='#FE9036'
+    radius='30'>
+  </e-base-button>
+  <text slot='price' style='margin: 16rpx 0 0 30rpx; font-size: 20rpx; color: #999;'>66人付款  广州</text>
+</e-goods-list>`,
+  d7: `<e-goods-list
+  src='/imgs/image.png'
+  title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适 1只/盒'
+  price='￥6666'>
+  <e-enhance-view
+    slot='price'
+    width='140'
+    height='44'
+    margin='0 0 0 10rpx'
+    type='betweenEnd'>
+    <e-base-button
+      text='商家免邮' 
+      theme='hollow'
+      width='90'
+      height='24'
+      textSize='18'
+      color='#FE9036'
+      radius='30'>
+    </e-base-button>
+    <e-base-button
+      text='赠' 
+      theme='hollow'
+      width='36'
+      height='24'
+      textSize='18'
+      color='#FE9036'
+      radius='30'>
+    </e-base-button>
+  </e-enhance-view>
+  <text slot='bottom' style='color: #999; font-size: 22rpx;'>5981条评论 97%好评</text>
+  <e-base-button
+    slot='right'
+    theme='default'
+    width='46'
+    height='46'
+    textSize='28'
+    spacing=''
+    radius='30'
+    color='#FE9036'
+    icon='/imgs/shopping.png'
+    iconSize='32'>
+  </e-base-button>
+</e-goods-list>`,
+  d8: `<e-base-card
+  src='/imgs/img.jpg'
+  title='可爱的小猫咪 圆脸白色装 高颜值会撒娇有点皮 毛色纯正舒适'>
+  <view slot='sub'>
+    <text style='font-size: 22rpx; color: #999;'>销量8523</text>
+    <e-enhance-view
+      height='34'
+      type='betweenStart'>
+      <text style='font-size: 30rpx;'>￥2699</text>
+      <e-enhance-text
+        icon='/imgs/money.png'
+        iconSize='48'
+        titleFontSize='24'
+        titleColor='#FA3B54'
+        titleSpacing='0'
+        title='￥10.5'>
+      </e-enhance-text>
+    </e-enhance-view>
+  </view>
+</e-base-card>`
 }
 
 Page({
@@ -87,7 +173,11 @@ Page({
       d1: { id: com[2].id, title: com[2].name, sub: '', code: code.d1 },
       d2: { id: com[9].id, title: com[9].name, sub: '中间三行', code: code.d2 },
       d3: { id: com[9].id, title: com[9].name, sub: '中间一行', code: code.d3 },
-      d4: { id: com[9].id, title: com[9].name, sub: '中间两行', code: code.d4 }
+      d4: { id: com[9].id, title: com[9].name, sub: '中间两行', code: code.d4 },
+      d5: { id: com[16].id, title: com[16].name, sub: 'longLine主题', code: code.d5 },
+      d6: { id: com[16].id, title: com[16].name, sub: 'rounded主题', code: code.d6 },
+      d7: { id: com[16].id, title: com[16].name, sub: 'default主题', code: code.d7 },
+      d8: { id: com[20].id, title: com[20].name, sub: '', code: code.d8 }
     }
   },
 

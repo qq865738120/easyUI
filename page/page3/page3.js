@@ -2,14 +2,12 @@
 const com = getApp().globalData.com;
 const code = {
   d1: `<e-search
-  icon='/imgs/search.png'
   catchonsearch='testTap'
   bgColor='#fff'
   width='520'
   buttonText=''>
 </e-search>`,
   d2: `<e-search
-  icon='/imgs/search.png'
   catchonsearch='testTap'
   placeholder='双11狂欢夜'
   bgColor='#fff'

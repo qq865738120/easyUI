@@ -8,7 +8,9 @@
     "page/page4/page4",
     "sub_detail/sub_detail",
     "page/page5/page5",
-    "page/page6/page6"
+    "page/page6/page6",
+    "start/start",
+    "about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",

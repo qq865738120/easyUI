@@ -1,6 +1,19 @@
 <!--page1/page1.wxml-->
 
-<show title='{{ com.d20.title }}' sub='{{ com.d20.sub }}' mId='{{ com.d20.id }}' code='{{ com.d20.code }}' margin='true'>
+<show title='{{ com.d21.title }}' sub='{{ com.d21.sub }}' mId='{{ com.d21.id }}' code='{{ com.d21.code }}' margin='true' bgColor='#fff'>
+<e-enhance-image
+  src='/imgs/img.jpg'>
+  <text style='color: #fff; position: absolute; bottom: 20rpx; right: 30rpx;'>2018.10.10</text>
+</e-enhance-image>
+</show>
+
+<show title='{{ com.d22.title }}' sub='{{ com.d22.sub }}' mId='{{ com.d22.id }}' code='{{ com.d22.code }}' margin='true' bgColor='#fff'>
+<e-enhance-icon
+  cus='iconfont icon-shezhi'>
+</e-enhance-icon>
+</show>
+
+<show title='{{ com.d20.title }}' sub='{{ com.d20.sub }}' mId='{{ com.d20.id }}' code='{{ com.d20.code }}' margin='true' bgColor='#fff'>
 <e-enhance-icon
   src='/imgs/icon.png'>
 </e-enhance-icon>
@@ -186,27 +199,27 @@
 </e-enhance-view>
 </show>
 
-<show title='{{ com.d13.title }}' sub='{{ com.d13.sub }}' mId='{{ com.d13.id }}' code='{{ com.d13.code }}' margin='true'>
+<show title='{{ com.d13.title }}' sub='{{ com.d13.sub }}' mId='{{ com.d13.id }}' code='{{ com.d13.code }}' margin='true' bgColor='#fff'>
 <e-enhance-text
   icon='/imgs/good.png'>
 </e-enhance-text>
 </show>
 
-<show title='{{ com.d14.title }}' sub='{{ com.d14.sub }}' mId='{{ com.d14.id }}' code='{{ com.d14.code }}' margin='true'>
+<show title='{{ com.d14.title }}' sub='{{ com.d14.sub }}' mId='{{ com.d14.id }}' code='{{ com.d14.code }}' margin='true' bgColor='#fff'>
 <e-enhance-text
   icon='/imgs/good.png'
   title='点赞'>
 </e-enhance-text>
 </show>
 
-<show title='{{ com.d15.title }}' sub='{{ com.d15.sub }}' mId='{{ com.d15.id }}' code='{{ com.d15.code }}' margin='true'>
+<show title='{{ com.d15.title }}' sub='{{ com.d15.sub }}' mId='{{ com.d15.id }}' code='{{ com.d15.code }}' margin='true' bgColor='#fff'>
 <e-enhance-text
   title='点赞'
   text='6'>
 </e-enhance-text>
 </show>
 
-<show title='{{ com.d16.title }}' sub='{{ com.d16.sub }}' mId='{{ com.d16.id }}' code='{{ com.d16.code }}' margin='true'>
+<show title='{{ com.d16.title }}' sub='{{ com.d16.sub }}' mId='{{ com.d16.id }}' code='{{ com.d16.code }}' margin='true' bgColor='#fff'>
 <e-enhance-text
   icon='/imgs/good.png'
   title='点赞'
@@ -214,13 +227,13 @@
 </e-enhance-text>
 </show>
 
-<show title='{{ com.d17.title }}' sub='{{ com.d17.sub }}' mId='{{ com.d17.id }}' code='{{ com.d17.code }}' margin='true'>
+<show title='{{ com.d17.title }}' sub='{{ com.d17.sub }}' mId='{{ com.d17.id }}' code='{{ com.d17.code }}' margin='true' bgColor='#fff'>
 <e-head-portrait
   src='/imgs/default_head.jpg'>
 </e-head-portrait>
 </show>
 
-<show title='{{ com.d18.title }}' sub='{{ com.d18.sub }}' mId='{{ com.d18.id }}' code='{{ com.d18.code }}' margin='true'>
+<show title='{{ com.d18.title }}' sub='{{ com.d18.sub }}' mId='{{ com.d18.id }}' code='{{ com.d18.code }}' margin='true' bgColor='#fff'>
 <e-head-portrait
   src='/imgs/default_head.jpg'
   textColor='#666'
@@ -228,7 +241,7 @@
 </e-head-portrait>
 </show>
 
-<show title='{{ com.d19.title }}' sub='{{ com.d19.sub }}' mId='{{ com.d19.id }}' code='{{ com.d19.code }}' margin='true'>
+<show title='{{ com.d19.title }}' sub='{{ com.d19.sub }}' mId='{{ com.d19.id }}' code='{{ com.d19.code }}' margin='true' bgColor='#fff'>
 <e-head-portrait
   src='/imgs/default_head.jpg'
   text='小红'

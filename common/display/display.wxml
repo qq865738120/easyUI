@@ -4,8 +4,10 @@
     <text class='title'>{{ title }}</text>
     <text class='sub'>{{ sub }}</text>
   </view>
-  <view class='{{ mbody }}'>
+  <view style='background-color: {{ bgColor }}; padding: 30rpx 0;'>
+    <view class='{{ mbody }}' >
     <slot></slot>
+  </view>
   </view>
   <view class='font'>
     <text id='{{ mId }}' class='font-left' catchtap='onDetail'>详细说明 ></text>

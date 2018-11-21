@@ -9,6 +9,7 @@
     "e-head-portrait": "/component/base/head_portrait/head_portrait",
     "e-search": "/component/form/search/search",
     "e-enhance-text": "/component/base/enhance_text/enhance_text",
-    "e-enhance-view": "/component/base/enhance_view/enhance_view"
+    "e-enhance-view": "/component/base/enhance_view/enhance_view",
+    "e-head-view": "/component/structure/head_view/head_view"
   }
 }

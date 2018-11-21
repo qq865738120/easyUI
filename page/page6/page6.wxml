@@ -1,6 +1,12 @@
 <!--page/page6/page6.wxml-->
 
-<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true'>
+<show title='{{ com.d6.title }}' sub='{{ com.d6.sub }}' mId='{{ com.d6.id }}' code='{{ com.d6.code }}' bgColor='#fff'>
+<e-sidebar
+  list='{{ sidebarList }}'
+  height='600rpx' />
+</show>
+
+<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true' bgColor='#fff'>
 <e-base-button
   id='1'
   text='弹出模态框' 
@@ -48,7 +54,7 @@
 </e-modal>
 </show>
 
-<show title='{{ com.d5.title }}' sub='{{ com.d5.sub }}' mId='{{ com.d5.id }}' code='{{ com.d5.code }}' margin='true'>
+<show title='{{ com.d5.title }}' sub='{{ com.d5.sub }}' mId='{{ com.d5.id }}' code='{{ com.d5.code }}' margin='true' bgColor='#fff'>
 <e-base-button
   id='2'
   text='弹出模态框' 

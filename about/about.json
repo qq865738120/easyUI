@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "关于",
+  "usingComponents": {
+    "e-enhance-view": "/component/base/enhance_view/enhance_view",
+    "e-enhance-text": "/component/base/enhance_text/enhance_text",
+    "e-icon-button": "/component/button/icon_button/icon_button"
+  }
+}

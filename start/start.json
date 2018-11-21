@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "开始",
+  "usingComponents": {
+    "e-icon-button": "/component/button/icon_button/icon_button",
+    "e-enhance-text": "/component/base/enhance_text/enhance_text",
+    "e-enhance-view": "/component/base/enhance_view/enhance_view",
+    "e-enhance-image": "/component/base/enhance_image/enhance_image",
+    "e-base-list": "/component/list/base_list/base_list"
+  }
+}

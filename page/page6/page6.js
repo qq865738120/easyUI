@@ -56,7 +56,61 @@ const code = {
     iconSize='32'
     icon='/imgs/hot.png'>
   </e-enhance-text>
-</e-goods-detail>`
+</e-goods-detail>`,
+  d4: `<e-modal isShow='{{ show1 }}'>
+  <text slot='content' style='color: #666; font-size: 30rpx'>确认退出登录吗</text>
+  <e-enhance-view
+    bgColor='#fff'
+    width='600'
+    type='betweenCenter'
+    slot='bottom'>
+    <e-base-button
+      id='cancle'
+      text='取消' 
+      theme='fillingAndGradient2'
+      width='285'
+      height='60'
+      textSize='28'
+      color='#FE9036'
+      endColor='#FE4E36'
+      radius='50'
+      catchbuttontap='onModalButtonTap'>
+    </e-base-button>
+    <e-base-button
+      id='ok'
+      text='确认' 
+      theme='fillingAndGradient2'
+      width='285'
+      height='60'
+      textSize='28'
+      color='#FE9036'
+      endColor='#FE4E36'
+      radius='50'
+      catchbuttontap='onModalButtonTap'>
+    </e-base-button>
+  </e-enhance-view>
+</e-modal>`,
+  d5: `<e-modal
+  src='/imgs/close.png'
+  isShow='{{ show2 }}'>
+  <text slot='content' style='color: #666; font-size: 30rpx'>确认退出登录吗</text>
+  <e-base-button
+    id='ok'
+    slot='bottom'
+    text='确认退出' 
+    theme='fillingAndGradient2'
+    width='500'
+    height='80'
+    textSize='32'
+    color='#FE9036'
+    endColor='#FE4E36'
+    radius='70'
+    catchbuttontap='onModalButtonTap'>
+  </e-base-button>
+</e-modal>`,
+  d6: `<e-sidebar
+  list='{{ sidebarList }}'
+  height='600rpx' />`
 }
 
 Page({
@@ -69,11 +123,13 @@ Page({
       d1: { id: com[11].id, title: com[11].name, sub: '两列布局', code: code.d1 },
       d2: { id: com[12].id, title: com[12].name, sub: '不带subDetail属性', code: code.d2 },
       d3: { id: com[12].id, title: com[12].name, sub: '带subDetail属性', code: code.d3 },
-      d4: { id: com[15].id, title: com[15].name, sub: '不带关闭按钮', code: code.d3 },
-      d5: { id: com[15].id, title: com[15].name, sub: '带关闭按钮', code: code.d3 }
+      d4: { id: com[15].id, title: com[15].name, sub: '不带关闭按钮', code: code.d4 },
+      d5: { id: com[15].id, title: com[15].name, sub: '带关闭按钮', code: code.d5 },
+      d6: { id: com[17].id, title: com[17].name, sub: '', code: code.d6 }
     },
     show1: false,
-    show2: false
+    show2: false,
+    sidebarList: [ '男装', '女装', '男鞋', '女鞋', '箱包手袋', '美妆护肤', '个护清洁', '手机数码', '电脑办公', '家用电器', '食品生鲜', '酒水饮料' ]
   },
 
   onButtonTap: function (e) {
@@ -110,7 +166,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

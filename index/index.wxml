@@ -14,7 +14,7 @@
 </easy-view>
 <easy-view cus='cus-view'>
   <easy-view width='650' margin='0 50rpx' type='betweenCenter'>
-    <text class='font-text'>开始></text>
-    <text class='font-text' style='color: #666'>关于></text>
+    <text class='font-text' catchtap='onStartTap'>开始></text>
+    <text class='font-text' style='color: #666' catchtap='onAboutTap'>关于></text>
   </easy-view>
 </easy-view>

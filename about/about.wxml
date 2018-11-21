@@ -1,0 +1,24 @@
+<!--about/about.wxml-->
+<e-enhance-view
+  height='100%'
+  width='100%'
+  reverse='col'
+  type='center'>
+  <e-icon-button cus='animated bounceInDown ' icon='/imgs/easyUI.png' text='版本号：v1.0.7' iconWidth='200' iconHeight='200' width='300' height='250' fontSize='28' spacing='0'></e-icon-button>
+  <e-enhance-view
+    height='160'
+    width='400'
+    margin='240rpx 0'
+    type='betweenStart'>
+    <e-enhance-text
+      cus='animated flipInX delay-2s'
+      icon-cus='iconfont icon-github icon'
+      titleSpacing='18'
+      title='qq865738120/easyUI' />
+    <e-enhance-text
+      cus='animated flipInX delay-3s'
+      icon-cus='iconfont icon-youxiang icon'
+      titleSpacing='18'
+      title='zwj865738120@163.com' />
+  </e-enhance-view>
+</e-enhance-view>

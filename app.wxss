@@ -26,3 +26,44 @@ page>text {
 .test-class {
   margin-left: 60rpx;
 }
+
+@font-face {
+  font-family: 'iconfont';  /* project id 913291 */
+  src: url('//at.alicdn.com/t/font_913291_92i6gimqox5.eot');
+  src: url('//at.alicdn.com/t/font_913291_92i6gimqox5.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_913291_92i6gimqox5.woff') format('woff'),
+  url('//at.alicdn.com/t/font_913291_92i6gimqox5.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_913291_92i6gimqox5.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size: 56rpx;
+  color: #36BCBC;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youxiang:before { content: "\e607"; }
+
+.icon-number1:before { content: "\e635"; }
+
+.icon-number3:before { content: "\e637"; }
+
+.icon-number4:before { content: "\e638"; }
+
+.icon-number5:before { content: "\e639"; }
+
+.icon-number6:before { content: "\e63a"; }
+
+.icon-number7:before { content: "\e63b"; }
+
+.icon-number8:before { content: "\e63c"; }
+
+.icon-number9:before { content: "\e63d"; }
+
+.icon-github:before { content: "\e845"; }
+
+.icon-number61:before { content: "\e600"; }
+
+.icon-shezhi:before { content: "\e6c9"; }

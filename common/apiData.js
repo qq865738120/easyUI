@@ -78,10 +78,11 @@ const attributes = [
     { name: 'buttonColor', type: 'String', deff: '#333', detail: '按钮文本颜色，如不需要搜索按钮则可以不设置' },
     { name: 'spacing', type: 'String', deff: '26', detail: '按钮与搜索框间距，如不需要搜索按钮则可以不设置' },
     { name: 'width', type: 'String', deff: '460', detail: '搜索框宽度' },
+    { name: 'height', type: 'String', deff: '60', detail: '搜索框高度' },
   ],
   [ // enhance_text
     { name: 'icon', type: 'String', deff: '-', detail: '图标资源文件路径，支持动态更新' },
-    { name: 'iconSize', type: 'String', deff: '38', detail: '图标资源文件大小' },
+    { name: 'iconSize', type: 'String', deff: '38', detail: '图标资源文件大小。当使用icon-cus自定义类引入阿里图标库中的图标时，该属性不生效' },
     { name: 'title', type: 'String', deff: '-', detail: '标题文本' },
     { name: 'titleFontSize', type: 'String', deff: '28', detail: '标题文字大小' },
     { name: 'titleColor', type: 'String', deff: '#666', detail: '标题文字颜色，支持动态更新' },
@@ -92,7 +93,7 @@ const attributes = [
     { name: 'textSpacing', type: 'String', deff: '10', detail: '标题与文本间距' },
   ],
   [ // enhance_view
-    { name: 'inline', type: 'String', deff: 'false', detail: 'false表示行内元素，true表示块级元素' },
+    { name: 'inline', type: 'String', deff: 'false', detail: 'true表示行内元素，false表示块级元素' },
     { name: 'reverse', type: 'String', deff: 'row', detail: 'row表示横向排列，col表示纵向排列' },
     { name: 'type', type: 'String', deff: '-', detail: '总共12种取值', show: [
       { name: 'start', detail: '排列方向上开始处对齐，垂直排列方向上开始处对齐' },
@@ -108,8 +109,8 @@ const attributes = [
       { name: 'betweenEnd', detail: '排列方向上两端对齐，垂直排列方向上结束处对齐' },
       { name: 'betweenCenter', detail: '排列方向上两端对齐，垂直排列方向上居中对齐' },
     ] },
-    { name: 'width', type: 'String', deff: '-', detail: '组件宽度，默认根据子元素自适应' },
-    { name: 'height', type: 'String', deff: '-', detail: '组件高度，默认根据子元素自适应' },
+    { name: 'width', type: 'String', deff: '-', detail: '组件宽度，默认根据子元素自适应。默认单位是rpx，支持px及%单位' },
+    { name: 'height', type: 'String', deff: '-', detail: '组件高度，默认根据子元素自适应。默认单位是rpx，支持px及%单位' },
     { name: 'margin', type: 'String', deff: '-', detail: '外边距，取值为符合css语法的字符串' },
     { name: 'padding', type: 'String', deff: '-', detail: '内边距，取值为符合css语法的字符串' },
     { name: 'bgColor', type: 'String', deff: '-', detail: '背景色' },
@@ -130,9 +131,10 @@ const attributes = [
     { name: 'detailSize', type: 'String', deff: '24', detail: '描述信息大小' },
   ],
   [ // enhance_icon
-    { name: 'width', type: 'String', deff: '64', detail: '图标宽度，单位rpx' },
+    { name: 'width', type: 'String', deff: '64', detail: '图标宽度，单位rpx。使用阿里图标库时此属性为图标大小' },
     { name: 'height', type: 'String', deff: '64', detail: '图标高度，单位rpx' },
     { name: 'src', type: 'String', deff: '-', detail: '图标资源文件路径' },
+    { name: 'color', type: 'String', deff: '#666', detail: '图标颜色，使用阿里图标库时生效' },
   ],
   [ // goods_card
     { name: 'width', type: 'String', deff: '370', detail: '组件宽度' },
@@ -189,8 +191,8 @@ const attributes = [
     { name: 'src', type: 'String', deff: '', detail: '按钮图片文件路径，如果不需要图片则可用不设置' },
     { name: 'imgMargin', type: 'String', deff: '', detail: '图片距离按钮边缘的距离' },
     { name: 'text', type: 'String', deff: '', detail: '按钮文字，如果不需要文字可不设置' },
-    { name: 'textColor', type: 'String', deff: '', detail: '文字颜色，如果不设置text则可用不设置该属性' },
-    { name: 'textSize', type: 'String', deff: '30', detail: '文字大小，如果不设置text则可用不设置该属性' }
+    { name: 'textColor', type: 'String', deff: '', detail: '文字颜色，如果不设置text则可以不设置该属性' },
+    { name: 'textSize', type: 'String', deff: '30', detail: '文字大小，如果不设置text则可以不设置该属性' }
   ],
   [ // count_button
     { name: 'width', type: 'String', deff: '130', detail: '组件宽度' },
@@ -216,6 +218,67 @@ const attributes = [
     { name: 'iconTop', type: 'String', deff: '25', detail: '图标距离窗口顶部的距离' },
     { name: 'titleColor', type: 'String', deff: '#000', detail: '标题文字颜色' },
     { name: 'titleSize', type: 'String', deff: '34', detail: '标题文字大小' },
+  ],
+  [ // goods_list
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '背景色' },
+    { name: 'theme', type: 'String', deff: 'default', detail: '主题，点击查看详细参数说明', show: [
+      { name: 'default', detail: '默认主题，即底部为短线条' },
+      { name: 'rounded', detail: 'rounded主题，即底部为短线条且图片视角圆润' },
+      { name: 'longLine', detail: 'longLine主题，即底部为长线条' },
+    ] },
+    { name: 'src', type: 'String', deff: '-', detail: '商品图片资源文件路径' },
+    { name: 'width', type: 'String', deff: '750', detail: '组件宽度' },
+    { name: 'imgSize', type: 'String', deff: '240', detail: '图片大小，默认240rpx*240rpx' },
+    { name: 'title', type: 'String', deff: '-', detail: '商品标题' },
+    { name: 'titleColor', type: 'String', deff: '-', detail: '标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '30', detail: '标题大小' },
+    { name: 'price', type: 'String', deff: '-', detail: '商品价格' },
+    { name: 'priceColor', type: 'String', deff: '#FA3B54', detail: '价格颜色' },
+    { name: 'priceSize', type: 'String', deff: '38', detail: '价格大小' },
+    { name: 'thickness', type: 'String', deff: '-', detail: '价格文字粗细' },
+    { name: 'showLine', type: 'String', deff: 'true', detail: '是否显示底部线条，默认显示' },
+  ],
+  [ // sidebar
+    { name: 'list', type: 'Array', deff: '-', detail: '内容数组，样例[ "item1", "item2" ]' },
+    { name: 'width', type: 'String', deff: '200', detail: '宽度' },
+    { name: 'height', type: 'String', deff: '100%', detail: '默认100%，单位不固定，设置时需在数值后带上单位' },
+    { name: 'bgColor', type: 'String', deff: '#f4f4f4', detail: '背景色' },
+    { name: 'itemColor1', type: 'String', deff: '#333333', detail: '列表项文字颜色' },
+    { name: 'itemSize1', type: 'String', deff: '30', detail: '列表项文字大小' },
+    { name: 'itemBgColor', type: 'String', deff: '#fff', detail: '列表项选中后背景色' },
+    { name: 'itemColor2', type: 'String', deff: '#FE9036', detail: '列表项选中后文字颜色' },
+    { name: 'itemSize2', type: 'String', deff: '32', detail: '列表项选中后文字大小' },
+  ],
+  [ // enhance_image
+    { name: 'width', type: 'String', deff: '600', detail: '组件宽度' },
+    { name: 'height', type: 'String', deff: '450', detail: '组件宽度' },
+    { name: 'src', type: 'String', deff: '-', detail: '图片资源文件路径' },
+    { name: 'mode', type: 'String', deff: 'scaleToFill', detail: '图片裁剪、缩放的模式。具体参数取值请查看官方文档image组件' },
+  ],
+  [ // head_view
+    { name: 'title', type: 'String', deff: '-', detail: '标题' },
+    { name: 'titleColor', type: 'String', deff: '#333', detail: '标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '30', detail: '标题大小' },
+    { name: 'tickness', type: 'String', deff: '700', detail: '标题粗细' },
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '背景颜色' },
+    { name: 'margin', type: 'String', deff: '30', detail: '左右内部边距' },
+    { name: 'padding', type: 'String', deff: '25', detail: '上下内部边距，标题部分与内容部分都使用该数值作为上下边距' },
+    { name: 'lineColor', type: 'String', deff: '#e8e8e8', detail: '标题栏底部线条颜色，不需要线条可设置为透明色或者与背景同色' },
+    { name: 'theme', type: 'String', deff: 'default', detail: '主题，点击查看具体参数取值', show: [
+      { name: 'default', detail: '默认主题，即标题栏底部为短线条' },
+      { name: 'longLine', detail: 'longLine主题，即标题栏底部为长线条' },
+    ] },
+    { name: 'title', type: 'String', deff: '-', detail: '标题' },
+    { name: 'title', type: 'String', deff: '-', detail: '标题' },
+  ],
+  [ // base_card
+    { name: 'src', type: 'String', deff: '-', detail: '图片资源文件' },
+    { name: 'imgWidth', type: 'String', deff: '160', detail: '图片宽度' },
+    { name: 'imgHeight', type: 'String', deff: '160', detail: '图片高度' },
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '背景颜色' },
+    { name: 'title', type: 'String', deff: '-', detail: '标题' },
+    { name: 'titleColor', type: 'String', deff: '#333', detail: '标题颜色' },
+    { name: 'titleSize', type: 'String', deff: '28', detail: '标题大小' },
   ]
 ]
 
@@ -243,6 +306,7 @@ const mClass = [
   ],
   [ // enhance_text
     { name: 'cus', detail: '组件最外层view自定义样式类' },
+    { name: 'icon-cus', detail: '图标自定义样式类' },
   ],
   [ // enhance_view
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
@@ -266,6 +330,21 @@ const mClass = [
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
   [ // modal
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // goods_list
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // sidebar
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // enhance_image
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // head_view
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // base_card
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
 ]
@@ -314,6 +393,20 @@ const method = [
   [ // modal
     { name: 'closetap', parameter: '事件对象', detail: '模态框关闭按钮点击事件' }
   ],
+  [ // goods_list
+    { name: 'listtap', parameter: '事件对象', detail: '列表点击事件' }
+  ],
+  [ // sidebar
+    { name: 'itemtap', parameter: '事件对象', detail: '列表项点击事件，被点击列表项索引在事件对象的detail的index字段' }
+  ],
+  [ // enhance_image
+    { name: 'error', parameter: '事件对象', detail: "当错误发生时，事件对象event.detail = {errMsg: 'something wrong'}。仅支持bind绑定，不支持catch。" },
+    { name: 'load', parameter: '事件对象', detail: "当图片载入完毕时，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}。仅支持bind绑定，不支持catch。" }
+  ],
+  [], // head_view
+  [ // base_card
+    { name: 'cardtap', parameter: '事件对象', detail: '列表点击事件' }
+  ],
 ]
 
 const slot = [
@@ -358,6 +451,26 @@ const slot = [
     { name: 'content', detail: '模态框内容插槽' },
     { name: 'bottom', detail: '模态框底部按钮栏插槽' }
   ],
+  [ // goods_list
+    { name: 'center', detail: '中间内容插槽' },
+    { name: 'price', detail: '价格后面插槽' },
+    { name: 'right', detail: '右下角插槽' },
+    { name: 'bottom', detail: '价格底部栏插槽' }
+  ],
+  [ // sidebar
+    { name: '-', detail: '列表项插槽，可插入任意自定义内容' }
+  ],
+  [ // enhance_image
+    { name: '-', detail: '内容插槽，可插入任意自定义内容' }
+  ],
+  [ // head_view
+    { name: 'sub', detail: '小标题插槽，即标题栏靠右的位置' },
+    { name: 'body', detail: '内容插槽，即标题栏以下部分' }
+  ],
+  [ // head_view
+    { name: 'sub', detail: '标题底部插槽' },
+    { name: 'bottom', detail: '组件底部插槽' }
+  ],
 ]
 
 const other = [
@@ -380,7 +493,13 @@ tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相
 `基础库1.9.90以上使用。`, // suspension_button
 `基础库1.9.90以上使用。`, // count_button
 `基础库1.9.90以上使用。
-tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData方法动态修改视图属性。如官方模态框能够满足需求请使用官方模态框。`, // enhance_view
+tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData方法动态修改视图属性。如官方模态框能够满足需求请使用官方模态框。`, // modal
+`基础库1.9.90以上使用。`, // goods_list
+`基础库1.9.90以上使用。`, // sidebar
+`基础库1.9.90以上使用。
+tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要设置背景图片且需要使用本地路径的场景。`, // modal
+`基础库1.9.90以上使用。`, // head_view
+`基础库1.9.90以上使用。`, // base_card
 ]
 
 module.exports = {

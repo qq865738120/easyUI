@@ -28,6 +28,10 @@ Component({
           mbody: newVal == 'true' ? 'body' : ''
         });
       }
+    },
+    bgColor: {
+      type: String,
+      value: ''
     }
   },
 

@@ -1,0 +1,6 @@
+/* component/structure/head_view/head_view.wxss */
+.title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}

@@ -37,10 +37,27 @@
 | suspension_button | [component/button/suspension_button](component/button/suspension_button) | 浮动按钮 |
 | count_button | [component/form/count_button](component/form/count_button) | 计数按钮 |
 | modal | [component/senior/modal](component/senior/modal) | 模态框 |
+| goods_list | [component/list/goods_list](component/list/goods_list) | 商品列表 |
+| sidebar | [component/senior/sidebar](component/senior/sidebar) | 侧边栏菜单 |
+| enhance_image | [component/base/enhance_image](component/base/enhance_image) | 增强image，可用于需要背景图片的场景 |
+| head_view | [component/structure/head_view](component/structure/head_view) | 带有头部标题栏的view |
 
 # 版本说明
 
-### v1.0.6 last
+### v1.0.7 last
+- 新增组件
+1. goods_list  
+2. sidebar
+3. enhance_image
+4. head_view
+- 修复&优化
+1. search组件新增默认搜索图标。
+2. search组件删除清楚图标。
+3. enhance_text支持使用阿里图标库引入图标（增加icon-cus自定义样式类）。
+4. enhance_icon支持使用阿里图标库引入图标。
+5. enhance_icon新增color属性。
+
+### v1.0.6 
 - 新增组件
 1. goods_card  
 2. goods_detail  
@@ -59,16 +76,6 @@
 1. 修复enhance_icon在手机上无法显示图片的bug。
 2. 将icon_list的subTitle属性默认值由24调整到28。
 3. 将icon_list的detail属性默认值由22调整到24。
-
-### v1.0.4
-- 新增组件
-1. icon_list
-2. enhance_icon
-
-### v1.0.3  
-- 修复&优化  
-1. 修复view/enhance_view中添加base_list组件时候导致base_list宽度不正常的bug。
-2. 重写小程序界面，提升阅读体验。
 
 # 关于
 - 作者：code_xia

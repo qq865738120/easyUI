@@ -57,11 +57,33 @@ Component({
     },
     width: {
       type: String,
-      value: ''
+      value: '',
+      observer: function (newVal) {
+        const subStr = newVal.substring(newVal.length - 2);
+        const subStr2 = newVal.substring(newVal.length - 1);
+        let value = newVal;
+        if (subStr != 'px' && subStr2 != '%') {
+          value += 'rpx';
+        }
+        this.setData({
+          mWidth: value
+        })
+      }
     },
     height: {
       type: String,
-      value: ''
+      value: '',
+      observer: function (newVal) {
+        const subStr = newVal.substring(newVal.length - 2);
+        const subStr2 = newVal.substring(newVal.length - 1);
+        let value = newVal;
+        if (subStr != 'px' && subStr2 != '%') {
+          value += 'rpx';
+        }
+        this.setData({
+          mHeight: value
+        })
+      }
     },
     margin: {
       type: String,
@@ -83,7 +105,9 @@ Component({
    * 组件的初始数据
    */
   data: {
-    mType: ''
+    mType: '',
+    mWidth: '',
+    mHeight: ''
   },
 
   /**
