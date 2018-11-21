@@ -45,7 +45,9 @@
 
 # 版本说明
 
-### v1.0.7 last
+### v1.1.0 last
+
+### v1.0.7
 - 新增组件
 1. goods_list  
 2. sidebar
