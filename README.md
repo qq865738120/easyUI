@@ -41,6 +41,7 @@
 | sidebar | [component/senior/sidebar](component/senior/sidebar) | 侧边栏菜单 |
 | enhance_image | [component/base/enhance_image](component/base/enhance_image) | 增强image，可用于需要背景图片的场景 |
 | head_view | [component/structure/head_view](component/structure/head_view) | 带有头部标题栏的view |
+| base_card | [component/list/base_card](component/list/base_card) | 基础卡片组件 |
 
 # 版本说明
 
@@ -49,7 +50,8 @@
 1. goods_list  
 2. sidebar
 3. enhance_image
-4. head_view
+4. head_view  
+5. base_card
 - 修复&优化
 1. search组件新增默认搜索图标。
 2. search组件删除清楚图标。
