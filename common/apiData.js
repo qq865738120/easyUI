@@ -82,7 +82,7 @@ const attributes = [
   ],
   [ // enhance_text
     { name: 'icon', type: 'String', deff: '-', detail: '图标资源文件路径，支持动态更新' },
-    { name: 'iconSize', type: 'String', deff: '38', detail: '图标资源文件大小' },
+    { name: 'iconSize', type: 'String', deff: '38', detail: '图标资源文件大小。当使用icon-cus自定义类引入阿里图标库中的图标时，该属性不生效' },
     { name: 'title', type: 'String', deff: '-', detail: '标题文本' },
     { name: 'titleFontSize', type: 'String', deff: '28', detail: '标题文字大小' },
     { name: 'titleColor', type: 'String', deff: '#666', detail: '标题文字颜色，支持动态更新' },
@@ -109,8 +109,8 @@ const attributes = [
       { name: 'betweenEnd', detail: '排列方向上两端对齐，垂直排列方向上结束处对齐' },
       { name: 'betweenCenter', detail: '排列方向上两端对齐，垂直排列方向上居中对齐' },
     ] },
-    { name: 'width', type: 'String', deff: '-', detail: '组件宽度，默认根据子元素自适应' },
-    { name: 'height', type: 'String', deff: '-', detail: '组件高度，默认根据子元素自适应' },
+    { name: 'width', type: 'String', deff: '-', detail: '组件宽度，默认根据子元素自适应。默认单位是rpx，支持px及%单位' },
+    { name: 'height', type: 'String', deff: '-', detail: '组件高度，默认根据子元素自适应。默认单位是rpx，支持px及%单位' },
     { name: 'margin', type: 'String', deff: '-', detail: '外边距，取值为符合css语法的字符串' },
     { name: 'padding', type: 'String', deff: '-', detail: '内边距，取值为符合css语法的字符串' },
     { name: 'bgColor', type: 'String', deff: '-', detail: '背景色' },
@@ -131,9 +131,10 @@ const attributes = [
     { name: 'detailSize', type: 'String', deff: '24', detail: '描述信息大小' },
   ],
   [ // enhance_icon
-    { name: 'width', type: 'String', deff: '64', detail: '图标宽度，单位rpx' },
+    { name: 'width', type: 'String', deff: '64', detail: '图标宽度，单位rpx。使用阿里图标库时此属性为图标大小' },
     { name: 'height', type: 'String', deff: '64', detail: '图标高度，单位rpx' },
     { name: 'src', type: 'String', deff: '-', detail: '图标资源文件路径' },
+    { name: 'color', type: 'String', deff: '#666', detail: '图标颜色，使用阿里图标库时生效' },
   ],
   [ // goods_card
     { name: 'width', type: 'String', deff: '370', detail: '组件宽度' },
@@ -219,6 +220,7 @@ const attributes = [
     { name: 'titleSize', type: 'String', deff: '34', detail: '标题文字大小' },
   ],
   [ // goods_list
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '背景色' },
     { name: 'theme', type: 'String', deff: 'default', detail: '主题，点击查看详细参数说明', show: [
       { name: 'default', detail: '默认主题，即底部为短线条' },
       { name: 'rounded', detail: 'rounded主题，即底部为短线条且图片视角圆润' },
@@ -304,6 +306,7 @@ const mClass = [
   ],
   [ // enhance_text
     { name: 'cus', detail: '组件最外层view自定义样式类' },
+    { name: 'icon-cus', detail: '图标自定义样式类' },
   ],
   [ // enhance_view
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },

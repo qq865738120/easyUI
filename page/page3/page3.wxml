@@ -1,10 +1,10 @@
 <!--page/page3/page3.wxml-->
 
-<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true'>
+<show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true' bgColor='#fff'>
 <e-count-button />
 </show>
 
-<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true'>
+<show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}' margin='true' bgColor='#fff'>
 <e-count-button
   theme='open' />
 </show>

@@ -1,5 +1,5 @@
 <!--component/list/goods_list/goods_list.wxml-->
-<view class='component cus' style='width: {{ width }}rpx; {{ com }}' catchtap='onTap'>
+<view class='component cus' style='width: {{ width }}rpx; background-color: {{ bgColor }}; {{ com }}' catchtap='onTap'>
   <image class='image' src='{{ src }}' style='width: {{ imgSize }}rpx; height: {{ imgSize }}rpx; {{ img }}'></image>
   <view class='right' style='width: {{ width - imgSize - 20 }}rpx; height: {{ imgSize - 1 + 21 }}rpx; {{ right }}'>
     <text class='title' style='color: {{ titleColor }}; font-size: {{ titleSize }}rpx; height: {{ (titleSize - 1 + 1) * 2 + 20}}rpx; width: {{ width - imgSize - 50 }}rpx; {{ tit }}'>{{ title }}</text>

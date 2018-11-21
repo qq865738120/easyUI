@@ -15,6 +15,10 @@ Component({
     src: {
       type: String,
       value: ''
+    },
+    color: {
+      type: String,
+      value: '#666'
     }
   },
 

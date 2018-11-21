@@ -3,7 +3,7 @@
   border-bottom: 1rpx solid #e8e8e8;
 }
 .head {
-  margin: 60rpx 30rpx 30rpx 30rpx;
+  margin: 60rpx 30rpx 20rpx 30rpx;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -23,7 +23,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 30rpx 30rpx 60rpx 30rpx;
+  padding: 20rpx 30rpx 60rpx 30rpx;
 }
 .font-left,
 .font-right {

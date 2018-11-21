@@ -53,6 +53,9 @@
 - 修复&优化
 1. search组件新增默认搜索图标。
 2. search组件删除清楚图标。
+3. enhance_text支持使用阿里图标库引入图标（增加icon-cus自定义样式类）。
+4. enhance_icon支持使用阿里图标库引入图标。
+5. enhance_icon新增color属性。
 
 ### v1.0.6 
 - 新增组件
@@ -73,16 +76,6 @@
 1. 修复enhance_icon在手机上无法显示图片的bug。
 2. 将icon_list的subTitle属性默认值由24调整到28。
 3. 将icon_list的detail属性默认值由22调整到24。
-
-### v1.0.4
-- 新增组件
-1. icon_list
-2. enhance_icon
-
-### v1.0.3  
-- 修复&优化  
-1. 修复view/enhance_view中添加base_list组件时候导致base_list宽度不正常的bug。
-2. 重写小程序界面，提升阅读体验。
 
 # 关于
 - 作者：code_xia

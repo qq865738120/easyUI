@@ -15,7 +15,12 @@ Component({
     },
     iconSize: {
       type: String,
-      value: '38'
+      value: '38',
+      observer: function (newVal) {
+        this.setData({
+          mIconSize: newVal
+        });
+      }
     },
     title: {
       type: String,
@@ -66,13 +71,14 @@ Component({
     },
   },
 
-  externalClasses: ['cus'],
+  externalClasses: ['cus', 'icon-cus'],
 
   /**
    * 组件的初始数据
    */
   data: {
     mIcon: '',
+    mIconSize: '',
     mTitleColor: '#666',
     mText: '',
     mTextColor: '#666'
@@ -86,5 +92,15 @@ Component({
       console.log('enhance_text点击事件触发', e);
       this.triggerEvent('texttap', e, { bubbles: true });
     }
-  }
+  },
+
+  lifetimes: {
+    ready: function () {
+      console.log(this.data);
+      let iconSize = this.data.mIcon == '' ? 0 : 38;
+      this.setData({
+        mIconSize: iconSize
+      })
+    },
+  },
 })

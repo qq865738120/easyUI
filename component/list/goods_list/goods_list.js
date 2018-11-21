@@ -9,6 +9,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    bgColor: {
+      type: String,
+      value: '#fff'
+    },
     theme: {
       type: String,
       value: 'default',

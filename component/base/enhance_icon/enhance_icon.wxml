@@ -1,3 +1,4 @@
 <!--component/base/enhance_icon/enhance_icon.wxml-->
-<image class='component cus' src='{{ src }}' style='width: {{ width }}rpx; height: {{ height }}rpx;'>
+<image class='component cus' src='{{ src }}' wx:if='{{ src != undefined && src != "" ? true : false }}' style='width: {{ width }}rpx; height: {{ height }}rpx;'>
 </image>
+<view class='component cus' wx:if='{{ src != undefined && src != "" ? false : true }}' style='font-size: {{ width }}rpx; color: {{ color }};'></view>
