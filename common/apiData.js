@@ -211,7 +211,7 @@ const attributes = [
     { name: 'isShow', type: 'Boolean', deff: 'false', detail: '是否弹出模态框，默认不弹出，需要显示的时候将该字段设为true' },
     { name: 'title', type: 'String', deff: '提示', detail: '模态框标题' },
     { name: 'radius', type: 'String', deff: '12', detail: '圆角' },
-    { name: 'src', type: 'String', deff: '', detail: '关闭按钮图标。如果不许则不设置。' },
+    { name: 'src', type: 'String', deff: '', detail: '关闭按钮图标。如果不许则不设置。如果不设置该属性可使用icon-cus自定义类使用阿里图标库' },
     { name: 'iconWidth', type: 'String', deff: '30', detail: '图标宽度' },
     { name: 'iconHeight', type: 'String', deff: '30', detail: '图标高度' },
     { name: 'iconLeft', type: 'String', deff: '610', detail: '图标距离窗口左边的距离' },
@@ -331,6 +331,7 @@ const mClass = [
   ],
   [ // modal
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+    { name: 'icon-cus', detail: '自定义关闭图标样式类，部分属性不可用。可使用阿里图标库。' },
   ],
   [ // goods_list
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
