@@ -153,6 +153,7 @@ const attributes = [
     { name: 'detailColor', type: 'String', deff: '#999', detail: '描述信息颜色' },
     { name: 'detailSize', type: 'String', deff: '22', detail: '描述信息大小' },
     { name: 'spacing', type: 'String', deff: '10', detail: '价格与描述信息间隔大小' },
+    { name: 'dataCus', type: 'String', deff: '-', detail: '自定义数据' },
   ],
   [ // goods_detail
     { name: 'bgColor', type: 'String', deff: '#fff', detail: '组件背景色' },
@@ -238,6 +239,7 @@ const attributes = [
     { name: 'priceSize', type: 'String', deff: '38', detail: '价格大小' },
     { name: 'thickness', type: 'String', deff: '-', detail: '价格文字粗细' },
     { name: 'showLine', type: 'String', deff: 'true', detail: '是否显示底部线条，默认显示' },
+    { name: 'dataCus', type: 'String', deff: '-', detail: '自定义数据' },
   ],
   [ // sidebar
     { name: 'list', type: 'Array', deff: '-', detail: '内容数组，样例[ "item1", "item2" ]' },
@@ -249,6 +251,7 @@ const attributes = [
     { name: 'itemBgColor', type: 'String', deff: '#fff', detail: '列表项选中后背景色' },
     { name: 'itemColor2', type: 'String', deff: '#FE9036', detail: '列表项选中后文字颜色' },
     { name: 'itemSize2', type: 'String', deff: '32', detail: '列表项选中后文字大小' },
+    { name: 'dataCus', type: 'Array', deff: '-', detail: '自定义数据，如无特殊需要可使用currentTarget下的dataset下的index字段。，样例[001, 002]' },
   ],
   [ // enhance_image
     { name: 'width', type: 'String', deff: '600', detail: '组件宽度' },
@@ -369,7 +372,8 @@ const method = [
     { name: 'headtap', parameter: '事件对象', detail: '头像点击事件' }
   ],
   [ // search
-    { name: 'onsearch', parameter: '事件对象', detail: '搜索事件，搜索关键字在事件对象的detail.value字段中。如果不带搜索按钮则用户开始输入后触发该事件，如果带有搜索按钮则在用户输入完成并点击按钮后触发该事件。如果不输入任何内容点击按钮则使用placeholder的值作为关键字搜索' }
+    { name: 'onsearch', parameter: '事件对象', detail: '搜索事件，搜索关键字在事件对象的detail.value字段中。如果不带搜索按钮则用户开始输入后触发该事件，如果带有搜索按钮则在用户输入完成并点击按钮后触发该事件。如果不输入任何内容点击按钮则使用placeholder的值作为关键字搜索' },
+    { name: 'onclean', parameter: '事件对象', detail: '搜索框清除事件' }
   ],
   [ // enhance_text
     { name: 'texttap', parameter: '事件对象', detail: '点击事件' }

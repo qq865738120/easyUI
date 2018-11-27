@@ -95,6 +95,10 @@ Component({
     showLine: {
       type: String,
       value: 'true'
+    },
+    dataCus: {
+      type: String,
+      value: ''
     }
   },
 

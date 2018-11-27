@@ -1,6 +1,6 @@
 <!--component/senior/goods_card/goods_card.wxml-->
-<view class='component cus' catchtap='onTap' style='border-radius: {{ radius }}rpx; width: {{ width }}rpx; background-color: {{ bgColor }};'>
-  <image src='{{ src }}' mode='aspectFill' style='width: 100%; height: {{ imgHeight }}rpx'></image>
+<view class='component cus' catchtap='onTap' data-cus='{{ dataCus }}' style='border-radius: {{ radius }}rpx; width: {{ width }}rpx; background-color: {{ bgColor }};'>
+  <image src='{{ src }}' mode='aspectFill' lazy-load='true' style='width: 100%; height: {{ imgHeight }}rpx'></image>
   <text class='title' space='ensp' style='color: {{ titleColor }}; font-size: {{ titleSize }}rpx'>{{ title }}</text>
   <view class='end'>
     <view>
