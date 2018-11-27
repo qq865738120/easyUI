@@ -10,6 +10,7 @@ const attributes = [
     { name: 'spacing', type: 'String', deff: '14', detail: '图标与文字间距' },
     { name: 'fontSize', type: 'String', deff: '24', detail: '文字大小' },
     { name: 'fontColor', type: 'String', deff: '#333333', detail: '文本颜色' },
+    { name: 'dataCus', type: 'String', deff: '-', detail: '组件自定义数据。可以从事件对象的target/currentTarget的dataset的cus中获取' },
   ],
   [ // base_list
     { name: 'title', type: 'String', deff: '-', detail: '左边标题' },

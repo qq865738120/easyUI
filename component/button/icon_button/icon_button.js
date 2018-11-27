@@ -45,6 +45,10 @@ Component({
     fontColor: {
       type: String,
       value: '#333333'
+    },
+    dataCus: {
+      type: String,
+      value: ''
     }
   },
 

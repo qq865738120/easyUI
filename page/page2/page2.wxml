@@ -34,7 +34,8 @@
 <show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' bgColor='#fff'>
 <e-icon-button 
   icon='/imgs/button_icon.png'
-  text='我的留言'>
+  text='我的留言'
+  catchbuttontap='testTap'>
 </e-icon-button>
 </show>
 
