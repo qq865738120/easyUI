@@ -137,7 +137,6 @@ Component({
           mLeft: (left > 0 && left < sysInfo.windowWidth - point[0] * 2 ? left + 'px' : mLeft),
           mTop: (top > 0 && top < sysInfo.windowHeight - point[1] * 2 ? top + 'px' : mTop)
         })
-        console.log('suspension_button移动事件触发', e);
         this.triggerEvent('buttonMove', e, { bubbles: true });
       }
     },

@@ -1,5 +1,5 @@
 <!--component/base/head_portrait/head_portrait.wxml-->
-<view class='component cus' style='display: {{ inline }}' catchtap='onTap'>
+<view class='component cus' style='display: {{ inline }}' bindtap='onTap'>
   <view class='body'>
     <image src='{{ src }}' style='width: {{ size }}rpx; height: {{ size }}rpx; border-radius: {{ radius }}rpx; border: {{ border }}; '></image>
     <view class='slot'>
