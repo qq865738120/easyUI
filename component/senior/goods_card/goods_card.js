@@ -63,6 +63,10 @@ Component({
     spacing: {
       type: String,
       value: '10'
+    },
+    dataCus: {
+      type: String,
+      value: ''
     }
   },
 

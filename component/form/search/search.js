@@ -121,11 +121,11 @@ Component({
     },
 
     onCleanTap: function (e) {
-      console.log(e);
       this.setData({
         value: '',
         inputing: false
       })
+      this.triggerEvent('onclean', e, { bubbles: true });
     }
   }
 })

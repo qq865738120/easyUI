@@ -1,5 +1,5 @@
 <!--component/list/base_card/base_card.wxml-->
-<view class='component cus' style='background-color: {{ bgColor }};' catchtap='onTap'>
+<view class='component cus' style='background-color: {{ bgColor }};' bindtap='onTap'>
   <view class='body'>
     <image src='{{ src }}' mode='aspectFill' style='width: {{ imgWidth }}rpx; height: {{ imgHeight }}rpx;'></image>
     <view class='body-right' style='width: {{ 750 - 140 - imgWidth }}rpx'>

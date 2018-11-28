@@ -1,5 +1,5 @@
 <!--component/base/enhance_text/enhance_text.wxml-->
-<view class='component cus' catchtap='onTap'>
+<view class='component cus' bindtap='onTap'>
   <view class='icon-cus' wx:if='{{ mIcon != undefined && mIcon != "" ? false : true }}'></view>
   <image class='icon-cus' src='{{ mIcon }}'  wx:if='{{ mIcon != undefined && mIcon != "" ? true : false }}' style='width: {{ mIconSize }}rpx; height: {{ mIconSize }}rpx;'></image>
   <text wx:if='{{ title != undefined && title != "" ? true : false }}' style='font-size: {{ titleFontSize }}rpx; color: {{ mTitleColor }}; margin-left: {{ titleSpacing }}rpx'>{{ title }}</text>

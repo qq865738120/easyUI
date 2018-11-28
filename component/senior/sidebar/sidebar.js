@@ -8,8 +8,16 @@ Component({
       type: Array,
       value: '',
       observer: function (newVal) {
+        let mList = [];
+        for (let i = 0; i < this.data.list.length; i++) {
+          mList[i] = {
+            text: newVal[i],
+            color: this.data.itemColor1,
+            size: this.data.itemSize1,
+          }
+        }
         this.setData({
-          mList: newVal
+          mList: mList
         });
       }
     },
@@ -55,6 +63,15 @@ Component({
       type: String,
       value: '32'
     },
+    dataCus: {
+      type: Array,
+      value: '',
+      observer: function (newVal) {
+        this.setData({
+          mDataCus: newVal
+        });
+      }
+    }
   },
 
   /**
@@ -63,6 +80,7 @@ Component({
   data: {
     view: '',
     mList: '',
+    mDataCus: [],
     itemColor: '#333333',
     itemSize: '30',
     lastIndex: -1

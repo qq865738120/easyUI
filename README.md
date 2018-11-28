@@ -45,7 +45,17 @@
 
 # 版本说明
 
-### v1.0.7 last
+### v1.1.0 last
+- 修复&优化
+1. modal组件关闭按钮支持阿里图标库  
+2. icon_button新增dataCus属性  
+3. 修复sidebar组件使用setData更新数据时候不显示的bug
+4. sidebar新增dataCus属性
+5. search新增onclean事件函数
+6. goods_card新增dataCus属性
+7. goods_list新增dataCus属性
+
+### v1.0.7
 - 新增组件
 1. goods_list  
 2. sidebar

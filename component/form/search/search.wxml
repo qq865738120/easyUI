@@ -4,8 +4,8 @@
     <image src='{{ icon }}' wx:if='{{ icon != undefined && icon != "" ? true : false }}' style='width: {{ iconSize }}rpx; height: {{ iconSize }}rpx'></image>
     <icon type='search' wx:if='{{ icon != undefined && icon != "" ? false : true }}' size='{{ iconSize }}rpx'></icon>
     <input class='input' value='{{ value }}' placeholder='{{ placeholder }}' focus='{{ focus }}' bindinput='onInput' style='font-size: {{ textSize }}rpx; color: {{ color }}; width: {{ width }}rpx'></input>
-    <icon type='clear' size='{{ 1 * iconSize - 8 }}rpx' hidden='{{ !inputing }}' style='width: {{ 1 * iconSize - 8 }}rpx; height: {{ 1 * iconSize - 8 }}rpx' catchtap='onCleanTap'></icon>
+    <icon type='clear' size='{{ 1 * iconSize - 8 }}rpx' hidden='{{ !inputing }}' style='width: {{ 1 * iconSize - 8 }}rpx; height: {{ 1 * iconSize - 8 }}rpx' bindtap='onCleanTap'></icon>
     <view hidden='{{ inputing }}' style='width: {{ 1 * iconSize - 8 }}rpx; height: {{ 1 * iconSize - 8 }}rpx'></view>
   </view>
-  <text wx:if='{{ mButtonText != undefined && mButtonText != "" ? true : false }}' catchtap='onButtonTap' style='font-size: {{ buttonTextSize }}rpx; color: {{ buttonColor }}; margin-left: {{ spacing }}rpx'>{{ mButtonText }}</text>
+  <text wx:if='{{ mButtonText != undefined && mButtonText != "" ? true : false }}' bindtap='onButtonTap' style='font-size: {{ buttonTextSize }}rpx; color: {{ buttonColor }}; margin-left: {{ spacing }}rpx'>{{ mButtonText }}</text>
 </view>
