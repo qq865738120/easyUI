@@ -11,7 +11,7 @@
   id='1'
   text='弹出模态框' 
   theme='fillingAndGradient2'
-  width='200'
+  width='240'
   height='60'
   textSize='28'
   color='#FE9036'
