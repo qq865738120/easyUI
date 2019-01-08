@@ -1,0 +1,8 @@
+/* component/senior/tabs/tabs.wxss */
+.component {
+  background-color: white;
+  white-space: nowrap;
+}
+.item {
+  display: inline-block;
+}

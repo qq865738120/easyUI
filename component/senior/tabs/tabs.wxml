@@ -1,0 +1,6 @@
+<!--component/senior/tabs/tabs.wxml-->
+<scroll-view class='component cus' scroll-x="{{ isScroll }}" style=''>
+  <view class='item' wx:for="{{ items }}" wx:key="{{ index }}" style='width: {{ itemWidth }}%' >
+    <text>{{ item }}</text>
+  </view>
+</scroll-view>
