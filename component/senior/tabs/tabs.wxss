@@ -2,7 +2,18 @@
 .component {
   background-color: white;
   white-space: nowrap;
+  position: relative;
+  box-sizing: content-box;
 }
 .item {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  right: 70%;
 }

@@ -1,6 +1,7 @@
 <!--component/senior/tabs/tabs.wxml-->
-<scroll-view class='component cus' scroll-x="{{ isScroll }}" style=''>
-  <view class='item' wx:for="{{ items }}" wx:key="{{ index }}" style='width: {{ itemWidth }}%' >
-    <text>{{ item }}</text>
+<scroll-view class='component cus' scroll-x="{{ isScroll }}" style='{{ scrollStyle }}'>
+  <view class='item' wx:for="{{ items }}" wx:key="{{ index }}" style='width: {{ itemWidth }}rpx; height: {{ height }}rpx' >
+    <text style='color: {{ selectColor }}'>{{ item }}</text>
   </view>
+  <view class="bottom-bar" style='background-color: {{ selectColor }}'></view>
 </scroll-view>
