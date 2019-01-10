@@ -110,7 +110,14 @@ const code = {
 </e-modal>`,
   d6: `<e-sidebar
   list='{{ sidebarList }}'
-  height='600rpx' />`
+  height='600rpx' />`,
+  d7: `<e-tabs
+  items='{{ ["全部", "最近热点", "发布", "最新" ] }}'
+  selected='2'/>`,
+  d8: `<e-tabs
+  items='{{ ["全部", "最近", "发布", "最新", "热点" ] }}'
+  selectColor='#455488'
+  theme='smallBar'/>`
 }
 
 Page({
@@ -125,7 +132,9 @@ Page({
       d3: { id: com[12].id, title: com[12].name, sub: '带subDetail属性', code: code.d3 },
       d4: { id: com[15].id, title: com[15].name, sub: '不带关闭按钮', code: code.d4 },
       d5: { id: com[15].id, title: com[15].name, sub: '带关闭按钮', code: code.d5 },
-      d6: { id: com[17].id, title: com[17].name, sub: '', code: code.d6 }
+      d6: { id: com[17].id, title: com[17].name, sub: '', code: code.d6 },
+      d7: { id: com[21].id, title: com[21].name, sub: 'default主题', code: code.d7 },
+      d8: { id: com[21].id, title: com[21].name, sub: 'smallBar主题', code: code.d8 }
     },
     show1: false,
     show2: false,

@@ -283,6 +283,21 @@ const attributes = [
     { name: 'title', type: 'String', deff: '-', detail: '标题' },
     { name: 'titleColor', type: 'String', deff: '#333', detail: '标题颜色' },
     { name: 'titleSize', type: 'String', deff: '28', detail: '标题大小' },
+  ],
+  [ // tabs
+    { name: 'items', type: 'Array', deff: "['item1', 'item2', 'item3', 'item4']", detail: '选项数组' },
+    { name: 'height', type: 'String', deff: "120", detail: 'tabs高度，单位rpx' },
+    { name: 'testColor', type: 'String', deff: "#666666", detail: '文字默认颜色' },
+    { name: 'textSize', type: 'String', deff: "28", detail: '文字大小' },
+    { name: 'selectColor', type: 'String', deff: "#FE9036", detail: '选中颜色' },
+    { name: 'selected', type: 'String', deff: "0", detail: '默认选中第几项，第一项为0' },
+    {
+      name: 'theme', type: 'String', deff: "default", detail: '主题，点击查看详情', show: [
+        { name: 'default', detail: '默认主题，即标底部条在最底部且跟选项等长' },
+        { name: 'smallBar', detail: 'smallBar主题，即标底部条在文字下方且与文字等长' },
+      ] 
+    },
+    { name: 'dataCus', type: 'String', deff: "-", detail: '自定义数据，数据在事件对象的currentTarget下的dataset下的cus中' },
   ]
 ]
 
@@ -352,6 +367,9 @@ const mClass = [
   [ // base_card
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // tabs
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -412,6 +430,9 @@ const method = [
   [], // head_view
   [ // base_card
     { name: 'cardtap', parameter: '事件对象', detail: '列表点击事件' }
+  ],
+  [ // tabs
+    { name: 'itemtap', parameter: '事件对象', detail: '选项点击事件' }
   ],
 ]
 
@@ -477,6 +498,9 @@ const slot = [
     { name: 'sub', detail: '标题底部插槽' },
     { name: 'bottom', detail: '组件底部插槽' }
   ],
+  [ // tabs
+
+  ],
 ]
 
 const other = [
@@ -506,6 +530,7 @@ tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData
 tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要设置背景图片且需要使用本地路径的场景。`, // modal
 `基础库1.9.90以上使用。`, // head_view
 `基础库1.9.90以上使用。`, // base_card
+`基础库1.9.90以上使用。`, // tabs
 ]
 
 module.exports = {
