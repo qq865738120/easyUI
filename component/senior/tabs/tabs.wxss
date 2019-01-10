@@ -2,18 +2,26 @@
 .component {
   background-color: white;
   white-space: nowrap;
+  box-sizing: border-box;
+}
+.content {
   position: relative;
-  box-sizing: content-box;
 }
 .item {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 0 30rpx;
+}
+.text {
+  transition: color 0.2s
 }
 .bottom-bar {
   position: absolute;
-  bottom: 0;
   height: 2px;
-  left: 0;
-  right: 70%;
+  border-radius: 2px
+}
+.small {
+  height: 4px;
+  border-radius: 2px;
 }

@@ -42,10 +42,13 @@
 | enhance_image | [component/base/enhance_image](component/base/enhance_image) | 增强image，可用于需要背景图片的场景 |
 | head_view | [component/structure/head_view](component/structure/head_view) | 带有头部标题栏的view |
 | base_card | [component/list/base_card](component/list/base_card) | 基础卡片组件 |
+| tabs | [component/senior/tabs](component/senior/tabs) | 标签栏 |
 
 # 版本说明
 
 ### v1.1.0 last
+- 新增组件
+1. tabs
 - 修复&优化
 1. modal组件关闭按钮支持阿里图标库  
 2. icon_button新增dataCus属性  
