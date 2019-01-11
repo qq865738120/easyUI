@@ -302,7 +302,7 @@ const attributes = [
   [ // load_more
     { name: 'lineColor', type: 'String', deff: '#e5e5e5', detail: '线条颜色' },
     { name: 'text', type: 'String', deff: '暂无数据', detail: '提示文本' },
-    { name: 'textSize', type: 'String', deff: '24', detail: '提示文本大小' },
+    { name: 'textSize', type: 'String', deff: '28', detail: '提示文本大小' },
     { name: 'textColor', type: 'String', deff: '#999999', detail: '提示文本颜色' },
     { name: 'loading', type: 'String', deff: 'false', detail: '是否展示loading动画' },
     { name: 'loadingColor', type: 'String', deff: '#36BCBC', detail: 'loading为true时生效' }

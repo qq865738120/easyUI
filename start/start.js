@@ -72,6 +72,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: '一行代码的艺术之旅',
+      path: '/index/index',
+      imageUrl: '/imgs/cover.png'
+    }
   }
 })
