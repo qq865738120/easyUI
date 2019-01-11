@@ -59,6 +59,7 @@
 5. search新增onclean事件函数
 6. goods_card新增dataCus属性
 7. goods_list新增dataCus属性
+8. tabs组件优化
 
 ### v1.0.7
 - 新增组件

@@ -75,7 +75,7 @@ Component({
     isScroll: true,
     scrollStyle: 'border-bottom: 1px solid #e5e5e5;',
     left: '0',
-    right: '0',
+    right: '750',
     bottom: '0',
     mSelected: '0',
     lastIndex: 0,
