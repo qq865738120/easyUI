@@ -298,7 +298,15 @@ const attributes = [
       ] 
     },
     { name: 'dataCus', type: 'String', deff: "-", detail: '自定义数据，数据在事件对象的currentTarget下的dataset下的cus中' },
-  ]
+  ],
+  [ // load_more
+    { name: 'lineColor', type: 'String', deff: '#e5e5e5', detail: '线条颜色' },
+    { name: 'text', type: 'String', deff: '暂无数据', detail: '提示文本' },
+    { name: 'textSize', type: 'String', deff: '24', detail: '提示文本大小' },
+    { name: 'textColor', type: 'String', deff: '#999999', detail: '提示文本颜色' },
+    { name: 'loading', type: 'String', deff: 'false', detail: '是否展示loading动画' },
+    { name: 'loadingColor', type: 'String', deff: '#36BCBC', detail: 'loading为true时生效' }
+  ],
 ]
 
 const mClass = [
@@ -370,6 +378,9 @@ const mClass = [
   [ // tabs
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // load_more
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -434,6 +445,7 @@ const method = [
   [ // tabs
     { name: 'itemtap', parameter: '事件对象', detail: '选项点击事件' }
   ],
+  [], // load_more
 ]
 
 const slot = [
@@ -501,6 +513,7 @@ const slot = [
   [ // tabs
 
   ],
+  [],// load_more
 ]
 
 const other = [
@@ -531,6 +544,7 @@ tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要�
 `基础库1.9.90以上使用。`, // head_view
 `基础库1.9.90以上使用。`, // base_card
 `基础库1.9.90以上使用。`, // tabs
+`基础库1.9.90以上使用。`, // load_more
 ]
 
 module.exports = {
