@@ -136,6 +136,8 @@ const code = {
   d22: `<e-enhance-icon
   cus='iconfont icon-shezhi'>
 </e-enhance-icon>`,
+  d23: `<e-load-more />`,
+  d24: `<e-load-more loading='true' text='加载中' />`,
 }
 
 Page({
@@ -167,6 +169,8 @@ Page({
       d20: { id: com[10].id, title: com[10].name, sub: '引用普通图标', code: code.d20 },
       d21: { id: com[18].id, title: com[18].name, sub: '插入文本', code: code.d21 },
       d22: { id: com[10].id, title: com[10].name, sub: '引用阿里图标库', code: code.d22 },
+      d23: { id: com[22].id, title: com[22].name, sub: '带loading属性', code: code.d23 },
+      d24: { id: com[22].id, title: com[22].name, sub: '', code: code.d24 },
     }
   },
 

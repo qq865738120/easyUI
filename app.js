@@ -23,6 +23,7 @@ App({
       { id: '19', name: 'head_view组件' },
       { id: '20', name: 'base_card组件' },
       { id: '21', name: 'tabs组件' },
+      { id: '22', name: 'load_more组件' },
     ]
   },
 })
