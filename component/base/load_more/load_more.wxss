@@ -13,7 +13,6 @@
 }
 .loading {
   display: inline-block;
-  margin-right: 4px;
   vertical-align: middle;
   width: 14px;
   height: 14px;

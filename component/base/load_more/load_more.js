@@ -14,7 +14,7 @@ Component({
     },
     textSize: {
       type: String,
-      value: '24'
+      value: '28'
     },
     textColor: {
       type: String,

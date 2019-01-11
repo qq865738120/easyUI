@@ -56,4 +56,11 @@ Page({
   onReady: function () {
 
   },
+  onShareAppMessage() {
+    return {
+      title: '一行代码的艺术之旅',
+      path: '/index/index',
+      imageUrl: '/imgs/cover.png'
+    }
+  }
 })
