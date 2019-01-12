@@ -287,7 +287,7 @@ const attributes = [
   [ // tabs
     { name: 'items', type: 'Array', deff: "['item1', 'item2', 'item3', 'item4']", detail: '选项数组' },
     { name: 'height', type: 'String', deff: "120", detail: 'tabs高度，单位rpx' },
-    { name: 'testColor', type: 'String', deff: "#666666", detail: '文字默认颜色' },
+    { name: 'textColor', type: 'String', deff: "#666666", detail: '文字默认颜色' },
     { name: 'textSize', type: 'String', deff: "28", detail: '文字大小' },
     { name: 'selectColor', type: 'String', deff: "#FE9036", detail: '选中颜色' },
     { name: 'selected', type: 'String', deff: "0", detail: '默认选中第几项，第一项为0' },
