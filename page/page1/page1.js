@@ -138,6 +138,14 @@ const code = {
 </e-enhance-icon>`,
   d23: `<e-load-more />`,
   d24: `<e-load-more loading='true' text='加载中' />`,
+  d25: `<e-loading color='#FE9036'/>`,
+  d26: `<e-loading type='doubleBounce' color='#455488'/>`,
+  d27: `<e-loading type='wave' color='#FE9036'/>`,
+  d28: `<e-loading type='wanderingCubes' color='#455488'/>`,
+  d29: `<e-loading type='spinnerPulse' color='#FE9036'/>`,
+  d30: `<e-loading type='chasingDots' color='#455488'/>`,
+  d31: `<e-loading type='threeBounce' color='#FE9036'/>`,
+  d32: `<e-loading type='cubeGrid' color='#455488'/>`,
 }
 
 Page({
@@ -169,8 +177,16 @@ Page({
       d20: { id: com[10].id, title: com[10].name, sub: '引用普通图标', code: code.d20 },
       d21: { id: com[18].id, title: com[18].name, sub: '插入文本', code: code.d21 },
       d22: { id: com[10].id, title: com[10].name, sub: '引用阿里图标库', code: code.d22 },
-      d23: { id: com[22].id, title: com[22].name, sub: '带loading属性', code: code.d23 },
-      d24: { id: com[22].id, title: com[22].name, sub: '', code: code.d24 },
+      d23: { id: com[22].id, title: com[22].name, sub: '', code: code.d23 },
+      d24: { id: com[22].id, title: com[22].name, sub: '带loading属性', code: code.d24 },
+      d25: { id: com[23].id, title: com[23].name, sub: 'type值为rotatePlane', code: code.d25 },
+      d26: { id: com[23].id, title: com[23].name, sub: 'type值为doubleBounce', code: code.d26 },
+      d27: { id: com[23].id, title: com[23].name, sub: 'type值为wave', code: code.d27 },
+      d28: { id: com[23].id, title: com[23].name, sub: 'type值为wanderingCubes', code: code.d28 },
+      d29: { id: com[23].id, title: com[23].name, sub: 'type值为spinnerPulse', code: code.d29 },
+      d30: { id: com[23].id, title: com[23].name, sub: 'type值为chasingDots', code: code.d30 },
+      d31: { id: com[23].id, title: com[23].name, sub: 'type值为threeBounce', code: code.d31 },
+      d32: { id: com[23].id, title: com[23].name, sub: 'type值为cubeGrid', code: code.d32 },
     }
   },
 

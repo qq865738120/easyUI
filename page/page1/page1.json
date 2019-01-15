@@ -8,6 +8,7 @@
     "e-enhance-view": "/component/base/enhance_view/enhance_view",
     "e-enhance-icon": "/component/base/enhance_icon/enhance_icon",
     "e-enhance-image": "/component/base/enhance_image/enhance_image",
-    "e-load-more": "/component/base/load_more/load_more"
+    "e-load-more": "/component/base/load_more/load_more",
+    "e-loading": "/component/base/loading/loading"
   }
 }

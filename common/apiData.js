@@ -287,7 +287,7 @@ const attributes = [
   [ // tabs
     { name: 'items', type: 'Array', deff: "['item1', 'item2', 'item3', 'item4']", detail: '选项数组' },
     { name: 'height', type: 'String', deff: "120", detail: 'tabs高度，单位rpx' },
-    { name: 'testColor', type: 'String', deff: "#666666", detail: '文字默认颜色' },
+    { name: 'textColor', type: 'String', deff: "#666666", detail: '文字默认颜色' },
     { name: 'textSize', type: 'String', deff: "28", detail: '文字大小' },
     { name: 'selectColor', type: 'String', deff: "#FE9036", detail: '选中颜色' },
     { name: 'selected', type: 'String', deff: "0", detail: '默认选中第几项，第一项为0' },
@@ -306,6 +306,13 @@ const attributes = [
     { name: 'textColor', type: 'String', deff: '#999999', detail: '提示文本颜色' },
     { name: 'loading', type: 'String', deff: 'false', detail: '是否展示loading动画' },
     { name: 'loadingColor', type: 'String', deff: '#36BCBC', detail: 'loading为true时生效' }
+  ],
+  [ // loading
+    { name: 'inLine', type: 'String', deff: 'true', detail: '是否是行内元素' },
+    { name: 'type', type: 'String', deff: 'rotatePlane', detail: 'loading动画类型' },
+    { name: 'width', type: 'String', deff: '60', detail: '宽度' },
+    { name: 'height', type: 'String', deff: '60', detail: '高度' },
+    { name: 'color', type: 'String', deff: '#999', detail: '颜色' }
   ],
 ]
 
@@ -381,6 +388,9 @@ const mClass = [
   [ // load_more
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // loading
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -446,6 +456,7 @@ const method = [
     { name: 'itemtap', parameter: '事件对象', detail: '选项点击事件' }
   ],
   [], // load_more
+  [], // loading
 ]
 
 const slot = [
@@ -514,6 +525,7 @@ const slot = [
 
   ],
   [],// load_more
+  [], // loading
 ]
 
 const other = [
@@ -545,6 +557,7 @@ tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要�
 `基础库1.9.90以上使用。`, // base_card
 `基础库1.9.90以上使用。`, // tabs
 `基础库1.9.90以上使用。`, // load_more
+`基础库1.9.90以上使用。`, // loading
 ]
 
 module.exports = {

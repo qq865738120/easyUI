@@ -1,5 +1,37 @@
 <!--page1/page1.wxml-->
 
+<show title='{{ com.d32.title }}' sub='{{ com.d32.sub }}' mId='{{ com.d32.id }}' code='{{ com.d32.code }}' margin='true' bgColor='#fff'>
+<e-loading type='cubeGrid' color='#455488'/>
+</show>
+
+<show title='{{ com.d31.title }}' sub='{{ com.d31.sub }}' mId='{{ com.d31.id }}' code='{{ com.d31.code }}' margin='true' bgColor='#fff'>
+<e-loading type='threeBounce' color='#FE9036'/>
+</show>
+
+<show title='{{ com.d30.title }}' sub='{{ com.d30.sub }}' mId='{{ com.d30.id }}' code='{{ com.d30.code }}' margin='true' bgColor='#fff'>
+<e-loading type='chasingDots' color='#455488'/>
+</show>
+
+<show title='{{ com.d29.title }}' sub='{{ com.d29.sub }}' mId='{{ com.d29.id }}' code='{{ com.d29.code }}' margin='true' bgColor='#fff'>
+<e-loading type='spinnerPulse' color='#FE9036'/>
+</show>
+
+<show title='{{ com.d28.title }}' sub='{{ com.d28.sub }}' mId='{{ com.d28.id }}' code='{{ com.d28.code }}' margin='true' bgColor='#fff'>
+<e-loading type='wanderingCubes' color='#455488'/>
+</show>
+
+<show title='{{ com.d27.title }}' sub='{{ com.d27.sub }}' mId='{{ com.d27.id }}' code='{{ com.d27.code }}' margin='true' bgColor='#fff'>
+<e-loading type='wave' color='#FE9036'/>
+</show>
+
+<show title='{{ com.d26.title }}' sub='{{ com.d26.sub }}' mId='{{ com.d26.id }}' code='{{ com.d26.code }}' margin='true' bgColor='#fff'>
+<e-loading type='doubleBounce' color='#455488'/>
+</show>
+
+<show title='{{ com.d25.title }}' sub='{{ com.d25.sub }}' mId='{{ com.d25.id }}' code='{{ com.d25.code }}' margin='true' bgColor='#fff'>
+<e-loading color='#FE9036'/>
+</show>
+
 <show title='{{ com.d24.title }}' sub='{{ com.d24.sub }}' mId='{{ com.d24.id }}' code='{{ com.d24.code }}' margin='true' bgColor='#fff'>
 <e-load-more loading='true' text='加载中' />
 </show>

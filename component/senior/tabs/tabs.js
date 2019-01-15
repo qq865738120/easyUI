@@ -23,7 +23,7 @@ Component({
       type: String,
       value: '120'
     },
-    testColor: {
+    textColor: {
       type: String,
       value: '#666666'
     },
@@ -141,7 +141,6 @@ Component({
         })
         that.barLeft(that.data.mSelected, that.data.domData);
         that.barRight(that.data.mSelected, that.data.domData);
-        // console.log(res)
       }).exec()
       query.in(this).selectAll('.text').fields({
         dataset: true,
@@ -155,7 +154,6 @@ Component({
           that.barLeft(that.data.mSelected, that.data.textDomData);
           that.barRight(that.data.mSelected, that.data.textDomData);
         }
-        console.log(res)
       }).exec()
     },
   },
