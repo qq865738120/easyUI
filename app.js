@@ -24,6 +24,7 @@ App({
       { id: '20', name: 'base_card组件' },
       { id: '21', name: 'tabs组件' },
       { id: '22', name: 'load_more组件' },
+      { id: '23', name: 'loading组件' },
     ]
   },
 })

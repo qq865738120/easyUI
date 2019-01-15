@@ -307,6 +307,13 @@ const attributes = [
     { name: 'loading', type: 'String', deff: 'false', detail: '是否展示loading动画' },
     { name: 'loadingColor', type: 'String', deff: '#36BCBC', detail: 'loading为true时生效' }
   ],
+  [ // loading
+    { name: 'inLine', type: 'String', deff: 'true', detail: '是否是行内元素' },
+    { name: 'type', type: 'String', deff: 'rotatePlane', detail: 'loading动画类型' },
+    { name: 'width', type: 'String', deff: '60', detail: '宽度' },
+    { name: 'height', type: 'String', deff: '60', detail: '高度' },
+    { name: 'color', type: 'String', deff: '#999', detail: '颜色' }
+  ],
 ]
 
 const mClass = [
@@ -381,6 +388,9 @@ const mClass = [
   [ // load_more
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // loading
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -446,6 +456,7 @@ const method = [
     { name: 'itemtap', parameter: '事件对象', detail: '选项点击事件' }
   ],
   [], // load_more
+  [], // loading
 ]
 
 const slot = [
@@ -514,6 +525,7 @@ const slot = [
 
   ],
   [],// load_more
+  [], // loading
 ]
 
 const other = [
@@ -545,6 +557,7 @@ tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要�
 `基础库1.9.90以上使用。`, // base_card
 `基础库1.9.90以上使用。`, // tabs
 `基础库1.9.90以上使用。`, // load_more
+`基础库1.9.90以上使用。`, // loading
 ]
 
 module.exports = {

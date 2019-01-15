@@ -1,0 +1,49 @@
+<!--component/base/loading/loading.wxml-->
+<view class='component cus' style='display: {{ inLine == "true" ? "flex" : "inline-flex" }}'>
+
+  <view class="rotateplane" wx:if="{{ type == 'rotatePlane' }}" style='width: {{ width }}rpx; height: {{ height }}rpx; background-color: {{ color }}'></view>
+
+  <view class="double-bounce" wx:if="{{ type == 'doubleBounce' }}" style='width: {{ width }}rpx; height: {{ height }}rpx;'>
+    <view class="double-bounce1" style='background-color: {{ color }}'></view>
+    <view class="double-bounce2" style='background-color: {{ color }}'></view>
+  </view>
+
+  <view class="wave" wx:if="{{ type == 'wave' }}" style='width: {{ width }}rpx; height: {{ height }}rpx;'>
+    <view class="rect1" style='background-color: {{ color }}'/>
+    <view class="rect2" style='background-color: {{ color }}'/>
+    <view class="rect3" style='background-color: {{ color }}'/>
+    <view class="rect4" style='background-color: {{ color }}'/>
+    <view class="rect5" style='background-color: {{ color }}'/>
+  </view>
+
+  <view class="wandering-cubes" wx:if="{{ type == 'wanderingCubes' }}" style='width: {{ width }}rpx; height: {{ height }}rpx;'>
+    <view class="cube1" style='background-color: {{ color }}'/>
+    <view class="cube2" style='background-color: {{ color }}'/>
+  </view>
+
+  <view class="spinner-pulse" wx:if="{{ type == 'spinnerPulse' }}" style='width: {{ width }}rpx; height: {{ height }}rpx; background-color: {{ color }}'></view>
+
+  <view class="chasing-dots" wx:if="{{ type == 'chasingDots' }}" style='width: {{ width }}rpx; height: {{ height }}rpx' >
+    <view class="dot1" style='background-color: {{ color }}'/>
+    <view class="dot2" style='background-color: {{ color }}'/>
+  </view>
+
+  <view class="three-bounce" wx:if="{{ type == 'threeBounce' }}" style='width: {{ width }}rpx; height: {{ height }}rpx'>
+    <view class="bounce1" style='background-color: {{ color }}'/>
+    <view class="bounce2" style='background-color: {{ color }}'/>
+    <view class="bounce3" style='background-color: {{ color }}'/>
+  </view>
+
+  <view class="sk-cube-grid" wx:if="{{ type == 'cubeGrid' }}" style='width: {{ width }}rpx; height: {{ height }}rpx'>
+    <view class="sk-cube sk-cube1" style='background-color: {{ color }}'></view>
+    <view class="sk-cube sk-cube2" style='background-color: {{ color }}'></view>
+    <view class="sk-cube sk-cube3" style='background-color: {{ color }}'></view>
+    <view class="sk-cube sk-cube4" style='background-color: {{ color }}'></view>
+    <view class="sk-cube sk-cube5" style='background-color: {{ color }}'></view>
+    <view class="sk-cube sk-cube6" style='background-color: {{ color }}'></view>
+    <view class="sk-cube sk-cube7" style='background-color: {{ color }}'></view>
+    <view class="sk-cube sk-cube8" style='background-color: {{ color }}'></view>
+    <view class="sk-cube sk-cube9" style='background-color: {{ color }}'></view>
+  </view>
+
+</view>

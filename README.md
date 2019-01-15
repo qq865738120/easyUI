@@ -44,6 +44,7 @@
 | base_card | [component/list/base_card](component/list/base_card) | 基础卡片组件 |
 | tabs | [component/senior/tabs](component/senior/tabs) | 标签栏 |
 | load_more | [component/base/load_more](component/base/load_more) | 加载更多组件 |
+| loading | [component/base/loading](component/base/loading) | 加载动画组件 |
 
 # 版本说明
 
@@ -51,6 +52,7 @@
 - 新增组件
 1. tabs
 2. load_more
+3. loading
 - 修复&优化
 1. modal组件关闭按钮支持阿里图标库  
 2. icon_button新增dataCus属性  
