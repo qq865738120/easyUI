@@ -62,6 +62,8 @@
 6. goods_card新增dataCus属性
 7. goods_list新增dataCus属性
 8. tabs组件优化
+9. suspension_button组件点击事件不触发bug修复
+10. suspension_button组件不适用图标时文本布局问题修复
 
 ### v1.0.7
 - 新增组件

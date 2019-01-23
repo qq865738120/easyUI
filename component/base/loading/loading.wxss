@@ -176,10 +176,6 @@
   }
 }
 
-.three-bounce {
-  
-}
-
 .three-bounce .bounce1 {
   width: 18rpx;
   height: 18rpx;
