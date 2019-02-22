@@ -45,6 +45,7 @@
 | tabs | [component/senior/tabs](component/senior/tabs) | 标签栏 |
 | load_more | [component/base/load_more](component/base/load_more) | 加载更多组件 |
 | loading | [component/base/loading](component/base/loading) | 加载动画组件 |
+| popup | [component/senior/popup](component/senior/popup) | 弹出框组件 |
 
 # 版本说明
 
@@ -53,6 +54,7 @@
 1. tabs
 2. load_more
 3. loading
+4. popup
 - 修复&优化
 1. modal组件关闭按钮支持阿里图标库  
 2. icon_button新增dataCus属性  
@@ -63,7 +65,7 @@
 7. goods_list新增dataCus属性
 8. tabs组件优化
 9. suspension_button组件点击事件不触发bug修复
-10. suspension_button组件不适用图标时文本布局问题修复
+10. suspension_button组件不使用图标时的文本布局问题修复
 
 ### v1.0.7
 - 新增组件

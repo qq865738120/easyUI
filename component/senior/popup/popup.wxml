@@ -1,0 +1,8 @@
+<!--component/senior/popup/popup.wxml-->
+<view class='component cus animated' hidden='{{ !show }}' style='width: {{ width }}px; height: {{ mHeight }}px; top: {{ top }}px; left: {{ left }}px; animation-name: {{ mIsShow ? "fadeIn" : "fadeOut" }};' catchtouchmove='onMove' catchtap='onTap'>
+  <view class='content {{ mIsShow ? "popup" : "popin" }}' style='background-color: {{ bgColor }}; border-radius: {{ radius }}rpx {{ radius }}rpx 0 0; transform: translate3d(0, {{ mIsShow ? "" : "100%" }}, 0);' catchtap='onContentTap'>
+    <view class='slot'><slot name='head'></slot></view>
+    <view class='slot'><slot name='content'></slot></view>
+    <view class='slot'><slot name='foot'></slot></view>
+  </view>
+</view>

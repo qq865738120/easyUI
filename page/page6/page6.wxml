@@ -1,5 +1,26 @@
 <!--page/page6/page6.wxml-->
 
+<show title='{{ com.d9.title }}' sub='{{ com.d9.sub }}' mId='{{ com.d9.id }}' code='{{ com.d9.code }}' margin='true' bgColor='#fff'>
+<e-base-button
+  id='3'
+  text='弹出弹出框' 
+  theme='fillingAndGradient2'
+  width='200'
+  height='80'
+  textSize='28'
+  color='#FE9036'
+  endColor='#FE4E36'
+  radius='50'
+  catchbuttontap='onButtonTap' />
+<e-popup
+  isShow='{{ show3 }}'
+  hideOnBlur='false'>
+  <view slot='head' style='text-align: center; font-weight: 800; font-size: 38rpx; margin: 40rpx'>标题</view>
+  <view slot='content' style='margin: 0rpx 30rpx; font-size: 34rpx; color: #666; height: 300rpx;'>这里放置主体内容</view>
+  <view slot='foot' style='font-size: 36rpx; color: #fff; display: flex; align-items: center; justify-content: center; height: 100rpx; background-color: #FE9036; margin-top: 30rpx;' catchtap='testTap'>确定</view>
+</e-popup>
+</show>
+
 <show title='{{ com.d8.title }}' sub='{{ com.d8.sub }}' mId='{{ com.d8.id }}' code='{{ com.d8.code }}'>
 <e-tabs
   items='{{ ["全部", "最近", "发布", "最新", "热点" ] }}'
@@ -25,7 +46,7 @@
   text='弹出模态框' 
   theme='fillingAndGradient2'
   width='200'
-  height='60'
+  height='80'
   textSize='28'
   color='#FE9036'
   endColor='#FE4E36'
@@ -73,7 +94,7 @@
   text='弹出模态框' 
   theme='fillingAndGradient2'
   width='200'
-  height='60'
+  height='80'
   textSize='28'
   color='#FE9036'
   endColor='#FE4E36'

@@ -117,7 +117,14 @@ const code = {
   d8: `<e-tabs
   items='{{ ["全部", "最近", "发布", "最新", "热点" ] }}'
   selectColor='#455488'
-  theme='smallBar'/>`
+  theme='smallBar'/>`,
+  d9: `<e-popup
+  isShow='{{ show3 }}'
+  hideOnBlur='false'>
+  <view slot='head' style='text-align: center; font-weight: 800; font-size: 38rpx; margin: 40rpx'>标题</view>
+  <view slot='content' style='margin: 0rpx 30rpx; font-size: 34rpx; color: #666; height: 300rpx;'>这里放置主体内容</view>
+  <view slot='foot' style='font-size: 36rpx; color: #fff; display: flex; align-items: center; justify-content: center; height: 100rpx; background-color: #FE9036; margin-top: 30rpx;' catchtap='testTap'>确定</view>
+</e-popup>`
 }
 
 Page({
@@ -134,10 +141,12 @@ Page({
       d5: { id: com[15].id, title: com[15].name, sub: '带关闭按钮', code: code.d5 },
       d6: { id: com[17].id, title: com[17].name, sub: '', code: code.d6 },
       d7: { id: com[21].id, title: com[21].name, sub: 'default主题', code: code.d7 },
-      d8: { id: com[21].id, title: com[21].name, sub: 'smallBar主题', code: code.d8 }
+      d8: { id: com[21].id, title: com[21].name, sub: 'smallBar主题', code: code.d8 },
+      d9: { id: com[24].id, title: com[24].name, sub: '点击遮罩不隐藏', code: code.d9 }
     },
     show1: false,
     show2: false,
+    show3: false,
     sidebarList: [ '男装', '女装', '男鞋', '女鞋', '箱包手袋', '美妆护肤', '个护清洁', '手机数码', '电脑办公', '家用电器', '食品生鲜', '酒水饮料' ]
   },
 
@@ -147,6 +156,7 @@ Page({
     switch (e.target.id) {
       case '1': that.setData({ show1: true }); break;
       case '2': that.setData({ show2: true }); break;
+      case '3': that.setData({ show3: true }); break;
     }
   },
 
@@ -167,6 +177,9 @@ Page({
   },
 
   testTap: function (e) {
+    this.setData({
+      show3: false
+    })
     console.log('test tap');
     console.log(e);
   },

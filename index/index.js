@@ -21,7 +21,7 @@ Page({
       { title: '表单组件', text: '2', lineColor: '#e8e8e8' },
       { title: '列表组件', text: '4', lineColor: '#e8e8e8' },
       { title: '结构组件', text: '2', lineColor: '#e8e8e8' },
-      { title: '高级组件', text: '5', lineColor: 'rgba(0,0,0,0)' },
+      { title: '高级组件', text: '6', lineColor: 'rgba(0,0,0,0)' },
     ]
   },
 
