@@ -10,6 +10,7 @@
     "e-base-button": "/component/button/base_button/base_button",
     "e-modal": "/component/senior/modal/modal",
     "e-sidebar": "/component/senior/sidebar/sidebar",
-    "e-tabs": "/component/senior/tabs/tabs"
+    "e-tabs": "/component/senior/tabs/tabs",
+    "e-popup": "/component/senior/popup/popup"
   }
 }

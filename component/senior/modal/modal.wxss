@@ -24,7 +24,7 @@
   position: absolute;
 }
 .animated {
-  animation-duration: 210ms;
+  animation-duration: 280ms;
   animation-fill-mode: both;
   animation-name: fadeIn;
 }

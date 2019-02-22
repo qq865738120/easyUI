@@ -314,6 +314,12 @@ const attributes = [
     { name: 'height', type: 'String', deff: '60', detail: '高度' },
     { name: 'color', type: 'String', deff: '#999', detail: '颜色' }
   ],
+  [ // popup
+    { name: 'isShow', type: 'Boolean', deff: 'false', detail: '是否展示，默认隐藏' },
+    { name: 'bgColor', type: 'String', deff: '#fff', detail: '背景色' },
+    { name: 'radius', type: 'String', deff: '0', detail: '顶部圆角大小' },
+    { name: 'hideOnBlur', type: 'String', deff: 'true', detail: '点击遮罩时是否隐藏，默认隐藏' }
+  ],
 ]
 
 const mClass = [
@@ -391,6 +397,9 @@ const mClass = [
   [ // loading
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // popup
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
 ]
 
 const method = [
@@ -457,6 +466,7 @@ const method = [
   ],
   [], // load_more
   [], // loading
+  [], // popup
 ]
 
 const slot = [
@@ -526,6 +536,11 @@ const slot = [
   ],
   [],// load_more
   [], // loading
+  [ // popup
+    { name: 'head', detail: '头部内容插槽' },
+    { name: 'content', detail: '主体内容插槽' },
+    { name: 'foot', detail: '底部内容插槽' }
+  ],
 ]
 
 const other = [
@@ -558,6 +573,7 @@ tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要�
 `基础库1.9.90以上使用。`, // tabs
 `基础库1.9.90以上使用。`, // load_more
 `基础库1.9.90以上使用。`, // loading
+`基础库1.9.90以上使用。`, // popup
 ]
 
 module.exports = {
