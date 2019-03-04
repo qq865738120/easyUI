@@ -1,5 +1,19 @@
 <!--page/page3/page3.wxml-->
 
+<show title='{{ com.d6.title }}' sub='{{ com.d6.sub }}' mId='{{ com.d6.id }}' code='{{ com.d6.code }}' margin='true' bgColor='#fff'>
+<e-checker
+  label='套餐'
+  theme='open'
+  catchselect='testTap'
+  list='{{ [ { id: "0", text: "官方标准套餐" }, { id: "1", text: "套餐1" }, { id: "2", text: "套餐2" }, { id: "3", text: "套餐3" }, { id: "4", text: "套餐4" } ] }}' />
+</show>
+
+<show title='{{ com.d5.title }}' sub='{{ com.d5.sub }}' mId='{{ com.d5.id }}' code='{{ com.d5.code }}' margin='true' bgColor='#fff'>
+<e-checker
+  label='重量'
+  list='{{ [ { id: "0", text: "20000g" }, { id: "1", text: "300000g" }, { id: "2", text: "400000g" }, { id: "3", text: "5000000g" }, { id: "4", text: "6000000g" } ] }}' />
+</show>
+
 <show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}' margin='true' bgColor='#fff'>
 <e-count-button />
 </show>
@@ -21,7 +35,6 @@
 <show title='{{ com.d2.title }}' sub='{{ com.d2.sub }}' mId='{{ com.d2.id }}' code='{{ com.d2.code }}'>
 <e-search
   catchonsearch='testTap'
-  focus='{{ true }}'
   placeholder='双11狂欢夜'
   bgColor='#fff'
   color='#FE9036'

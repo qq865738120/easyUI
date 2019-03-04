@@ -26,6 +26,7 @@ App({
       { id: '22', name: 'load_more组件' },
       { id: '23', name: 'loading组件' },
       { id: '24', name: 'popup组件' },
+      { id: '25', name: 'checker组件' },
     ]
   },
 })
