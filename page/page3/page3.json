@@ -3,6 +3,7 @@
   "usingComponents": {
     "show": "/common/display/display",
     "e-search": "/component/form/search/search",
-    "e-count-button": "/component/form/count_button/count_button"
+    "e-count-button": "/component/form/count_button/count_button",
+    "e-checker": "/component/form/checker/checker"
   }
 }

@@ -323,6 +323,22 @@ const attributes = [
     { name: 'radius', type: 'String', deff: '0', detail: '顶部圆角大小' },
     { name: 'hideOnBlur', type: 'String', deff: 'true', detail: '点击遮罩时是否隐藏，默认隐藏' }
   ],
+  [ // checker
+    { name: 'label', type: 'String', deff: '-', detail: 'label内容，不需要label则不用设置' },
+    { name: 'labelSize', type: 'String', deff: '26', detail: 'label大小' },
+    { name: 'labelColor', type: 'String', deff: '#333333', detail: 'label颜色' },
+    { name: 'list', type: 'Array', deff: '-', detail: '选项数据，示例：[{ id: "0", text: "官方标准套餐" }]' },
+    { name: 'itemSize', type: 'String', deff: '24', detail: '选项大小' },
+    { name: 'selected', type: 'String', deff: '第一个选项的id', detail: '默认选择哪一项，对应list中的id字段' },
+    { name: 'selectColor', type: 'String', deff: '#FE9036', detail: '选中后的颜色' },
+    {
+      name: 'theme', type: 'String', deff: 'default', detail: '主题，默认为default，详情请点击', show: [
+        { name: 'default', detail: '默认主题，即背景色填充' },
+        { name: 'open', detail: 'open主题，即边框改变颜色' },
+      ]  
+    },
+    { name: 'themeColor', type: 'String', deff: 'rgba(254, 144, 54, 0.1)', detail: '使用open主题时候生效' },
+  ],
 ]
 
 const mClass = [
@@ -404,6 +420,9 @@ const mClass = [
   [ // popup
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
   ],
+  [ // checker
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ]
 ]
 
 const method = [
@@ -471,6 +490,9 @@ const method = [
   [], // load_more
   [], // loading
   [], // popup
+  [ // checker
+    { name: 'select', parameter: '选中的选项id', detail: '被选中的选项id。通过访问detail.id获取' }
+  ],
 ]
 
 const slot = [
@@ -545,6 +567,7 @@ const slot = [
     { name: 'content', detail: '主体内容插槽' },
     { name: 'foot', detail: '底部内容插槽' }
   ],
+  [], // checker
 ]
 
 const other = [
@@ -578,6 +601,7 @@ tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要�
 `基础库1.9.90以上使用。`, // load_more
 `基础库1.9.90以上使用。`, // loading
 `基础库1.9.90以上使用。`, // popup
+`基础库1.9.90以上使用。`, // checker
 ]
 
 module.exports = {

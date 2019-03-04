@@ -46,6 +46,7 @@
 | load_more | [component/base/load_more](component/base/load_more) | 加载更多组件 |
 | loading | [component/base/loading](component/base/loading) | 加载动画组件 |
 | popup | [component/senior/popup](component/senior/popup) | 弹出框组件 |
+| checker | [component/form/checker](component/form/checker) | 选项组件，常用于商品规格选择 |
 
 # 版本说明
 
@@ -55,6 +56,7 @@
 2. load_more
 3. loading
 4. popup
+5. checker
 - 修复&优化
 1. modal组件关闭按钮支持阿里图标库  
 2. icon_button新增dataCus属性  

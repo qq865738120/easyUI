@@ -1,0 +1,19 @@
+/* component/form/checker/checker.wxss */
+.label {
+  margin-top: 30rpx;
+}
+.content {
+  margin: 30rpx 0 10rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  background-color: #F5F5F5;
+  padding: 10rpx 24rpx;
+  border-radius: 50rpx;
+  margin-right: 18rpx;
+  margin-bottom: 20rpx;
+  color: #333333;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 180ms
+}
