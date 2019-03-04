@@ -66,6 +66,9 @@
 8. tabs组件优化
 9. suspension_button组件点击事件不触发bug修复
 10. suspension_button组件不使用图标时的文本布局问题修复
+11. goods_detail组件新增点击banner图可预览图片，以及样式优化
+12. base_list组件自定义样式类bug修复
+13. icon_button组件新增徽章效果，可通过badge属性设置，并且支持使用阿里图标库使用cus-icon自定义类设置
 
 ### v1.0.7
 - 新增组件

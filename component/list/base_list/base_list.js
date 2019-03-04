@@ -40,7 +40,7 @@ Component({
     }
   },
 
-  externalClasses: ['cus', 'cus-title', 'cus-subTitle'],
+  externalClasses: ['cus', 'cus-title', 'cus-subtitle'],
 
   /**
    * 组件的初始数据

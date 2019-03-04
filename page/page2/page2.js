@@ -99,6 +99,14 @@ const code = {
   theme='shine2'
   left='650'>
 </e-suspension-button >`,
+  d13: `<e-icon-button 
+  cus-icon='iconfont icon-shezhi'
+  width='120'
+  height='120'
+  text='设置'
+  catchbuttontap='testTap'
+  badge='2'>
+</e-icon-button>`
 }
 
 Page({
@@ -120,6 +128,7 @@ Page({
       d10: { id: com[13].id, title: com[13].name, sub: 'default主题', code: code.d10 },
       d11: { id: com[13].id, title: com[13].name, sub: 'shine1主题、带拖动效果', code: code.d11 },
       d12: { id: com[13].id, title: com[13].name, sub: 'shine2主题', code: code.d12 },
+      d13: { id: com[1].id, title: com[1].name, sub: '带徽章并使用阿里图标库', code: code.d13 },
     }
   },
 

@@ -2,7 +2,7 @@
 .component {
   background-color: white;
   width: 750rpx;
-  height: 80rpx;
+  height: 90rpx;
 }
 .title {
   font-size:30rpx;
@@ -11,6 +11,8 @@
 .subTitle {
   font-size: 30rpx;
   color:rgba(144,144,144,1);
+  display: inline-flex;
+  align-items: center;
 }
 .body {
   height: 100%;

@@ -9,7 +9,7 @@
 }
 .body {
   background-color: #fff;
-  width: 600rpx;
+  width: 580rpx;
   display: flex;
   flex-direction: column;
   align-items: center;

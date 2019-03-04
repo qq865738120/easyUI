@@ -87,6 +87,14 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onTapImg: function(e) {
+      wx.previewImage({
+        current: e.currentTarget.dataset.src,
+        urls: this.data.imgList,
+        complete: function(res) {
+          console.log(res)
+        }
+      })
+    }
   }
 })
