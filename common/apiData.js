@@ -11,6 +11,9 @@ const attributes = [
     { name: 'fontSize', type: 'String', deff: '24', detail: '文字大小' },
     { name: 'fontColor', type: 'String', deff: '#333333', detail: '文本颜色' },
     { name: 'dataCus', type: 'String', deff: '-', detail: '组件自定义数据。可以从事件对象的target/currentTarget的dataset的cus中获取' },
+    { name: 'badge', type: 'String', deff: '-', detail: '徽章内容，不设置该属性则不显示徽章' },
+    { name: 'badgeSize', type: 'String', deff: '18', detail: '徽章大小' },
+    { name: 'badgeColor', type: 'String', deff: '#F23030', detail: '徽章背景色' },
   ],
   [ // base_list
     { name: 'title', type: 'String', deff: '-', detail: '左边标题' },
@@ -326,11 +329,12 @@ const mClass = [
   [],
   [ // icon_button
     { name: 'cus', detail: '组件最外层view自定义样式类' },
+    { name: 'cus-icon', detail: '图标类，使用阿里图标库时有效' },
   ],
   [ // base_list
     { name: 'cus', detail: '组件最外层view自定义样式类' },
     { name: 'cus-title', detail: '标题自定义样式类' },
-    { name: 'cus-subTitle', detail: '副标题自定义样式类' }
+    { name: 'cus-subtitle', detail: '副标题自定义样式类' }
   ],
   [ // title_view
     { name: 'cus', detail: '组件最外层view自定义样式类' },

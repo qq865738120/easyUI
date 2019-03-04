@@ -31,6 +31,17 @@
 <view style='height: 100rpx;'></view>
 </show>
 
+<show title='{{ com.d13.title }}' sub='{{ com.d13.sub }}' mId='{{ com.d13.id }}' code='{{ com.d13.code }}' bgColor='#fff'>
+<e-icon-button 
+  cus-icon='iconfont icon-shezhi'
+  width='120'
+  height='120'
+  text='设置'
+  catchbuttontap='testTap'
+  badge='2'>
+</e-icon-button>
+</show>
+
 <show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}' bgColor='#fff'>
 <e-icon-button 
   icon='/imgs/button_icon.png'

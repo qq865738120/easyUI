@@ -87,10 +87,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onTapImg: function() {
-      console.log(this.data.imgList)
+    onTapImg: function(e) {
       wx.previewImage({
-        urls: [''],
+        current: e.currentTarget.dataset.src,
+        urls: this.data.imgList,
+        complete: function(res) {
+          console.log(res)
+        }
       })
     }
   }

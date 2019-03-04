@@ -4,4 +4,14 @@
   flex-direction: column;
   align-items: center;
   justify-content:  center;
+  position: relative;
+}
+.badge {
+  position: absolute;
+  right: 16rpx;
+  top: 12rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 50rpx;
+  color: white;
+  text-align: center;
 }

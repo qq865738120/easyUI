@@ -16,13 +16,15 @@
   justify-content: space-between;
 }
 .title-text {
-  font-weight: 700;
+  font-weight: bold;
+  line-height: 46rpx;
 }
 .price {
-  margin: 22rpx 0 10rpx 0;
+  margin: 32rpx 0 10rpx 0;
 }
 .price-text {
   margin-right: 8rpx;
+  font-weight: bold;
 }
 .detail {
   display: flex;

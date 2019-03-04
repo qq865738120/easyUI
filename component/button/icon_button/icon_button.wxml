@@ -1,5 +1,7 @@
 <!--component/button/icon_button/icon_button.wxml-->
 <view class='component cus' data-cus='{{ dataCus }}' bindtap='onTap' style='width: {{ width }}rpx; height: {{ height }}rpx'>
-  <image class='icon' src='{{ mSrc }}' style='width: {{ iconWidth }}rpx; height: {{ iconHeight }}rpx; margin-bottom: {{ spacing }}rpx'></image>
-  <text class='text' style='font-size: {{ fontSize }}rpx; color: {{ fontColor }}'>{{ mText }}</text>
+  <view class='badge' wx:if='{{ badge ? true : false }}' style='background-color: {{ badgeColor }}; font-size: {{ badgeSize }}rpx;'>{{ badge }}</view>
+  <view wx:if='{{ mSrc ? false : true }}' class='cus-icon'></view>
+  <image class='icon' wx:if='{{ mSrc ? true : false }}' src='{{ mSrc }}' style='width: {{ iconWidth }}rpx; height: {{ iconHeight }}rpx;'></image>
+  <text class='text' style='font-size: {{ fontSize }}rpx; color: {{ fontColor }}; margin-top: {{ spacing }}rpx'>{{ mText }}</text>
 </view>

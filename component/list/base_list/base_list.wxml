@@ -2,7 +2,7 @@
   <view class='body' style='border-bottom: 1px solid {{ lineColor }}'>
     <text class='title cus-title'>{{ mTitle }}</text>
     <view class='left'>
-      <text class='subTitle cus-subTitle'>{{ mSubTitle }}</text>
+      <text class='subTitle cus-subtitle'>{{ mSubTitle }}</text>
       <image src='{{ icon }}' wx:if='{{ showIcon == "false" ? false : true }}' style='width: {{ iconWidth }}rpx; height: {{ iconHeight }}rpx; margin-left: 12rpx;'></image>
     </view>
   </view>

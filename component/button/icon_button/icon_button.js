@@ -49,10 +49,22 @@ Component({
     dataCus: {
       type: String,
       value: ''
+    },
+    badge: {
+      type: String,
+      value: ''
+    },
+    badgeSize: {
+      type: String,
+      value: '18'
+    },
+    badgeColor: {
+      type: String,
+      value: '#F23030'
     }
   },
 
-  externalClasses: ['cus'],
+  externalClasses: ['cus', 'cus-icon'],
 
   /**
    * 组件的初始数据
