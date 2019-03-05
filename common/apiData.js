@@ -255,6 +255,7 @@ const attributes = [
     { name: 'itemColor2', type: 'String', deff: '#FE9036', detail: '列表项选中后文字颜色' },
     { name: 'itemSize2', type: 'String', deff: '32', detail: '列表项选中后文字大小' },
     { name: 'dataCus', type: 'Array', deff: '-', detail: '自定义数据，如无特殊需要可使用currentTarget下的dataset下的index字段。，样例[001, 002]' },
+    { name: 'selected', type: 'String', deff: '0', detail: '默认选中第几项，是从0开始的索引号' },
   ],
   [ // enhance_image
     { name: 'width', type: 'String', deff: '600', detail: '组件宽度' },

@@ -7,7 +7,7 @@
     <view class='bottom' style='width: {{ width - imgSize - 50 }}rpx; {{ bottom }}'>
       <view class='bottom-left' style='width: {{ width - imgSize - 20 - 80 }}rpx;'>
         <view class='bottom-top'>
-          <text style='color: {{ priceColor }}; font-size: {{ priceSize }}rpx; font-weight: {{ thickness }};'>{{ price }}</text>
+          <text style='color: {{ priceColor }}; font-size: {{ priceSize }}rpx; font-weight: {{ thickness }}; font-weight: bold;'>{{ price }}</text>
           <slot name='price'></slot>
         </view>
         <slot name='bottom'></slot>
