@@ -63,6 +63,10 @@ Component({
       type: String,
       value: '32'
     },
+    selected: {
+      type: String,
+      value: '0'
+    },
     dataCus: {
       type: Array,
       value: '',
@@ -127,6 +131,7 @@ Component({
       this.setData({
         mList: mList
       })
+      this.onTap({ currentTarget: { dataset: { index: this.data.selected }, id: 'id0' }, detail: { index: '' } })
     },
   },
 })
