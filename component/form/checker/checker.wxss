@@ -1,9 +1,9 @@
 /* component/form/checker/checker.wxss */
 .label {
-  margin-top: 30rpx;
+  padding-top: 30rpx;
 }
 .content {
-  margin: 30rpx 0 10rpx 0;
+  margin: 30rpx 0 20rpx 0;
   display: flex;
   flex-wrap: wrap;
 }

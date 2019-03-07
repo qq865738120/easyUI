@@ -72,7 +72,7 @@ Component({
    */
   methods: {
     onTap(e) {
-      this.setData({ mselected: this.data.list[e.currentTarget.dataset.id].id })
+      this.setData({ mselected: e.currentTarget.dataset.index})
       this.triggerEvent('select', e.currentTarget.dataset, { bubbles: true });
     }
   },
