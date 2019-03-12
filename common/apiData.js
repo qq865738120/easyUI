@@ -160,7 +160,7 @@ const attributes = [
   ],
   [ // goods_detail
     { name: 'bgColor', type: 'String', deff: '#fff', detail: '组件背景色' },
-    { name: 'imgList', type: 'Array', deff: '-', detail: '展示图片路径的数组，例：["image1.png", "image2.png"]' },
+    { name: 'imgList', type: 'Array', deff: '-', detail: '展示图片路径的数组，例：["image1.png", "image2.png"]。如果需要展示视频则为["video.mp4", "image1.png"]，如果需要设置视频预览图则为[{ url: "video.mp4", poster: "poster.png" }, "image.png"]' },
     { name: 'title', type: 'String', deff: '-', detail: '商品标题' },
     { name: 'titleColor', type: 'String', deff: '#333333', detail: '商品标题颜色' },
     { name: 'titleSize', type: 'String', deff: '32', detail: '商品标题大小' },

@@ -15,7 +15,27 @@ Component({
     },
     imgList: {
       type: Array,
-      value: ''
+      value: '',
+      observer: function (newVal) {
+        let list = []
+        for (let item of newVal) {
+          let str = item.url ? item.url.split(".")[item.url.split(".").length - 1] : item.split(".")[item.split(".").length - 1]
+          let type = 'image';
+          let poster = item.poster ? item.poster : '';
+          let url = item.url ? item.url : item;
+          if (str == 'mp4' || str == 'mov' || str == 'm4v' || str == '3gp' || str == 'avi' || str == 'm3u8' || str == 'webm') {
+            type = "video"
+          }
+          list.push({
+            url,
+            poster,
+            type
+          })
+        }
+        this.setData({
+          mImgList: list
+        });
+      }
     },
     title: {
       type: String,
@@ -80,7 +100,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    mDetail: 'border: 1rpx solid; padding: 2rpx 8rpx; border-radius: 10rpx;'
+    mDetail: 'border: 1rpx solid; padding: 2rpx 8rpx; border-radius: 10rpx;',
+    mImgList: []
   },
 
   /**
@@ -88,13 +109,29 @@ Component({
    */
   methods: {
     onTapImg: function(e) {
-      wx.previewImage({
-        current: e.currentTarget.dataset.src,
-        urls: this.data.imgList,
-        complete: function(res) {
-          console.log(res)
+      console.log('e', e)
+      let index = e.currentTarget.dataset.index;
+      if (e.currentTarget.dataset.src.type == 'image') {
+        let urls = []
+        for (let i = 0; i < this.data.mImgList.length; i++) {
+          if (this.data.mImgList[i].type == "video" && i < index) {
+            index--
+          }
+          if (this.data.mImgList[i].type == "image") {
+            urls.push(this.data.mImgList[i].url)
+          }
         }
-      })
+        wx.previewImage({
+          current: e.currentTarget.dataset.src.url,
+          urls,
+          complete: function (res) {
+            console.log(res)
+          }
+        })
+      } else if (e.currentTarget.dataset.src.type == 'video') {
+
+      }
+      
     }
   }
 })
