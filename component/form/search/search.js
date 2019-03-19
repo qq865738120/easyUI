@@ -1,5 +1,4 @@
 // component/form/search/search.js
-let value = '';
 
 Component({
   /**
@@ -107,15 +106,17 @@ Component({
         console.log('search搜索事件触发', e);
         this.triggerEvent('onsearch', e, { bubbles: true });
       }
-      value = e.detail.value;
+      this.setData({
+        value: e.detail.value
+      })
     },
 
     onButtonTap: function (e) {
       console.log('search搜索事件触发', e);
-      if (value == '') {
+      if (this.data.value == '') {
         e.detail.value = this.data.mPlaceholder;
       } else {
-        e.detail.value = value
+        e.detail.value = this.data.value
       }
       this.triggerEvent('onsearch', e, { bubbles: true });
     },
