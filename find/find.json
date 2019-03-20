@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "关于",
+  "usingComponents": {
+    "e-base-card": "/component/list/base_card/base_card",
+    "e-enhance-text": "/component/base/enhance_text/enhance_text"
+  }
+}

@@ -1,3 +1,9 @@
+import plugin from 'lib/plugin.js'
+
+let config = {
+  host: 'https://www.cutey.net.cn'
+}
+
 App({
   globalData: {
     com: [
@@ -29,4 +35,15 @@ App({
       { id: '25', name: 'checker组件' },
     ]
   },
+
+  onLaunch: function () {
+    const instance = plugin.axios.create({
+      baseURL: config.host,
+      timeout: 60000,
+    })
+    instance.defaults.headers.common['Authorization'] = 'I am a token';
+    instance.defaults.headers.common['Content-Type'] = "application/json;charset=utf-8";
+    wx.$axios = instance
+    wx.$wx = plugin.wx
+  }
 })
