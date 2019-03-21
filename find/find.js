@@ -14,7 +14,7 @@ Page({
   },
 
   _loadList: async function (list) {
-    let res = await wx.$axios.get('/api/v1/article/createtime', { params: { page: this.data.page, row: 5 } })
+    let res = await wx.$axios.get('/api/v1/article/createtime', { params: { page: this.data.page } })
     if (res.code == 200) {
       for (let item of res.data) {
         list.push({
