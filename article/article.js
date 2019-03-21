@@ -7,27 +7,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title: 'ksjdf',
-    author: 'adsf',
-    watch: 21,
-    time: '2018-10-20',
-    content: '<h1>123</h1>'
+    title: '',
+    author: '',
+    watch: '',
+    time: '',
+    content: '',
+    isLoading: true,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
+    this.setData({ isLoading: true })
     let res = await wx.$axios.get('/api/v1/article/id', { params: { id: options.id } })
     if (res.code == 200) {
       let res2 = await wx.$axios.get('/api/v1/user/info/id', { params: { id: res.data.author_id } })
       if (res2.code == 200) {
         this.setData({ author: res2.data.nickname })
       }
+      let res3 = await wx.$axios.get(res.data.content)
+      let content = getApp().towxml.toJson(res3, 'html' );
       this.setData({
         title: res.data.title,
         watch: res.data.watch_count,
-        time: res.data.created_date.split('T')[0]
+        time: res.data.created_date.split('T')[0],
+        content
+      }, () => {
+        this.setData({ isLoading: false })
       })
       
     }

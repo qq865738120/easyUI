@@ -1,11 +1,17 @@
 import plugin from 'lib/plugin.js'
+const Towxml = require('/towxml/main');
 
 let config = {
-  host: 'https://www.cutey.net.cn'
+  host: 'https://www.cutey.net.cn',
+  ver: 'v1.2.1'
 }
 
 App({
+
+  towxml: new Towxml(),
+
   globalData: {
+    version: config.ver,
     com: [
       {},
       { id: '1', name: 'icon_button组件'},
@@ -42,9 +48,9 @@ App({
       timeout: 60000,
     })
     instance.interceptors.request.use(function (config) {
-      wx.showLoading({
-        title: '加载中...',
-      })
+      // wx.showLoading({
+      //   title: '加载中...',
+      // })
       return config;
     }, function (error) {
       wx.showToast({

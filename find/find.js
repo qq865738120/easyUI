@@ -26,12 +26,13 @@ Page({
         })
       }
       this.setData({ list })
-    } else if (res.data.code == 201) {
+    } else if (res.code == 201) {
       this.setData({ isBottom: true })
     }
   },
 
   onTap(e) {
+    wx.$axios.get('/api/v1/article/watch', { params: { id: e.currentTarget.dataset.id } })
     wx.navigateTo({
       url: '/article/article?id=' + e.currentTarget.dataset.id
     })
