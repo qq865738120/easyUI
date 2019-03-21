@@ -11,7 +11,8 @@
     "page/page6/page6",
     "start/start",
     "about/about",
-    "find/find"
+    "find/find",
+    "article/article"
   ],
   "window": {
     "backgroundTextStyle": "light",

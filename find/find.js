@@ -9,13 +9,14 @@ Page({
   data: {
     list: [
     ],
-    page: 1
+    page: 1,
+    isBottom: false
   },
 
   _loadList: async function (list) {
-    let res = await wx.$axios.get('/api/v1/article/createtime', { params: { page: this.data.page } })
-    if (res.data.code == 200) {
-      for (let item of res.data.data) {
+    let res = await wx.$axios.get('/api/v1/article/createtime', { params: { page: this.data.page, row: 5 } })
+    if (res.code == 200) {
+      for (let item of res.data) {
         list.push({
           id: item.id,
           img: item.illustration,
@@ -25,7 +26,15 @@ Page({
         })
       }
       this.setData({ list })
+    } else if (res.data.code == 201) {
+      this.setData({ isBottom: true })
     }
+  },
+
+  onTap(e) {
+    wx.navigateTo({
+      url: '/article/article?id=' + e.currentTarget.dataset.id
+    })
   },
 
   /**
@@ -68,15 +77,18 @@ Page({
    */
   onPullDownRefresh: function () {
     this.setData({ page: 1 })
-    _loadList([])
+    this.setData({ isBottom: false })
+    this._loadList([])
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: async function () {
+    if (this.data.isBottom) return;
     this.setData({ page: this.data.page + 1 })
-    _loadList([])
+    await this._loadList(this.data.list)
+    wx.stopPullDownRefresh()
   },
 
   /**

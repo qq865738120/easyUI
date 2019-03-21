@@ -41,6 +41,29 @@ App({
       baseURL: config.host,
       timeout: 60000,
     })
+    instance.interceptors.request.use(function (config) {
+      wx.showLoading({
+        title: '加载中...',
+      })
+      return config;
+    }, function (error) {
+      wx.showToast({
+        title: '网路异常',
+        icon: 'none'
+      })
+      return Promise.reject(error);
+    });
+    instance.interceptors.response.use(function (response) {
+      wx.hideLoading()
+      return response.data
+    }, function (error) {
+      wx.hideLoading()
+      wx.showToast({
+        title: '服务器无响应',
+        icon: 'none'
+      })
+      return Promise.reject(error);
+    });
     instance.defaults.headers.common['Authorization'] = 'I am a token';
     instance.defaults.headers.common['Content-Type'] = "application/json;charset=utf-8";
     wx.$axios = instance

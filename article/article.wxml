@@ -1,0 +1,14 @@
+<!--article/article.wxml-->
+<view class='title'>{{ title }}</view>
+<view class='author'>{{ author }}</view>
+<view class='sub'>
+  <e-enhance-text
+    icon-cus='iconfont icon-chakan'
+    titleFontSize='26'
+    title='{{ watch }}'>
+  </e-enhance-text>
+  <text style='color: #999; font-size: 24rpx;'>{{ time }}</text>
+</view>
+<view style="margin: 0 30rpx;">
+  <rich-text nodes="{{ content }}"></rich-text>
+</view>

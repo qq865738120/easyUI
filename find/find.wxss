@@ -8,3 +8,6 @@
   align-items: center;
   justify-content: space-between;
 }
+.more {
+  margin: 40rpx 0;
+}

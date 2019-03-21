@@ -1,5 +1,5 @@
 <!--find/find.wxml-->
-<view data-id='item.id' wx:for='{{ list }}'>
+<view data-id='{{ item.id }}' wx:for='{{ list }}' catchtap='onTap'>
   <e-base-card
     src='{{ item.img }}'
     title='{{ item.title }}'
@@ -15,3 +15,4 @@
   </e-base-card>
 </view>
 
+<e-load-more cus='more' wx:if="{{ isBottom }}" text='我也是有底线的' />
