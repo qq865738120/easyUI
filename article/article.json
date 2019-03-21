@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "文章",
+  "usingComponents": {
+    "e-enhance-text": "/component/base/enhance_text/enhance_text",
+    "e-loading": "/component/base/loading/loading"
+  }
+}

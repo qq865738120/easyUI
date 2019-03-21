@@ -4,7 +4,7 @@
   width='100%'
   reverse='col'
   type='center'>
-  <e-icon-button cus='animated bounceInDown ' icon='/imgs/easyUI.png' text='版本号：v1.1.0' iconWidth='200' iconHeight='200' width='300' height='250' fontSize='28' spacing='0'></e-icon-button>
+  <e-icon-button cus='animated bounceInDown ' icon='/imgs/easyUI.png' text='版本号：{{ version }}' iconWidth='200' iconHeight='200' width='300' height='250' fontSize='28' spacing='0'></e-icon-button>
   <e-enhance-view
     height='160'
     width='400'

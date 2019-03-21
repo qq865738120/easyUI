@@ -1,5 +1,17 @@
+import plugin from 'lib/plugin.js'
+const Towxml = require('/towxml/main');
+
+let config = {
+  host: 'https://www.cutey.net.cn',
+  ver: 'v1.2.1'
+}
+
 App({
+
+  towxml: new Towxml(),
+
   globalData: {
+    version: config.ver,
     com: [
       {},
       { id: '1', name: 'icon_button组件'},
@@ -29,4 +41,38 @@ App({
       { id: '25', name: 'checker组件' },
     ]
   },
+
+  onLaunch: function () {
+    const instance = plugin.axios.create({
+      baseURL: config.host,
+      timeout: 60000,
+    })
+    instance.interceptors.request.use(function (config) {
+      // wx.showLoading({
+      //   title: '加载中...',
+      // })
+      return config;
+    }, function (error) {
+      wx.showToast({
+        title: '网路异常',
+        icon: 'none'
+      })
+      return Promise.reject(error);
+    });
+    instance.interceptors.response.use(function (response) {
+      wx.hideLoading()
+      return response.data
+    }, function (error) {
+      wx.hideLoading()
+      wx.showToast({
+        title: '服务器无响应',
+        icon: 'none'
+      })
+      return Promise.reject(error);
+    });
+    instance.defaults.headers.common['Authorization'] = 'I am a token';
+    instance.defaults.headers.common['Content-Type'] = "application/json;charset=utf-8";
+    wx.$axios = instance
+    wx.$wx = plugin.wx
+  }
 })

@@ -1,0 +1,13 @@
+/* find/find.wxss */
+.icon-chakan {
+  font-size: 34rpx;
+  color: #455488;
+}
+.sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.more {
+  margin: 40rpx 0;
+}

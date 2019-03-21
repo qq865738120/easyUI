@@ -11,7 +11,7 @@ Component({
   properties: {
     src: {
       type: String,
-      value: ''
+      value: '',
     },
     imgWidth: {
       type: String,

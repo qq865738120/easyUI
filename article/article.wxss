@@ -1,0 +1,42 @@
+/* article/article.wxss */
+/* @import "/common/quill-core.wxss";
+@import "/common/quill-bubble.wxss"; */
+@import '/towxml/style/main.wxss';
+@import '/towxml/style/theme/light.wxss';
+
+page {
+  background-color: white;
+  height: 100%;
+}
+.loading {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30rpx; 
+}
+.title {
+  font-size: 46rpx;
+  font-weight: bold;
+  margin: 80rpx 30rpx 40rpx 30rpx;
+}
+.author {
+  margin: 0 30rpx 10rpx 30rpx;
+  font-size: 30rpx;
+  color: #455488;
+}
+.author::before {
+  content: '作者';
+  color: #999;
+  margin-right: 20rpx;
+}
+.icon-chakan {
+  font-size: 34rpx;
+  color: #999;
+}

@@ -1,0 +1,18 @@
+<!--find/find.wxml-->
+<view data-id='{{ item.id }}' wx:for='{{ list }}' catchtap='onTap'>
+  <e-base-card
+    src='{{ item.img }}'
+    title='{{ item.title }}'
+    titleSize='32'>
+    <view slot='sub' class='sub'>
+      <e-enhance-text
+        icon-cus='iconfont icon-chakan'
+        titleFontSize='26'
+        title='{{ item.watch }}'>
+      </e-enhance-text>
+      <text style='color: #999; font-size: 24rpx;'>{{ item.time }}</text>
+    </view>
+  </e-base-card>
+</view>
+
+<e-load-more cus='more' wx:if="{{ isBottom }}" text='我也是有底线的' />

@@ -96,7 +96,6 @@ Component({
 
   lifetimes: {
     ready: function () {
-      console.log(this.data);
       let iconSize = this.data.mIcon == '' ? 0 : 38;
       this.setData({
         mIconSize: iconSize

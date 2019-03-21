@@ -1,0 +1,22 @@
+<!--article/article.wxml-->
+<import src="/towxml/entry.wxml"/>
+
+<view wx:if="{{ isLoading }}" class='loading'>
+  <e-loading type='wave' color='#36BCBC'/>
+</view>
+
+
+<block wx:else>
+  <view class='title'>{{ title }}</view>
+  <view class='author'>{{ author }}</view>
+  <view class='sub'>
+    <e-enhance-text
+      icon-cus='iconfont icon-chakan'
+      titleFontSize='26'
+      title='{{ watch }}'>
+    </e-enhance-text>
+    <text style='color: #999; font-size: 24rpx;'>{{ time }}</text>
+  </view>
+  <template is="entry" data="{{...content}}"/>
+</block>
+

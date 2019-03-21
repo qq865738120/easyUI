@@ -10,12 +10,44 @@
     "page/page5/page5",
     "page/page6/page6",
     "start/start",
-    "about/about"
+    "about/about",
+    "find/find",
+    "article/article"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f9f9f9",
     "navigationBarTitleText": "组件",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#444444",
+    "selectedColor": "#455488",
+    "list": [
+      {
+        "iconPath": "/imgs/tab-home-1.png",
+        "selectedIconPath": "/imgs/tab-home-2.png",
+        "pagePath": "index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "/imgs/tab-start-1.png",
+        "selectedIconPath": "/imgs/tab-start-2.png",
+        "pagePath": "start/start",
+        "text": "开始"
+      },
+      {
+        "iconPath": "/imgs/tab-find-1.png",
+        "selectedIconPath": "/imgs/tab-find-2.png",
+        "pagePath": "find/find",
+        "text": "发现"
+      },
+      {
+        "iconPath": "/imgs/tab-about-1.png",
+        "selectedIconPath": "/imgs/tab-about-2.png",
+        "pagePath": "about/about",
+        "text": "关于"
+      }
+    ]
   }
 }
