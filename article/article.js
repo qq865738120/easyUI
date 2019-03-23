@@ -14,7 +14,8 @@ Page({
     content: '',
     isLoading: true,
     cover: '',
-    isShare: false
+    isShare: false,
+    id: ''
   },
 
   onSuspensionTap() {
@@ -29,9 +30,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
+    console.log('options', options)
     let isShare = options.isShare ? true : false;
-    this.setData({ isLoading: true, isShare })
-    let res = await wx.$axios.get('/api/v1/article/id', { params: { id: options.id } })
+    this.setData({ isLoading: true, isShare, id: options.id })
+    let res = await wx.$axios.get('/api/v1/article/id', { params: { id: this.data.id } })
     if (res.code == 200) {
       let res2 = await wx.$axios.get('/api/v1/user/info/id', { params: { id: res.data.author_id } })
       if (res2.code == 200) {
@@ -100,7 +102,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: this.data.title,
-      path: `/${this.route}?isShare=true`,
+      path: `/${this.route}?isShare=true&id=${this.data.id}`,
       imageUrl: this.data.cover
     }
   }
