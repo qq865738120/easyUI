@@ -80,6 +80,10 @@ Component({
     textSize: {
       type: String,
       value: '30'
+    },
+    openType: {
+      type: String,
+      value: ''
     }
   },
 
@@ -93,7 +97,7 @@ Component({
     lastTime: 0,
   },
 
-  externalClasses: ['cus'],
+  externalClasses: ['cus', 'img-cus'],
 
   /**
    * 组件的方法列表

@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": 0,
@@ -72,7 +72,15 @@
 				{
 					"id": -1,
 					"name": "高级组件",
-					"pathName": "page/page6/page6"
+					"pathName": "page/page6/page6",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "文章",
+					"pathName": "article/article",
+					"query": "id=B306623C728D91D3521FEAE722ACFA&isShare=true",
+					"scene": "1007"
 				}
 			]
 		}

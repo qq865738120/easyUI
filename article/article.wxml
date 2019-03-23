@@ -3,8 +3,8 @@
 
 <view wx:if="{{ isLoading }}" class='loading'>
   <e-loading type='wave' color='#36BCBC'/>
+  <view style='font-size: 28rpx; color: #666; margin-top: 30rpx;'>本文由cutey.net.cn提供</view>
 </view>
-
 
 <block wx:else>
   <view class='title'>{{ title }}</view>
@@ -18,5 +18,16 @@
     <text style='color: #999; font-size: 24rpx;'>{{ time }}</text>
   </view>
   <template is="entry" data="{{...content}}"/>
+  <e-suspension-button 
+    bindbuttontap='onSuspensionTap'
+    openType='{{ isShare ? "" : "share" }}'
+    top='900'
+    left='650'
+    img-cus='iconfont {{ isShare ? "icon-shouye1" : "icon-fenxiangkaobei" }}'
+    imgMargin='26'
+    color='rgba(254, 144, 54, 0.35)'
+    theme='shine1'
+    removable='true'>
+  </e-suspension-button >
+  <text style='color: #a8a8a8; width: 100%; text-align: center; margin: 60rpx 0 40rpx 0'>成为博主，请立即访问cutey.net.cn</text>
 </block>
-

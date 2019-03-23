@@ -2,6 +2,7 @@
   "navigationBarTitleText": "文章",
   "usingComponents": {
     "e-enhance-text": "/component/base/enhance_text/enhance_text",
-    "e-loading": "/component/base/loading/loading"
+    "e-loading": "/component/base/loading/loading",
+    "e-suspension-button": "/component/button/suspension_button/suspension_button"
   }
 }
