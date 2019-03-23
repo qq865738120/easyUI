@@ -54,6 +54,8 @@
 - 新增组件
 - 修复&优化
 1. 优化小程序，并新增发现页面
+2. 优化suspension_button组件，新增openType属性兼容原生button组件特殊使用场景
+3. 优化suspension_button组件，新增img-cus自定义类，可用于使用阿里图标库的场景
 
 ### v1.2.0
 - 新增组件

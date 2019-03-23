@@ -13,13 +13,24 @@ Page({
     time: '',
     content: '',
     isLoading: true,
+    cover: '',
+    isShare: false
+  },
+
+  onSuspensionTap() {
+    if (this.data.isShare) {
+      wx.switchTab({
+        url: '/index/index',
+      })
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
-    this.setData({ isLoading: true })
+    let isShare = options.isShare ? true : false;
+    this.setData({ isLoading: true, isShare })
     let res = await wx.$axios.get('/api/v1/article/id', { params: { id: options.id } })
     if (res.code == 200) {
       let res2 = await wx.$axios.get('/api/v1/user/info/id', { params: { id: res.data.author_id } })
@@ -32,7 +43,8 @@ Page({
         title: res.data.title,
         watch: res.data.watch_count,
         time: res.data.created_date.split('T')[0],
-        content
+        content,
+        cover: res.data.illustration
       }, () => {
         this.setData({ isLoading: false })
       })
@@ -86,6 +98,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: this.data.title,
+      path: `/${this.route}?isShare=true`,
+      imageUrl: this.data.cover
+    }
   }
 })

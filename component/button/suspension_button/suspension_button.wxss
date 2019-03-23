@@ -7,4 +7,7 @@
   align-items: center;
   transition-property: top left;
   transition-duration: 30ms;
+  padding: 0;
+  box-sizing: border-box;
 }
+button::after{ border: none; }

@@ -197,7 +197,8 @@ const attributes = [
     { name: 'imgMargin', type: 'String', deff: '', detail: '图片距离按钮边缘的距离' },
     { name: 'text', type: 'String', deff: '', detail: '按钮文字，如果不需要文字可不设置' },
     { name: 'textColor', type: 'String', deff: '', detail: '文字颜色，如果不设置text则可以不设置该属性' },
-    { name: 'textSize', type: 'String', deff: '30', detail: '文字大小，如果不设置text则可以不设置该属性' }
+    { name: 'textSize', type: 'String', deff: '30', detail: '文字大小，如果不设置text则可以不设置该属性' },
+    { name: 'openType', type: 'String', deff: '-', detail: '原生button组件open-type属性值，具体取值请查看官方文档button组件open-type属性相关说明' }
   ],
   [ // count_button
     { name: 'width', type: 'String', deff: '130', detail: '组件宽度' },
@@ -386,6 +387,7 @@ const mClass = [
   ],
   [ // suspension_button
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+    { name: 'img-cus', detail: '自定义图标样式类，不知设置src属性的情况下该样式类生效。可使用阿里图标库' },
   ],
   [ // count_button
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
