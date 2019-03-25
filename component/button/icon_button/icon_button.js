@@ -61,6 +61,14 @@ Component({
     badgeColor: {
       type: String,
       value: '#F23030'
+    },
+    formType: {
+      type: String,
+      value: ''
+    },
+    openType: {
+      type: String,
+      value: ''
     }
   },
 
@@ -81,6 +89,14 @@ Component({
     onTap: function (e) {
       console.log('icon_button点击事件触发', e);
       this.triggerEvent('buttontap', e, { bubbles: true });
+    },
+    submit: function (e) {
+      console.log('icon_button提交事件触发', e);
+      this.triggerEvent('submit', e.detail, { bubbles: true });
+    },
+    reset: function (e) {
+      console.log('icon_button重置事件触发', e);
+      this.triggerEvent('submit', e, { bubbles: true });
     }
   }
 })
