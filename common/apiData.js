@@ -14,6 +14,8 @@ const attributes = [
     { name: 'badge', type: 'String', deff: '-', detail: '徽章内容，不设置该属性则不显示徽章' },
     { name: 'badgeSize', type: 'String', deff: '18', detail: '徽章大小' },
     { name: 'badgeColor', type: 'String', deff: '#F23030', detail: '徽章背景色' },
+    { name: 'formType', type: 'String', deff: '-', detail: '原生button组件form-type属性' },
+    { name: 'openType', type: 'String', deff: '-', detail: '原生button组件open-type属性' },
   ],
   [ // base_list
     { name: 'title', type: 'String', deff: '-', detail: '左边标题' },
@@ -431,7 +433,9 @@ const mClass = [
 const method = [
   [],
   [ // icon_button
-    { name: 'buttontap', parameter: '事件对象', detail: '按钮点击事件' }
+    { name: 'buttontap', parameter: '事件对象', detail: '按钮点击事件' },
+    { name: 'submit', parameter: 'e.detail对象', detail: '按钮提交事件，需要设置formType属性为submit才能生效' },
+    { name: 'reset', parameter: '事件对象', detail: '按钮提交事件，需要设置formType属性为reset才能生效' }
   ],
   [ // base_list
     { name: 'listtap', parameter: '事件对象', detail: '列表点击事件' }

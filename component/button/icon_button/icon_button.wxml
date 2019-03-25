@@ -1,7 +1,9 @@
 <!--component/button/icon_button/icon_button.wxml-->
-<view class='component cus' data-cus='{{ dataCus }}' bindtap='onTap' style='width: {{ width }}rpx; height: {{ height }}rpx'>
-  <view class='badge' wx:if='{{ badge ? true : false }}' style='background-color: {{ badgeColor }}; font-size: {{ badgeSize }}rpx;'>{{ badge }}</view>
-  <view wx:if='{{ mSrc ? false : true }}' class='cus-icon'></view>
-  <image class='icon' wx:if='{{ mSrc ? true : false }}' src='{{ mSrc }}' style='width: {{ iconWidth }}rpx; height: {{ iconHeight }}rpx;'></image>
-  <text class='text' style='font-size: {{ fontSize }}rpx; color: {{ fontColor }}; margin-top: {{ spacing }}rpx'>{{ mText }}</text>
-</view>
+<form bindsubmit='submit' bindreset='reset' report-submit='true'>
+  <button form-type='{{ formType }}' open-type='{{ openType }}' class='component cus' data-cus='{{ dataCus }}' bindtap='onTap' style='width: {{ width }}rpx; height: {{ height }}rpx'>
+    <view class='badge' wx:if='{{ badge ? true : false }}' style='background-color: {{ badgeColor }}; font-size: {{ badgeSize }}rpx;'>{{ badge }}</view>
+    <view wx:if='{{ mSrc ? false : true }}' class='cus-icon'></view>
+    <image class='icon' wx:if='{{ mSrc ? true : false }}' src='{{ mSrc }}' style='width: {{ iconWidth }}rpx; height: {{ iconHeight }}rpx;'></image>
+    <text class='text' style='font-size: {{ fontSize }}rpx; color: {{ fontColor }}; margin-top: {{ spacing }}rpx'>{{ mText }}</text>
+  </button>
+</form>
