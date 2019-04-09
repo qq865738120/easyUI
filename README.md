@@ -57,6 +57,7 @@
 2. 优化suspension_button组件，新增openType属性兼容原生button组件特殊使用场景
 3. 优化suspension_button组件，新增img-cus自定义类，可用于使用阿里图标库的场景
 4. 优化icon_button组件，增加对小程序原生button组件的form-type以及open-type属性的支持
+5. goods_detail组件底部添加自定义插槽bottom
 
 ### v1.2.0
 - 新增组件

@@ -536,7 +536,8 @@ const slot = [
   ],
   [ // goods_detail
     { name: 'titleLast', detail: '标题栏最右边插槽，可插入分享按钮等组件' },
-    { name: 'priceLast', detail: '价格栏最紧跟价格其后的插槽，促销图标、文字等组件' }
+    { name: 'priceLast', detail: '价格栏最紧跟价格其后的插槽，促销图标、文字等组件' },
+    { name: 'bottom', detail: '组件底部自定义插槽' }
   ],
   [], // suspension_button
   [], // count_button
