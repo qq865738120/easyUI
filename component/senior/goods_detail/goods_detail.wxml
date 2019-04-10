@@ -15,6 +15,9 @@
       <text class='price-text' style='color: {{ priceColor }}; font-size: {{ priceSize }}rpx'>{{ price }}</text>
       <slot name='priceLast'></slot>
     </view>
+    <view>
+      <slot name='bottom'></slot>
+    </view>
     <view class='detail'>
       <text style='color: {{ detailColor }}; font-size: {{ detailSize }}rpx; {{ mDetail }}'>{{ detail }}</text>
       <text wx:if='{{ subDetail != undefined && subDetail != "" ? true : false }}' style='color: {{ detailColor }}; font-size: {{ detailSize }}rpx; {{ mDetail }}'>{{ subDetail }}</text>
