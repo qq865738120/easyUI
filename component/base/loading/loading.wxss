@@ -177,8 +177,8 @@
 }
 
 .three-bounce .bounce1 {
-  width: 18rpx;
-  height: 18rpx;
+  width: 33%;
+  height: 33%;
   border-radius: 100%;
   display: inline-block;
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -186,8 +186,8 @@
 }
 
 .three-bounce .bounce2 {
-  width: 18rpx;
-  height: 18rpx;
+  width: 33%;
+  height: 33%;
   border-radius: 100%;
   display: inline-block;
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -195,8 +195,8 @@
 }
 
 .three-bounce .bounce3 {
-  width: 18rpx;
-  height: 18rpx;
+  width: 33%;
+  height: 33%;
   border-radius: 100%;
   display: inline-block;
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
