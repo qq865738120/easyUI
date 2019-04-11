@@ -103,7 +103,7 @@
 }
 
 .cube1, .cube2 {
-  width: 15rpx;
+  width: 25%;
   height: 15rpx;
   position: absolute;
   top: 0;
