@@ -7,10 +7,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: [
-    ],
+    list: [],
     page: 1,
-    isBottom: false
+    isBottom: false,
+    isLoading: true
   },
 
   _loadList: async function (list) {
@@ -41,8 +41,11 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    this._loadList([])
+  onLoad: async function (options) {
+    await this._loadList([])
+    this.setData({
+      isLoading: false
+    })
   },
 
   /**
