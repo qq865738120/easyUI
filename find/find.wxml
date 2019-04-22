@@ -1,4 +1,10 @@
 <!--find/find.wxml-->
+<view wx:if="{{ isLoading }}" class='loading'>
+  <e-loading type='cubeGrid' color='#36BCBC'/>
+  <view style='font-size: 28rpx; color: #666; margin-top: 30rpx;'>加载中...</view>
+</view>
+
+<block wx:else>
 <view data-id='{{ item.id }}' wx:for='{{ list }}' catchtap='onTap'>
   <e-base-card
     src='{{ item.img }}'
@@ -16,3 +22,4 @@
 </view>
 
 <e-load-more cus='more' wx:if="{{ isBottom }}" text='我也是有底线的' />
+</block>

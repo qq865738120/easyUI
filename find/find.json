@@ -7,6 +7,7 @@
   "usingComponents": {
     "e-base-card": "/component/list/base_card/base_card",
     "e-enhance-text": "/component/base/enhance_text/enhance_text",
-    "e-load-more": "/component/base/load_more/load_more"
+    "e-load-more": "/component/base/load_more/load_more",
+    "e-loading": "/component/base/loading/loading"
   }
 }
