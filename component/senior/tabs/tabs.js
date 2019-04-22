@@ -42,6 +42,7 @@ Component({
         this.setData({
           mSelected: newVal
         })
+        this.onItemTap({ currentTarget: { dataset: { index: newVal } } })
       }
     },
     theme: {

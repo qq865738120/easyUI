@@ -31,7 +31,7 @@
 <show title='{{ com.d7.title }}' sub='{{ com.d7.sub }}' mId='{{ com.d7.id }}' code='{{ com.d7.code }}'>
 <e-tabs
   items='{{ ["全部", "最近热点", "发布", "最新" ] }}'
-  selected='2'/>
+  selected='{{ index }}'/>
 </show>
 
 <show title='{{ com.d6.title }}' sub='{{ com.d6.sub }}' mId='{{ com.d6.id }}' code='{{ com.d6.code }}' bgColor='#fff'>
