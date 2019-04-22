@@ -59,6 +59,7 @@
 4. 优化icon_button组件，增加对小程序原生button组件的form-type以及open-type属性的支持
 5. goods_detail组件底部添加自定义插槽bottom
 6. 修复loading组件设置width和height属性不起作用的bug
+7. 修复tabs组件selected属性使用数据绑定时界面显示异常的bug
 
 ### v1.2.0
 - 新增组件
