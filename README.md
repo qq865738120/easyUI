@@ -60,6 +60,7 @@
 5. goods_detail组件底部添加自定义插槽bottom
 6. 修复loading组件设置width和height属性不起作用的bug
 7. 修复tabs组件selected属性使用数据绑定时界面显示异常的bug
+8. 修复icon_button组件的样式问题
 
 ### v1.2.0
 - 新增组件

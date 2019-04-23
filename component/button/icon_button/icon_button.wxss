@@ -5,6 +5,20 @@
   align-items: center;
   justify-content:  center;
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: unset;
+  text-align: unset;
+  text-decoration: unset;
+  line-height: unset;
+  border-radius: 0px;
+  -webkit-tap-highlight-color: unset;
+  overflow: unset;
+  color: unset;
+  background-color: unset;
+}
+.component::after {
+  content: none;
 }
 .badge {
   position: absolute;

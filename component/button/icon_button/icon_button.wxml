@@ -1,6 +1,6 @@
 <!--component/button/icon_button/icon_button.wxml-->
 <form bindsubmit='submit' bindreset='reset' report-submit='true'>
-  <button form-type='{{ formType }}' open-type='{{ openType }}' class='component cus' data-cus='{{ dataCus }}' bindtap='onTap' style='width: {{ width }}rpx; height: {{ height }}rpx'>
+  <button form-type='{{ formType }}' hover-class='none' open-type='{{ openType }}' class='component cus' data-cus='{{ dataCus }}' bindtap='onTap' style='width: {{ width }}rpx; height: {{ height }}rpx'>
     <view class='badge' wx:if='{{ badge ? true : false }}' style='background-color: {{ badgeColor }}; font-size: {{ badgeSize }}rpx;'>{{ badge }}</view>
     <view wx:if='{{ mSrc ? false : true }}' class='cus-icon'></view>
     <image class='icon' wx:if='{{ mSrc ? true : false }}' src='{{ mSrc }}' style='width: {{ iconWidth }}rpx; height: {{ iconHeight }}rpx;'></image>
