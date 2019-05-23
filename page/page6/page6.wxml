@@ -25,7 +25,8 @@
 <e-tabs
   items='{{ ["全部", "最近", "发布", "最新", "热点" ] }}'
   selectColor='#455488'
-  theme='smallBar'/>
+  theme='smallBar'
+  catchitemtap='testTap'/>
 </show>
 
 <show title='{{ com.d7.title }}' sub='{{ com.d7.sub }}' mId='{{ com.d7.id }}' code='{{ com.d7.code }}'>

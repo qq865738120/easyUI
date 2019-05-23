@@ -18,6 +18,9 @@
 >打开项目，选择需要的组件（组件位于component目录下），将包含组件4个文件的文件夹复制到您的项目中。  
 然后在您项目的代码中引用即可，详细引用说明请查看[小程序官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)。
 
+### 扫码查看api文档
+![home](https://github.com/qq865738120/easyUI/blob/master/imgs/QR.jpg)
+
 # 组件目录
 
 | 组件名      | 路径                              | 说明                  |
