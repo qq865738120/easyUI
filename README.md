@@ -61,6 +61,7 @@
 6. 修复loading组件设置width和height属性不起作用的bug
 7. 修复tabs组件selected属性使用数据绑定时界面显示异常的bug
 8. 修复icon_button组件的样式问题
+9. 修复基础库版本升级引起的tabs组件bug
 
 ### v1.2.0
 - 新增组件

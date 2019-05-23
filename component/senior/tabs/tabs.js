@@ -95,14 +95,14 @@ Component({
   methods: {
     barLeft: function(index, dom) {
       let that = this;
-      this.setData({
+      dom[index] && this.setData({
         left: dom[index].left
       })
     },
     barRight: function (index, dom) {
       let that = this;
       this.setData({
-        right: that.data.windowWidth - dom[index].right,
+        right: that.data.windowWidth - (dom[index] && dom[index].right),
       })
     },
     onItemTap: function(e) {
