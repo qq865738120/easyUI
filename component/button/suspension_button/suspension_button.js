@@ -123,7 +123,8 @@ Component({
     },
 
     onTap: function (e) {
-      
+      console.log('suspension_button点击事件触发', e);
+      this.triggerEvent('buttontap', e, { bubbles: true });
     },
 
     onMove: function (e) {
@@ -145,8 +146,6 @@ Component({
     },
 
     onMoveStart: function (e) {
-      console.log('suspension_button点击事件触发', e);
-      this.triggerEvent('buttontap', e, { bubbles: true });
       if (this.data.removable == 'false') return;
       const point = this._rpx2Px(this.data.width / 2, this.data.height / 2);
       this.setData({
