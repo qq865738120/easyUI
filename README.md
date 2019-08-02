@@ -65,6 +65,8 @@
 7. 修复tabs组件selected属性使用数据绑定时界面显示异常的bug
 8. 修复icon_button组件的样式问题
 9. 修复基础库版本升级引起的tabs组件bug
+10. 修复suspension_button组件移动时触发点击事件的bug
+11. 修复enhance_image组件cus自定义类的bug
 
 ### v1.2.0
 - 新增组件
