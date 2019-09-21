@@ -12,7 +12,7 @@
 		"nodeModules": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.0",
+	"libVersion": "2.8.3",
 	"appid": "wxbbf8997335033561",
 	"projectname": "wxa1959549aa0905d2",
 	"debugOptions": {
