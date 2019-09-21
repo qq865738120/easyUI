@@ -21,6 +21,15 @@
 ### 扫码查看api文档
 ![home](https://github.com/qq865738120/easyUI/blob/master/imgs/QR.jpg)
 
+# 运行项目
+1. 进入项目根目录。
+2. 进入[node官网](https://nodejs.org/)下载node并安装（如果已经安装请省略这部）。
+3. 打开命令行（cmd/终端）运行`npm install`。看到命令行内没有错误提示，并且项目根目录多出一个node_modules目录。
+4. 用微信开发者工具打开项目（如果已经打开请省略这部）。
+5. 点击微信开发者工具左上角，工具->构建npm。提示构建完成后会看到项目根目录多出一个miniprogram_npm目录。
+
+>请使用1.9.90以上的基础库。
+
 # 组件目录
 
 | 组件名      | 路径                              | 说明                  |
@@ -139,7 +148,3 @@
 
 >使用组件前请详细查看组件提供的接口。  
 >查看方法：打开小程序选择页面，点击对应组件下方的“详细说明”按钮。
-
-### 扫码查看api文档
-![home](https://github.com/qq865738120/easyUI/blob/master/imgs/QR.jpg)
-
