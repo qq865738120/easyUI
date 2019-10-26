@@ -73,4 +73,5 @@
 
   <view class='h1'>其他：</view>
   <text class='content' space='emsp'>{{ other }}</text>
+  <ad unit-id="adunit-8d216e3712996a13" ad-intervals='30' style='margin-top: 80rpx'></ad>
 </view>

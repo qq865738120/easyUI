@@ -1,7 +1,7 @@
 <!--component/senior/goods_detail/goods_detail.wxml-->
 <view class='component cus' style='background-color: {{ bgColor }};'>
   <swiper class='swiper' indicator-dots='true' skip-hidden-item-layout='true'>
-    <swiper-item data-src='{{ item }}' wx:for='{{ mImgList }}' data-index='{{ index }}' bindtap='onTapImg'>
+    <swiper-item data-src='{{ item }}' wx:for='{{ mImgList }}' wx:key='{{ index }}' data-index='{{ index }}' bindtap='onTapImg'>
       <image wx:if='{{ item.type == "image" }}' class='image' src='{{ item.url }}' mode='aspectFill'></image>
       <video wx:if='{{ item.type == "video" }}' class='image' direction='{{ 0 }}' src='{{ item.url }}' show-mute-btn="{{ true }}" poster="{{ item.poster }}"></video>
     </swiper-item>

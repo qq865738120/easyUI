@@ -4,7 +4,7 @@
     <text class='title'>{{ title }}</text>
     <text class='sub'>{{ sub }}</text>
   </view>
-  <view style='background-color: {{ bgColor }}; padding: 30rpx 0;'>
+  <view style='background-color: {{ bgColor }}; padding: 40rpx 0; height: {{ height }}'>
     <view class='{{ mbody }}' >
     <slot></slot>
   </view>

@@ -32,6 +32,10 @@ Component({
     bgColor: {
       type: String,
       value: ''
+    },
+    height: {
+      type: String,
+      value: ''
     }
   },
 

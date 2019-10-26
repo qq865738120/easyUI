@@ -58,10 +58,22 @@
 | loading | [component/base/loading](component/base/loading) | 加载动画组件 |
 | popup | [component/senior/popup](component/senior/popup) | 弹出框组件 |
 | checker | [component/form/checker](component/form/checker) | 选项组件，常用于商品规格选择 |
+| progress_bar | [component/base/progress_bar](component/base/progress_bar) | 进度条组件 |
+| icon | [component/base/icon](component/base/icon) | 图标组件 |
+| transition | [component/base/transition](component/base/transition) | 过度效果组件 |
+
 
 # 版本说明
 
-### v1.2.1 last
+### v1.3.0 last
+- 新增组件
+1. progress_bar
+2. icon
+3. transition
+- 修复&优化
+1. 优化小程序
+
+### v1.2.1
 - 新增组件
 - 修复&优化
 1. 优化小程序，并新增发现页面

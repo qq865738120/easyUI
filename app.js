@@ -3,7 +3,7 @@ const Towxml = require('/towxml/main');
 
 let config = {
   host: 'https://www.cutey.net.cn',
-  ver: 'v1.2.1'
+  ver: 'v1.3.0'
 }
 
 App({
@@ -39,6 +39,9 @@ App({
       { id: '23', name: 'loading组件' },
       { id: '24', name: 'popup组件' },
       { id: '25', name: 'checker组件' },
+      { id: '26', name: 'progress_bar组件' },
+      { id: '27', name: 'icon组件' },
+      { id: '28', name: 'transition组件' },
     ]
   },
 
@@ -73,6 +76,6 @@ App({
     instance.defaults.headers.common['Authorization'] = 'I am a token';
     instance.defaults.headers.common['Content-Type'] = "application/json;charset=utf-8";
     wx.$axios = instance
-    wx.$wx = plugin.wx
+    // wx.$wx = plugin.wx
   }
 })

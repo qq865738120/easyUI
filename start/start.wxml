@@ -1,6 +1,6 @@
 <!--start/start.wxml-->
 <swiper class='swiper' duration='350' next-margin='70rpx'>
-  <swiper-item class='item' wx:for='{{ swiperList }}'>
+  <swiper-item class='item' wx:for='{{ swiperList }}' wx:key='{{ index }}' >
     <e-enhance-view
       cus='view-cus'
       bgColor='#fff'

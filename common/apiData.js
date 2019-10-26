@@ -343,6 +343,55 @@ const attributes = [
     },
     { name: 'themeColor', type: 'String', deff: 'rgba(254, 144, 54, 0.1)', detail: '使用open主题时候生效' },
   ],
+  [ // progress_bar
+    { name: 'bgColor', type: 'String', deff: '#e5e5e5', detail: '进度条背景色' },
+    { name: 'padding', type: 'String', deff: '6', detail: '文本与进度条边缘距离' },
+    { name: 'radius', type: 'String', deff: '30rpx', detail: '圆角大小' },
+    { name: 'textSize', type: 'String', deff: '22', detail: '进度文本大小' },
+    { name: 'percent', type: 'Number', deff: '60', detail: '进度条进度（该数字表示当前进度占总体进度的百分比）' },
+    { name: 'textColor', type: 'String', deff: '#ffffff', detail: '进度文本颜色' },
+    { name: 'barColor', type: 'String', deff: 'linear-gradient(to right, #ffd2ae, #FE9036)', detail: '进度条激活区域背景色' }
+  ],
+  [ // icon
+    { name: 'name', type: 'String', deff: 'mine', detail: '图标名称' },
+    { name: 'padding', type: 'String', deff: '10rpx', detail: '图标内边距' },
+    { name: 'size', type: 'String', deff: '46rpx', detail: '图标大小' },
+    { name: 'color', type: 'String', deff: '#454545', detail: '图标颜色' }
+  ],
+  [ // transition
+    {
+      name: 'name', type: 'String', deff: '-', detail: '过度的名称', show: [
+        { name: 'bounce', detail: '弹入弹出' },
+        { name: 'bounce-up', detail: '顶部弹入弹出' },
+        { name: 'bounce-down', detail: '底部弹入弹出' },
+        { name: 'bounce-left', detail: '左边弹入弹出' },
+        { name: 'bounce-right', detail: '右边弹入弹出' },
+        { name: 'fade', detail: '淡入淡出' },
+        { name: 'fade-up', detail: '顶部淡入淡出' },
+        { name: 'fade-down', detail: '底部淡入淡出' },
+        { name: 'fade-left', detail: '左边淡入淡出' },
+        { name: 'fade-right', detail: '右边淡入淡出' },
+        { name: 'flip-x', detail: '以水平方向为转轴，翻转进入/退出' },
+        { name: 'flip-y', detail: '以竖直方向为转轴，翻转进入/退出' },
+        { name: 'lightSpeed', detail: '快速进入/退出，类似光线效果' },
+        { name: 'rotate', detail: '旋转进入/退出' },
+        { name: 'rotate-up-left', detail: '以左下角为转轴从顶部旋转进入/退出' },
+        { name: 'rotate-down-left', detail: '以左下角为转轴从底部旋转进入/退出' },
+        { name: 'rotate-up-right', detail: '以右下角为转轴从顶部旋转进入/退出' },
+        { name: 'rotate-down-right', detail: '以右下角为转轴从底部旋转进入/退出' },
+        { name: 'slide-up', detail: '顶部滑动进入/退出' },
+        { name: 'slide-down', detail: '底部滑动进入/退出' },
+        { name: 'slide-left', detail: '左边滑动进入/退出' },
+        { name: 'slide-right', detail: '右边滑动进入/退出' },
+        { name: 'zoom', detail: '缩放进入/退出' },
+        { name: 'zoom-up', detail: '从顶部缩放进入/退出' },
+        { name: 'zoom-down', detail: '从底部缩放进入/退出' },
+        { name: 'zoom-left', detail: '从左边缩放进入/退出' },
+        { name: 'zoom-right', detail: '从右边缩放进入/退出' },
+      ] },
+    { name: 'isShow', type: 'Boolean', deff: 'true', detail: '是否展示改组件内容，默认展示。' },
+    { name: 'duration', type: 'Number', deff: '200', detail: '过度持续时长，单位毫秒（ms）。' }
+  ],
 ]
 
 const mClass = [
@@ -427,7 +476,20 @@ const mClass = [
   ],
   [ // checker
     { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
-  ]
+  ],
+  [ // progress_bar
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+    { name: 'cus-container', detail: '进度条自定义样式类，部分属性不可用' },
+    { name: 'cus-skills', detail: '进度条激活区域自定义样式类，部分属性不可用' },
+  ],
+  [ // icon
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+  ],
+  [ // transition
+    { name: 'cus', detail: '自定义组件样式类，部分属性不可用' },
+    { name: 'cus-enter', detail: '自定义进入动画样式类，部分属性不可用。当使用name属性后该样式类将失效。' },
+    { name: 'cus-leave', detail: '自定义退出动画样式类，部分属性不可用。当使用name属性后该样式类将失效。' },
+  ],
 ]
 
 const method = [
@@ -500,6 +562,13 @@ const method = [
   [ // checker
     { name: 'select', parameter: '选中的选项id', detail: '被选中的选项id。通过访问detail.id获取' }
   ],
+  [], // progress_bar
+  [ // icon
+    { name: 'icontap', parameter: '事件对象', detail: '图标点击事件' }
+  ],
+  [ // transition
+    { name: 'finish', parameter: '事件对象', detail: '过度的完成事件' }
+  ]
 ]
 
 const slot = [
@@ -576,40 +645,50 @@ const slot = [
     { name: 'foot', detail: '底部内容插槽' }
   ],
   [], // checker
+  [ // progress_bar
+    { name: '-', detail: '进度条激活部分最右边插槽' }
+  ],
+  [],// icon
+  [ // transition
+    { name: '-', detail: '内容插槽。插入需要附加transition效果的元素。' }
+  ],
 ]
 
 const other = [
 '',
-'基础库1.9.90以上使用', // icon_button
-`基础库1.9.90以上使用。`, // base_list
-`基础库1.9.90以上使用。`, // title_view
-`基础库1.9.90以上使用。`, // base_button
-`基础库1.9.90以上使用。`, // head_portrait
-`基础库1.9.90以上使用。`, // search
-`基础库1.9.90以上使用。`, // enhance_text
-`基础库1.9.90以上使用。`, // enhance_view
-`基础库1.9.90以上使用。
+'请在基础库1.9.90以上版本使用', // icon_button
+`请在基础库1.9.90以上版本使用。`, // base_list
+`请在基础库1.9.90以上版本使用。`, // title_view
+`请在基础库1.9.90以上版本使用。`, // base_button
+`请在基础库1.9.90以上版本使用。`, // head_portrait
+`请在基础库1.9.90以上版本使用。`, // search
+`请在基础库1.9.90以上版本使用。`, // enhance_text
+`请在基础库1.9.90以上版本使用。`, // enhance_view
+`请在基础库1.9.90以上版本使用。
 tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // icon_list
-`基础库1.9.90以上使用。
+`请在基础库1.9.90以上版本使用。
 tip: 在需要配合组件库中其它组件的时候优先考虑使用该组件展示图片或图标，不建议使用官方image组件`, // enhance_icon
-`基础库1.9.90以上使用。`, // goods_card
-`基础库1.9.90以上使用。
+`请在基础库1.9.90以上版本使用。`, // goods_card
+`请在基础库1.9.90以上版本使用。
 tip: 复制代码中包含了其它组件，请仔细查看是否已经引入相关组件。`, // goods_detail
-`基础库1.9.90以上使用。`, // suspension_button
-`基础库1.9.90以上使用。`, // count_button
-`基础库1.9.90以上使用。
+`请在基础库1.9.90以上版本使用。`, // suspension_button
+`请在基础库1.9.90以上版本使用。`, // count_button
+`请在基础库1.9.90以上版本使用。
 tip: 使用时需添加自定义组件并且绑定收据，在js中使用setData方法动态修改视图属性。如官方模态框能够满足需求请使用官方模态框。`, // modal
-`基础库1.9.90以上使用。`, // goods_list
-`基础库1.9.90以上使用。`, // sidebar
-`基础库1.9.90以上使用。
+`请在基础库1.9.90以上版本使用。`, // goods_list
+`请在基础库1.9.90以上版本使用。`, // sidebar
+`请在基础库1.9.90以上版本使用。
 tip: 该组件弥补了image组件无法插入内容的缺点，可用于需要设置背景图片且需要使用本地路径的场景。`, // modal
-`基础库1.9.90以上使用。`, // head_view
-`基础库1.9.90以上使用。`, // base_card
-`基础库1.9.90以上使用。索引在itemtap事件对象中获取。event.detail.currentTarget.dataset.index就是当前点击的tab项，其中event为事件对象。`, // tabs
-`基础库1.9.90以上使用。`, // load_more
-`基础库1.9.90以上使用。`, // loading
-`基础库1.9.90以上使用。`, // popup
-`基础库1.9.90以上使用。`, // checker
+`请在基础库1.9.90以上版本使用。`, // head_view
+`请在基础库1.9.90以上版本使用。`, // base_card
+`请在基础库1.9.90以上版本使用。索引在itemtap事件对象中获取。event.detail.currentTarget.dataset.index就是当前点击的tab项，其中event为事件对象。`, // tabs
+`请在基础库1.9.90以上版本使用。`, // load_more
+`请在基础库1.9.90以上版本使用。`, // loading
+`请在基础库1.9.90以上版本使用。`, // popup
+`请在基础库1.9.90以上版本使用。`, // checker
+`请在基础库1.9.90以上版本使用。`, // progress_bar
+`请在基础库1.9.90以上版本使用。`, // icon
+`请在基础库1.9.90以上版本使用。`, // transition
 ]
 
 module.exports = {

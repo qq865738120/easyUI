@@ -9,6 +9,9 @@
     "e-enhance-icon": "/component/base/enhance_icon/enhance_icon",
     "e-enhance-image": "/component/base/enhance_image/enhance_image",
     "e-load-more": "/component/base/load_more/load_more",
-    "e-loading": "/component/base/loading/loading"
+    "e-loading": "/component/base/loading/loading",
+    "e-progress-bar": "/component/base/progress_bar/progress_bar",
+    "e-icon": "/component/base/icon/icon",
+    "e-transition": "/component/base/transition/transition"
   }
 }
