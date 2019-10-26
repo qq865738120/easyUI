@@ -1,0 +1,15 @@
+<!--component/base/progress_bar/progress_bar.wxml-->
+<view class='component cus'>
+  <!-- <view class='loading' wx:if='{{ loading == "true" ? true : false }}' style='border: 2px solid {{ lineColor }};border-color: {{ lineColor }} {{ lineColor }} {{ lineColor }} {{ loadingColor }};'></view>
+  <view class='left' wx:if='{{ loading == "true" ? false : true }}' style='background-color: {{ lineColor }}'></view>
+  <text class='text' style='font-size: {{ textSize }}rpx; color: {{ textColor }}'>{{ text }}</text>
+  <view class='right' wx:if='{{ loading == "true" ? false : true }}' style='background-color: {{ lineColor }}'></view> -->
+  <view class="container cus-container" style="background-color: {{ bgColor }}; border-radius: {{ radius }}">
+    <view class="skills cus-skills" style="padding: {{ padding }}rpx 16rpx {{ padding }}rpx 0; font-size: {{ textSize }}rpx; width: {{ percent }}%; color: {{ textColor }}; background: {{ barColor }};">
+      <view class="slot">
+        <slot></slot>
+      </view>
+      {{ percent }}%
+    </view>
+  </view>
+</view>

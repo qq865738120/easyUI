@@ -146,6 +146,11 @@ const code = {
   d30: `<e-loading type='chasingDots' color='#455488'/>`,
   d31: `<e-loading type='threeBounce' color='#FE9036'/>`,
   d32: `<e-loading type='cubeGrid' color='#455488'/>`,
+  d33: `<e-progress-bar />`,
+  d34: `<e-icon name="mine" />`,
+  d35: `<e-transition cus='transition' name="rotate-down-left" isShow='{{ isShowTransition }}' duration='400' bindfinish='testTap'>
+  <e-enhance-image src='/imgs/img.jpg' />
+</e-transition>`
 }
 
 Page({
@@ -154,6 +159,20 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isShowTransition: true,
+    icons: [
+      "sfilter", "refresh", "consult", "store", "local", 
+      "mine", "crowd", "money", "mail", "complain",
+      "favorite", "servicer", "minus", "checked", "add",
+      "confirm-border", "offical", "delete-border", "collect", "eye",
+      "prompt", "help", "progress", "warning", "config",
+      "home", "radio-button", "minus-border", "search", "hotline",
+      "add-border", "sort-by-down", "close", "sort-by-up", "back-to-top",
+      "clock", "setup", "calendar", "share", "delete",
+      "edit", "upload", "detail", "download-app", "more-border",
+      "voice", "message", "scan", "qrcode", "collapse",
+      "forward", "return", "dropdown", "suggest"
+    ],
     com: {
       d1: { id: com[8].id, title: com[8].name, sub: 'type设置为start', code: code.d1 },
       d2: { id: com[8].id, title: com[8].name, sub: 'type设置为startEnd', code: code.d2 },
@@ -187,6 +206,9 @@ Page({
       d30: { id: com[23].id, title: com[23].name, sub: 'type值为chasingDots', code: code.d30 },
       d31: { id: com[23].id, title: com[23].name, sub: 'type值为threeBounce', code: code.d31 },
       d32: { id: com[23].id, title: com[23].name, sub: 'type值为cubeGrid', code: code.d32 },
+      d33: { id: com[26].id, title: com[26].name, sub: '', code: code.d33 },
+      d34: { id: com[27].id, title: com[27].name, sub: '', code: code.d34 },
+      d35: { id: com[28].id, title: com[28].name, sub: '', code: code.d35 },
     }
   },
 
@@ -195,10 +217,13 @@ Page({
     console.log(e);
   },
 
+  onTransition: function (e) {
+    this.setData({ isShowTransition: !this.data.isShowTransition })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 })

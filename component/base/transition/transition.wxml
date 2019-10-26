@@ -1,0 +1,4 @@
+<!--component/base/transition/transition.wxml-->
+<view class='component cus {{ enter }} {{ leave }} {{ cusEnter }} {{ cusLeave }}' wx:if="{{ mIsShow }}" style="animation-duration: {{ duration }}ms">
+  <slot></slot>
+</view>

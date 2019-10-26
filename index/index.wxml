@@ -5,6 +5,7 @@
     <e-base-list
       id='{{ index + 1 }}'
       wx:for='{{ list }}'
+      wx:key='{{ index }}'
       title='{{ item.title }}'
       subTitle='{{ item.text }}'
       lineColor='{{ item.lineColor }}'

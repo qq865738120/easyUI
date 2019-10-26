@@ -1,0 +1,19 @@
+/* component/base/progress_bar/progress_bar.wxss */
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+.skills {
+  text-align: right;
+  position: relative;
+  transition: width 0.2s ease-out;
+}
+.slot {
+  position: absolute;
+  right: 0;
+}

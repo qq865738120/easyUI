@@ -1,0 +1,3 @@
+<!--component/base/icon/icon.wxml-->
+<view class='component cus iconfont {{ name }}' catchtap="onTap" style="font-size: {{ size }}; color: {{ color }}; padding: {{ padding }}">
+</view>

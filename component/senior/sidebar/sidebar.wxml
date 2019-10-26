@@ -1,6 +1,6 @@
 <!--component/senior/sidebar/sidebar.wxml-->
 <scroll-view class='component cus' scroll-y='true' scroll-into-view='{{ view }}' scroll-with-animation='true' style='width: {{ width }}rpx; height: {{ height }}; background-color: {{ bgColor }};'>
-  <view id='{{ "id" + index }}' data-index='{{ index }}' data-cus='{{ mDataCus[index] }}' class='items' wx:key='zwj' wx:for='{{ mList }}' bindtap='onTap' style=' background-color: {{ item.bg }};'>
+  <view id='{{ "id" + index }}' data-index='{{ index }}' data-cus='{{ mDataCus[index] }}' class='items' wx:key='index' wx:for='{{ mList }}' bindtap='onTap' style=' background-color: {{ item.bg }};'>
     <slot></slot>
     <text class='text' style='color: {{ item.color }}; font-size: {{ item.size }}rpx;'>{{ item.text }}</text>
   </view>

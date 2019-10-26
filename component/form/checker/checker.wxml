@@ -1,6 +1,6 @@
 <!--component/form/checker/checker.wxml-->
 <view class='component cus'>
-  <text class='label' wx:if='{{ label }}' style='font-size: {{ labelSize }}rpx; color: {{ labelColor }}rpx'>{{ label }}</text>
+  <text class='label' wx:if='{{ label }}' wx:key='{{ label }}' style='font-size: {{ labelSize }}rpx; color: {{ labelColor }}rpx'>{{ label }}</text>
   <view class='content' style='margin-top: {{ label ? 24 : 30 }}rpx'>
     <text wx:for='{{ list }}' data-id='{{ item.id }}' class='item' style='font-size: {{ itemSize }}rpx; {{ item.id == mselected ? itemStyle : "" }}' catchtap='onTap'>{{ item.text }}</text>
   </view>

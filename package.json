@@ -22,6 +22,6 @@
   "dependencies": {
     "axios": "^0.18.1",
     "axios-miniprogram-adapter": "^0.2.2",
-    "wx-api-promisify": "^0.1.2"
+    // "wx-api-promisify": "^0.1.2"
   }
 }

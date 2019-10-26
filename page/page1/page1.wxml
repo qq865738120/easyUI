@@ -1,302 +1,230 @@
 <!--page1/page1.wxml-->
+<show title='{{ com.d35.title }}' sub='{{ com.d35.sub }}' mId='{{ com.d35.id }}' code='{{ com.d35.code }}' margin='true' bgColor='#fff' height='560rpx'>
+  <view>
+    <e-base-button text='显示/隐藏' theme='filling' width='200' height='50' textSize='24' color='#FE9036' radius='100' bindbuttontap='onTransition' />
+  </view>
+  <e-transition cus='transition' name="rotate-down-left" isShow='{{ isShowTransition }}' duration='400' bindfinish='testTap'>
+    <e-enhance-image src='/imgs/img.jpg' />
+  </e-transition>
+</show>
+
+<show title='{{ com.d34.title }}' sub='{{ com.d34.sub }}' mId='{{ com.d34.id }}' code='{{ com.d34.code }}' margin='true' bgColor='#fff'>
+  <view class="icon-box" wx:for='{{ icons }}' wx:key='{{ index }}'>
+    <e-icon name="{{item}}" />{{item}}</view>
+</show>
+
+<show title='{{ com.d33.title }}' sub='{{ com.d33.sub }}' mId='{{ com.d33.id }}' code='{{ com.d33.code }}' margin='true' bgColor='#fff'>
+  <e-progress-bar />
+</show>
 
 <show title='{{ com.d32.title }}' sub='{{ com.d32.sub }}' mId='{{ com.d32.id }}' code='{{ com.d32.code }}' margin='true' bgColor='#fff'>
-<e-loading type='cubeGrid' color='#455488'/>
+  <e-loading type='cubeGrid' color='#455488' />
 </show>
 
 <show title='{{ com.d31.title }}' sub='{{ com.d31.sub }}' mId='{{ com.d31.id }}' code='{{ com.d31.code }}' margin='true' bgColor='#fff'>
-<e-loading type='threeBounce' color='#FE9036'/>
+  <e-loading type='threeBounce' color='#FE9036' />
 </show>
 
 <show title='{{ com.d30.title }}' sub='{{ com.d30.sub }}' mId='{{ com.d30.id }}' code='{{ com.d30.code }}' margin='true' bgColor='#fff'>
-<e-loading type='chasingDots' color='#455488'/>
+  <e-loading type='chasingDots' color='#455488' />
 </show>
 
 <show title='{{ com.d29.title }}' sub='{{ com.d29.sub }}' mId='{{ com.d29.id }}' code='{{ com.d29.code }}' margin='true' bgColor='#fff'>
-<e-loading type='spinnerPulse' color='#FE9036'/>
+  <e-loading type='spinnerPulse' color='#FE9036' />
 </show>
 
 <show title='{{ com.d28.title }}' sub='{{ com.d28.sub }}' mId='{{ com.d28.id }}' code='{{ com.d28.code }}' margin='true' bgColor='#fff'>
-<e-loading type='wanderingCubes' color='#455488'/>
+  <e-loading type='wanderingCubes' color='#455488' />
 </show>
 
 <show title='{{ com.d27.title }}' sub='{{ com.d27.sub }}' mId='{{ com.d27.id }}' code='{{ com.d27.code }}' margin='true' bgColor='#fff'>
-<e-loading type='wave' color='#FE9036'/>
+  <e-loading type='wave' color='#FE9036' />
 </show>
 
 <show title='{{ com.d26.title }}' sub='{{ com.d26.sub }}' mId='{{ com.d26.id }}' code='{{ com.d26.code }}' margin='true' bgColor='#fff'>
-<e-loading type='doubleBounce' color='#455488'/>
+  <e-loading type='doubleBounce' color='#455488' />
 </show>
 
 <show title='{{ com.d25.title }}' sub='{{ com.d25.sub }}' mId='{{ com.d25.id }}' code='{{ com.d25.code }}' margin='true' bgColor='#fff'>
-<e-loading color='#FE9036'/>
+  <e-loading color='#FE9036' />
 </show>
 
 <show title='{{ com.d24.title }}' sub='{{ com.d24.sub }}' mId='{{ com.d24.id }}' code='{{ com.d24.code }}' margin='true' bgColor='#fff'>
-<e-load-more loading='true' text='加载中' />
+  <e-load-more loading='true' text='加载中' />
 </show>
 
 <show title='{{ com.d23.title }}' sub='{{ com.d23.sub }}' mId='{{ com.d23.id }}' code='{{ com.d23.code }}' margin='true' bgColor='#fff'>
-<e-load-more />
+  <e-load-more />
 </show>
 
 <show title='{{ com.d21.title }}' sub='{{ com.d21.sub }}' mId='{{ com.d21.id }}' code='{{ com.d21.code }}' margin='true' bgColor='#fff'>
-<e-enhance-image
-  src='/imgs/img.jpg'>
-  <text style='color: #fff; position: absolute; bottom: 20rpx; right: 30rpx;'>2018.10.10</text>
-</e-enhance-image>
+  <e-enhance-image src='/imgs/img.jpg'>
+    <text style='color: #fff; position: absolute; bottom: 20rpx; right: 30rpx;'>2018.10.10</text>
+  </e-enhance-image>
 </show>
 
 <show title='{{ com.d22.title }}' sub='{{ com.d22.sub }}' mId='{{ com.d22.id }}' code='{{ com.d22.code }}' margin='true' bgColor='#fff'>
-<e-enhance-icon
-  cus='iconfont icon-shezhi'>
-</e-enhance-icon>
+  <e-enhance-icon cus='iconfont icon-shezhi'>
+  </e-enhance-icon>
 </show>
 
 <show title='{{ com.d20.title }}' sub='{{ com.d20.sub }}' mId='{{ com.d20.id }}' code='{{ com.d20.code }}' margin='true' bgColor='#fff'>
-<e-enhance-icon
-  src='/imgs/icon.png'>
-</e-enhance-icon>
+  <e-enhance-icon src='/imgs/icon.png'>
+  </e-enhance-icon>
 </show>
 
 <show title='{{ com.d1.title }}' sub='{{ com.d1.sub }}' mId='{{ com.d1.id }}' code='{{ com.d1.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='start'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='start'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d2.title }}' sub='{{ com.d2.sub }}' mId='{{ com.d2.id }}' code='{{ com.d2.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='startEnd'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='startEnd'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d3.title }}' sub='{{ com.d3.sub }}' mId='{{ com.d3.id }}' code='{{ com.d3.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='startCenter'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='startCenter'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d4.title }}' sub='{{ com.d4.sub }}' mId='{{ com.d4.id }}' code='{{ com.d4.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='endStart'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='endStart'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d5.title }}' sub='{{ com.d5.sub }}' mId='{{ com.d5.id }}' code='{{ com.d5.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='end'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='end'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d6.title }}' sub='{{ com.d6.sub }}' mId='{{ com.d6.id }}' code='{{ com.d6.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='endCenter'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='endCenter'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d7.title }}' sub='{{ com.d7.sub }}' mId='{{ com.d7.id }}' code='{{ com.d7.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='centerStart'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='centerStart'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d8.title }}' sub='{{ com.d8.sub }}' mId='{{ com.d8.id }}' code='{{ com.d8.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='centerEnd'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='centerEnd'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d9.title }}' sub='{{ com.d9.sub }}' mId='{{ com.d9.id }}' code='{{ com.d9.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='center'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='center'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d10.title }}' sub='{{ com.d10.sub }}' mId='{{ com.d10.id }}' code='{{ com.d10.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='betweenStart'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='betweenStart'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d11.title }}' sub='{{ com.d11.sub }}' mId='{{ com.d11.id }}' code='{{ com.d11.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='betweenEnd'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='betweenEnd'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d12.title }}' sub='{{ com.d12.sub }}' mId='{{ com.d12.id }}' code='{{ com.d12.code }}'>
-<e-enhance-view
-  bgColor='#fff'
-  height='120'
-  width='450'
-  margin='0 30rpx'
-  type='betweenCenter'>
-  <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
-  <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
-  <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
-  <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
-  <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
-</e-enhance-view>
+  <e-enhance-view bgColor='#fff' height='120' width='450' margin='0 30rpx' type='betweenCenter'>
+    <text style='color: #FF7137; font-size: 28rpx;'>元素1</text>
+    <text style='color: #E84D32; font-size: 28rpx;'>元素2</text>
+    <text style='color: #FF4444; font-size: 28rpx;'>元素3</text>
+    <text style='color: #E8328D; font-size: 28rpx;'>元素4</text>
+    <text style='color: #FF37FF; font-size: 28rpx;'>元素5</text>
+  </e-enhance-view>
 </show>
 
 <show title='{{ com.d13.title }}' sub='{{ com.d13.sub }}' mId='{{ com.d13.id }}' code='{{ com.d13.code }}' margin='true' bgColor='#fff'>
-<e-enhance-text
-  icon='/imgs/good.png'>
-</e-enhance-text>
+  <e-enhance-text icon='/imgs/good.png'>
+  </e-enhance-text>
 </show>
 
 <show title='{{ com.d14.title }}' sub='{{ com.d14.sub }}' mId='{{ com.d14.id }}' code='{{ com.d14.code }}' margin='true' bgColor='#fff'>
-<e-enhance-text
-  icon='/imgs/good.png'
-  title='点赞'>
-</e-enhance-text>
+  <e-enhance-text icon='/imgs/good.png' title='点赞'>
+  </e-enhance-text>
 </show>
 
 <show title='{{ com.d15.title }}' sub='{{ com.d15.sub }}' mId='{{ com.d15.id }}' code='{{ com.d15.code }}' margin='true' bgColor='#fff'>
-<e-enhance-text
-  title='点赞'
-  text='6'>
-</e-enhance-text>
+  <e-enhance-text title='点赞' text='6'>
+  </e-enhance-text>
 </show>
 
 <show title='{{ com.d16.title }}' sub='{{ com.d16.sub }}' mId='{{ com.d16.id }}' code='{{ com.d16.code }}' margin='true' bgColor='#fff'>
-<e-enhance-text
-  icon='/imgs/good.png'
-  title='点赞'
-  text='10'>
-</e-enhance-text>
+  <e-enhance-text icon='/imgs/good.png' title='点赞' text='10'>
+  </e-enhance-text>
 </show>
 
 <show title='{{ com.d17.title }}' sub='{{ com.d17.sub }}' mId='{{ com.d17.id }}' code='{{ com.d17.code }}' margin='true' bgColor='#fff'>
-<e-head-portrait
-  src='/imgs/default_head.jpg'>
-</e-head-portrait>
+  <e-head-portrait src='/imgs/default_head.jpg'>
+  </e-head-portrait>
 </show>
 
 <show title='{{ com.d18.title }}' sub='{{ com.d18.sub }}' mId='{{ com.d18.id }}' code='{{ com.d18.code }}' margin='true' bgColor='#fff'>
-<e-head-portrait
-  src='/imgs/default_head.jpg'
-  textColor='#666'
-  text='小明'>
-</e-head-portrait>
+  <e-head-portrait src='/imgs/default_head.jpg' textColor='#666' text='小明'>
+  </e-head-portrait>
 </show>
 
 <show title='{{ com.d19.title }}' sub='{{ com.d19.sub }}' mId='{{ com.d19.id }}' code='{{ com.d19.code }}' margin='true' bgColor='#fff'>
-<e-head-portrait
-  src='/imgs/default_head.jpg'
-  text='小红'
-  textColor='#666'
-  spacing='20'
-  size='160'
-  bindheadtap='testTap'>
-  <e-base-button
-    text='我的好友' 
-    theme='filling'
-    width='120'
-    height='36'
-    textSize='20'
-    color='#FE9036'
-    radius='30'
-    bindbuttontap='testTap'></e-base-button>
-</e-head-portrait>
+  <e-head-portrait src='/imgs/default_head.jpg' text='小红' textColor='#666' spacing='20' size='160' bindheadtap='testTap'>
+    <e-base-button text='我的好友' theme='filling' width='120' height='36' textSize='20' color='#FE9036' radius='30' bindbuttontap='testTap'></e-base-button>
+  </e-head-portrait>
 </show>
