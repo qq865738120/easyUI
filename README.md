@@ -130,26 +130,6 @@
 4. enhance_icon支持使用阿里图标库引入图标。
 5. enhance_icon新增color属性。
 
-### v1.0.6 
-- 新增组件
-1. goods_card  
-2. goods_detail  
-3. suspension_button
-4. count_button
-5. modal
-- 修复&优化
-1. 删除enhance_icon组件插槽。  
-2. 修复小程序base_button的详细说明不正确的bug。  
-3. search组件新增focus属性。  
-4. base_button新增filling2主题。  
-5. icon_button删除size属性，新增width和height属性。
-
-### v1.0.5   
-- 修复&优化
-1. 修复enhance_icon在手机上无法显示图片的bug。
-2. 将icon_list的subTitle属性默认值由24调整到28。
-3. 将icon_list的detail属性默认值由22调整到24。
-
 # 关于
 - 作者：code_xia
 - 个人邮箱：zwj865738120@163.com
@@ -159,3 +139,6 @@
 
 >使用组件前请详细查看组件提供的接口。  
 >查看方法：打开小程序选择页面，点击对应组件下方的“详细说明”按钮。
+
+### 给作者买杯咖啡
+![pay](https://github.com/qq865738120/easyUI/blob/master/imgs/pay.jpg)
