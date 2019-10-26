@@ -1,4 +1,5 @@
 <!--index/index.wxml-->
+<view class='warp'>
 <easy-view height='960' margin='50rpx 0 0 0' reverse='col' type='betweenCenter'>
   <easy-icon-button icon='/imgs/easyUI.png' text='一行代码的艺术之旅' iconWidth='250' iconHeight='250' width='300' height='300' fontSize='32'></easy-icon-button>
   <easy-view cus='cus-list'>
@@ -13,3 +14,5 @@
     </e-base-list>
   </easy-view>
 </easy-view>
+<ad unit-id="adunit-7f5c328840bc80e1" ad-intervals='30' style="margin-top: 80rpx"></ad>
+</view>
