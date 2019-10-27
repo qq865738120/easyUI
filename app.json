@@ -37,12 +37,6 @@
         "text": "开始"
       },
       {
-        "iconPath": "/imgs/tab-find-1.png",
-        "selectedIconPath": "/imgs/tab-find-2.png",
-        "pagePath": "find/find",
-        "text": "发现"
-      },
-      {
         "iconPath": "/imgs/tab-about-1.png",
         "selectedIconPath": "/imgs/tab-about-2.png",
         "pagePath": "about/about",
