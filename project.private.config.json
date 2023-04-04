@@ -1,28 +1,11 @@
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
-  "setting": {
-    "urlCheck": true,
-    "es6": true,
-    "postcss": true,
-    "minified": true,
-    "newFeature": true,
-    "nodeModules": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    }
-  },
-  "compileType": "miniprogram",
-  "libVersion": "2.8.3",
-  "appid": "wxbbf8997335033561",
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
   "projectname": "wxa1959549aa0905d2",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": true
+  },
+  "libVersion": "2.30.3",
   "condition": {
     "miniprogram": {
       "list": [
@@ -61,12 +44,15 @@
           "pathName": "article/article",
           "query": "id=B306623C728D91D3521FEAE722ACFA&isShare=true",
           "scene": "1007"
+        },
+        {
+          "name": "",
+          "pathName": "qrcode/index",
+          "query": "ssid=Tencent-GuestWiFi&password=123456",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
-  },
-  "editorSetting": {
-    "tabIndent": "insertSpaces",
-    "tabSize": 2
   }
 }

@@ -3,7 +3,7 @@ const Towxml = require('/towxml/main');
 
 let config = {
   host: 'https://www.cutey.net.cn',
-  ver: 'v1.3.0'
+  ver: 'v1.4.0'
 }
 
 App({

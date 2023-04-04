@@ -1,0 +1,25 @@
+/* qrcode/index.wxss */
+page {
+  background-color: white;
+}
+
+.page-warp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 160rpx;
+  height: calc(100vh - 160rpx);
+  position: relative;
+}
+
+.button-cus {
+  margin-top: 50rpx;
+  font-weight: 400 !important;
+}
+
+.ad {
+  position: absolute;
+  bottom: 0rpx;
+  width: 100vw;
+}

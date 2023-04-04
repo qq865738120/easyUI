@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "e-enhance-image": "/component/base/enhance_image/enhance_image",
+    "e-base-button": "/component/button/base_button/base_button"
+  }
+}

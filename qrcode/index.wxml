@@ -1,0 +1,16 @@
+<!--qrcode/index.wxml-->
+<view class="page-warp">
+  <e-enhance-image src='/imgs/WIFI.svg' mode='aspectFill' width='300' height='300'></e-enhance-image>
+  <e-base-button
+    cus='button-cus'
+    text='一键连接WI-FI' 
+    theme='fillingAndShine'
+    width='640'
+    height='90'
+    textSize='30'
+    color='#FFC34C'
+    radius='30'
+    bindbuttontap='buttonTap'>
+  </e-base-button>
+  <ad class="ad" unit-id="adunit-7f5c328840bc80e1" ad-intervals='30' wx:if="{{ !!options.adtag }}"></ad>
+</view>

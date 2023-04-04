@@ -12,7 +12,8 @@
     "start/start",
     "about/about",
     "find/find",
-    "article/article"
+    "article/article",
+    "qrcode/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
